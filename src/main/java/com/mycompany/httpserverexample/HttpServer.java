@@ -19,15 +19,17 @@ import java.util.Date;
  * Created by yar 09.09.2009
  */
 public class HttpServer {
+    private static int count = 1;
 
     public static void main(String[] args) throws Throwable {
         ServerSocket ss = new ServerSocket(7777);
         System.out.println("server is started");
         while (true) {
             Socket s = ss.accept();
-            System.err.println("Client accepted");
-            new Thread(new SocketProcessor(s)).start();
-            System.err.println("SocketProcessor is created");
+            System.err.println("Client number " + count + "  accepted");
+            new Thread(new SocketProcessor(s,count)).start();
+            System.err.println("SocketProcessor number " + count + " is created");
+            count++;
         }
     }
 
@@ -36,26 +38,26 @@ public class HttpServer {
         private Socket s;
         private InputStream is;
         private OutputStream os;
-        private static int count = 0;
+        private int number;
 
-        private SocketProcessor(Socket s) throws Throwable {
+
+        private SocketProcessor(Socket s, int count) throws Throwable {
             this.s = s;
             this.is = s.getInputStream();
             this.os = s.getOutputStream();
-            count++;
-            System.err.println("1");
+            this.number = count;
+            
         }
 
         public void run() {
             try {
                 String readInputHeaders = readInputHeaders();
                 Calendar cal = Calendar.getInstance();
-                System.err.println("2");
                 SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
                 writeResponse("<html><body><h1>" + sdf.format(cal.getTime()) + "</h1>"
-                        + "<p>Current thread number is " + count + "</p>"
+                        + "<p>Current thread number is " + number + "</p>"
                         + "<p>Current thread name is " + readInputHeaders + "</p></body></html>");
-                System.err.println(readInputHeaders);
+                System.out.println("Message from client " + number + " : " + readInputHeaders);
             } catch (Throwable t) {
                 /*do nothing*/
             } finally {
@@ -65,38 +67,40 @@ public class HttpServer {
                     /*do nothing*/
                 }
             }
-            System.err.println("Client processing finished");
+            System.err.println("Client number" + number + " processing finished");
         }
 
         private void writeResponse(String s) throws Throwable {
-            System.err.println("4");
+
             String response = "HTTP/1.1 200 OK\r\n"
                     + "Server: YarServer/2009-09-09\r\n"
                     + "Content-Type: text/html\r\n"
                     + "Content-Length: " + s.length() + "\r\n"
                     + "Connection: close\r\n\r\n";
             String result = response + s;
-            System.err.println("5");
             os.write(result.getBytes());
-            System.err.println("6");
             os.flush();
         }
 
         private String readInputHeaders() throws Throwable {
-            System.err.println("7");
-            BufferedReader br = new BufferedReader(new InputStreamReader(is));
-            System.err.println("8");
+
+            byte buf[] = new byte[128*1024];
+            int r = is.read(buf);
+            String data = new String(buf, 0, r);
+            return data;
+        }
+
+           /* BufferedReader br = new BufferedReader(new InputStreamReader(is));
+
             String result = null;
             while (true) {
                 String s = br.readLine();
-                System.out.println(s);
                 result += s;
                 if (s == null || s.trim().length() == 0) {
                     break;
                 }
             }
-            System.err.println(result);
             return result;
-        }
+        }*/
     }
 }
