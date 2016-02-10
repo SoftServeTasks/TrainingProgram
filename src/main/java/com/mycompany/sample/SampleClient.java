@@ -11,38 +11,41 @@ package com.mycompany.sample;
  */
 import java.io.*;
 import java.net.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 class SampleClient extends Thread {
- private static int counter = 1;
 
-    public SampleClient() {
-        counter++;
-    }
- 
- String request = null;
+    private static int counter = 1;
+
     public static void main(String args[]) {
-        
-        try {
-            // открываем сокет и коннектимся к localhost:3128
-            // получаем сокет сервера
-            Socket s = new Socket("localhost", 3128);
+        ExecutorService service = Executors.newCachedThreadPool();
+        for (; counter < 10; ) {
+            service.submit(new Runnable() {
+                public void run() {
 
-            // берём поток вывода и выводим туда первый аргумент
-            // заданный при вызове, адрес открытого сокета и его порт
-            
-            s.getOutputStream().write((counter + "\n" + s.getInetAddress().getHostAddress()
-                    + ":" + s.getLocalPort()).getBytes());
+                    try {
+                        Socket s = new Socket("localhost", 3128);
+                        
+                        String toServer =  String.format("From %d to server message: Hello \n "
+                                + "****************************", counter);
 
-            // читаем ответ
-            byte buf[] = new byte[64 * 1024];
-            int r = s.getInputStream().read(buf);
-            String data = new String(buf, 0, r);
+                        s.getOutputStream().write(toServer.getBytes());
 
-            // выводим ответ в консоль
-            System.out.println(data);
-        } catch (Exception e) {
-            
-            e.printStackTrace();
-        } // вывод исключений
+                        byte buf[] = new byte[64 * 1024];
+                        int r = s.getInputStream().read(buf);
+                        String data = new String(buf, 0, r);
+
+                        System.out.println(data);
+                        
+                    } catch (Exception e) {
+
+                        e.printStackTrace();
+                    }
+                }
+            });
+            counter++;
+        }
     }
+
 }
