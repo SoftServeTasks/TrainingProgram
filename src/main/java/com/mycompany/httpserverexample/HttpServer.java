@@ -14,20 +14,26 @@ import java.io.BufferedReader;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * Created by yar 09.09.2009
  */
 public class HttpServer {
+
     private static int count = 1;
 
     public static void main(String[] args) throws Throwable {
         ServerSocket ss = new ServerSocket(7777);
         System.out.println("server is started");
+
         while (true) {
+            System.out.println("Waiting for the clients");
             Socket s = ss.accept();
+
             System.err.println("Client number " + count + "  accepted");
-            new Thread(new SocketProcessor(s,count)).start();
+            new Thread(new SocketProcessor(s, count)).start();
             System.err.println("SocketProcessor number " + count + " is created");
             count++;
         }
@@ -40,13 +46,12 @@ public class HttpServer {
         private OutputStream os;
         private int number;
 
-
         private SocketProcessor(Socket s, int count) throws Throwable {
             this.s = s;
             this.is = s.getInputStream();
             this.os = s.getOutputStream();
             this.number = count;
-            
+
         }
 
         public void run() {
@@ -84,13 +89,13 @@ public class HttpServer {
 
         private String readInputHeaders() throws Throwable {
 
-            byte buf[] = new byte[128*1024];
+            byte buf[] = new byte[128 * 1024];
             int r = is.read(buf);
             String data = new String(buf, 0, r);
             return data;
         }
 
-           /* BufferedReader br = new BufferedReader(new InputStreamReader(is));
+        /* BufferedReader br = new BufferedReader(new InputStreamReader(is));
 
             String result = null;
             while (true) {
