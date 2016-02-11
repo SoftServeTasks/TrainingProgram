@@ -3,8 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.httpserverexample;
+package com.mycompany.httpserverexample.httpcliensimulation;
 
+import com.mycompany.httpserverexample.firsthttpserver.HttpServer;
+import com.mycompany.httpserverexample.proxyserver.ProxyServer;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -15,6 +17,7 @@ import java.util.concurrent.Executors;
 public class ClientsRunner {
     
     public static void main(String[] args) throws InterruptedException {
+
          ExecutorService service = Executors.newCachedThreadPool();
          Thread thread;
             for (int i = 0; i < 10; i++) {
