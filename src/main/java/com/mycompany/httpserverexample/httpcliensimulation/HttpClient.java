@@ -38,7 +38,7 @@ public class HttpClient implements Runnable {
             System.out.println("Client number " + threadIdentificator + " started");
             String toServer = "Hello from client " + threadIdentificator;
             s.getOutputStream().write(toServer.getBytes());
-            System.out.println("Message: " + toServer + " sent to server localhost:"+port + "!\n");
+            System.out.println("Message: " + toServer + " sent to server localhost:"+ port + "!\n");
 
             byte buf[] = new byte[64 * 1024];
             int r = s.getInputStream().read(buf);

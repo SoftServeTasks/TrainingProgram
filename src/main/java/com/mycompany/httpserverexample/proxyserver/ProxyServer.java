@@ -5,18 +5,9 @@
  */
 package com.mycompany.httpserverexample.proxyserver;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.concurrent.ExecutorService;
-import com.sun.net.httpserver.HttpServer;
 
 /**
  *
@@ -42,9 +33,12 @@ public class ProxyServer extends Thread {
 
         while (true) {
             try {
-                Socket clientSocket = serverSocket.accept();
-                ClientSession session = new ClientSession(clientSocket);
+                int count = 1;
+                Socket clientSocket5555 = serverSocket.accept();
+                ClientSession session = new ClientSession(clientSocket5555);
+                System.err.println(" * Client number " + count + "  accepted\n");
                 new Thread(session).start();
+                count++;
 
             } catch (IOException e) {
                 System.out.println("Failed to establish connection.");

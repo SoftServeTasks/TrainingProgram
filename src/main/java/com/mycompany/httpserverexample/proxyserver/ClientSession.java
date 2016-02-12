@@ -23,21 +23,22 @@ import java.util.logging.Logger;
  */
 class ClientSession implements Runnable {
 
-    private Socket socket;
-    private InputStream in = null;
-    private OutputStream out = null;
+    private Socket clientSocket5555;
+    private InputStream fromClient = null;
+    private OutputStream toClient = null;
 
 
     @Override
     public void run() {
         try {
             /* Получаем заголовок сообщения от клиента */
-            String header = readHeader();
-            System.out.println(header + "\n");
+            System.out.println("Слушаю клиента \n");
+            String fromClient = readClientsMessage();
+            System.out.println(" Запрос от клиента на 5555: " + fromClient + "\n");
             /* Получаем из заголовка указатель на интересующий ресурс */
-            from_net(header, "localhost", 7777);
-            System.err.println(readHeader());
-            writeAnswerFromServer(readHeader());
+            readdressToHttpServer(fromClient, "localhost", 7777);
+
+            
             System.out.println("Работа proxy окончена успешно! ");
         } catch (IOException e) {
             e.printStackTrace();
@@ -47,7 +48,7 @@ class ClientSession implements Runnable {
             Logger.getLogger(ClientSession.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
             try {
-                socket.close();
+                clientSocket5555.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -55,23 +56,23 @@ class ClientSession implements Runnable {
     }
 
     public ClientSession(Socket socket) throws IOException {
-        this.socket = socket;
+        this.clientSocket5555 = socket;
         initialize();
     }
 
     private void initialize() throws IOException {
         /* Получаем поток ввода, в который помещаются сообщения от клиента */
-        in = socket.getInputStream();
+        fromClient = clientSocket5555.getInputStream();
         /* Получаем поток вывода, для отправки сообщений клиенту */
-        out = socket.getOutputStream();
+        toClient = clientSocket5555.getOutputStream();
     }
 
     /**
      * * Считывает заголовок сообщения от клиента. * * @return строка с
      * заголовком сообщения от клиента. * @throws IOException
      */
-    private String readHeader() throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+    private String readClientsMessage() throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(fromClient));
         StringBuilder builder = new StringBuilder();
         String ln = null;
         while (true) {
@@ -79,10 +80,11 @@ class ClientSession implements Runnable {
             if (ln == null || ln.isEmpty()) {
                 break;
             }
-            builder.append(ln + System.getProperty("line.separator"));
+            builder.append(ln /*+ System.getProperty("line.separator")*/);
         }
         return builder.toString();
     }
+    
 
     // "вырезает" из строки str часть, находящуюся между строками start и end
     // если строки end нет, то берётся строка после start
@@ -109,7 +111,7 @@ class ClientSession implements Runnable {
 
     // печатает ошибку прокси
     protected void printError(String err) throws Exception {
-        out.write((new String("HTTP/1.1 200 OK\nServer: HomeProxy\n"
+        toClient.write((new String("HTTP/1.1 200 OK\nServer: HomeProxy\n"
                 + "Content-Type: text/plain; charset=windows-1251\n\n"
                 + err)).getBytes());
     }
@@ -132,28 +134,28 @@ class ClientSession implements Runnable {
             host = host.substring(0, port);
         }
 
-        from_net(header, host, port);
+        readdressToHttpServer(header, host, port);
     }
 
     // подключение к серверу
-    protected void from_net(String header, String host, int port) throws Exception, Throwable {
+    protected void readdressToHttpServer(String clientsRequest, String host, int port) throws Exception, Throwable {
         System.out.println("Перенаправляю запрос на http://localhost:7777/");
-        Socket sc = new Socket(host, port);
-        header = "ПОЛУЧЕНО ОТ PROXY! \n" + header;
-        sc.getOutputStream().write(header.getBytes());
+        Socket httpserversocket7777 = new Socket(host, port);
+        clientsRequest = "ПОЛУЧЕНО ОТ PROXY! \n" + clientsRequest;
+        httpserversocket7777.getOutputStream().write(clientsRequest.getBytes());
+        //toClient.write(clientsRequest.getBytes());
         byte buf[] = new byte[128 * 1024];
-        int r = sc.getInputStream().read(buf);
+        int r = httpserversocket7777.getInputStream().read(buf);
         String data = new String(buf, 0, r);
-        writeAnswerFromServer("ОТ 7777 ПОЛУЧЕН ОТВЕТ: \n" + data);
-        r=in.read(buf);
-        data = new String(buf, 0, r);
-        writeAnswerFromServer("ОТ 7777 ПОЛУЧЕН ОТВЕТ: \n" + data);
-        sc.close();
+        writeAnswerFromServer(data + "\n ***************************************************"
+                + "\nОТВЕТ ОТ СЕРВЕРА 7777 ПЕРЕДАН КЛИЕНТУ СЕРВЕРОМ 5555!\n");
+        System.err.println("PROXY OT 7777 ПОЛУЧИЛ ОТВЕТ: " + data);
+        httpserversocket7777.close();
     }
     
     private void writeAnswerFromServer(String serversAnswer) throws Throwable {
-            out.write(serversAnswer.getBytes());
-            out.flush();
+            toClient.write(serversAnswer.getBytes());
+            toClient.flush();
         }
 
 }
