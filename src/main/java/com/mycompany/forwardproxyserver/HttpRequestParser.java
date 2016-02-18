@@ -1,0 +1,124 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.mycompany.forwardproxyserver;
+
+import java.io.File;
+
+/**
+ *
+ * @author osyniaev
+ */
+public enum HttpRequestParser {
+    INSTANCE;
+
+    private String request;
+    private String host;
+    private int port;
+
+    HttpRequestParser() {
+
+    }
+
+
+    public void setHost(String host) {
+        this.host = host;
+    }
+
+    public void setPort(int port) {
+        this.port = port;
+    }
+
+    public String getRequest() {
+        return request;
+    }
+
+    public void setRequest(String request) {
+        this.request = request;
+    }
+
+    /**
+     * "вырезает" из строки str часть, находящуюся между строками start и end
+     * если строки end нет, то берётся строка после start если кусок не найден,
+     * возвращается null для поиска берётся строка до "\n\n" или "\r\n\r\n",
+     * если таковые присутствуют
+     */
+    private String extract(String str, String start, String end) {
+        int s = str.indexOf("\n\n", 0), e;
+        if (s < 0) {
+            s = str.indexOf("\r\n\r\n", 0);
+        }
+        if (s > 0) {
+            str = str.substring(0, s);
+        }
+        s = str.indexOf(start, 0) + start.length();
+        if (s < start.length()) {
+            return null;
+        }
+        e = str.indexOf(end, s);
+        if (e < 0) {
+            e = str.length();
+        }
+        System.err.println("Обрезанная строка: \n" + str.substring(s, e));
+        return (str.substring(s, e)).trim();
+    }
+
+    /**
+     *
+     * @return host:port
+     */
+    private String getHostLine() {
+        String hostLine = extract(request, "Host:", "\n");
+        if ((hostLine == null)) {
+            throw new InvalidRequestException(request);
+        }
+        System.out.println("hostLine: " + hostLine);
+        return hostLine;
+    }
+
+    /**
+     *
+     * @return HOST
+     * @throws Exception
+     */
+    public String getHost() throws Exception {
+        String hostLine = getHostLine();
+        int colonIndex;
+        if (hostLine.contains(":")) {
+            colonIndex = hostLine.indexOf(":", 0);
+        } else {
+            colonIndex = hostLine.indexOf("/", 0);
+        }
+        if (colonIndex < 0) {
+            setHost(hostLine);
+            System.err.println("host: " + hostLine);
+            return hostLine;
+
+        } else {
+            hostLine = hostLine.substring(0, colonIndex);
+            setHost(hostLine);
+            System.err.println("host: " + hostLine);
+            return hostLine;
+        }
+    }
+
+    /**
+     *
+     * @return PORT
+     * @throws Exception
+     */
+    public int getPort() throws Exception {
+        String hostLine = getHostLine();
+        int portValue = hostLine.indexOf(":", 0);
+        if (portValue < 0) {
+            portValue = 80;
+        } else {
+            portValue = Integer.parseInt(hostLine.substring(portValue + 1));
+        }
+        setPort(portValue);
+        System.err.println("port = " + portValue);
+        return portValue;
+    }
+}
