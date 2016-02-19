@@ -39,29 +39,30 @@ public class HttpRequestHandler implements Runnable {
         this.connectionWithClient = connectionWithClient;
     }
 
-    
     /**
-     * Получаем поток ввода, в который помещаются сообщения от клиента 
-     * Получаем поток вывода, для отправки сообщений клиенту 
-     * @throws IOException 
+     *
+     * Get the input stream, which brings messages from the client Get the
+     * output stream for sending messages to the client
+     *
+     * @throws IOException
      */
     private void initialize() throws IOException {
-       
+
         fromClientChannel = connectionWithClient.getInputStream();
-       
+
         toClientChannel = connectionWithClient.getOutputStream();
         responseHandler = new ResponseHandler(fromClientChannel, toClientChannel);
         requestParser = HttpRequestParser.INSTANCE;
     }
-    
-    
 
     /**
-     * 
+     * Connects to the resource from the header "host", 
+     * sends clients request, 
+     * receives response from resource and returns it to client
      * @param header
      * @param host
      * @param port
-     * @throws Exception 
+     * @throws Exception
      */
     protected void dawnloadFromInet(String header, String host, int port) throws Exception {
         System.err.println("Подключение к " + host + ":" + port);
@@ -83,14 +84,13 @@ public class HttpRequestHandler implements Runnable {
 
         sc.close();
     }
-    
+
     /**
-     * 
+     * reads message from client
      * @param fromClientChannel
      * @return
-     * @throws IOException 
+     * @throws IOException
      */
-
     protected String readClientsRequest(InputStream fromClientChannel) throws IOException {
         String header = null;
         byte buf[] = new byte[1024 * 1024];
@@ -101,7 +101,6 @@ public class HttpRequestHandler implements Runnable {
         }
         return header;
     }
-
 
     public void run() {
         try {
@@ -124,12 +123,11 @@ public class HttpRequestHandler implements Runnable {
             }
         }
     }
-    
+
     /**
-     * 
+     *
      * @return current time
      */
-
     private String getCurrentTime() {
         Calendar cal = Calendar.getInstance();
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");

@@ -14,7 +14,9 @@ import org.apache.log4j.Logger;
 
 
 /**
- *
+ * It's a sample of elementary forward proxy server
+ * It expects a socket connection, then it creates a new socket  
+ * to communicate with each individual client in separate thread
  * @author osyniaev
  */
 public class ProxyServer extends Thread {
@@ -67,6 +69,7 @@ public class ProxyServer extends Thread {
 
     /**
      * The server listens on port and waits for clients to connect.
+     * when client is accepted, server creates a request handler instance in a separate thread
      * For each connected client creates a separate handler in a separate thread.
      */
     

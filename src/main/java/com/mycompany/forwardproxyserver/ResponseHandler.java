@@ -46,7 +46,7 @@ public class ResponseHandler {
     
  
     /**
-     * печатает ошибку прокси
+     * returns proxy error to the client
      * @param err
      * @throws Exception 
      */
@@ -57,7 +57,7 @@ public class ResponseHandler {
     }
     
     /**
-     * печатает сообщение
+     * returns proxy message to the client
      * @param message
      * @throws IOException 
      */

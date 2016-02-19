@@ -22,7 +22,6 @@ public enum HttpRequestParser {
 
     }
 
-
     public void setHost(String host) {
         this.host = host;
     }
@@ -40,10 +39,11 @@ public enum HttpRequestParser {
     }
 
     /**
-     * "вырезает" из строки str часть, находящуюся между строками start и end
-     * если строки end нет, то берётся строка после start если кусок не найден,
-     * возвращается null для поиска берётся строка до "\n\n" или "\r\n\r\n",
-     * если таковые присутствуют
+     *
+     * "Cuts" from the string str portion located between the lines start and
+     * end If the string end doesn't exist, it takes string after the start line
+     * if a piece is not found, Returns null for the search method takes the
+     * string to "\ n \ n" or "\ r \ n \ r \ n", If it is present
      */
     private String extract(String str, String start, String end) {
         int s = str.indexOf("\n\n", 0), e;
@@ -67,7 +67,7 @@ public enum HttpRequestParser {
 
     /**
      *
-     * @return host:port
+     * @return header "host" value host:port
      */
     private String getHostLine() {
         String hostLine = extract(request, "Host:", "\n");

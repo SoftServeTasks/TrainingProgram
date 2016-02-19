@@ -6,7 +6,7 @@
 package com.mycompany.forwardproxyserver;
 
 /**
- * исключение, вібрасіваемое при некорректном запросе от клиента
+ * exception is thrown  when the request from the client is incorrect
  * @author osyniaev
  */
 public class InvalidRequestException extends RuntimeException{
