@@ -42,6 +42,8 @@ public class HttpClient implements Runnable {
             System.out.println("Client number " + threadIdentificator + " started");
             sendMessageToServer();
             System.out.println("Message sent to server localhost:" + port + "!\n");
+            
+            Thread.sleep(2000);
 
             String messageFromServer = readMessageFromServer();
 

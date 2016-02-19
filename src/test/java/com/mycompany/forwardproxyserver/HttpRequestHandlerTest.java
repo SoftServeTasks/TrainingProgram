@@ -11,8 +11,12 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.lang.reflect.Field;
 import java.net.Socket;
+import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Assert;
+import static org.junit.Assert.assertEquals;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.mockito.Matchers;
@@ -32,13 +36,17 @@ public class HttpRequestHandlerTest {
    private HttpRequestHandler instance;
    private Socket socket;
    private int counter;
+   private InputStream fromClient;
+   private OutputStream toClient;
     
     
     @Before
     public void setUp() throws IOException  {
         socket = Mockito.mock(Socket.class);
-        counter=1;
+        counter =1;
         instance = new HttpRequestHandler(socket, 1);
+        fromClient = socket.getInputStream();
+        toClient = socket.getOutputStream();
     }
 
     /**
@@ -64,9 +72,17 @@ public class HttpRequestHandlerTest {
     @Test
     public void testRun() throws IOException, Exception {
        HttpRequestHandler instanc1=Mockito.mock(HttpRequestHandler.class);
-       InputStream inputStream = socket.getInputStream();
        instanc1.setConnectionWithClient(socket);
        instanc1.run();
+    }
+
+
+    /**
+     * Test of readClientsRequest method, of class HttpRequestHandler.
+     */
+    @Test(expected = NullPointerException.class)
+    public void testReadClientsRequest() throws Exception {
+        String result = instance.readClientsRequest(fromClient);
     }
     
 }

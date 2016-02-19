@@ -36,7 +36,7 @@ public class ProxyServerTest {
     @Test
     public void verifyStartServer() throws NoSuchMethodException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, Exception {
         
-        ProxyServer.startServer();
+        instanse.startServer();
         Field declaredField = instanse.getClass().getDeclaredField("httpListener");
         declaredField.setAccessible(true);
         ServerSocket ss = (ServerSocket) declaredField.get(this);
@@ -55,7 +55,7 @@ public class ProxyServerTest {
         Field declaredField = instanse.getClass().getDeclaredField("httpListener");
         declaredField.setAccessible(true);
         declaredField.set(this, httpListener);
-        ProxyServer.listenPort();
+        instanse.listenPort();
         spy(httpListener).accept();
     }
    
@@ -70,7 +70,7 @@ public class ProxyServerTest {
         declaredField.setAccessible(true);
         declaredField.set(this, mock);
         doThrow(new IOException()).when(mock).accept();
-        ProxyServer.listenPort();
+        instanse.listenPort();
 
     }
 }

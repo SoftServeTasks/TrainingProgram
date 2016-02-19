@@ -23,7 +23,8 @@ public class ProxyServer extends Thread {
 
     private static final int DEFAULT_PORT = 1002;
     private static ServerSocket httpListener = null;
-    private static  ExecutorService executorPool = Executors.newCachedThreadPool();;
+    private static  ExecutorService executorPool = Executors.newCachedThreadPool();
+    private HttpRequestHandler session;
 
     public ProxyServer(ExecutorService executorPool) {
         this.executorPool = executorPool;
@@ -41,20 +42,24 @@ public class ProxyServer extends Thread {
         ProxyServer.httpListener = httpListener;
     }
     
-    
+    @Override
+    public void run() {
+        startServer();
+        listenPort();
+    }
     
 
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
 
         startServer();
         listenPort();
 
-    }
+    }*/
     
     /**
      * Starting the server
      */
-    public static  void startServer() {
+    public /*static*/  void startServer() {
         int port = DEFAULT_PORT;
  
         try {
@@ -73,12 +78,12 @@ public class ProxyServer extends Thread {
      * For each connected client creates a separate handler in a separate thread.
      */
     
-    public static void listenPort() {
+    public /*static*/ void listenPort() {
         while (true) {
             try {
                 int count = 1;
                 Socket clientSocket = httpListener.accept();
-                HttpRequestHandler session = new HttpRequestHandler(clientSocket, count);
+                session = new HttpRequestHandler(clientSocket, count);
                 System.err.println(" * Client number " + count + "  accepted\n");
                 executorPool.execute(session);
                 count++;

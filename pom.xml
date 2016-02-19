@@ -17,6 +17,7 @@
         <junit.version>4.12</junit.version>
         <mockito.version>1.10.19</mockito.version>
         <powermock.version>1.6.4</powermock.version>
+        <integration_test.package>**/com/mycompany/forwardproxyserver/integration/**</integration_test.package>
     </properties>
     <dependencies>
         <!-- Test -->
@@ -63,9 +64,9 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>sis1</finalName>
+        <finalName>forward</finalName>
         <plugins>
-            <plugin>
+            <!--plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${compiler.plugin.version}</version>
@@ -73,8 +74,69 @@
                     <source>${jdk.version}</source>
                     <target>${jdk.version}</target>
                 </configuration>
+            </plugin-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.5</version>
+                <configuration>
+                    <excludes>
+                        <exclude>${integration_test.package}</exclude>
+                        <exclude>**/*$*</exclude>
+                    </excludes>
+                </configuration>
             </plugin>
-        </plugins>
+        <!--plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-failsafe-plugin</artifactId>
+            <version>2.18</version>
+            <executions-->
+            <!--
+                Invokes both the integration-test and the verify goals of the
+                Failsafe Maven plugin
+            -->
+            <!--execution>
+            <id>integration-tests</id>
+            <goals>
+                <goal>integration-test</goal>
+                <goal>verify</goal>
+            </goals>
+            <configuration-->
+            <!--Skips integration tests if the value of skip.integration.tests
+            property is true-->
+            <!--skipTests>${skip.integration.tests}</skipTests>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin-->
+
+                <plugin>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <version>2.12</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.apache.maven.surefire</groupId>
+                            <artifactId>surefire-junit47</artifactId>
+                            <version>2.12</version>
+                        </dependency>
+                    </dependencies>
+                    <configuration>
+                        <groups>com.mycompany.forwardproxyserver.integration.IntegrationTest</groups>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>integration-test</goal>
+                            </goals>
+                            <configuration>
+                                <includes>
+                                    <include>**/*.class</include>
+                                </includes>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
     </build>
     <reporting>
 
@@ -111,4 +173,29 @@
             </plugin>
         </plugins>
     </reporting>
+    <profiles>
+        <!-- The Configuration of the development profile -->
+        <profile>
+            <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <build.profile.id>dev</build.profile.id>
+                <!--Only unit tests are run when the development profile is active-->
+                <skip.integration.tests>true</skip.integration.tests>
+                <skip.unit.tests>false</skip.unit.tests>
+            </properties>
+        </profile>
+        <!-- The Configuration of the integration-test profile -->
+        <profile>
+            <id>integration-test</id>
+            <properties>
+                <build.profile.id>integration-test</build.profile.id>
+                <!--Only integration tests are run when the integration-test profile is active-->
+                <skip.integration.tests>false</skip.integration.tests>
+                <skip.unit.tests>true</skip.unit.tests>
+            </properties>
+        </profile>
+    </profiles>
 </project>
