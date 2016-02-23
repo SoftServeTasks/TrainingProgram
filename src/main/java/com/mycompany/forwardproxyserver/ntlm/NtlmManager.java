@@ -61,6 +61,7 @@ public class NtlmManager extends NtlmAuthenticator {
             responseHandler.printAnyMessage(type1Handler.generateType2Message());
         } catch (NotEnoughUserCredentialsException ex) {
             System.err.println("Challenge have not been sent, becouse client hasnt enough creditionals");
+            ex.printStackTrace();
         } catch (IOException ex) {
             // do nothing
         }

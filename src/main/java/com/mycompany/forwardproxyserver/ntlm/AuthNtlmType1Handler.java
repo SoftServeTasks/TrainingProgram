@@ -51,6 +51,7 @@ public class AuthNtlmType1Handler {
     }
     
     private boolean checkCredentials (String domain, String workstation) {
+        System.err.println("Check: " + dao.isExist(new AuthorizedClientDto(domain, workstation)));
         return (dao.isExist(new AuthorizedClientDto(domain, workstation)));
     }
     

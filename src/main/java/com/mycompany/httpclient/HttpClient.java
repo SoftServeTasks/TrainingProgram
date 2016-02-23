@@ -109,6 +109,9 @@ public class HttpClient implements Runnable {
             Thread.sleep(2000);
             sendMessageToServer(type3MessageToServer);
             Thread.sleep(2000);
+            String completeMessageFromServer = readMessageFromServer();
+            System.err.println("\n* CLIENT: Hooray! I've got necessary information\n Servers Response is :\n" + completeMessageFromServer);
+            
 
         } catch (Exception e) {
             System.out.println("* CLIENT: init error: " + e);

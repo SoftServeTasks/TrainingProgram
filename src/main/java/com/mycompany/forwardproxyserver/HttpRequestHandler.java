@@ -72,7 +72,6 @@ public class HttpRequestHandler implements Runnable {
     protected void dawnloadFromInet(String header, String host, int port) throws Exception {
         System.err.println("Подключение к " + host + ":" + port);
         sc = new Socket(host, port);
-        System.err.println("header: " + header);
         sc.getOutputStream().write(header.getBytes());
 
         InputStream is = sc.getInputStream();
@@ -121,11 +120,9 @@ public class HttpRequestHandler implements Runnable {
             System.err.println("+ PROXY: Chellenge was sent to client");
             Thread.sleep(2000);
             clientsRequest = readClientsRequest(fromClientChannel);
-            System.err.println("Clients Response: " + clientsRequest);
+            System.err.println("Clients Response (with Type3): " + clientsRequest);
             type3Handler = new AuthNtlnType3Handler(clientsRequest);
             String headerValue = type3Handler.getProxyAuthorizationHeaderValue();
-            System.err.println("+ PROXY:  Proxy-Authorization: NTLM " +headerValue + "\n");
-            System.out.println("+ PROXY: Clients request " + clientsNumber + " is: " + clientsRequest);
             if(type3Handler.checkUserData()) {
                 requestParser.setRequest(clientsRequest);
                 dawnloadFromInet(clientsRequest, requestParser.getHost(), requestParser.getPort());

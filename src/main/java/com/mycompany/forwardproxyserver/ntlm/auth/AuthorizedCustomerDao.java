@@ -28,7 +28,14 @@ public enum AuthorizedCustomerDao implements IAuthorizedDao {
     }
 
     public boolean isExist(AuthorizedClientDto newClient) {
-        return authorizedCustomers.containsValue(newClient);
+        if (authorizedCustomers.containsValue(newClient)) {
+            return true;
+        }
+        AuthorizedClientDto client = getClient(newClient.getWorkstation());
+        if (client.getDomain().equals(newClient.getDomain())) {
+            return true;
+        }
+        return false;
     }
     
     public AuthorizedClientDto getClient (String workstation) {
