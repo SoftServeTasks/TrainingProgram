@@ -45,7 +45,7 @@ public enum HttpRequestParser {
      * if a piece is not found, Returns null for the search method takes the
      * string to "\ n \ n" or "\ r \ n \ r \ n", If it is present
      */
-    private String extract(String str, String start, String end) {
+    public String extract(String str, String start, String end) {
         int s = str.indexOf("\n\n", 0), e;
         if (s < 0) {
             s = str.indexOf("\r\n\r\n", 0);
@@ -61,7 +61,6 @@ public enum HttpRequestParser {
         if (e < 0) {
             e = str.length();
         }
-        System.err.println("Обрезанная строка: \n" + str.substring(s, e));
         return (str.substring(s, e)).trim();
     }
 

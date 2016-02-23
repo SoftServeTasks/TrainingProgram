@@ -11,6 +11,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.net.ServerSocket;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import static org.mockito.Mockito.*;
 
@@ -19,7 +20,7 @@ import static org.mockito.Mockito.*;
  *
  * @author osyniaev
  */
-
+@Ignore
 public class ProxyServerTest {
 
     private ProxyServer instanse;
@@ -28,6 +29,7 @@ public class ProxyServerTest {
     @Before
     public void setUp() {
         instanse = new ProxyServer(); 
+        
     }
 
     /**

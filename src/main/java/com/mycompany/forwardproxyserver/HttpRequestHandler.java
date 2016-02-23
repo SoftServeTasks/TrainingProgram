@@ -5,6 +5,8 @@
  */
 package com.mycompany.forwardproxyserver;
 
+import com.mycompany.forwardproxyserver.ntlm.AuthNtlnType3Handler;
+import com.mycompany.forwardproxyserver.ntlm.NtlmManager;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -28,6 +30,8 @@ public class HttpRequestHandler implements Runnable {
     private ResponseHandler responseHandler;
     private HttpRequestParser requestParser;
     private Socket sc;
+    private NtlmManager ntlmManager;
+    private AuthNtlnType3Handler type3Handler;
 
     public HttpRequestHandler(Socket socket, int count) throws IOException {
         this.connectionWithClient = socket;
@@ -53,6 +57,7 @@ public class HttpRequestHandler implements Runnable {
         toClientChannel = connectionWithClient.getOutputStream();
         responseHandler = new ResponseHandler(fromClientChannel, toClientChannel);
         requestParser = HttpRequestParser.INSTANCE;
+        ntlmManager = new NtlmManager(responseHandler);
     }
 
     /**
@@ -97,18 +102,38 @@ public class HttpRequestHandler implements Runnable {
         int r = fromClientChannel.read(buf);
         if (r >= 0) {
             header = new String(buf, 0, r);
-            System.out.println("CURRENT TIME IS: " + getCurrentTime() + "\nCLIENTS " + clientsNumber + " REQUEST: \n" + header);
         }
         return header;
     }
 
     public void run() {
         try {
-
-            String clientsRequest = readClientsRequest(fromClientChannel);
-            requestParser.setRequest(clientsRequest);
-            System.out.println("Clients request " + clientsNumber + " is: " + clientsRequest);
-            dawnloadFromInet(clientsRequest, requestParser.getHost(), requestParser.getPort());
+            String clientsRequest;
+            clientsRequest=readClientsRequest(fromClientChannel);
+            System.out.println("+ PROXY: CURRENT TIME IS: " + getCurrentTime() + "\nCLIENTS " + clientsNumber + " REQUEST: \n" + clientsRequest);
+            ntlmManager.return407();
+            clientsRequest = readClientsRequest(fromClientChannel);
+            System.err.println("+ PROXY: Client sent after 407: " + clientsRequest);
+            String testGetType1 = ntlmManager.testGetType1(clientsRequest);
+            System.err.println("+ PROXY: type1: " + testGetType1);
+            ntlmManager.resolveNegotiate(clientsRequest);
+            ntlmManager.sendChallenge();
+            System.err.println("+ PROXY: Chellenge was sent to client");
+            Thread.sleep(2000);
+            clientsRequest = readClientsRequest(fromClientChannel);
+            System.err.println("Clients Response: " + clientsRequest);
+            type3Handler = new AuthNtlnType3Handler(clientsRequest);
+            String headerValue = type3Handler.getProxyAuthorizationHeaderValue();
+            System.err.println("+ PROXY:  Proxy-Authorization: NTLM " +headerValue + "\n");
+            System.out.println("+ PROXY: Clients request " + clientsNumber + " is: " + clientsRequest);
+            if(type3Handler.checkUserData()) {
+                requestParser.setRequest(clientsRequest);
+                dawnloadFromInet(clientsRequest, requestParser.getHost(), requestParser.getPort());
+            } else {
+                System.err.println("Unrecognized client");
+                responseHandler.print401Error();
+            }
+            
         } catch (Exception e) {
             try {
                 e.printStackTrace();

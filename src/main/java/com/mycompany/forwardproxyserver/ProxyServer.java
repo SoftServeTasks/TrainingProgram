@@ -84,7 +84,7 @@ public class ProxyServer extends Thread {
                 int count = 1;
                 Socket clientSocket = httpListener.accept();
                 session = new HttpRequestHandler(clientSocket, count);
-                System.err.println(" * Client number " + count + "  accepted\n");
+                System.err.println(" + PROXY: * Client number " + count + "  accepted\n");
                 executorPool.execute(session);
                 count++;
 
