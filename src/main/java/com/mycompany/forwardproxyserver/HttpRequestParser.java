@@ -6,6 +6,9 @@
 package com.mycompany.forwardproxyserver;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 
 /**
  *
@@ -119,5 +122,16 @@ public enum HttpRequestParser {
         setPort(portValue);
         System.err.println("port = " + portValue);
         return portValue;
+    }
+    
+    public String cleanClientsRequest () {
+        String [] strings = request.split("\n");
+        String result="";
+        for (String str: strings) {
+            if(!str.startsWith("Proxy-Authorization: NTLM ")) {
+                result = result.concat(str.concat("\n"));
+            } 
+        }
+        return result;
     }
 }
