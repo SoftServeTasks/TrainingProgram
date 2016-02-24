@@ -7,6 +7,7 @@ package com.mycompany.forwardproxyserver;
 
 import com.mycompany.forwardproxyserver.ntlm.AuthNtlnType3Handler;
 import com.mycompany.forwardproxyserver.ntlm.NtlmManager;
+import com.mycompany.forwardproxyserver.telemetry.ClientsBrowserAnalyzer;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -34,6 +35,7 @@ public class HttpRequestHandler implements Runnable {
     private Socket sc;
     private NtlmManager ntlmManager;
     private AuthNtlnType3Handler type3Handler;
+    private ClientsBrowserAnalyzer browserAnalyzer;
 
     public HttpRequestHandler(Socket socket, int count) throws IOException {
         this.connectionWithClient = socket;
@@ -53,13 +55,12 @@ public class HttpRequestHandler implements Runnable {
      * @throws IOException
      */
     private void initialize() throws IOException {
-
         fromClientChannel = connectionWithClient.getInputStream();
-
         toClientChannel = connectionWithClient.getOutputStream();
         responseHandler = new ResponseHandler(fromClientChannel, toClientChannel);
         requestParser = HttpRequestParser.INSTANCE;
         ntlmManager = new NtlmManager(responseHandler);
+        browserAnalyzer = ClientsBrowserAnalyzer.INSTANSE;
     }
 
     /**
@@ -75,31 +76,29 @@ public class HttpRequestHandler implements Runnable {
         System.err.println(" * PROXY: Подключение к " + host + ":" + port);
         sc = new Socket(host, port);
         sc.getOutputStream().write(header.getBytes());
-        System.err.println(" * PROXY: Header " + header + "Oтправлен "+ host + ":" + port + "\n");
+        System.err.println(" * PROXY: Header " + header + "Oтправлен " + host + ":" + port + "\n");
         Thread.sleep(2000);
         InputStream is = sc.getInputStream();
 
         System.err.println(" * PROXY: Читаю ответ от portscan.ru:80");
-        
+
         Thread.sleep(3000);
 
-        String readClientsRequest = readClientsRequest(is);
-
-        System.err.println(" * PROXY: Ответ от portscan.ru:80 :" + readClientsRequest);
-        byte buf[] = new byte[64*1024];
+//        String readClientsRequest = readClientsRequest(is);
+        //System.err.println(" * PROXY: Ответ от portscan.ru:80 :" + readClientsRequest);
+        byte buf[] = new byte[64 * 1024];
         int r = 1;
-        while(r > 0)
-        {
+        while (r > 0) {
             r = is.read(buf);
-            if(r > 0)
-            {
-                System.err.println(new String (buf, 0, r));
-                if(r > 0) toClientChannel.write(buf, 0, r);
+            if (r > 0) {
+                System.err.println(new String(buf, 0, r));
+                if (r > 0) {
+                    toClientChannel.write(buf, 0, r);
+                }
             }
         }
 
         //responseHandler.printAnyMessage(readClientsRequest);
-
         sc.close();
     }
 
@@ -123,15 +122,19 @@ public class HttpRequestHandler implements Runnable {
     @Override
     public void run() {
         try {
-            String clientsRequest=null;
+            String clientsRequest = null;
             clientsRequest = readClientsRequest(fromClientChannel);
+            requestParser.setRequest(clientsRequest);
+            browserAnalyzer.setParser(requestParser);
+            browserAnalyzer.analyzeBrowserType();
             System.out.println("+ PROXY: CURRENT TIME IS: " + getCurrentTime() + "\nCLIENTS " + clientsNumber + " REQUEST: \n" + clientsRequest);
             String proxyAuthenticatHeaderValue = null;
             while (proxyAuthenticatHeaderValue == null) {
                 System.err.println("* PROXY: Необходима NTLM аутентификация, возвращаю ошибку 407 клиенту!\n");
                 ntlmManager.return407();
                 clientsRequest = readClientsRequest(fromClientChannel);
-                proxyAuthenticatHeaderValue = requestParser.extract(clientsRequest, "Proxy-Authorization: NTLM ", "\n"); 
+                requestParser.setRequest(clientsRequest);
+                proxyAuthenticatHeaderValue = requestParser.extract(clientsRequest, "Proxy-Authorization: NTLM ", "\n");
             }
 
             System.err.println("+ PROXY: Client sent after 407: " + clientsRequest);
@@ -161,6 +164,7 @@ public class HttpRequestHandler implements Runnable {
             } catch (Exception ex) {
             }
         } finally {
+            browserAnalyzer.getInfoAboutBrpowsers();
             try {
                 connectionWithClient.close();
             } catch (IOException ex) {

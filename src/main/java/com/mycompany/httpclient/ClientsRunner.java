@@ -26,7 +26,7 @@ public class ClientsRunner {
            // for (int i = 0; i < 10; i++) {
                 thread = new Thread(new HttpClient(1));
                 //service.submit(thread);
-                thread.start();
+                //thread.start();
           //  }*/
     }
            
