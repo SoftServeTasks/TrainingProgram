@@ -75,10 +75,12 @@ public class HttpRequestHandler implements Runnable {
     protected void dawnloadFromInet(String header, String host, int port) throws Exception {
         System.err.println(" * PROXY: Подключение к " + host + ":" + port);
         sc = new Socket(host, port);
-        sc.getOutputStream().write(header.getBytes());
-        System.err.println(" * PROXY: Header " + header + "Oтправлен " + host + ":" + port + "\n");
+        OutputStream toSite = sc.getOutputStream();
+        toSite.write(header.getBytes());
+        toSite.flush();
+        System.err.println(" * PROXY: Header " + header + "\nOтправлен " + host + ":" + port + "\n");
         Thread.sleep(2000);
-        InputStream is = sc.getInputStream();
+        InputStream fromSite = sc.getInputStream();
 
         System.err.println(" * PROXY: Читаю ответ от portscan.ru:80");
 
@@ -89,7 +91,7 @@ public class HttpRequestHandler implements Runnable {
         byte buf[] = new byte[64 * 1024];
         int r = 1;
         while (r > 0) {
-            r = is.read(buf);
+            r = fromSite.read(buf);
             if (r > 0) {
                 System.err.println(new String(buf, 0, r));
                 if (r > 0) {
@@ -99,6 +101,8 @@ public class HttpRequestHandler implements Runnable {
         }
 
         //responseHandler.printAnyMessage(readClientsRequest);
+        toSite.close();
+        fromSite.close();
         sc.close();
     }
 
@@ -123,29 +127,29 @@ public class HttpRequestHandler implements Runnable {
     public void run() {
         try {
             String clientsRequest = null;
-            clientsRequest = readClientsRequest(fromClientChannel);
+           /* clientsRequest = readClientsRequest(fromClientChannel);
             requestParser.setRequest(clientsRequest);
             browserAnalyzer.setParser(requestParser);
-            browserAnalyzer.analyzeBrowserType();
-            System.out.println("+ PROXY: CURRENT TIME IS: " + getCurrentTime() + "\nCLIENTS " + clientsNumber + " REQUEST: \n" + clientsRequest);
+            browserAnalyzer.analyzeBrowserType();*/
+            System.out.println("\n+ PROXY: CURRENT TIME IS: " + getCurrentTime() + "\nCLIENTS " + clientsNumber + " REQUEST: \n" + clientsRequest);
             String proxyAuthenticatHeaderValue = null;
             while (proxyAuthenticatHeaderValue == null) {
-                System.err.println("* PROXY: Необходима NTLM аутентификация, возвращаю ошибку 407 клиенту!\n");
+                System.err.println("\n* PROXY: Необходима NTLM аутентификация, возвращаю ошибку 407 клиенту!\n");
                 ntlmManager.return407();
                 clientsRequest = readClientsRequest(fromClientChannel);
                 requestParser.setRequest(clientsRequest);
                 proxyAuthenticatHeaderValue = requestParser.extract(clientsRequest, "Proxy-Authorization: NTLM ", "\n");
             }
 
-            System.err.println("+ PROXY: Client sent after 407: " + clientsRequest);
+            System.err.println("\n+ PROXY: Client sent after 407: " + clientsRequest);
             String testGetType1 = ntlmManager.testGetType1(clientsRequest);
-            System.err.println("+ PROXY: type1: " + testGetType1);
+            System.err.println("\n+ PROXY: type1: " + testGetType1);
             ntlmManager.resolveNegotiate(clientsRequest);
             ntlmManager.sendChallenge();
-            System.err.println("+ PROXY: Chellenge was sent to client");
+            System.err.println("\n+ PROXY: Chellenge was sent to client");
             Thread.sleep(2000);
             clientsRequest = readClientsRequest(fromClientChannel);
-            System.err.println("Clients Response (with Type3): " + clientsRequest);
+            System.err.println("\n+ PROXY: Clients Response (with Type3): " + clientsRequest);
             type3Handler = new AuthNtlnType3Handler(clientsRequest);
             String headerValue = type3Handler.getProxyAuthorizationHeaderValue();
             if (type3Handler.checkUserData()) {

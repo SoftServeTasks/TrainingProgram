@@ -11,6 +11,7 @@ import com.mycompany.forwardproxyserver.ntlm.AuthNtlmType3Maker;
 import com.mycompany.forwardproxyserver.ntlm.auth.AuthorizedClientDto;
 import java.io.IOException;
 import java.net.Socket;
+import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import jcifs.ntlmssp.Type2Message;
@@ -21,8 +22,9 @@ import jcifs.util.Base64;
  *
  * @author osyniaev
  */
-public class HttpClient implements Runnable {
+public class HttpClient /*implements Runnable*/ extends Thread{
 
+    private final CountDownLatch latch;
     private int threadIdentificator;
     private int port;
     private final static int DAFAULT_PORT = 1002;
@@ -52,20 +54,30 @@ public class HttpClient implements Runnable {
 
     private String type3MessageToServer;
 
+    public HttpClient(int count, CountDownLatch latch) {
+        this.threadIdentificator = count;
+        this.port = DAFAULT_PORT;
+        initClientsData();
+        type1Maker = new AuthNtlmType1Maker(domain, workstation);
+        type1MessageToServer = defaultMessageToServer + "Proxy-Authorization: NTLM " + Base64.encode(type1Maker.makeType1Message().toByteArray()) + "\n\n";
+        this.latch = latch;
+    }
+    
     public HttpClient(int count) {
         this.threadIdentificator = count;
         this.port = DAFAULT_PORT;
         initClientsData();
         type1Maker = new AuthNtlmType1Maker(domain, workstation);
-        type1MessageToServer = defaultMessageToServer + "Proxy-Authorization: NTLM " + Base64.encode(type1Maker.makeType1Message().toByteArray())+"\n\n";
-
+        type1MessageToServer = defaultMessageToServer + "Proxy-Authorization: NTLM " + Base64.encode(type1Maker.makeType1Message().toByteArray()) + "\n\n";
+        this.latch = null;
     }
 
-    public HttpClient(int threadIdentificator, int port) {
+    public HttpClient(int threadIdentificator, int port, CountDownLatch latch) {
         this.threadIdentificator = threadIdentificator;
         this.port = port;
         initClientsData();
         type1Maker = new AuthNtlmType1Maker(domain, workstation);
+        this.latch = latch;
     }
 
     public Socket getSocket() {

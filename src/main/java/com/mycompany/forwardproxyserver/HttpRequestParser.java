@@ -132,6 +132,6 @@ public enum HttpRequestParser {
                 result = result.concat(str.concat("\n"));
             } 
         }
-        return result;
+        return result + "\n\n";
     }
 }
