@@ -8,6 +8,7 @@ package com.mycompany.forwardproxyserver;
 import com.mycompany.forwardproxyserver.ntlm.AuthNtlnType3Handler;
 import com.mycompany.forwardproxyserver.ntlm.NtlmManager;
 import com.mycompany.forwardproxyserver.telemetry.ClientsBrowserAnalyzer;
+import com.mycompany.forwardproxyserver.telemetry.ServerResponseTimeAnalizer;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -36,6 +37,12 @@ public class HttpRequestHandler implements Runnable {
     private NtlmManager ntlmManager;
     private AuthNtlnType3Handler type3Handler;
     private ClientsBrowserAnalyzer browserAnalyzer;
+    private static volatile int count = 0;
+    private long timer;
+    private ServerResponseTimeAnalizer serverResponseTimeAnalizer;
+    private long start;
+    private long finish;
+    
 
     public HttpRequestHandler(Socket socket, int count) throws IOException {
         this.connectionWithClient = socket;
@@ -47,6 +54,24 @@ public class HttpRequestHandler implements Runnable {
         this.connectionWithClient = connectionWithClient;
     }
 
+    public static int getCount() {
+        return count;
+    }
+
+    public static void setCount(int count) {
+        HttpRequestHandler.count = count;
+    }
+
+    public long getTimer() {
+        return timer;
+    }
+
+    public void setTimer(long timer) {
+        this.timer = timer;
+    }
+
+    
+    
     /**
      *
      * Get the input stream, which brings messages from the client Get the
@@ -55,12 +80,14 @@ public class HttpRequestHandler implements Runnable {
      * @throws IOException
      */
     private void initialize() throws IOException {
+        count ++;
         fromClientChannel = connectionWithClient.getInputStream();
         toClientChannel = connectionWithClient.getOutputStream();
         responseHandler = new ResponseHandler(fromClientChannel, toClientChannel);
         requestParser = HttpRequestParser.INSTANCE;
         ntlmManager = new NtlmManager(responseHandler);
         browserAnalyzer = ClientsBrowserAnalyzer.INSTANSE;
+        serverResponseTimeAnalizer = ServerResponseTimeAnalizer.ANALIZER;
     }
 
     /**
@@ -97,6 +124,8 @@ public class HttpRequestHandler implements Runnable {
                 if (r > 0) {
                     toClientChannel.write(buf, 0, r);
                 }
+                finish = System.currentTimeMillis();
+                serverResponseTimeAnalizer.addcurrentResponseTime(finish-start, count);
             }
         }
 
@@ -127,16 +156,20 @@ public class HttpRequestHandler implements Runnable {
     public void run() {
         try {
             String clientsRequest = null;
-           /* clientsRequest = readClientsRequest(fromClientChannel);
+            clientsRequest = readClientsRequest(fromClientChannel);
+            start = System.currentTimeMillis();
             requestParser.setRequest(clientsRequest);
             browserAnalyzer.setParser(requestParser);
-            browserAnalyzer.analyzeBrowserType();*/
+            browserAnalyzer.analyzeBrowserType();
             System.out.println("\n+ PROXY: CURRENT TIME IS: " + getCurrentTime() + "\nCLIENTS " + clientsNumber + " REQUEST: \n" + clientsRequest);
             String proxyAuthenticatHeaderValue = null;
             while (proxyAuthenticatHeaderValue == null) {
                 System.err.println("\n* PROXY: Необходима NTLM аутентификация, возвращаю ошибку 407 клиенту!\n");
+                finish = System.currentTimeMillis();
                 ntlmManager.return407();
+                serverResponseTimeAnalizer.addcurrentResponseTime(finish-start, count);
                 clientsRequest = readClientsRequest(fromClientChannel);
+                start = System.currentTimeMillis();
                 requestParser.setRequest(clientsRequest);
                 proxyAuthenticatHeaderValue = requestParser.extract(clientsRequest, "Proxy-Authorization: NTLM ", "\n");
             }
@@ -146,9 +179,12 @@ public class HttpRequestHandler implements Runnable {
             System.err.println("\n+ PROXY: type1: " + testGetType1);
             ntlmManager.resolveNegotiate(clientsRequest);
             ntlmManager.sendChallenge();
+            finish = System.currentTimeMillis();
+            serverResponseTimeAnalizer.addcurrentResponseTime(finish-start, count);
             System.err.println("\n+ PROXY: Chellenge was sent to client");
             Thread.sleep(2000);
             clientsRequest = readClientsRequest(fromClientChannel);
+            start = System.currentTimeMillis();
             System.err.println("\n+ PROXY: Clients Response (with Type3): " + clientsRequest);
             type3Handler = new AuthNtlnType3Handler(clientsRequest);
             String headerValue = type3Handler.getProxyAuthorizationHeaderValue();
@@ -159,6 +195,8 @@ public class HttpRequestHandler implements Runnable {
             } else {
                 System.err.println("Unrecognized client");
                 responseHandler.print401Error();
+                finish = System.currentTimeMillis();
+                serverResponseTimeAnalizer.addcurrentResponseTime(finish-start, count);
             }
 
         } catch (Exception e) {
@@ -169,8 +207,12 @@ public class HttpRequestHandler implements Runnable {
             }
         } finally {
             browserAnalyzer.getInfoAboutBrpowsers();
+            count --;
             try {
+                connectionWithClient.shutdownInput();
+                connectionWithClient.shutdownOutput();
                 connectionWithClient.close();
+                serverResponseTimeAnalizer.getResponseTimeStatistic();
             } catch (IOException ex) {
                 // do nothing
             }

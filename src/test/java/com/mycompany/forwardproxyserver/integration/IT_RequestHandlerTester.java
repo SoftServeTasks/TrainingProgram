@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 import static org.mockito.Mockito.spy;
@@ -21,6 +22,8 @@ import static org.mockito.Mockito.verify;
  *
  * @author osyniaev
  */
+
+@Ignore
 @Category(IntegrationTest.class)
 public class IT_RequestHandlerTester {
 

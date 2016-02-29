@@ -128,6 +128,9 @@ public class HttpClient /*implements Runnable*/ extends Thread{
             Thread.sleep(2000);
             String completeMessageFromServer = readMessageFromServer();
             System.err.println("\n* CLIENT: Hooray! I've got necessary information\n Servers Response is :\n" + completeMessageFromServer);
+            socket.shutdownInput();
+            socket.shutdownOutput();
+            socket.close();
 
         } catch (Exception e) {
             System.out.println("* CLIENT: init error: " + e);
