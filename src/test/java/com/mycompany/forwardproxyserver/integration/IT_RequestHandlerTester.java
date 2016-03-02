@@ -23,7 +23,7 @@ import static org.mockito.Mockito.verify;
  * @author osyniaev
  */
 
-@Ignore
+
 @Category(IntegrationTest.class)
 public class IT_RequestHandlerTester {
 

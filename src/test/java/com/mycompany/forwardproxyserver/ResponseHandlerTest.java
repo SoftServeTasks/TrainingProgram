@@ -21,7 +21,7 @@ import static org.mockito.Mockito.*;
  * @author osyniaev
  */
 
-@Ignore
+
 public class ResponseHandlerTest {
     
     private ResponseHandler instance;

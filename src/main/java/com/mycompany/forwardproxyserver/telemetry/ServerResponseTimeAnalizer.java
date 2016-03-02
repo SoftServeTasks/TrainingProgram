@@ -68,7 +68,7 @@ public enum ServerResponseTimeAnalizer {
     private static class GraficDrower extends JComponent {
 
         Graphics2D gr;
-        double ox = 100, oy = 700; // ось симметрии параболы
+        double ox = 100, oy = ServerResponseTimeAnalizer.ANALIZER.getAvgResponseTime()/10; // ось симметрии параболы
         double step = 50;
 
         public void paintComponent(Graphics g) {
@@ -81,8 +81,7 @@ public enum ServerResponseTimeAnalizer {
             }
             // Рисуем оси
             gr.setPaint(Color.GREEN);
-            gr.setStroke(new BasicStroke((float) 2));
-            //gr.draw(new Line2D.Double(ox, 0, ox, this.getHeight()));
+            gr.setStroke(new BasicStroke((float) 5));
             gr.draw(new Line2D.Double(0, oy, this.getWidth(), oy));
 
             // Рисуем отрезок интервала
