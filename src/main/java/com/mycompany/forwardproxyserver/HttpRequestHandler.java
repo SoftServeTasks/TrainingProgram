@@ -9,17 +9,12 @@ import com.mycompany.forwardproxyserver.ntlm.AuthNtlnType3Handler;
 import com.mycompany.forwardproxyserver.ntlm.NtlmManager;
 import com.mycompany.forwardproxyserver.telemetry.ClientsBrowserAnalyzer;
 import com.mycompany.forwardproxyserver.telemetry.ServerResponseTimeAnalizer;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 import java.text.SimpleDateFormat;
-import java.util.Arrays;
 import java.util.Calendar;
-import jcifs.util.Base64;
 
 /**
  *
@@ -42,7 +37,6 @@ public class HttpRequestHandler implements Runnable {
     private ServerResponseTimeAnalizer serverResponseTimeAnalizer;
     private long start;
     private long finish;
-    
 
     public HttpRequestHandler(Socket socket, int count) throws IOException {
         this.connectionWithClient = socket;
@@ -70,8 +64,6 @@ public class HttpRequestHandler implements Runnable {
         this.timer = timer;
     }
 
-    
-    
     /**
      *
      * Get the input stream, which brings messages from the client Get the
@@ -80,7 +72,7 @@ public class HttpRequestHandler implements Runnable {
      * @throws IOException
      */
     private void initialize() throws IOException {
-        count ++;
+        count++;
         fromClientChannel = connectionWithClient.getInputStream();
         toClientChannel = connectionWithClient.getOutputStream();
         responseHandler = new ResponseHandler(fromClientChannel, toClientChannel);
@@ -102,35 +94,30 @@ public class HttpRequestHandler implements Runnable {
     protected void dawnloadFromInet(String header, String host, int port) throws Exception {
         System.err.println(" * PROXY: Подключение к " + host + ":" + port);
         sc = new Socket(host, port);
-        OutputStream toSite = sc.getOutputStream();
-        toSite.write(header.getBytes());
-        toSite.flush();
-        System.err.println(" * PROXY: Header " + header + "\nOтправлен " + host + ":" + port + "\n");
-        Thread.sleep(2000);
-        InputStream fromSite = sc.getInputStream();
-
-        System.err.println(" * PROXY: Читаю ответ от portscan.ru:80");
-
-        Thread.sleep(3000);
-
-//        String readClientsRequest = readClientsRequest(is);
-        //System.err.println(" * PROXY: Ответ от portscan.ru:80 :" + readClientsRequest);
-        byte buf[] = new byte[64 * 1024];
-        int r = 1;
-        while (r > 0) {
-            r = fromSite.read(buf);
-            if (r > 0) {
-                System.err.println(new String(buf, 0, r));
-                if (r > 0) {
+        InputStream fromSite;
+        try (OutputStream toSite = sc.getOutputStream()) {
+            toSite.write(header.getBytes());
+            toSite.flush();
+            System.err.println(" * PROXY: Header " + header + "\nOтправлен " + host + ":" + port + "\n");
+            Thread.sleep(2000);
+            fromSite = sc.getInputStream();
+            System.err.println(" * PROXY: Читаю ответ от portscan.ru:80");
+            Thread.sleep(3000);
+            //        String readClientsRequest = readClientsRequest(is);
+            //System.err.println(" * PROXY: Ответ от portscan.ru:80 :" + readClientsRequest);
+            byte buf[] = new byte[64 * 1024];
+            int r = 1;
+            while (r > 0) {
+                r = fromSite.read(buf);
+                //System.err.println(new String(buf, 0, r));
+                if ((r > 0)) {
                     toClientChannel.write(buf, 0, r);
                 }
                 finish = System.currentTimeMillis();
-                serverResponseTimeAnalizer.addcurrentResponseTime(finish-start, count);
+                serverResponseTimeAnalizer.addcurrentResponseTime(finish - start, count);
             }
+            //responseHandler.printAnyMessage(readClientsRequest);
         }
-
-        //responseHandler.printAnyMessage(readClientsRequest);
-        toSite.close();
         fromSite.close();
         sc.close();
     }
@@ -167,7 +154,7 @@ public class HttpRequestHandler implements Runnable {
                 System.err.println("\n* PROXY: Необходима NTLM аутентификация, возвращаю ошибку 407 клиенту!\n");
                 finish = System.currentTimeMillis();
                 ntlmManager.return407();
-                serverResponseTimeAnalizer.addcurrentResponseTime(finish-start, count);
+                serverResponseTimeAnalizer.addcurrentResponseTime(finish - start, count);
                 clientsRequest = readClientsRequest(fromClientChannel);
                 start = System.currentTimeMillis();
                 requestParser.setRequest(clientsRequest);
@@ -180,7 +167,7 @@ public class HttpRequestHandler implements Runnable {
             ntlmManager.resolveNegotiate(clientsRequest);
             ntlmManager.sendChallenge();
             finish = System.currentTimeMillis();
-            serverResponseTimeAnalizer.addcurrentResponseTime(finish-start, count);
+            serverResponseTimeAnalizer.addcurrentResponseTime(finish - start, count);
             System.err.println("\n+ PROXY: Chellenge was sent to client");
             Thread.sleep(2000);
             clientsRequest = readClientsRequest(fromClientChannel);
@@ -196,7 +183,7 @@ public class HttpRequestHandler implements Runnable {
                 System.err.println("Unrecognized client");
                 responseHandler.print401Error();
                 finish = System.currentTimeMillis();
-                serverResponseTimeAnalizer.addcurrentResponseTime(finish-start, count);
+                serverResponseTimeAnalizer.addcurrentResponseTime(finish - start, count);
             }
 
         } catch (Exception e) {
@@ -207,7 +194,7 @@ public class HttpRequestHandler implements Runnable {
             }
         } finally {
             browserAnalyzer.getInfoAboutBrpowsers();
-            count --;
+            count--;
             try {
                 connectionWithClient.shutdownInput();
                 connectionWithClient.shutdownOutput();

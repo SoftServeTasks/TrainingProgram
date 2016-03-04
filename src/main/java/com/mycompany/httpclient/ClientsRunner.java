@@ -12,6 +12,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.CountDownLatch;
 import com.mycompany.httpclient.HttpClient;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -22,7 +23,7 @@ import java.util.Date;
  */
 public class ClientsRunner {
     
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException, IOException {
         
   
         
@@ -36,14 +37,12 @@ public class ClientsRunner {
             new com.mycompany.httpclient.HttpClient(i,latch).start();
         }
         ServerResponseTimeAnalizer analyzer = ServerResponseTimeAnalizer.ANALIZER;
-        Thread.sleep(15000);
-        analyzer.growStatisticsGrafic();
+        Thread.sleep(20000);
+        analyzer.growStatisticsGraficByJFreeChart();
+        analyzer.drowStatisticsChartByJFreeChart();
         analyzer.getResponseTimeStatistic();
         System.err.println("Среднее время ответа сервера " + analyzer.getAvgResponseTime());
-        
-        
-        analyzer.growStatisticsGrafic();
-        analyzer.getResponseTimeStatistic();
+
         /*ExecutorService service = Executors.newCachedThreadPool();
         Thread thread;
         for (int i = 0; i < 10; i++) {

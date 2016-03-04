@@ -1,5 +1,5 @@
 projectKey=Proxy
 serverUrl=http://localhost:9000
 dashboardUrl=http://localhost:9000/dashboard/index/Proxy
-ceTaskId=AVMyeLOMn4Z8lo6X8aKK
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AVMyeLOMn4Z8lo6X8aKK
+ceTaskId=AVM4Sp5xn4Z8lo6X8aSx
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVM4Sp5xn4Z8lo6X8aSx

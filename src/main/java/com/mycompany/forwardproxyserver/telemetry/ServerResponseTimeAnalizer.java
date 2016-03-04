@@ -19,6 +19,20 @@ import java.util.HashSet;
 import java.util.List;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
+import java.io.*;
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.data.category.DefaultCategoryDataset;
+import org.jfree.chart.ChartUtilities;
+import org.jfree.chart.plot.XYPlot;
+import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
+import org.jfree.data.xy.XYDataset;
+import org.jfree.data.xy.XYSeries;
+import org.jfree.data.xy.XYSeriesCollection;
+import org.jfree.ui.ApplicationFrame;
+import org.jfree.ui.RefineryUtilities;
 
 /**
  *
@@ -37,7 +51,7 @@ public enum ServerResponseTimeAnalizer {
         }
     }
 
-    public void growStatisticsGrafic() {
+    public void growStatisticsGraficByAwt() {
 
         JFrame jf = new JFrame("Статистика времени ответа прокси-сервера в зависимости от количества живых подключений");
         jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -45,6 +59,17 @@ public enum ServerResponseTimeAnalizer {
         jf.add(new GraficDrower());
         jf.setVisible(true);
 
+    }
+
+    public void drowStatisticsChartByJFreeChart() {
+        XYLineChart_AWT chart = new XYLineChart_AWT("Minimal Static Chart", "Time proxy's response Statistics");
+        chart.pack();
+        RefineryUtilities.centerFrameOnScreen(chart);
+        chart.setVisible(true);
+    }
+
+    public void growStatisticsGraficByJFreeChart() throws IOException {
+        new BarChart3D();
     }
 
     public static HashSet<ServerStateModel> getServerResponseTimeStatistic() {
@@ -68,7 +93,7 @@ public enum ServerResponseTimeAnalizer {
     private static class GraficDrower extends JComponent {
 
         Graphics2D gr;
-        double ox = 100, oy = ServerResponseTimeAnalizer.ANALIZER.getAvgResponseTime()/10; // ось симметрии параболы
+        double ox = 100, oy = ServerResponseTimeAnalizer.ANALIZER.getAvgResponseTime() / 10; // ось симметрии параболы
         double step = 50;
 
         public void paintComponent(Graphics g) {
@@ -97,4 +122,88 @@ public enum ServerResponseTimeAnalizer {
         }
     }
 
+    public class BarChart3D {
+
+        private final DefaultCategoryDataset dataset;
+
+        public BarChart3D() throws IOException {
+            dataset = new DefaultCategoryDataset();
+            buildChart();
+
+        }
+
+        public void buildChart() throws IOException {
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            int i = 1;
+            for (ServerStateModel model : serverResponseTimeStatistic) {
+                dataset.addValue(model.getResponseTime(), "Время ответа Proxy", i + ": " + sdf.format(model.getCurrentDate().getTime()));
+                i++;
+            }
+            JFreeChart barChart = ChartFactory.createBarChart3D(
+                    "Time proxy's response Statistics",
+                    "Date",
+                    "Time, millisecond",
+                    dataset,
+                    PlotOrientation.VERTICAL,
+                    true, true, false);
+            int width = 1200;
+            /* Width of the image */
+            int height = 800;
+            /* Height of the image */
+
+            JFrame frame
+                    = new JFrame("MinimalStaticChart");
+            // Помещаем график на фрейм
+            frame.getContentPane()
+                    .add(new ChartPanel(barChart));
+            frame.setSize(1300, 900);
+            frame.setVisible(true);
+            frame.show();
+
+            //File barChart3D = new File("barChart3D.jpeg");
+            //ChartUtilities.saveChartAsJPEG(barChart3D, barChart, width, height);
+        }
+
+    }
+
+    public class XYLineChart_AWT extends ApplicationFrame {
+
+        public XYLineChart_AWT(String applicationTitle, String chartTitle) {
+            super(applicationTitle);
+            JFreeChart xylineChart = ChartFactory.createXYLineChart(
+                    chartTitle,
+                    "Date",
+                    "Time, miliseconds",
+                    createDataset(),
+                    PlotOrientation.VERTICAL,
+                    true, true, false);
+
+            ChartPanel chartPanel = new ChartPanel(xylineChart);
+            chartPanel.setPreferredSize(new java.awt.Dimension(1200, 750));
+            final XYPlot plot = xylineChart.getXYPlot();
+            XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer();
+            renderer.setSeriesPaint(0, Color.RED);
+            renderer.setSeriesPaint(1, Color.GREEN);
+            renderer.setSeriesStroke(0, new BasicStroke(4.0f));
+            renderer.setSeriesStroke(1, new BasicStroke(3.0f));
+            plot.setRenderer(renderer);
+            setContentPane(chartPanel);
+        }
+
+        private XYDataset createDataset() {
+            final XYSeries actual = new XYSeries("Actual time");
+            final XYSeries average = new XYSeries("Average time");
+            long avgResponseTime = getAvgResponseTime();
+            int i = 1;
+            for (ServerStateModel model : serverResponseTimeStatistic) {
+                actual.add(i, model.getResponseTime());
+                average.add(i, avgResponseTime);
+                i++;
+            }
+            final XYSeriesCollection dataset = new XYSeriesCollection();
+            dataset.addSeries(actual);
+            dataset.addSeries(average);
+            return dataset;
+        }
+    }
 }
