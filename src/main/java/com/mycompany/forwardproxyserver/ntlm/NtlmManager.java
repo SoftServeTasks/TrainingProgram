@@ -8,6 +8,7 @@ package com.mycompany.forwardproxyserver.ntlm;
 import com.mycompany.forwardproxyserver.ResponseHandler;
 import java.io.IOException;
 import jcifs.smb.NtlmAuthenticator;
+import org.apache.log4j.Logger;
 
 ;
 
@@ -18,8 +19,9 @@ import jcifs.smb.NtlmAuthenticator;
 public class NtlmManager extends NtlmAuthenticator {
 
     private final AuthNtlmType1Handler type1Handler;
-    private AuthNtlnType3Handler type3Handler;
+    private AuthNtlmType3Handler type3Handler;
     private final ResponseHandler responseHandler;
+    private static final Logger LOGGER = Logger.getLogger(NtlmManager.class);
 
     public NtlmManager(ResponseHandler responseHandler) {
         this.responseHandler = responseHandler;
@@ -60,10 +62,10 @@ public class NtlmManager extends NtlmAuthenticator {
         try {
             responseHandler.printAnyMessage(type1Handler.generateType2Message());
         } catch (NotEnoughUserCredentialsException ex) {
-            System.err.println("Challenge have not been sent, becouse client hasnt enough creditionals");
-            ex.printStackTrace();
+            LOGGER.error("Challenge have not been sent, becouse client hasnt enough creditionals",ex);
+
         } catch (IOException ex) {
-            // do nothing
+            LOGGER.error("Error:",ex);
         }
     }
 

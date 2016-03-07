@@ -8,6 +8,7 @@ package com.mycompany.forwardproxyserver.ntlm;
 import com.mycompany.forwardproxyserver.ntlm.auth.AuthorizedClientDto;
 import jcifs.ntlmssp.Type2Message;
 import jcifs.ntlmssp.Type3Message;
+import org.apache.log4j.Logger;
 
 /**
  *
@@ -17,6 +18,7 @@ public class AuthNtlmType3Maker {
     
     private final Type2Message type2;
     private Type3Message type3;
+    private static final Logger LOGGER = Logger.getLogger(AuthNtlmType3Maker.class);
 
     public AuthNtlmType3Maker(Type2Message type2) {
         this.type2 = type2;

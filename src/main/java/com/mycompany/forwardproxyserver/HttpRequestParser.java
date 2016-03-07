@@ -9,6 +9,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import org.apache.log4j.Logger;
 
 /**
  *
@@ -20,6 +21,7 @@ public enum HttpRequestParser {
     private String request;
     private String host;
     private int port;
+    private static final Logger LOGGER = Logger.getLogger(HttpRequestParser.class);
 
     HttpRequestParser() {
 
@@ -76,7 +78,7 @@ public enum HttpRequestParser {
         if ((hostLine == null)) {
             throw new InvalidRequestException(request);
         }
-        System.out.println("hostLine: " + hostLine);
+        LOGGER.debug("hostLine: " + hostLine);
         return hostLine;
     }
 
@@ -95,13 +97,13 @@ public enum HttpRequestParser {
         }
         if (colonIndex < 0) {
             setHost(hostLine);
-            System.err.println("host: " + hostLine);
+            LOGGER.debug("host: " + hostLine);
             return hostLine;
 
         } else {
             hostLine = hostLine.substring(0, colonIndex);
             setHost(hostLine);
-            System.err.println("host: " + hostLine);
+            LOGGER.debug("host: " + hostLine);
             return hostLine;
         }
     }
@@ -120,7 +122,7 @@ public enum HttpRequestParser {
             portValue = Integer.parseInt(hostLine.substring(portValue + 1));
         }
         setPort(portValue);
-        System.err.println("port = " + portValue);
+        LOGGER.debug("port = " + portValue);
         return portValue;
     }
     

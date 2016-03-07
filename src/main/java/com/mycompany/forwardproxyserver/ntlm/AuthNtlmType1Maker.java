@@ -6,6 +6,7 @@
 package com.mycompany.forwardproxyserver.ntlm;
 
 import jcifs.ntlmssp.Type1Message;
+import org.apache.log4j.Logger;
 
 /**
  *
@@ -15,6 +16,7 @@ public class AuthNtlmType1Maker {
     private final String domain;
     private final String workstation;
     private static final int DEFAULT_FLAGS= -1576488441;
+    private static final Logger LOGGER = Logger.getLogger(AuthNtlmType1Maker.class);
 
     public AuthNtlmType1Maker(String domain, String workstation) {
         this.domain = domain;

@@ -11,19 +11,21 @@ import com.mycompany.forwardproxyserver.ntlm.auth.AuthorizedCustomerDao;
 import java.io.IOException;
 import jcifs.ntlmssp.Type3Message;
 import jcifs.util.Base64;
+import org.apache.log4j.Logger;
 
 /**
  *
  * @author osyniaev
  */
-public class AuthNtlnType3Handler {
+public class AuthNtlmType3Handler {
     
      private final HttpRequestParser parser;
      private final AuthorizedCustomerDao dao;
      private String response;
      private Type3Message type3;
+     private static final Logger LOGGER = Logger.getLogger(AuthNtlmType3Handler.class);
 
-    public AuthNtlnType3Handler(String response) throws IOException {
+    public AuthNtlmType3Handler(String response) throws IOException {
         this.parser = HttpRequestParser.INSTANCE;
         this.dao = AuthorizedCustomerDao.INSTANSE;
         this.response = response;

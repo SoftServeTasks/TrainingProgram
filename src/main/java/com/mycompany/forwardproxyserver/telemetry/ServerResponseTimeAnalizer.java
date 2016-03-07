@@ -20,6 +20,7 @@ import java.util.List;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 import java.io.*;
+import org.apache.log4j.Logger;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -42,11 +43,12 @@ public enum ServerResponseTimeAnalizer {
     ANALIZER;
 
     private volatile static HashSet<ServerStateModel> serverResponseTimeStatistic = new HashSet<>();
+    private static final Logger LOGGER = Logger.getLogger(ServerResponseTimeAnalizer.class);
 
     public void getResponseTimeStatistic() {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         for (ServerStateModel model : serverResponseTimeStatistic) {
-            System.err.println("На дату " + sdf.format(model.getCurrentDate().getTime()) + " количество живых подключений " + model.getAliveConnectionsNumber()
+            LOGGER.info("На дату " + sdf.format(model.getCurrentDate().getTime()) + " количество живых подключений " + model.getAliveConnectionsNumber()
                     + " время ответа сервера " + model.getResponseTime() + " милисекунд");
         }
     }

@@ -8,6 +8,7 @@ package com.mycompany.forwardproxyserver.telemetry;
 import com.mycompany.forwardproxyserver.HttpRequestParser;
 import java.util.HashMap;
 import org.apache.http.HttpRequest;
+import org.apache.log4j.Logger;
 
 /**
  *
@@ -18,7 +19,8 @@ public enum ClientsBrowserAnalyzer {
 
     private HttpRequestParser parser;
     private String userAgentHeader;
-    private volatile HashMap<String, Integer> browsers = new HashMap<String, Integer>();
+    private volatile HashMap<String, Integer> browsers = new HashMap<>();
+    private static final Logger LOGGER = Logger.getLogger(ClientsBrowserAnalyzer.class);
 
     private ClientsBrowserAnalyzer() {
         initBroserBase();
@@ -35,7 +37,7 @@ public enum ClientsBrowserAnalyzer {
     private void addBrowser(String browserName) {
         Integer numberRequestsFromBrowser = browsers.get(browserName);
         numberRequestsFromBrowser++;
-        System.err.println("Добавляю " + numberRequestsFromBrowser + "-й браузер " + browserName + " в базу\n");
+        LOGGER.debug("Добавляю " + numberRequestsFromBrowser + "-й браузер " + browserName + " в базу\n");
         browsers.put(browserName, numberRequestsFromBrowser);
     }
 
@@ -101,7 +103,7 @@ public enum ClientsBrowserAnalyzer {
     }
 
     public void getInfoAboutBrpowsers() {
-        System.err.println("\n\n*****************************\nИнформация о браузерах: "
+        LOGGER.info("\n\n*****************************\nИнформация о браузерах: "
                 + browsers.toString() + "\n*****************************\n");
     }
 }

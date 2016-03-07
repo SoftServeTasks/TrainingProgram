@@ -8,6 +8,7 @@ package com.mycompany.forwardproxyserver.ntlm;
 import jcifs.ntlmssp.Type1Message;
 import jcifs.ntlmssp.Type2Message;
 import jcifs.util.Base64;
+import org.apache.log4j.Logger;
 
 /**
  *
@@ -18,6 +19,7 @@ public class AuthNtlmType2Maker {
     private Type1Message type1;
     private ProxyMessages messageMacker;
     private Type2Message type2;
+    private static final Logger LOGGER = Logger.getLogger(AuthNtlmType2Maker.class);
 
 
     public AuthNtlmType2Maker(Type1Message negotiate) {
@@ -35,7 +37,7 @@ public class AuthNtlmType2Maker {
         type2.setTarget("testTarget");
         type2.setTargetInformation("targetInformation".getBytes());
         type2.setFlags(type1.getFlags());
-        System.err.println("\ntype2 decoded value: " +  type2.toString() + "\n");
+        LOGGER.debug("\ntype2 decoded value: " +  type2.toString() + "\n");
     }
      
     public String getCompleteChallenge () {

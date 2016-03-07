@@ -17,6 +17,7 @@ import java.util.concurrent.Executors;
 import jcifs.ntlmssp.Type2Message;
 import jcifs.ntlmssp.Type3Message;
 import jcifs.util.Base64;
+import org.apache.log4j.Logger;
 
 /**
  *
@@ -38,6 +39,7 @@ public class HttpClient /*implements Runnable*/ extends Thread{
     private String workstation;
     private String user;
     private String password;
+    private static final Logger LOGGER = Logger.getLogger(HttpClient.class);
 
     private String defaultMessageToServer = "GET http://portscan.ru/ HTTP/1.1\n"
             + "Host: portscan.ru\n"
@@ -95,46 +97,38 @@ public class HttpClient /*implements Runnable*/ extends Thread{
     public void run() {
         try {
             socket = new Socket("localhost", port);
-            System.out.println("Client number " + threadIdentificator + " started");
-            Thread.sleep(1000);
+            LOGGER.info("Client number " + threadIdentificator + " started");
             sendMessageToServer();
-            System.out.println("* CLIENT: Message sent to server localhost:" + port + "!\n");
-
-            Thread.sleep(2000);
-
+            LOGGER.debug("* CLIENT: Message sent to server localhost:" + port + "!\n");
             String messageFromServer = readMessageFromServer();
-
-            System.out.println("///////////////////////////////////////////////////\n"
-                    + "* CLIENT: SERVER localhost:" + port + " RETURNED ANSWER: \n\n " + messageFromServer
+            LOGGER.debug("* CLIENT: SERVER localhost:" + port + " RETURNED ANSWER: \n\n " + messageFromServer
                     + "\n ************************************************** \n");
 
             String proxyAuthenticatHeaderValue = parser.extract(messageFromServer, "Proxy-Authenticate: ", "\n");
-            System.err.println("* CLIENT: Сервер вернул header Proxy-Authenticate: " + proxyAuthenticatHeaderValue + "\n");
+            LOGGER.debug("* CLIENT: Сервер вернул header Proxy-Authenticate: " 
+                    + proxyAuthenticatHeaderValue + "\n");
             if (proxyAuthenticatHeaderValue.equals("NTLM")) {
-                System.err.println("* CLIENT: Отправляю Type1Message \n" + type1MessageToServer);
+                LOGGER.debug("* CLIENT: Отправляю Type1Message \n" + type1MessageToServer);
                 sendMessageToServer(type1MessageToServer);
             }
-            Thread.sleep(2000);
             String challengeFromServer = readMessageFromServer();
-            System.err.println("\n* CLIENT: I've got challenge fron proxy: \n" + challengeFromServer + "\n");
+            LOGGER.debug("\n* CLIENT: I've got challenge fron proxy: \n" + challengeFromServer + "\n");
             String ntlmHeaderValue = parser.extract(challengeFromServer, "Proxy-Authenticate: NTLM ", "\n");
             type2 = new Type2Message(Base64.decode(ntlmHeaderValue));
             type3Maker = new AuthNtlmType3Maker(type2);
             type3 = type3Maker.makeType3Message(new AuthorizedClientDto(domain, workstation, user, password));
             type3MessageToServer = defaultMessageToServer + "Proxy-Authorization: NTLM " + Base64.encode(type3.toByteArray());
-            System.err.println("\nType3: " + type3 + "\n");
-            Thread.sleep(2000);
+            LOGGER.debug("\nType3: " + type3 + "\n");
             sendMessageToServer(type3MessageToServer);
-            Thread.sleep(2000);
             String completeMessageFromServer = readMessageFromServer();
-            System.err.println("\n* CLIENT: Hooray! I've got necessary information\n Servers Response is :\n" + completeMessageFromServer);
+            LOGGER.debug("\n* CLIENT: Hooray! I've got necessary information\n "
+                    + "Servers Response is :\n" + completeMessageFromServer);
             socket.shutdownInput();
             socket.shutdownOutput();
             socket.close();
 
         } catch (Exception e) {
-            System.out.println("* CLIENT: init error: " + e);
-            e.printStackTrace();
+            LOGGER.error("* CLIENT: init error: ", e);
         }
     }
 

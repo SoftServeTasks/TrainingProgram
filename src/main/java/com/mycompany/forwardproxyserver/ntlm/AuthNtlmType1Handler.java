@@ -11,6 +11,7 @@ import com.mycompany.forwardproxyserver.ntlm.auth.AuthorizedCustomerDao;
 import java.io.IOException;
 import jcifs.ntlmssp.Type1Message;
 import jcifs.util.Base64;
+import org.apache.log4j.Logger;
 
 /**
  *
@@ -21,6 +22,7 @@ public class AuthNtlmType1Handler {
     private Type1Message type1Message;
     private final AuthorizedCustomerDao dao;
     private AuthNtlmType2Maker challengeMaker;
+    private static final Logger LOGGER = Logger.getLogger(AuthNtlmType1Handler.class);
 
     public AuthNtlmType1Handler() {
         parser = HttpRequestParser.INSTANCE;
@@ -33,7 +35,8 @@ public class AuthNtlmType1Handler {
         //type1Message=new Type1Message(getType1Message(negotiate).getBytes());
         challengeMaker = new AuthNtlmType2Maker(type1Message);
         //int flags = type1Message.getFlags();
-        System.err.println("Domain: " + type1Message.getSuppliedDomain() + "\nWorkstation: " + type1Message.getSuppliedWorkstation());
+        LOGGER.info("Domain: " + type1Message.getSuppliedDomain() + "\nWorkstation: " 
+                + type1Message.getSuppliedWorkstation());
     }
     
     public String generateType2Message() throws NotEnoughUserCredentialsException {
@@ -51,7 +54,7 @@ public class AuthNtlmType1Handler {
     }
     
     private boolean checkCredentials (String domain, String workstation) {
-        System.err.println("Check: " + dao.isExist(new AuthorizedClientDto(domain, workstation)));
+        LOGGER.debug("Check: " + dao.isExist(new AuthorizedClientDto(domain, workstation)));
         return (dao.isExist(new AuthorizedClientDto(domain, workstation)));
     }
     

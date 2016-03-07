@@ -9,6 +9,7 @@ import com.mycompany.forwardproxyserver.ntlm.ProxyMessages;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import org.apache.log4j.Logger;
 
 /**
  *
@@ -18,6 +19,8 @@ public class ResponseHandler {
     
     private InputStream fromClientChannel = null;
     private OutputStream toClientChannel = null;
+    private static final Logger LOGGER = Logger.getLogger(ResponseHandler.class);
+    
     public ResponseHandler() {
     }
     

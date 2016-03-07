@@ -25,6 +25,7 @@ public class ProxyServer extends Thread {
     private static ServerSocket httpListener = null;
     private static  ExecutorService executorPool = Executors.newCachedThreadPool();
     private HttpRequestHandler session;
+    private static final Logger LOGGER = Logger.getLogger(ProxyServer.class);
 
     public ProxyServer(ExecutorService executorPool) {
         this.executorPool = executorPool;
@@ -64,10 +65,10 @@ public class ProxyServer extends Thread {
  
         try {
             httpListener = new ServerSocket(port);
-            System.out.println("Proxy server started on port: "
+            LOGGER.info("Proxy server started on port: "
                     + httpListener.getLocalPort() + "\n");
         } catch (IOException e) {
-            System.out.println("Port " + port + " is blocked.");
+            LOGGER.error("Port " + port + " is blocked.",e);
             System.exit(-1);
         }
     }
@@ -84,13 +85,12 @@ public class ProxyServer extends Thread {
                 int count = 1;
                 Socket clientSocket = httpListener.accept();
                 session = new HttpRequestHandler(clientSocket, count);
-                System.err.println(" + PROXY: * Client number " + count + "  accepted\n");
+                LOGGER.info(" + PROXY: * Client number " + count + "  accepted\n");
                 executorPool.execute(session);
                 count++;
 
             } catch (IOException e) {
-                System.out.println("Failed to establish connection.");
-                System.out.println(e.getMessage());
+                LOGGER.error("Failed to establish connection.",e);
                 System.exit(-1);
             }
         }
