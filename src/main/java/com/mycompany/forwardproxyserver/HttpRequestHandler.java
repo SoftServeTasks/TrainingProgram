@@ -102,10 +102,8 @@ public class HttpRequestHandler implements Runnable {
             toSite.write(header.getBytes());
             toSite.flush();
             LOGGER.debug(" * PROXY: Header " + header + "\nOтправлен " + host + ":" + port + "\n");
-            Thread.sleep(2000);
             fromSite = sc.getInputStream();
             LOGGER.info(" * PROXY: Читаю ответ от portscan.ru:80");
-            Thread.sleep(3000);
             //        String readClientsRequest = readClientsRequest(is);
             //System.err.println(" * PROXY: Ответ от portscan.ru:80 :" + readClientsRequest);
             byte buf[] = new byte[64 * 1024];
@@ -172,7 +170,6 @@ public class HttpRequestHandler implements Runnable {
             finish = System.currentTimeMillis();
             serverResponseTimeAnalizer.addcurrentResponseTime(finish - start, count);
             LOGGER.info("\n+ PROXY: Chellenge was sent to client");
-            Thread.sleep(2000);
             clientsRequest = readClientsRequest(fromClientChannel);
             start = System.currentTimeMillis();
             LOGGER.debug("\n+ PROXY: Clients Response (with Type3): " + clientsRequest);

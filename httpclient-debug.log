@@ -1,0 +1,850 @@
+15:26:13,080  INFO Thread-2 HttpClient:run:100 - Client number 1 started
+15:26:13,081 DEBUG Thread-2 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+15:26:13,082  INFO Thread-7 HttpClient:run:100 - Client number 6 started
+15:26:13,082 DEBUG Thread-7 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+15:26:13,081  INFO Thread-1 HttpClient:run:100 - Client number 0 started
+15:26:13,082 DEBUG Thread-1 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+15:26:13,080  INFO Thread-6 HttpClient:run:100 - Client number 5 started
+15:26:13,085  INFO Thread-9 HttpClient:run:100 - Client number 8 started
+15:26:13,086 DEBUG Thread-9 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+15:26:13,087 DEBUG Thread-6 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+15:26:13,085  INFO Thread-5 HttpClient:run:100 - Client number 4 started
+15:26:13,088 DEBUG Thread-5 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+15:26:13,084  INFO Thread-10 HttpClient:run:100 - Client number 9 started
+15:26:13,088 DEBUG Thread-10 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+15:26:13,084  INFO Thread-8 HttpClient:run:100 - Client number 7 started
+15:26:13,091 DEBUG Thread-8 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+15:26:13,083  INFO Thread-3 HttpClient:run:100 - Client number 2 started
+15:26:13,092 DEBUG Thread-3 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+15:26:13,083  INFO Thread-4 HttpClient:run:100 - Client number 3 started
+15:26:13,096 DEBUG Thread-1 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+15:26:13,097 DEBUG Thread-4 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+15:26:13,098 DEBUG Thread-1 HttpClient:run:108 - * CLIENT: Ñåğâåğ âåğíóë header Proxy-Authenticate: NTLM
+
+15:26:13,099 DEBUG Thread-1 HttpClient:run:111 - * CLIENT: Îòïğàâëÿş Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+15:26:13,099 DEBUG Thread-5 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+15:26:13,099 DEBUG Thread-5 HttpClient:run:108 - * CLIENT: Ñåğâåğ âåğíóë header Proxy-Authenticate: NTLM
+
+15:26:13,100 DEBUG Thread-3 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+15:26:13,100 DEBUG Thread-3 HttpClient:run:108 - * CLIENT: Ñåğâåğ âåğíóë header Proxy-Authenticate: NTLM
+
+15:26:13,100 DEBUG Thread-3 HttpClient:run:111 - * CLIENT: Îòïğàâëÿş Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+15:26:13,100 DEBUG Thread-5 HttpClient:run:111 - * CLIENT: Îòïğàâëÿş Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+15:26:13,102 DEBUG Thread-6 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+15:26:13,102 DEBUG Thread-6 HttpClient:run:108 - * CLIENT: Ñåğâåğ âåğíóë header Proxy-Authenticate: NTLM
+
+15:26:13,102 DEBUG Thread-6 HttpClient:run:111 - * CLIENT: Îòïğàâëÿş Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+15:26:13,104 DEBUG Thread-7 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+15:26:13,104 DEBUG Thread-7 HttpClient:run:108 - * CLIENT: Ñåğâåğ âåğíóë header Proxy-Authenticate: NTLM
+
+15:26:13,104 DEBUG Thread-7 HttpClient:run:111 - * CLIENT: Îòïğàâëÿş Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+15:26:13,104 DEBUG Thread-1 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+15:26:13,104 DEBUG Thread-8 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+15:26:13,104 DEBUG Thread-8 HttpClient:run:108 - * CLIENT: Ñåğâåğ âåğíóë header Proxy-Authenticate: NTLM
+
+15:26:13,104 DEBUG Thread-8 HttpClient:run:111 - * CLIENT: Îòïğàâëÿş Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+15:26:13,108 DEBUG Thread-10 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+15:26:13,109 DEBUG Thread-10 HttpClient:run:108 - * CLIENT: Ñåğâåğ âåğíóë header Proxy-Authenticate: NTLM
+
+15:26:13,109 DEBUG Thread-10 HttpClient:run:111 - * CLIENT: Îòïğàâëÿş Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+15:26:13,110 DEBUG Thread-3 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+15:26:13,110 DEBUG Thread-6 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+15:26:13,111 DEBUG Thread-5 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+15:26:13,111 DEBUG Thread-2 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+15:26:13,111 DEBUG Thread-2 HttpClient:run:108 - * CLIENT: Ñåğâåğ âåğíóë header Proxy-Authenticate: NTLM
+
+15:26:13,111 DEBUG Thread-2 HttpClient:run:111 - * CLIENT: Îòïğàâëÿş Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+15:26:13,113 DEBUG Thread-10 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+15:26:13,114 DEBUG Thread-2 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+15:26:13,117 DEBUG Thread-8 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+15:26:13,118 DEBUG Thread-4 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+15:26:13,118 DEBUG Thread-4 HttpClient:run:108 - * CLIENT: Ñåğâåğ âåğíóë header Proxy-Authenticate: NTLM
+
+15:26:13,118 DEBUG Thread-4 HttpClient:run:111 - * CLIENT: Îòïğàâëÿş Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+15:26:13,122 DEBUG Thread-4 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+15:26:13,123 DEBUG Thread-7 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+15:26:13,123 DEBUG Thread-9 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+15:26:13,123 DEBUG Thread-9 HttpClient:run:108 - * CLIENT: Ñåğâåğ âåğíóë header Proxy-Authenticate: NTLM
+
+15:26:13,123 DEBUG Thread-9 HttpClient:run:111 - * CLIENT: Îòïğàâëÿş Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+15:26:13,125 DEBUG Thread-9 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+15:26:13,181 DEBUG Thread-3 HttpClient:run:121 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+15:26:13,181 DEBUG Thread-7 HttpClient:run:121 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+15:26:13,181 DEBUG Thread-9 HttpClient:run:121 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+15:26:13,182 DEBUG Thread-6 HttpClient:run:121 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+15:26:13,183 DEBUG Thread-10 HttpClient:run:121 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+15:26:13,183 DEBUG Thread-2 HttpClient:run:121 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+15:26:13,184 DEBUG Thread-1 HttpClient:run:121 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+15:26:13,184 DEBUG Thread-5 HttpClient:run:121 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+15:26:13,189 DEBUG Thread-8 HttpClient:run:121 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+15:26:13,189 DEBUG Thread-4 HttpClient:run:121 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+15:26:13,386 DEBUG Thread-6 HttpClient:run:124 - 
+* CLIENT: Hooray! I've got necessary information
+ Servers Response is :
+HTTP/1.1 200 OK
+Server: nginx/1.6.3
+Date: Mon, 07 Mar 2016 13:26:13 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/5.3.29
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Encoding: gzip
+
+1759
+‹      ½\{oÜÖ•ÿÛş·L°Ã™ÑÓÖ3hÒd“mÚ¸ˆ6AÅ¡4´8ä„äHœ ’×ìF@ĞÅ-š6»öb±cYõ2O0óöœs¼—CÊrĞV‰Gò>Ïãw^—ZúÉÏ?xkõ77ßf­´¬\]Â_,pÂe+îZxÃsš+W¯2øYJı4ğV†íÏ‡‡Ã>ü>öØğ|tox<Ú=İƒ÷ÙğÜÚ…›ĞŠ}ÎnFqú¡ë„µ¸»TçcĞx4fÛK?<íØŞg]kÙz+
+S/LíÕg1—[¶RïNZÇÕ-2·åÄ‰—.ÿûê;öK,üp“µbo}ÙZw¶|è\ƒ‹Å^°láW‹¥0,\·¯~Ç¦{|5¼3µt:À³Ó¨ë¶x1¦ßŞ¨çŸÕ:á†U‚&¸•Ä®Ş·„H€v;ğ¨§$-‘!tÚ°¶¦—¸±ßI}œXíøÑûp8íé%bŸÁƒóáÉè İc£}¸q6ì;³Ñ0/÷¡#4ëÂ9&ğØ: ±úÔKİ¼í¿„×ğq6<ö†Ï‡g5IWmk›ŞÎv7}_/òÒ¤Xeã/Z@®ı€ Tå±ò‰{Õ‹(¨ZY+9Á#Æ'éNà%-ÏK¥¬‘äºI"%.ëkQ”&iìt²«ZÛkØlL–ô!³!Ö‚¶³í%QÛ«ço\n°òõµÕ?Û$K½×mgËáw-²¾lİNê »á‡Iıög]/Ş±'k“Ú$­ç6·TçíÅº^mH“V?~8Ğ·å¹›¯<ÄÊO+ëİĞEÕ¬L°»?­\{-ñb Ï^"wóÚDM^™XübbQS…k;NØôîØ[^ì¯û®ƒC^SZqmnİm6<gİm4ççæ××@ÌRƒñÒZÔÜÆ,…‘±ô¦¿ÅÜÀI@°À‹SFŸvĞÜ‹îÅvat/R ,[m'Â.°©FçsºiÄ‹l4Ô‹á&Ük: *MöÚ;x°í7ÓÖ»Ş€Ö‹¬ã4›~¸Á;/êÊĞšY~#¡¦?<eÃ' b=Ò)T¶¾PbÀ«¯G (ã ôàæ" ÁØö{x!¬°f|H›®-­Å+Ã¿Â¨g€¿…v¨İ½á	è+ª8ª(Î¼O#(Â†Ohf¡Öà‚`®Î†ç5 ïŒ eh‰Ï(|•Èë7—­m@kœäÈ;Ğ nF
+EÙ7:A´ÉîP¹:ˆ!.¡†¥ÀÖd(€™€–ğÿvü”64¾@AvÄ°­X[N»µiş¦§3é'¶Í>úK¢nìzÌ¶W^IÏëõ­Íšµë NNÇ¯G/„ß PoÌßÈëÔ%ôÊ ØG¿¨ù¡ŸVîÂˆï5Øô©¹©Æt•Ea°ó±ßÜğÒd¥q×ËfPsmr›ú?›ÌHs‹“Fğ|Œu¯¶p±¼Úû0fE^ew±ÿ³ ¸|øÚòüVŠºS¼cR‹×§‰`m_QË¤ã„Óm¯ê¶½ ’:ÚÜKİ@¶û h[ ^I`t´V6bW¡rgs`àpôÔ´W9:£G9J~éÀòxŒ+¦VÉÇë[wìN´íÅv´¾üöWØ¸/«Ì;ªMˆsh£JÕM¯¡?:>IÚ’£‡c"¨v?å¢±×œÄ+,j‚†ÂvıØ<9ËŸ`î­?ô/³ ï’y¼;àbƒÑPD‚!Ï†OYX´‹ˆ@L¸sHœëM”Í±İŠü¤d?\Ì|üîï}È ®Ï‡§´‘Òµ£Ñ>Æ^Ò‰ÂRr¹Ñ†ÜÁ·r±™xágé Ã0:Ñ»dğ Z“ÿ×·Wp Ç]JtMƒ—M“Ir7¦†TKh÷ÕR0ä$;¡+1¸1†ÓœªmDÑ8u;aSxÍü)!t3YÛáŠ\DIiXXÛ»
+)—ÀëRú•be:(‰¦ŸtggÁÁÓÎĞ"÷¦È]€7×Zï¦“:¶Ó´İÀ§`Àí®Ù³3ëSóÓ“³3³³éÉ™‚IAû¹éÆøG×oL'ÂÄ VmñlìAØŒ¶kúÍÏ?gŸ|
+Ş[7iUîJLÎè$ÙSÆb@¤‹$í"Ü\}X~G^Ê—£/¯c_N\ë4‰VØ&|*Ú`?ùö.¼?ü”CETvŒıpR¦ bFåíj`(ı?::2n+Æp$ó`øÆ½ öÃßPğŞâ#h³e:òã(ÿªôşO‚éàNLÑÉèñğL?#é0—d†§> š}úA(³	Ş÷f†á «è…¢G'bSˆ¥ÓøKÎñ?h|nÌÒ9ìí½›6\!¦öŞxéD8º³sÉ¹¸]=´Ø:ä^f’4r£ÀÆœĞ«LF–÷uÂŞ]]½y(É’Ii\nxËÀ[	ş…â‡=²ñÏDP!8'C@g<XH"×w‚[”²^ÍõFº,Ôë<~¬%iáŸˆî*=fuÓu»Ø×V²ãPO£?İn‹c¬¸ÿşd#¤T qw•ÖF¡gŞÿu×w7?äq‚¾5ÆD›©WM·ıˆ[İ€P>©®;®‡<¬·«;NÜ­FÍ0ÚÄõ„ş¦o¸âÏÔÅz·•<ÀµxNì¶Ì ×¡ ]QK:m7Õys.Z`îÒVa ?p‹¥#án%^ !L`§«sÄR<¤qlJsXÌŸëµ¢ „dÙª²ì]Š?tğ†%’a|0¤;XëNà¥p=SV/?¹å7›^(»ò©ı¦Å¶œ 7¦s³Óó×/Ó7 ª~ÈXÊ, !á·.)ù\‡UÓ©M|B\Ã\ûÔš¨AÓkÛŞÚ¦Ÿ&Ïs[Ü¼VeúH ›«~Û‹ºéEÀhIw­aàÄâÕ™FƒÒ)h™µ@Oä.èC,;ÿ“&š›	Êühç‰¼¦¿£w43Ó?Ÿ™™¼q£ 	’ÚF(ÿç© ¤½t¨:o]Ğ8Ë;MÊ>?¾”†şÂ¯5Y0°>{Ë‹#»K°Hé#İwA°]šR“âŠz¶uc0ç
+a4Dcínê5±õ•á7?Xã½À&çgk“sÚÔôtmjvšÁX‚²WôM®ÚNÜC>„€ãqÛkúİ¶‰¢rÁ–&Ô}ƒ¤… m€#æÔx{ ³ÎÀ7ÒÖ²5[„y´¨µnšFÊè®¥!ƒvÒuÁ?$|1	@tšã)eù—ê¼÷ŠNğù:İÀ‰¹g,Vû~è6Õ£`†ñ^ \ŸŒ`Ì³œ#\ìOÎšîÉ†òhòJM]oLÎ–<›™™.ë5;;Ç{]á.ÍØ¥‘8"³²µ]8ÜÃo`/?R=]¨Dj¾üÁé+º[|dÄ8èN0´Då¡øÿÑé1wŒI£Œ±™Xsq‡`½¤Ê¸_)€…‹ ÁHµ‚xÆÀ;§Y¢ÿ@à›Ê0beFªÑhıR›ÿy‰Èÿ¼ºÍ(ÛÉéÉ¹é¹¹ù—éRjSJøSŸ?ÒæŒSÙD/³@Ebçİøa™Ìµ¦V¤ßw®òq=Y{ÈiÍ¸Îdp	‘ŒÅ£P`\{]§ŠËR’ÆQ¸±"²¼>	[æw†W‚Ú€£ æSoª$Ê=èÌkEéÎ6‹eşØº	İ_DüåkåY/‘;±LWw8™XT±‡ÀšĞ1ı‚¶S¬+K¨…ËCÌb<(üœ9	AœğÅD`¼MÎuAj—Œ–€Î!ø’øM4~J¥ŸS?ç‘*4=ƒ_çÀ¸7z×?nÄÀ±ªBRÏ}œóÆ$=†®çTÛRÉ{ªgyOñÉ	6è‰?{ ¦çcíË„-‘?úZÑ^±¢Õã‰xòœs@M`ÊT`“ìş?`u4ì!†ÚœFz?oÍe:úÀ{fqÛÒùiUOü®D¨ïÓBÎñ<°	ó=&É}[ûJĞö\)8&v¾ ê}.2‡²É<5+
+£ûXƒJC>«­èh"¥öûBŠáÙ·ïy-ñ	e²ç
+OsûyA"p‰Ë¢âx ªñÄVœœ²G|+°¼ú¶”ú2!™H£l-\nq·HÃ
+iÜásn[Õşeèœ
+–»TÃ$¡“Â"ÅÈ”ï,„û$³ıLÆjB!3à!4z‚¾ÇŒİõÆf ­åËDqc Œxš‚§w} ÚËAÌiàÎc`ÁI}%Œ|'B–P|aq¶ÏQ“Ñı}.*yIøË®Z™Pè²,Ó^ßKÕay¦ˆ„LUFd3…K£*ãİrucìÁƒYõ&6ŠúaFÁ
+LB¥•	¾ÚCB£¾ µqä¸i‚¥RZü9UÏèpqîXT¹û”­RuvšÊ¿;ÑİCcQ{$éÿQV)o&Á%Qà7ÙkoÏã?Â:iœ+±NPğ]`ˆt9)<e0H”Şø1#S‘Ä‡gÀï	 Ú™ß?ğCé	DŸ1HÖ¼ŞÆS‹’ÇTjÚ#™)ÃÉ1ƒ U[‚[¯J»!‰Åy9*i:Pi%ğÊ÷qÄa,^&Û—f¡ÜNç
+ÁhäM³_åûR+æC•Ïø	·C÷àƒRJeQ›ÙtXYCb-=3-hÃ³Ó#N{B…Q±ª~Ç÷D»?äÜbbçç Š÷¤©(À@ƒ’N”f¢‘7ç'ÙÙ#±ÍN¾­¥0 ÕNi~‘Q`¸¼å âg…ƒSZ f+$»œ¢h{¤‰j‘ Œa"Ã%Ó!dõ.aØy†7x?Å@uç3:Íb·¦¬•wj?«ıº&ÓìĞzV9áÏ´\ÏèÑlø{ÎÉ‰j*IMÀï5=WŞ·ÊòR¦íKœ¹ÔNæT•ŠJW\»g:VôöSóaI[ÇMI_º†ßpJF@úB‚útXŠïêƒ{†ÁËÉDO›à„ˆô„“ôD8"»BÎÇVé
+"Î]êG7å‘®L°Ç¾ğÀ{ªüvªå“ğwU÷<W“dHU¸¬}Âû…>§Ü%EûMí}P7	à-¡ç7§U½LìuJò5+@“”“è²GŞ„´ÊèƒJÏ¥çáÕ	ÁÒı¢ÀtëaÇ€RÂ‡„,¹”e¡KæP©B¹ú(n\—BÁÏ”M"·Õ~Şı	wÿ€¶Ã5FÒdõ  ÷|é+]y†ğIÂy‚_ŸHq ÄàLÕ0ÀÙû¿jµŠc5'w£¯5àÍ²•“SÓ353´È)zÇ$Q|-WuÄcD’xÄ[=:À‰Æ \g‹ÓÃØ¸[g$Usç£»lî2+Fê”)…8¦âNm€*´+ÆŠÿÚ"¸Ö l£Ãæfg§gå•·*ËèäËşqô5ª"JÌIÿÓœƒ¡;"\â†ù€Ôë<;o$1Mˆbş”:73DŸï)ù_¾r:œqÕ‘Ôê[7ëïİ#d%dğËrbü]æÕ`»SîÁ›
+¦Á/cÓG"à¢Ğ•À+;t^?H¯’÷¯«?IeŸBÓ¬Öhú¥Z¦âLF™Ù”Ñ¸ršIiñ_jc”HåàA:™}•A„<àÂŒì»Œ]tÀc€ÃRéöRdMi$Ì¡¼ <;ç+Ğ„v²15gó¡ÒUù
+5Ô!ÙÓ]<Zê &Ùv<!G¯Rä\|´±æ…ñ)s›Ù†‰ãJ¸¢xYÍ\…L>x¢á>Í$CHy:ÜºL±
+×§<—Ü îr„äw aßè~5o–…"<ÈÎq3"æïÔÒ}Î€CFïò
+•ü‰-$kîo!ĞA’ût„Ë"Ş£mî‹ôØó\$;^­xÉ+%cˆùJ/?å'×İ-u>–œ{G¡()ÏB!ä!‰ÔCò“3Ä-u|Gæx.…ğ³OŞ¼Ê²"î<Ò,*ã5—}¦æ"ÿ8'È¶"¦|øñü`’g7ó!¹ûÂh`,ª&ĞË-†+E_)*8§h¬È£.I±
+eMwGÉ°İ#¼ÇeuBF¯c™ú,C¥åêÏU@wPäa–L›x´?z“vjO¦Ê`ù£»
+/‹óHù¤ƒ,6©Ì#-IgFÍÜ2¢i=V>!§â‰ ê™‘ÛËù*.S‘–v¢Ììy	E*jÉ*L±w¢xÛ‰1áSe"ËMæG~œv€}H§€“‰Ì›âa«9/Iµr@ÕXDèi8Ò@ê¯„Ò$mBÌi]!ûÆ`›JIÊg¢,¤CQ;‰h•øWÙBİ¾îqùU)#Êd›ô•Z;‘–% Æ<v*TÃ>Ghq"#^ä7\”Cÿ­(òàáx´Ã×#¤!.¿çnÏ¿Q8¸Ï‘dO§?õ©P3Úí@â·%F`0¾^>€•Ÿ¨îRÀĞÒIúùØ÷<•¢FU³İÎĞ[–G9ÙàÓhÃÁ­€õ¢¼—KêR°õ­
+¹¨ˆ¢·9¨–¥5«OªÛ>sJFñÕ³‹1ˆÑì}í}±,‡¿‡…’<èßÅèö”üÉ?œ{õrKú/l½ğ¢Nfè[!*ò,ÒX>8?ñno>1k&“T¸_T*×¨iñh°ˆ«DÎŠpûf V-3&¸K3ŞÅ{7'tKBÁ®áT•W—Û±»òìXŞŞpOñc~ö}í&Ùë±Ç‹ÌrÛMK~¡óà
+hT¶;3òò¼0&Œªd°3ôÒ$uRf¯…üøD–†ãËyß»wDvµOeİ _ß3{ÚãyÖf%	³Ó ´ÆH©W¿´— ‹¬pÄûÛ".ÇU1FR^/[ƒÓF¨rD>³¿/s$zf<§H@—Å,=UT£âu>+¿È¸{+Win¶.\ª	›°ÕFnG¯|¥Òã™FZwÀaÏ¬½äŠ¨c2È)\?Ü®fÑœ87wBRz€ÒË í_…®UOöó4ÈÜ³#š{dîrU\VyÇ½m'„^æôLîıÄüWuş±›´
+_¶4_sÄcŞQêå_då7ÕIy(’Ÿ)jÃ‚·ÿŒ?<á¬°××ºA°¨½vë¬E]ù‚×ğ[I>%xûzöºuvÍâù¹9ƒ&@ì©Æ$DîOypŒu	Z”Ø³æ›‚ıá¹±ßğCü¿ôÒØßt?ué¬'{É{§êè4«4«l»ÊÜ	v—U¶?q?ÅóRøK?!¥´fi¼ŸÛµç->áÔÔäÔìÌäô½mX•\Qå®ß\OaomËO¢xß½…)ßİl;ñ5w m37×íÆNê­âƒ7a*×Ó›¾š´ Şâe_0×IİVÅÃ~ÁğÖ–³–Ô¬mxéÛ×öÂ4ysgÕÙø•Óö*– ÅÄ'O«,¡†nìÁ|¢mÖ¢ÊÖáqF1œ#¬uœZı*jz5?L¼8}Ó[b¯’TYˆ+ZdI©]ÇèÏøáÂez¿'1~«4kA$ÎÊwYØ2o"${#»\à—ÖûfÕëm·&^ëˆ»õ6gA}é‚™¿®E/vhÈO¢µÛ›²ğÎ§n«YsšÍ··`cïûIê…^\±~şÁ/ÅUy?rš 0@øß	(ïÁt]¯Ğ·/&*ÍÈí"«âà]•Y|]·Ä¢n¹ ÕkÀÃÄÒşÄAö÷–HÚ³7ÁÌÑêR¬Tİ¿%>’mÁYK¢ 4{‘á‹6ö<ü`aŸŸgÅ¤:e¯ç“:Õ/Ò§:ÿ«	Kuş—nşS»Ï¡úF  
+0
+
+
+15:26:13,439 DEBUG Thread-4 HttpClient:run:124 - 
+* CLIENT: Hooray! I've got necessary information
+ Servers Response is :
+HTTP/1.1 200 OK
+Server: nginx/1.6.3
+Date: Mon, 07 Mar 2016 13:26:13 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/5.3.29
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Encoding: gzip
+
+1759
+‹      ½\{oÜÖ•ÿÛş·L°Ã™ÑÓÖ3hÒd“mÚ¸ˆ6AÅ¡4´8ä„äHœ ’×ìF@ĞÅ-š6»öb±cYõ2O0óöœs¼—CÊrĞV‰Gò>Ïãw^—ZúÉÏ?xkõ77ßf­´¬\]Â_,pÂe+îZxÃsš+W¯2øYJı4ğV†íÏ‡‡Ã>ü>öØğ|tox<Ú=İƒ÷ÙğÜÚ…›ĞŠ}ÎnFqú¡ë„µ¸»TçcĞx4fÛK?<íØŞg]kÙz+
+S/LíÕg1—[¶RïNZÇÕ-2·åÄ‰—.ÿûê;öK,üp“µbo}ÙZw¶|è\ƒ‹Å^°láW‹¥0,\·¯~Ç¦{|5¼3µt:À³Ó¨ë¶x1¦ßŞ¨çŸÕ:á†U‚&¸•Ä®Ş·„H€v;ğ¨§$-‘!tÚ°¶¦—¸±ßI}œXíøÑûp8íé%bŸÁƒóáÉè İc£}¸q6ì;³Ñ0/÷¡#4ëÂ9&ğØ: ±úÔKİ¼í¿„×ğq6<ö†Ï‡g5IWmk›ŞÎv7}_/òÒ¤Xeã/Z@®ı€ Tå±ò‰{Õ‹(¨ZY+9Á#Æ'éNà%-ÏK¥¬‘äºI"%.ëkQ”&iìt²«ZÛkØlL–ô!³!Ö‚¶³í%QÛ«ço\n°òõµÕ?Û$K½×mgËáw-²¾lİNê »á‡Iıög]/Ş±'k“Ú$­ç6·TçíÅº^mH“V?~8Ğ·å¹›¯<ÄÊO+ëİĞEÕ¬L°»?­\{-ñb Ï^"wóÚDM^™XübbQS…k;NØôîØ[^ì¯û®ƒC^SZqmnİm6<gİm4ççæ××@ÌRƒñÒZÔÜÆ,…‘±ô¦¿ÅÜÀI@°À‹SFŸvĞÜ‹îÅvat/R ,[m'Â.°©FçsºiÄ‹l4Ô‹á&Ük: *MöÚ;x°í7ÓÖ»Ş€Ö‹¬ã4›~¸Á;/êÊĞšY~#¡¦?<eÃ' b=Ò)T¶¾PbÀ«¯G (ã ôàæ" ÁØö{x!¬°f|H›®-­Å+Ã¿Â¨g€¿…v¨İ½á	è+ª8ª(Î¼O#(Â†Ohf¡Öà‚`®Î†ç5 ïŒ eh‰Ï(|•Èë7—­m@kœäÈ;Ğ nF
+EÙ7:A´ÉîP¹:ˆ!.¡†¥ÀÖd(€™€–ğÿvü”64¾@AvÄ°­X[N»µiş¦§3é'¶Í>úK¢nìzÌ¶W^IÏëõ­Íšµë NNÇ¯G/„ß PoÌßÈëÔ%ôÊ ØG¿¨ù¡ŸVîÂˆï5Øô©¹©Æt•Ea°ó±ßÜğÒd¥q×ËfPsmr›ú?›ÌHs‹“Fğ|Œu¯¶p±¼Úû0fE^ew±ÿ³ ¸|øÚòüVŠºS¼cR‹×§‰`m_QË¤ã„Óm¯ê¶½ ’:ÚÜKİ@¶û h[ ^I`t´V6bW¡rgs`àpôÔ´W9:£G9J~éÀòxŒ+¦VÉÇë[wìN´íÅv´¾üöWØ¸/«Ì;ªMˆsh£JÕM¯¡?:>IÚ’£‡c"¨v?å¢±×œÄ+,j‚†ÂvıØ<9ËŸ`î­?ô/³ ï’y¼;àbƒÑPD‚!Ï†OYX´‹ˆ@L¸sHœëM”Í±İŠü¤d?\Ì|üîï}È ®Ï‡§´‘Òµ£Ñ>Æ^Ò‰ÂRr¹Ñ†ÜÁ·r±™xágé Ã0:Ñ»dğ Z“ÿ×·Wp Ç]JtMƒ—M“Ir7¦†TKh÷ÕR0ä$;¡+1¸1†ÓœªmDÑ8u;aSxÍü)!t3YÛáŠ\DIiXXÛ»
+)—ÀëRú•be:(‰¦ŸtggÁÁÓÎĞ"÷¦È]€7×Zï¦“:¶Ó´İÀ§`Àí®Ù³3ëSóÓ“³3³³éÉ™‚IAû¹éÆøG×oL'ÂÄ VmñlìAØŒ¶kúÍÏ?gŸ|
+Ş[7iUîJLÎè$ÙSÆb@¤‹$í"Ü\}X~G^Ê—£/¯c_N\ë4‰VØ&|*Ú`?ùö.¼?ü”CETvŒıpR¦ bFåíj`(ı?::2n+Æp$ó`øÆ½ öÃßPğŞâ#h³e:òã(ÿªôşO‚éàNLÑÉèñğL?#é0—d†§> š}úA(³	Ş÷f†á «è…¢G'bSˆ¥ÓøKÎñ?h|nÌÒ9ìí½›6\!¦öŞxéD8º³sÉ¹¸]=´Ø:ä^f’4r£ÀÆœĞ«LF–÷uÂŞ]]½y(É’Ii\nxËÀ[	ş…â‡=²ñÏDP!8'C@g<XH"×w‚[”²^ÍõFº,Ôë<~¬%iáŸˆî*=fuÓu»Ø×V²ãPO£?İn‹c¬¸ÿşd#¤T qw•ÖF¡gŞÿu×w7?äq‚¾5ÆD›©WM·ıˆ[İ€P>©®;®‡<¬·«;NÜ­FÍ0ÚÄõ„ş¦o¸âÏÔÅz·•<ÀµxNì¶Ì ×¡ ]QK:m7Õys.Z`îÒVa ?p‹¥#án%^ !L`§«sÄR<¤qlJsXÌŸëµ¢ „dÙª²ì]Š?tğ†%’a|0¤;XëNà¥p=SV/?¹å7›^(»ò©ı¦Å¶œ 7¦s³Óó×/Ó7 ª~ÈXÊ, !á·.)ù\‡UÓ©M|B\Ã\ûÔš¨AÓkÛŞÚ¦Ÿ&Ïs[Ü¼VeúH ›«~Û‹ºéEÀhIw­aàÄâÕ™FƒÒ)h™µ@Oä.èC,;ÿ“&š›	Êühç‰¼¦¿£w43Ó?Ÿ™™¼q£ 	’ÚF(ÿç© ¤½t¨:o]Ğ8Ë;MÊ>?¾”†şÂ¯5Y0°>{Ë‹#»K°Hé#İwA°]šR“âŠz¶uc0ç
+a4Dcínê5±õ•á7?Xã½À&çgk“sÚÔôtmjvšÁX‚²WôM®ÚNÜC>„€ãqÛkúİ¶‰¢rÁ–&Ô}ƒ¤… m€#æÔx{ ³ÎÀ7ÒÖ²5[„y´¨µnšFÊè®¥!ƒvÒuÁ?$|1	@tšã)eù—ê¼÷ŠNğù:İÀ‰¹g,Vû~è6Õ£`†ñ^ \ŸŒ`Ì³œ#\ìOÎšîÉ†òhòJM]oLÎ–<›™™.ë5;;Ç{]á.ÍØ¥‘8"³²µ]8ÜÃo`/?R=]¨Dj¾üÁé+º[|dÄ8èN0´Då¡øÿÑé1wŒI£Œ±™Xsq‡`½¤Ê¸_)€…‹ ÁHµ‚xÆÀ;§Y¢ÿ@à›Ê0beFªÑhıR›ÿy‰Èÿ¼ºÍ(ÛÉéÉ¹é¹¹ù—éRjSJøSŸ?ÒæŒSÙD/³@Ebçİøa™Ìµ¦V¤ßw®òq=Y{ÈiÍ¸Îdp	‘ŒÅ£P`\{]§ŠËR’ÆQ¸±"²¼>	[æw†W‚Ú€£ æSoª$Ê=èÌkEéÎ6‹eşØº	İ_DüåkåY/‘;±LWw8™XT±‡ÀšĞ1ı‚¶S¬+K¨…ËCÌb<(üœ9	AœğÅD`¼MÎuAj—Œ–€Î!ø’øM4~J¥ŸS?ç‘*4=ƒ_çÀ¸7z×?nÄÀ±ªBRÏ}œóÆ$=†®çTÛRÉ{ªgyOñÉ	6è‰?{ ¦çcíË„-‘?úZÑ^±¢Õã‰xòœs@M`ÊT`“ìş?`u4ì!†ÚœFz?oÍe:úÀ{fqÛÒùiUOü®D¨ïÓBÎñ<°	ó=&É}[ûJĞö\)8&v¾ ê}.2‡²É<5+
+£ûXƒJC>«­èh"¥öûBŠáÙ·ïy-ñ	e²ç
+OsûyA"p‰Ë¢âx ªñÄVœœ²G|+°¼ú¶”ú2!™H£l-\nq·HÃ
+iÜásn[Õşeèœ
+–»TÃ$¡“Â"ÅÈ”ï,„û$³ıLÆjB!3à!4z‚¾ÇŒİõÆf ­åËDqc Œxš‚§w} ÚËAÌiàÎc`ÁI}%Œ|'B–P|aq¶ÏQ“Ñı}.*yIøË®Z™Pè²,Ó^ßKÕay¦ˆ„LUFd3…K£*ãİrucìÁƒYõ&6ŠúaFÁ
+LB¥•	¾ÚCB£¾ µqä¸i‚¥RZü9UÏèpqîXT¹û”­RuvšÊ¿;ÑİCcQ{$éÿQV)o&Á%Qà7ÙkoÏã?Â:iœ+±NPğ]`ˆt9)<e0H”Şø1#S‘Ä‡gÀï	 Ú™ß?ğCé	DŸ1HÖ¼ŞÆS‹’ÇTjÚ#™)ÃÉ1ƒ U[‚[¯J»!‰Åy9*i:Pi%ğÊ÷qÄa,^&Û—f¡ÜNç
+ÁhäM³_åûR+æC•Ïø	·C÷àƒRJeQ›ÙtXYCb-=3-hÃ³Ó#N{B…Q±ª~Ç÷D»?äÜbbçç Š÷¤©(À@ƒ’N”f¢‘7ç'ÙÙ#±ÍN¾­¥0 ÕNi~‘Q`¸¼å âg…ƒSZ f+$»œ¢h{¤‰j‘ Œa"Ã%Ó!dõ.aØy†7x?Å@uç3:Íb·¦¬•wj?«ıº&ÓìĞzV9áÏ´\ÏèÑlø{ÎÉ‰j*IMÀï5=WŞ·ÊòR¦íKœ¹ÔNæT•ŠJW\»g:VôöSóaI[ÇMI_º†ßpJF@úB‚útXŠïêƒ{†ÁËÉDO›à„ˆô„“ôD8"»BÎÇVé
+"Î]êG7å‘®L°Ç¾ğÀ{ªüvªå“ğwU÷<W“dHU¸¬}Âû…>§Ü%EûMí}P7	à-¡ç7§U½LìuJò5+@“”“è²GŞ„´ÊèƒJÏ¥çáÕ	ÁÒı¢ÀtëaÇ€RÂ‡„,¹”e¡KæP©B¹ú(n\—BÁÏ”M"·Õ~Şı	wÿ€¶Ã5FÒdõ  ÷|é+]y†ğIÂy‚_ŸHq ÄàLÕ0ÀÙû¿jµŠc5'w£¯5àÍ²•“SÓ353´È)zÇ$Q|-WuÄcD’xÄ[=:À‰Æ \g‹ÓÃØ¸[g$Usç£»lî2+Fê”)…8¦âNm€*´+ÆŠÿÚ"¸Ö l£Ãæfg§gå•·*ËèäËşqô5ª"JÌIÿÓœƒ¡;"\â†ù€Ôë<;o$1Mˆbş”:73DŸï)ù_¾r:œqÕ‘Ôê[7ëïİ#d%dğËrbü]æÕ`»SîÁ›
+¦Á/cÓG"à¢Ğ•À+;t^?H¯’÷¯«?IeŸBÓ¬Öhú¥Z¦âLF™Ù”Ñ¸ršIiñ_jc”HåàA:™}•A„<àÂŒì»Œ]tÀc€ÃRéöRdMi$Ì¡¼ <;ç+Ğ„v²15gó¡ÒUù
+5Ô!ÙÓ]<Zê &Ùv<!G¯Rä\|´±æ…ñ)s›Ù†‰ãJ¸¢xYÍ\…L>x¢á>Í$CHy:ÜºL±
+×§<—Ü îr„äw aßè~5o–…"<ÈÎq3"æïÔÒ}Î€CFïò
+•ü‰-$kîo!ĞA’ût„Ë"Ş£mî‹ôØó\$;^­xÉ+%cˆùJ/?å'×İ-u>–œ{G¡()ÏB!ä!‰ÔCò“3Ä-u|Gæx.…ğ³OŞ¼Ê²"î<Ò,*ã5—}¦æ"ÿ8'È¶"¦|øñü`’g7ó!¹ûÂh`,ª&ĞË-†+E_)*8§h¬È£.I±
+eMwGÉ°İ#¼ÇeuBF¯c™ú,C¥åêÏU@wPäa–L›x´?z“vjO¦Ê`ù£»
+/‹óHù¤ƒ,6©Ì#-IgFÍÜ2¢i=V>!§â‰ ê™‘ÛËù*.S‘–v¢Ììy	E*jÉ*L±w¢xÛ‰1áSe"ËMæG~œv€}H§€“‰Ì›âa«9/Iµr@ÕXDèi8Ò@ê¯„Ò$mBÌi]!ûÆ`›JIÊg¢,¤CQ;‰h•øWÙBİ¾îqùU)#Êd›ô•Z;‘–% Æ<v*TÃ>Ghq"#^ä7\”Cÿ­(òàáx´Ã×#¤!.¿çnÏ¿Q8¸Ï‘dO§?õ©P3Úí@â·%F`0¾^>€•Ÿ¨îRÀĞÒIúùØ÷<•¢FU³İÎĞ[–G9ÙàÓhÃÁ­€õ¢¼—KêR°õ­
+¹¨ˆ¢·9¨–¥5«OªÛ>sJFñÕ³‹1ˆÑì}í}±,‡¿‡…’<èßÅèö”üÉ?œ{õrKú/l½ğ¢Nfè[!*ò,ÒX>8?ñno>1k&“T¸_T*×¨iñh°ˆ«DÎŠpûf V-3&¸K3ŞÅ{7'tKBÁ®áT•W—Û±»òìXŞŞpOñc~ö}í&Ùë±Ç‹ÌrÛMK~¡óà
+hT¶;3òò¼0&Œªd°3ôÒ$uRf¯…üøD–†ãËyß»wDvµOeİ _ß3{ÚãyÖf%	³Ó ´ÆH©W¿´— ‹¬pÄûÛ".ÇU1FR^/[ƒÓF¨rD>³¿/s$zf<§H@—Å,=UT£âu>+¿È¸{+Win¶.\ª	›°ÕFnG¯|¥Òã™FZwÀaÏ¬½äŠ¨c2È)\?Ü®fÑœ87wBRz€ÒË í_…®UOöó4ÈÜ³#š{dîrU\VyÇ½m'„^æôLîıÄüWuş±›´
+_¶4_sÄcŞQêå_då7ÕIy(’Ÿ)jÃ‚·ÿŒ?<á¬°××ºA°¨½vë¬E]ù‚×ğ[I>%xûzöºuvÍâù¹9ƒ&@ì©Æ$DîOypŒu	Z”Ø³æ›‚ıá¹±ßğCü¿ôÒØßt?ué¬'{É{§êè4«4«l»ÊÜ	v—U¶?q?ÅóRøK?!¥´fi¼ŸÛµç->áÔÔäÔìÌäô½mX•\Qå®ß\OaomËO¢xß½…)ßİl;ñ5w m37×íÆNê­âƒ7a*×Ó›¾š´ Şâe_0×IİVÅÃ~ÁğÖ–³–Ô¬mxéÛ×öÂ4ysgÕÙø•Óö*– ÅÄ'O«,¡†nìÁ|¢mÖ¢ÊÖáqF1œ#¬uœZı*jz5?L¼8}Ó[b¯’TYˆ+ZdI©]ÇèÏøáÂez¿'1~«4kA$ÎÊwYØ2o"${#»\à—ÖûfÕëm·&^ëˆ»õ6gA}é‚™¿®E/vhÈO¢µÛ›²ğÎ§n«YsšÍ··`cïûIê…^\±~şÁ/ÅUy?rš 0@øß	(ïÁt]¯Ğ·/&*ÍÈí"«âà]•Y|]·Ä¢n¹ ÕkÀÃÄÒşÄAö÷–HÚ³7ÁÌÑêR¬Tİ¿%>’mÁYK¢ 4{‘á‹6ö<ü`aŸŸgÅ¤:e¯ç“:Õ/Ò§:ÿ«	Kuş—nşS»Ï¡úF  
+0
+
+
+15:26:13,494 DEBUG Thread-5 HttpClient:run:124 - 
+* CLIENT: Hooray! I've got necessary information
+ Servers Response is :
+HTTP/1.1 200 OK
+Server: nginx/1.6.3
+Date: Mon, 07 Mar 2016 13:26:14 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/5.3.29
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Encoding: gzip
+
+1759
+‹      ½\{oÜÖ•ÿÛş·L°Ã™ÑÓÖ3hÒd“mÚ¸ˆ6AÅ¡4´8ä„äHœ ’×ìF@ĞÅ-š6»öb±cYõ2O0óöœs¼—CÊrĞV‰Gò>Ïãw^—ZúÉÏ?xkõ77ßf­´¬\]Â_,pÂe+îZxÃsš+W¯2øYJı4ğV†íÏ‡‡Ã>ü>öØğ|tox<Ú=İƒ÷ÙğÜÚ…›ĞŠ}ÎnFqú¡ë„µ¸»TçcĞx4fÛK?<íØŞg]kÙz+
+S/LíÕg1—[¶RïNZÇÕ-2·åÄ‰—.ÿûê;öK,üp“µbo}ÙZw¶|è\ƒ‹Å^°láW‹¥0,\·¯~Ç¦{|5¼3µt:À³Ó¨ë¶x1¦ßŞ¨çŸÕ:á†U‚&¸•Ä®Ş·„H€v;ğ¨§$-‘!tÚ°¶¦—¸±ßI}œXíøÑûp8íé%bŸÁƒóáÉè İc£}¸q6ì;³Ñ0/÷¡#4ëÂ9&ğØ: ±úÔKİ¼í¿„×ğq6<ö†Ï‡g5IWmk›ŞÎv7}_/òÒ¤Xeã/Z@®ı€ Tå±ò‰{Õ‹(¨ZY+9Á#Æ'éNà%-ÏK¥¬‘äºI"%.ëkQ”&iìt²«ZÛkØlL–ô!³!Ö‚¶³í%QÛ«ço\n°òõµÕ?Û$K½×mgËáw-²¾lİNê »á‡Iıög]/Ş±'k“Ú$­ç6·TçíÅº^mH“V?~8Ğ·å¹›¯<ÄÊO+ëİĞEÕ¬L°»?­\{-ñb Ï^"wóÚDM^™XübbQS…k;NØôîØ[^ì¯û®ƒC^SZqmnİm6<gİm4ççæ××@ÌRƒñÒZÔÜÆ,…‘±ô¦¿ÅÜÀI@°À‹SFŸvĞÜ‹îÅvat/R ,[m'Â.°©FçsºiÄ‹l4Ô‹á&Ük: *MöÚ;x°í7ÓÖ»Ş€Ö‹¬ã4›~¸Á;/êÊĞšY~#¡¦?<eÃ' b=Ò)T¶¾PbÀ«¯G (ã ôàæ" ÁØö{x!¬°f|H›®-­Å+Ã¿Â¨g€¿…v¨İ½á	è+ª8ª(Î¼O#(Â†Ohf¡Öà‚`®Î†ç5 ïŒ eh‰Ï(|•Èë7—­m@kœäÈ;Ğ nF
+EÙ7:A´ÉîP¹:ˆ!.¡†¥ÀÖd(€™€–ğÿvü”64¾@AvÄ°­X[N»µiş¦§3é'¶Í>úK¢nìzÌ¶W^IÏëõ­Íšµë NNÇ¯G/„ß PoÌßÈëÔ%ôÊ ØG¿¨ù¡ŸVîÂˆï5Øô©¹©Æt•Ea°ó±ßÜğÒd¥q×ËfPsmr›ú?›ÌHs‹“Fğ|Œu¯¶p±¼Úû0fE^ew±ÿ³ ¸|øÚòüVŠºS¼cR‹×§‰`m_QË¤ã„Óm¯ê¶½ ’:ÚÜKİ@¶û h[ ^I`t´V6bW¡rgs`àpôÔ´W9:£G9J~éÀòxŒ+¦VÉÇë[wìN´íÅv´¾üöWØ¸/«Ì;ªMˆsh£JÕM¯¡?:>IÚ’£‡c"¨v?å¢±×œÄ+,j‚†ÂvıØ<9ËŸ`î­?ô/³ ï’y¼;àbƒÑPD‚!Ï†OYX´‹ˆ@L¸sHœëM”Í±İŠü¤d?\Ì|üîï}È ®Ï‡§´‘Òµ£Ñ>Æ^Ò‰ÂRr¹Ñ†ÜÁ·r±™xágé Ã0:Ñ»dğ Z“ÿ×·Wp Ç]JtMƒ—M“Ir7¦†TKh÷ÕR0ä$;¡+1¸1†ÓœªmDÑ8u;aSxÍü)!t3YÛáŠ\DIiXXÛ»
+)—ÀëRú•be:(‰¦ŸtggÁÁÓÎĞ"÷¦È]€7×Zï¦“:¶Ó´İÀ§`Àí®Ù³3ëSóÓ“³3³³éÉ™‚IAû¹éÆøG×oL'ÂÄ VmñlìAØŒ¶kúÍÏ?gŸ|
+Ş[7iUîJLÎè$ÙSÆb@¤‹$í"Ü\}X~G^Ê—£/¯c_N\ë4‰VØ&|*Ú`?ùö.¼?ü”CETvŒıpR¦ bFåíj`(ı?::2n+Æp$ó`øÆ½ öÃßPğŞâ#h³e:òã(ÿªôşO‚éàNLÑÉèñğL?#é0—d†§> š}úA(³	Ş÷f†á «è…¢G'bSˆ¥ÓøKÎñ?h|nÌÒ9ìí½›6\!¦öŞxéD8º³sÉ¹¸]=´Ø:ä^f’4r£ÀÆœĞ«LF–÷uÂŞ]]½y(É’Ii\nxËÀ[	ş…â‡=²ñÏDP!8'C@g<XH"×w‚[”²^ÍõFº,Ôë<~¬%iáŸˆî*=fuÓu»Ø×V²ãPO£?İn‹c¬¸ÿşd#¤T qw•ÖF¡gŞÿu×w7?äq‚¾5ÆD›©WM·ıˆ[İ€P>©®;®‡<¬·«;NÜ­FÍ0ÚÄõ„ş¦o¸âÏÔÅz·•<ÀµxNì¶Ì ×¡ ]QK:m7Õys.Z`îÒVa ?p‹¥#án%^ !L`§«sÄR<¤qlJsXÌŸëµ¢ „dÙª²ì]Š?tğ†%’a|0¤;XëNà¥p=SV/?¹å7›^(»ò©ı¦Å¶œ 7¦s³Óó×/Ó7 ª~ÈXÊ, !á·.)ù\‡UÓ©M|B\Ã\ûÔš¨AÓkÛŞÚ¦Ÿ&Ïs[Ü¼VeúH ›«~Û‹ºéEÀhIw­aàÄâÕ™FƒÒ)h™µ@Oä.èC,;ÿ“&š›	Êühç‰¼¦¿£w43Ó?Ÿ™™¼q£ 	’ÚF(ÿç© ¤½t¨:o]Ğ8Ë;MÊ>?¾”†şÂ¯5Y0°>{Ë‹#»K°Hé#İwA°]šR“âŠz¶uc0ç
+a4Dcínê5±õ•á7?Xã½À&çgk“sÚÔôtmjvšÁX‚²WôM®ÚNÜC>„€ãqÛkúİ¶‰¢rÁ–&Ô}ƒ¤… m€#æÔx{ ³ÎÀ7ÒÖ²5[„y´¨µnšFÊè®¥!ƒvÒuÁ?$|1	@tšã)eù—ê¼÷ŠNğù:İÀ‰¹g,Vû~è6Õ£`†ñ^ \ŸŒ`Ì³œ#\ìOÎšîÉ†òhòJM]oLÎ–<›™™.ë5;;Ç{]á.ÍØ¥‘8"³²µ]8ÜÃo`/?R=]¨Dj¾üÁé+º[|dÄ8èN0´Då¡øÿÑé1wŒI£Œ±™Xsq‡`½¤Ê¸_)€…‹ ÁHµ‚xÆÀ;§Y¢ÿ@à›Ê0beFªÑhıR›ÿy‰Èÿ¼ºÍ(ÛÉéÉ¹é¹¹ù—éRjSJøSŸ?ÒæŒSÙD/³@Ebçİøa™Ìµ¦V¤ßw®òq=Y{ÈiÍ¸Îdp	‘ŒÅ£P`\{]§ŠËR’ÆQ¸±"²¼>	[æw†W‚Ú€£ æSoª$Ê=èÌkEéÎ6‹eşØº	İ_DüåkåY/‘;±LWw8™XT±‡ÀšĞ1ı‚¶S¬+K¨…ËCÌb<(üœ9	AœğÅD`¼MÎuAj—Œ–€Î!ø’øM4~J¥ŸS?ç‘*4=ƒ_çÀ¸7z×?nÄÀ±ªBRÏ}œóÆ$=†®çTÛRÉ{ªgyOñÉ	6è‰?{ ¦çcíË„-‘?úZÑ^±¢Õã‰xòœs@M`ÊT`“ìş?`u4ì!†ÚœFz?oÍe:úÀ{fqÛÒùiUOü®D¨ïÓBÎñ<°	ó=&É}[ûJĞö\)8&v¾ ê}.2‡²É<5+
+£ûXƒJC>«­èh"¥öûBŠáÙ·ïy-ñ	e²ç
+OsûyA"p‰Ë¢âx ªñÄVœœ²G|+°¼ú¶”ú2!™H£l-\nq·HÃ
+iÜásn[Õşeèœ
+–»TÃ$¡“Â"ÅÈ”ï,„û$³ıLÆjB!3à!4z‚¾ÇŒİõÆf ­åËDqc Œxš‚§w} ÚËAÌiàÎc`ÁI}%Œ|'B–P|aq¶ÏQ“Ñı}.*yIøË®Z™Pè²,Ó^ßKÕay¦ˆ„LUFd3…K£*ãİrucìÁƒYõ&6ŠúaFÁ
+LB¥•	¾ÚCB£¾ µqä¸i‚¥RZü9UÏèpqîXT¹û”­RuvšÊ¿;ÑİCcQ{$éÿQV)o&Á%Qà7ÙkoÏã?Â:iœ+±NPğ]`ˆt9)<e0H”Şø1#S‘Ä‡gÀï	 Ú™ß?ğCé	DŸ1HÖ¼ŞÆS‹’ÇTjÚ#™)ÃÉ1ƒ U[‚[¯J»!‰Åy9*i:Pi%ğÊ÷qÄa,^&Û—f¡ÜNç
+ÁhäM³_åûR+æC•Ïø	·C÷àƒRJeQ›ÙtXYCb-=3-hÃ³Ó#N{B…Q±ª~Ç÷D»?äÜbbçç Š÷¤©(À@ƒ’N”f¢‘7ç'ÙÙ#±ÍN¾­¥0 ÕNi~‘Q`¸¼å âg…ƒSZ f+$»œ¢h{¤‰j‘ Œa"Ã%Ó!dõ.aØy†7x?Å@uç3:Íb·¦¬•wj?«ıº&ÓìĞzV9áÏ´\ÏèÑlø{ÎÉ‰j*IMÀï5=WŞ·ÊòR¦íKœ¹ÔNæT•ŠJW\»g:VôöSóaI[ÇMI_º†ßpJF@úB‚útXŠïêƒ{†ÁËÉDO›à„ˆô„“ôD8"»BÎÇVé
+"Î]êG7å‘®L°Ç¾ğÀ{ªüvªå“ğwU÷<W“dHU¸¬}Âû…>§Ü%EûMí}P7	à-¡ç7§U½LìuJò5+@“”“è²GŞ„´ÊèƒJÏ¥çáÕ	ÁÒı¢ÀtëaÇ€RÂ‡„,¹”e¡KæP©B¹ú(n\—BÁÏ”M"·Õ~Şı	wÿ€¶Ã5FÒdõ  ÷|é+]y†ğIÂy‚_ŸHq ÄàLÕ0ÀÙû¿jµŠc5'w£¯5àÍ²•“SÓ353´È)zÇ$Q|-WuÄcD’xÄ[=:À‰Æ \g‹ÓÃØ¸[g$Usç£»lî2+Fê”)…8¦âNm€*´+ÆŠÿÚ"¸Ö l£Ãæfg§gå•·*ËèäËşqô5ª"JÌIÿÓœƒ¡;"\â†ù€Ôë<;o$1Mˆbş”:73DŸï)ù_¾r:œqÕ‘Ôê[7ëïİ#d%dğËrbü]æÕ`»SîÁ›
+¦Á/cÓG"à¢Ğ•À+;t^?H¯’÷¯«?IeŸBÓ¬Öhú¥Z¦âLF™Ù”Ñ¸ršIiñ_jc”HåàA:™}•A„<àÂŒì»Œ]tÀc€ÃRéöRdMi$Ì¡¼ <;ç+Ğ„v²15gó¡ÒUù
+5Ô!ÙÓ]<Zê &Ùv<!G¯Rä\|´±æ…ñ)s›Ù†‰ãJ¸¢xYÍ\…L>x¢á>Í$CHy:ÜºL±
+×§<—Ü îr„äw aßè~5o–…"<ÈÎq3"æïÔÒ}Î€CFïò
+•ü‰-$kîo!ĞA’ût„Ë"Ş£mî‹ôØó\$;^­xÉ+%cˆùJ/?å'×İ-u>–œ{G¡()ÏB!ä!‰ÔCò“3Ä-u|Gæx.…ğ³OŞ¼Ê²"î<Ò,*ã5—}¦æ"ÿ8'È¶"¦|øñü`’g7ó!¹ûÂh`,ª&ĞË-†+E_)*8§h¬È£.I±
+eMwGÉ°İ#¼ÇeuBF¯c™ú,C¥åêÏU@wPäa–L›x´?z“vjO¦Ê`ù£»
+/‹óHù¤ƒ,6©Ì#-IgFÍÜ2¢i=V>!§â‰ ê™‘ÛËù*.S‘–v¢Ììy	E*jÉ*L±w¢xÛ‰1áSe"ËMæG~œv€}H§€“‰Ì›âa«9/Iµr@ÕXDèi8Ò@ê¯„Ò$mBÌi]!ûÆ`›JIÊg¢,¤CQ;‰h•øWÙBİ¾îqùU)#Êd›ô•Z;‘–% Æ<v*TÃ>Ghq"#^ä7\”Cÿ­(òàáx´Ã×#¤!.¿çnÏ¿Q8¸Ï‘dO§?õ©P3Úí@â·%F`0¾^>€•Ÿ¨îRÀĞÒIúùØ÷<•¢FU³İÎĞ[–G9ÙàÓhÃÁ­€õ¢¼—KêR°õ­
+¹¨ˆ¢·9¨–¥5«OªÛ>sJFñÕ³‹1ˆÑì}í}±,‡¿‡…’<èßÅèö”üÉ?œ{õrKú/l½ğ¢Nfè[!*ò,ÒX>8?ñno>1k&“T¸_T*×¨iñh°ˆ«DÎŠpûf V-3&¸K3ŞÅ{7'tKBÁ®áT•W—Û±»òìXŞŞpOñc~ö}í&Ùë±Ç‹ÌrÛMK~¡óà
+hT¶;3òò¼0&Œªd°3ôÒ$uRf¯…üøD–†ãËyß»wDvµOeİ _ß3{ÚãyÖf%	³Ó ´ÆH©W¿´— ‹¬pÄûÛ".ÇU1FR^/[ƒÓF¨rD>³¿/s$zf<§H@—Å,=UT£âu>+¿È¸{+Win¶.\ª	›°ÕFnG¯|¥Òã™FZwÀaÏ¬½äŠ¨c2È)\?Ü®fÑœ87wBRz€ÒË í_…®UOöó4ÈÜ³#š{dîrU\VyÇ½m'„^æôLîıÄüWuş±›´
+_¶4_sÄcŞQêå_då7ÕIy(’Ÿ)jÃ‚·ÿŒ?<á¬°××ºA°¨½vë¬E]ù‚×ğ[I>%xûzöºuvÍâù¹9ƒ&@ì©Æ$DîOypŒu	Z”Ø³æ›‚ıá¹±ßğCü¿ôÒØßt?ué¬'{É{§êè4«4«l»ÊÜ	v—U¶?q?ÅóRøK?!¥´fi¼ŸÛµç->áÔÔäÔìÌäô½mX•\Qå®ß\OaomËO¢xß½…)ßİl;ñ5w m37×íÆNê­âƒ7a*×Ó›¾š´ Şâe_0×IİVÅÃ~ÁğÖ–³–Ô¬mxéÛ×öÂ4ysgÕÙø•Óö*– ÅÄ'O«,¡†nìÁ|¢mÖ¢ÊÖáqF1œ#¬uœZı*jz5?L¼8}Ó[b¯’TYˆ+ZdI©]ÇèÏøáÂez¿'1~«4kA$ÎÊwYØ2o"${#»\à—ÖûfÕëm·&^ëˆ»õ6gA}é‚™¿®E/vhÈO¢µÛ›²ğÎ§n«YsšÍ··`cïûIê…^\±~şÁ/ÅUy?rš 0@øß	(ïÁt]¯Ğ·/&*ÍÈí"«âà]•Y|]·Ä¢n¹ ÕkÀÃÄÒşÄAö÷–HÚ³7ÁÌÑêR¬Tİ¿%>’mÁYK¢ 4{‘á‹6ö<ü`aŸŸgÅ¤:e¯ç“:Õ/Ò§:ÿ«	Kuş—nşS»Ï¡úF  
+0
+
+
+15:26:13,555 DEBUG Thread-10 HttpClient:run:124 - 
+* CLIENT: Hooray! I've got necessary information
+ Servers Response is :
+HTTP/1.1 200 OK
+Server: nginx/1.6.3
+Date: Mon, 07 Mar 2016 13:26:14 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/5.3.29
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Encoding: gzip
+
+1759
+‹      ½\{oÜÖ•ÿÛş·L°Ã™ÑÓÖ3hÒd“mÚ¸ˆ6AÅ¡4´8ä„äHœ ’×ìF@ĞÅ-š6»öb±cYõ2O0óöœs¼—CÊrĞV‰Gò>Ïãw^—ZúÉÏ?xkõ77ßf­´¬\]Â_,pÂe+îZxÃsš+W¯2øYJı4ğV†íÏ‡‡Ã>ü>öØğ|tox<Ú=İƒ÷ÙğÜÚ…›ĞŠ}ÎnFqú¡ë„µ¸»TçcĞx4fÛK?<íØŞg]kÙz+
+S/LíÕg1—[¶RïNZÇÕ-2·åÄ‰—.ÿûê;öK,üp“µbo}ÙZw¶|è\ƒ‹Å^°láW‹¥0,\·¯~Ç¦{|5¼3µt:À³Ó¨ë¶x1¦ßŞ¨çŸÕ:á†U‚&¸•Ä®Ş·„H€v;ğ¨§$-‘!tÚ°¶¦—¸±ßI}œXíøÑûp8íé%bŸÁƒóáÉè İc£}¸q6ì;³Ñ0/÷¡#4ëÂ9&ğØ: ±úÔKİ¼í¿„×ğq6<ö†Ï‡g5IWmk›ŞÎv7}_/òÒ¤Xeã/Z@®ı€ Tå±ò‰{Õ‹(¨ZY+9Á#Æ'éNà%-ÏK¥¬‘äºI"%.ëkQ”&iìt²«ZÛkØlL–ô!³!Ö‚¶³í%QÛ«ço\n°òõµÕ?Û$K½×mgËáw-²¾lİNê »á‡Iıög]/Ş±'k“Ú$­ç6·TçíÅº^mH“V?~8Ğ·å¹›¯<ÄÊO+ëİĞEÕ¬L°»?­\{-ñb Ï^"wóÚDM^™XübbQS…k;NØôîØ[^ì¯û®ƒC^SZqmnİm6<gİm4ççæ××@ÌRƒñÒZÔÜÆ,…‘±ô¦¿ÅÜÀI@°À‹SFŸvĞÜ‹îÅvat/R ,[m'Â.°©FçsºiÄ‹l4Ô‹á&Ük: *MöÚ;x°í7ÓÖ»Ş€Ö‹¬ã4›~¸Á;/êÊĞšY~#¡¦?<eÃ' b=Ò)T¶¾PbÀ«¯G (ã ôàæ" ÁØö{x!¬°f|H›®-­Å+Ã¿Â¨g€¿…v¨İ½á	è+ª8ª(Î¼O#(Â†Ohf¡Öà‚`®Î†ç5 ïŒ eh‰Ï(|•Èë7—­m@kœäÈ;Ğ nF
+EÙ7:A´ÉîP¹:ˆ!.¡†¥ÀÖd(€™€–ğÿvü”64¾@AvÄ°­X[N»µiş¦§3é'¶Í>úK¢nìzÌ¶W^IÏëõ­Íšµë NNÇ¯G/„ß PoÌßÈëÔ%ôÊ ØG¿¨ù¡ŸVîÂˆï5Øô©¹©Æt•Ea°ó±ßÜğÒd¥q×ËfPsmr›ú?›ÌHs‹“Fğ|Œu¯¶p±¼Úû0fE^ew±ÿ³ ¸|øÚòüVŠºS¼cR‹×§‰`m_QË¤ã„Óm¯ê¶½ ’:ÚÜKİ@¶û h[ ^I`t´V6bW¡rgs`àpôÔ´W9:£G9J~éÀòxŒ+¦VÉÇë[wìN´íÅv´¾üöWØ¸/«Ì;ªMˆsh£JÕM¯¡?:>IÚ’£‡c"¨v?å¢±×œÄ+,j‚†ÂvıØ<9ËŸ`î­?ô/³ ï’y¼;àbƒÑPD‚!Ï†OYX´‹ˆ@L¸sHœëM”Í±İŠü¤d?\Ì|üîï}È ®Ï‡§´‘Òµ£Ñ>Æ^Ò‰ÂRr¹Ñ†ÜÁ·r±™xágé Ã0:Ñ»dğ Z“ÿ×·Wp Ç]JtMƒ—M“Ir7¦†TKh÷ÕR0ä$;¡+1¸1†ÓœªmDÑ8u;aSxÍü)!t3YÛáŠ\DIiXXÛ»
+)—ÀëRú•be:(‰¦ŸtggÁÁÓÎĞ"÷¦È]€7×Zï¦“:¶Ó´İÀ§`Àí®Ù³3ëSóÓ“³3³³éÉ™‚IAû¹éÆøG×oL'ÂÄ VmñlìAØŒ¶kúÍÏ?gŸ|
+Ş[7iUîJLÎè$ÙSÆb@¤‹$í"Ü\}X~G^Ê—£/¯c_N\ë4‰VØ&|*Ú`?ùö.¼?ü”CETvŒıpR¦ bFåíj`(ı?::2n+Æp$ó`øÆ½ öÃßPğŞâ#h³e:òã(ÿªôşO‚éàNLÑÉèñğL?#é0—d†§> š}úA(³	Ş÷f†á «è…¢G'bSˆ¥ÓøKÎñ?h|nÌÒ9ìí½›6\!¦öŞxéD8º³sÉ¹¸]=´Ø:ä^f’4r£ÀÆœĞ«LF–÷uÂŞ]]½y(É’Ii\nxËÀ[	ş…â‡=²ñÏDP!8'C@g<XH"×w‚[”²^ÍõFº,Ôë<~¬%iáŸˆî*=fuÓu»Ø×V²ãPO£?İn‹c¬¸ÿşd#¤T qw•ÖF¡gŞÿu×w7?äq‚¾5ÆD›©WM·ıˆ[İ€P>©®;®‡<¬·«;NÜ­FÍ0ÚÄõ„ş¦o¸âÏÔÅz·•<ÀµxNì¶Ì ×¡ ]QK:m7Õys.Z`îÒVa ?p‹¥#án%^ !L`§«sÄR<¤qlJsXÌŸëµ¢ „dÙª²ì]Š?tğ†%’a|0¤;XëNà¥p=SV/?¹å7›^(»ò©ı¦Å¶œ 7¦s³Óó×/Ó7 ª~ÈXÊ, !á·.)ù\‡UÓ©M|B\Ã\ûÔš¨AÓkÛŞÚ¦Ÿ&Ïs[Ü¼VeúH ›«~Û‹ºéEÀhIw­aàÄâÕ™FƒÒ)h™µ@Oä.èC,;ÿ“&š›	Êühç‰¼¦¿£w43Ó?Ÿ™™¼q£ 	’ÚF(ÿç© ¤½t¨:o]Ğ8Ë;MÊ>?¾”†şÂ¯5Y0°>{Ë‹#»K°Hé#İwA°]šR“âŠz¶uc0ç
+a4Dcínê5±õ•á7?Xã½À&çgk“sÚÔôtmjvšÁX‚²WôM®ÚNÜC>„€ãqÛkúİ¶‰¢rÁ–&Ô}ƒ¤… m€#æÔx{ ³ÎÀ7ÒÖ²5[„y´¨µnšFÊè®¥!ƒvÒuÁ?$|1	@tšã)eù—ê¼÷ŠNğù:İÀ‰¹g,Vû~è6Õ£`†ñ^ \ŸŒ`Ì³œ#\ìOÎšîÉ†òhòJM]oLÎ–<›™™.ë5;;Ç{]á.ÍØ¥‘8"³²µ]8ÜÃo`/?R=]¨Dj¾üÁé+º[|dÄ8èN0´Då¡øÿÑé1wŒI£Œ±™Xsq‡`½¤Ê¸_)€…‹ ÁHµ‚xÆÀ;§Y¢ÿ@à›Ê0beFªÑhıR›ÿy‰Èÿ¼ºÍ(ÛÉéÉ¹é¹¹ù—éRjSJøSŸ?ÒæŒSÙD/³@Ebçİøa™Ìµ¦V¤ßw®òq=Y{ÈiÍ¸Îdp	‘ŒÅ£P`\{]§ŠËR’ÆQ¸±"²¼>	[æw†W‚Ú€£ æSoª$Ê=èÌkEéÎ6‹eşØº	İ_DüåkåY/‘;±LWw8™XT±‡ÀšĞ1ı‚¶S¬+K¨…ËCÌb<(üœ9	AœğÅD`¼MÎuAj—Œ–€Î!ø’øM4~J¥ŸS?ç‘*4=ƒ_çÀ¸7z×?nÄÀ±ªBRÏ}œóÆ$=†®çTÛRÉ{ªgyOñÉ	6è‰?{ ¦çcíË„-‘?úZÑ^±¢Õã‰xòœs@M`ÊT`“ìş?`u4ì!†ÚœFz?oÍe:úÀ{fqÛÒùiUOü®D¨ïÓBÎñ<°	ó=&É}[ûJĞö\)8&v¾ ê}.2‡²É<5+
+£ûXƒJC>«­èh"¥öûBŠáÙ·ïy-ñ	e²ç
+OsûyA"p‰Ë¢âx ªñÄVœœ²G|+°¼ú¶”ú2!™H£l-\nq·HÃ
+iÜásn[Õşeèœ
+–»TÃ$¡“Â"ÅÈ”ï,„û$³ıLÆjB!3à!4z‚¾ÇŒİõÆf ­åËDqc Œxš‚§w} ÚËAÌiàÎc`ÁI}%Œ|'B–P|aq¶ÏQ“Ñı}.*yIøË®Z™Pè²,Ó^ßKÕay¦ˆ„LUFd3…K£*ãİrucìÁƒYõ&6ŠúaFÁ
+LB¥•	¾ÚCB£¾ µqä¸i‚¥RZü9UÏèpqîXT¹û”­RuvšÊ¿;ÑİCcQ{$éÿQV)o&Á%Qà7ÙkoÏã?Â:iœ+±NPğ]`ˆt9)<e0H”Şø1#S‘Ä‡gÀï	 Ú™ß?ğCé	DŸ1HÖ¼ŞÆS‹’ÇTjÚ#™)ÃÉ1ƒ U[‚[¯J»!‰Åy9*i:Pi%ğÊ÷qÄa,^&Û—f¡ÜNç
+ÁhäM³_åûR+æC•Ïø	·C÷àƒRJeQ›ÙtXYCb-=3-hÃ³Ó#N{B…Q±ª~Ç÷D»?äÜbbçç Š÷¤©(À@ƒ’N”f¢‘7ç'ÙÙ#±ÍN¾­¥0 ÕNi~‘Q`¸¼å âg…ƒSZ f+$»œ¢h{¤‰j‘ Œa"Ã%Ó!dõ.aØy†7x?Å@uç3:Íb·¦¬•wj?«ıº&ÓìĞzV9áÏ´\ÏèÑlø{ÎÉ‰j*IMÀï5=WŞ·ÊòR¦íKœ¹ÔNæT•ŠJW\»g:VôöSóaI[ÇMI_º†ßpJF@úB‚útXŠïêƒ{†ÁËÉDO›à„ˆô„“ôD8"»BÎÇVé
+"Î]êG7å‘®L°Ç¾ğÀ{ªüvªå“ğwU÷<W“dHU¸¬}Âû…>§Ü%EûMí}P7	à-¡ç7§U½LìuJò5+@“”“è²GŞ„´ÊèƒJÏ¥çáÕ	ÁÒı¢ÀtëaÇ€RÂ‡„,¹”e¡KæP©B¹ú(n\—BÁÏ”M"·Õ~Şı	wÿ€¶Ã5FÒdõ  ÷|é+]y†ğIÂy‚_ŸHq ÄàLÕ0ÀÙû¿jµŠc5'w£¯5àÍ²•“SÓ353´È)zÇ$Q|-WuÄcD’xÄ[=:À‰Æ \g‹ÓÃØ¸[g$Usç£»lî2+Fê”)…8¦âNm€*´+ÆŠÿÚ"¸Ö l£Ãæfg§gå•·*ËèäËşqô5ª"JÌIÿÓœƒ¡;"\â†ù€Ôë<;o$1Mˆbş”:73DŸï)ù_¾r:œqÕ‘Ôê[7ëïİ#d%dğËrbü]æÕ`»SîÁ›
+¦Á/cÓG"à¢Ğ•À+;t^?H¯’÷¯«?IeŸBÓ¬Öhú¥Z¦âLF™Ù”Ñ¸ršIiñ_jc”HåàA:™}•A„<àÂŒì»Œ]tÀc€ÃRéöRdMi$Ì¡¼ <;ç+Ğ„v²15gó¡ÒUù
+5Ô!ÙÓ]<Zê &Ùv<!G¯Rä\|´±æ…ñ)s›Ù†‰ãJ¸¢xYÍ\…L>x¢á>Í$CHy:ÜºL±
+×§<—Ü îr„äw aßè~5o–…"<ÈÎq3"æïÔÒ}Î€CFïò
+•ü‰-$kîo!ĞA’ût„Ë"Ş£mî‹ôØó\$;^­xÉ+%cˆùJ/?å'×İ-u>–œ{G¡()ÏB!ä!‰ÔCò“3Ä-u|Gæx.…ğ³OŞ¼Ê²"î<Ò,*ã5—}¦æ"ÿ8'È¶"¦|øñü`’g7ó!¹ûÂh`,ª&ĞË-†+E_)*8§h¬È£.I±
+eMwGÉ°İ#¼ÇeuBF¯c™ú,C¥åêÏU@wPäa–L›x´?z“vjO¦Ê`ù£»
+/‹óHù¤ƒ,6©Ì#-IgFÍÜ2¢i=V>!§â‰ ê™‘ÛËù*.S‘–v¢Ììy	E*jÉ*L±w¢xÛ‰1áSe"ËMæG~œv€}H§€“‰Ì›âa«9/Iµr@ÕXDèi8Ò@ê¯„Ò$mBÌi]!ûÆ`›JIÊg¢,¤CQ;‰h•øWÙBİ¾îqùU)#Êd›ô•Z;‘–% Æ<v*TÃ>Ghq"#^ä7\”Cÿ­(òàáx´Ã×#¤!.¿çnÏ¿Q8¸Ï‘dO§?õ©P3Úí@â·%F`0¾^>€•Ÿ¨îRÀĞÒIúùØ÷<•¢FU³İÎĞ[–G9ÙàÓhÃÁ­€õ¢¼—KêR°õ­
+¹¨ˆ¢·9¨–¥5«OªÛ>sJFñÕ³‹1ˆÑì}í}±,‡¿‡…’<èßÅèö”üÉ?œ{õrKú/l½ğ¢Nfè[!*ò,ÒX>8?ñno>1k&“T¸_T*×¨iñh°ˆ«DÎŠpûf V-3&¸K3ŞÅ{7'tKBÁ®áT•W—Û±»òìXŞŞpOñc~ö}í&Ùë±Ç‹ÌrÛMK~¡óà
+hT¶;3òò¼0&Œªd°3ôÒ$uRf¯…üøD–†ãËyß»wDvµOeİ _ß3{ÚãyÖf%	³Ó ´ÆH©W¿´— ‹¬pÄûÛ".ÇU1FR^/[ƒÓF¨rD>³¿/s$zf<§H@—Å,=UT£âu>+¿È¸{+Win¶.\ª	›°ÕFnG¯|¥Òã™FZwÀaÏ¬½äŠ¨c2È)\?Ü®fÑœ87wBRz€ÒË í_…®UOöó4ÈÜ³#š{dîrU\VyÇ½m'„^æôLîıÄüWuş±›´
+_¶4_sÄcŞQêå_då7ÕIy(’Ÿ)jÃ‚·ÿŒ?<á¬°××ºA°¨½vë¬E]ù‚×ğ[I>%xûzöºuvÍâù¹9ƒ&@ì©Æ$DîOypŒu	Z”Ø³æ›‚ıá¹±ßğCü¿ôÒØßt?ué¬'{É{§êè4«4«l»ÊÜ	v—U¶?q?ÅóRøK?!¥´fi¼ŸÛµç->áÔÔäÔìÌäô½mX•\Qå®ß\OaomËO¢xß½…)ßİl;ñ5w m37×íÆNê­âƒ7a*×Ó›¾š´ Şâe_0×IİVÅÃ~ÁğÖ–³–Ô¬mxéÛ×öÂ4ysgÕÙø•Óö*– ÅÄ'O«,¡†nìÁ|¢mÖ¢ÊÖáqF1œ#¬uœZı*jz5?L¼8}Ó[b¯’TYˆ+ZdI©]ÇèÏøáÂez¿'1~«4kA$ÎÊwYØ2o"${#»\à—ÖûfÕëm·&^ëˆ»õ6gA}é‚™¿®E/vhÈO¢µÛ›²ğÎ§n«YsšÍ··`cïûIê…^\±~şÁ/ÅUy?rš 0@øß	(ïÁt]¯Ğ·/&*ÍÈí"«âà]•Y|]·Ä¢n¹ ÕkÀÃÄÒşÄAö÷–HÚ³7ÁÌÑêR¬Tİ¿%>’mÁYK¢ 4{‘á‹6ö<ü`aŸŸgÅ¤:e¯ç“:Õ/Ò§:ÿ«	Kuş—nşS»Ï¡úF  
+0
+
+
+15:26:13,612 DEBUG Thread-7 HttpClient:run:124 - 
+* CLIENT: Hooray! I've got necessary information
+ Servers Response is :
+HTTP/1.1 200 OK
+Server: nginx/1.6.3
+Date: Mon, 07 Mar 2016 13:26:14 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/5.3.29
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Encoding: gzip
+
+1759
+‹      ½\{oÜÖ•ÿÛş·L°Ã™ÑÓÖ3hÒd“mÚ¸ˆ6AÅ¡4´8ä„äHœ ’×ìF@ĞÅ-š6»öb±cYõ2O0óöœs¼—CÊrĞV‰Gò>Ïãw^—ZúÉÏ?xkõ77ßf­´¬\]Â_,pÂe+îZxÃsš+W¯2øYJı4ğV†íÏ‡‡Ã>ü>öØğ|tox<Ú=İƒ÷ÙğÜÚ…›ĞŠ}ÎnFqú¡ë„µ¸»TçcĞx4fÛK?<íØŞg]kÙz+
+S/LíÕg1—[¶RïNZÇÕ-2·åÄ‰—.ÿûê;öK,üp“µbo}ÙZw¶|è\ƒ‹Å^°láW‹¥0,\·¯~Ç¦{|5¼3µt:À³Ó¨ë¶x1¦ßŞ¨çŸÕ:á†U‚&¸•Ä®Ş·„H€v;ğ¨§$-‘!tÚ°¶¦—¸±ßI}œXíøÑûp8íé%bŸÁƒóáÉè İc£}¸q6ì;³Ñ0/÷¡#4ëÂ9&ğØ: ±úÔKİ¼í¿„×ğq6<ö†Ï‡g5IWmk›ŞÎv7}_/òÒ¤Xeã/Z@®ı€ Tå±ò‰{Õ‹(¨ZY+9Á#Æ'éNà%-ÏK¥¬‘äºI"%.ëkQ”&iìt²«ZÛkØlL–ô!³!Ö‚¶³í%QÛ«ço\n°òõµÕ?Û$K½×mgËáw-²¾lİNê »á‡Iıög]/Ş±'k“Ú$­ç6·TçíÅº^mH“V?~8Ğ·å¹›¯<ÄÊO+ëİĞEÕ¬L°»?­\{-ñb Ï^"wóÚDM^™XübbQS…k;NØôîØ[^ì¯û®ƒC^SZqmnİm6<gİm4ççæ××@ÌRƒñÒZÔÜÆ,…‘±ô¦¿ÅÜÀI@°À‹SFŸvĞÜ‹îÅvat/R ,[m'Â.°©FçsºiÄ‹l4Ô‹á&Ük: *MöÚ;x°í7ÓÖ»Ş€Ö‹¬ã4›~¸Á;/êÊĞšY~#¡¦?<eÃ' b=Ò)T¶¾PbÀ«¯G (ã ôàæ" ÁØö{x!¬°f|H›®-­Å+Ã¿Â¨g€¿…v¨İ½á	è+ª8ª(Î¼O#(Â†Ohf¡Öà‚`®Î†ç5 ïŒ eh‰Ï(|•Èë7—­m@kœäÈ;Ğ nF
+EÙ7:A´ÉîP¹:ˆ!.¡†¥ÀÖd(€™€–ğÿvü”64¾@AvÄ°­X[N»µiş¦§3é'¶Í>úK¢nìzÌ¶W^IÏëõ­Íšµë NNÇ¯G/„ß PoÌßÈëÔ%ôÊ ØG¿¨ù¡ŸVîÂˆï5Øô©¹©Æt•Ea°ó±ßÜğÒd¥q×ËfPsmr›ú?›ÌHs‹“Fğ|Œu¯¶p±¼Úû0fE^ew±ÿ³ ¸|øÚòüVŠºS¼cR‹×§‰`m_QË¤ã„Óm¯ê¶½ ’:ÚÜKİ@¶û h[ ^I`t´V6bW¡rgs`àpôÔ´W9:£G9J~éÀòxŒ+¦VÉÇë[wìN´íÅv´¾üöWØ¸/«Ì;ªMˆsh£JÕM¯¡?:>IÚ’£‡c"¨v?å¢±×œÄ+,j‚†ÂvıØ<9ËŸ`î­?ô/³ ï’y¼;àbƒÑPD‚!Ï†OYX´‹ˆ@L¸sHœëM”Í±İŠü¤d?\Ì|üîï}È ®Ï‡§´‘Òµ£Ñ>Æ^Ò‰ÂRr¹Ñ†ÜÁ·r±™xágé Ã0:Ñ»dğ Z“ÿ×·Wp Ç]JtMƒ—M“Ir7¦†TKh÷ÕR0ä$;¡+1¸1†ÓœªmDÑ8u;aSxÍü)!t3YÛáŠ\DIiXXÛ»
+)—ÀëRú•be:(‰¦ŸtggÁÁÓÎĞ"÷¦È]€7×Zï¦“:¶Ó´İÀ§`Àí®Ù³3ëSóÓ“³3³³éÉ™‚IAû¹éÆøG×oL'ÂÄ VmñlìAØŒ¶kúÍÏ?gŸ|
+Ş[7iUîJLÎè$ÙSÆb@¤‹$í"Ü\}X~G^Ê—£/¯c_N\ë4‰VØ&|*Ú`?ùö.¼?ü”CETvŒıpR¦ bFåíj`(ı?::2n+Æp$ó`øÆ½ öÃßPğŞâ#h³e:òã(ÿªôşO‚éàNLÑÉèñğL?#é0—d†§> š}úA(³	Ş÷f†á «è…¢G'bSˆ¥ÓøKÎñ?h|nÌÒ9ìí½›6\!¦öŞxéD8º³sÉ¹¸]=´Ø:ä^f’4r£ÀÆœĞ«LF–÷uÂŞ]]½y(É’Ii\nxËÀ[	ş…â‡=²ñÏDP!8'C@g<XH"×w‚[”²^ÍõFº,Ôë<~¬%iáŸˆî*=fuÓu»Ø×V²ãPO£?İn‹c¬¸ÿşd#¤T qw•ÖF¡gŞÿu×w7?äq‚¾5ÆD›©WM·ıˆ[İ€P>©®;®‡<¬·«;NÜ­FÍ0ÚÄõ„ş¦o¸âÏÔÅz·•<ÀµxNì¶Ì ×¡ ]QK:m7Õys.Z`îÒVa ?p‹¥#án%^ !L`§«sÄR<¤qlJsXÌŸëµ¢ „dÙª²ì]Š?tğ†%’a|0¤;XëNà¥p=SV/?¹å7›^(»ò©ı¦Å¶œ 7¦s³Óó×/Ó7 ª~ÈXÊ, !á·.)ù\‡UÓ©M|B\Ã\ûÔš¨AÓkÛŞÚ¦Ÿ&Ïs[Ü¼VeúH ›«~Û‹ºéEÀhIw­aàÄâÕ™FƒÒ)h™µ@Oä.èC,;ÿ“&š›	Êühç‰¼¦¿£w43Ó?Ÿ™™¼q£ 	’ÚF(ÿç© ¤½t¨:o]Ğ8Ë;MÊ>?¾”†şÂ¯5Y0°>{Ë‹#»K°Hé#İwA°]šR“âŠz¶uc0ç
+a4Dcínê5±õ•á7?Xã½À&çgk“sÚÔôtmjvšÁX‚²WôM®ÚNÜC>„€ãqÛkúİ¶‰¢rÁ–&Ô}ƒ¤… m€#æÔx{ ³ÎÀ7ÒÖ²5[„y´¨µnšFÊè®¥!ƒvÒuÁ?$|1	@tšã)eù—ê¼÷ŠNğù:İÀ‰¹g,Vû~è6Õ£`†ñ^ \ŸŒ`Ì³œ#\ìOÎšîÉ†òhòJM]oLÎ–<›™™.ë5;;Ç{]á.ÍØ¥‘8"³²µ]8ÜÃo`/?R=]¨Dj¾üÁé+º[|dÄ8èN0´Då¡øÿÑé1wŒI£Œ±™Xsq‡`½¤Ê¸_)€…‹ ÁHµ‚xÆÀ;§Y¢ÿ@à›Ê0beFªÑhıR›ÿy‰Èÿ¼ºÍ(ÛÉéÉ¹é¹¹ù—éRjSJøSŸ?ÒæŒSÙD/³@Ebçİøa™Ìµ¦V¤ßw®òq=Y{ÈiÍ¸Îdp	‘ŒÅ£P`\{]§ŠËR’ÆQ¸±"²¼>	[æw†W‚Ú€£ æSoª$Ê=èÌkEéÎ6‹eşØº	İ_DüåkåY/‘;±LWw8™XT±‡ÀšĞ1ı‚¶S¬+K¨…ËCÌb<(üœ9	AœğÅD`¼MÎuAj—Œ–€Î!ø’øM4~J¥ŸS?ç‘*4=ƒ_çÀ¸7z×?nÄÀ±ªBRÏ}œóÆ$=†®çTÛRÉ{ªgyOñÉ	6è‰?{ ¦çcíË„-‘?úZÑ^±¢Õã‰xòœs@M`ÊT`“ìş?`u4ì!†ÚœFz?oÍe:úÀ{fqÛÒùiUOü®D¨ïÓBÎñ<°	ó=&É}[ûJĞö\)8&v¾ ê}.2‡²É<5+
+£ûXƒJC>«­èh"¥öûBŠáÙ·ïy-ñ	e²ç
+OsûyA"p‰Ë¢âx ªñÄVœœ²G|+°¼ú¶”ú2!™H£l-\nq·HÃ
+iÜásn[Õşeèœ
+–»TÃ$¡“Â"ÅÈ”ï,„û$³ıLÆjB!3à!4z‚¾ÇŒİõÆf ­åËDqc Œxš‚§w} ÚËAÌiàÎc`ÁI}%Œ|'B–P|aq¶ÏQ“Ñı}.*yIøË®Z™Pè²,Ó^ßKÕay¦ˆ„LUFd3…K£*ãİrucìÁƒYõ&6ŠúaFÁ
+LB¥•	¾ÚCB£¾ µqä¸i‚¥RZü9UÏèpqîXT¹û”­RuvšÊ¿;ÑİCcQ{$éÿQV)o&Á%Qà7ÙkoÏã?Â:iœ+±NPğ]`ˆt9)<e0H”Şø1#S‘Ä‡gÀï	 Ú™ß?ğCé	DŸ1HÖ¼ŞÆS‹’ÇTjÚ#™)ÃÉ1ƒ U[‚[¯J»!‰Åy9*i:Pi%ğÊ÷qÄa,^&Û—f¡ÜNç
+ÁhäM³_åûR+æC•Ïø	·C÷àƒRJeQ›ÙtXYCb-=3-hÃ³Ó#N{B…Q±ª~Ç÷D»?äÜbbçç Š÷¤©(À@ƒ’N”f¢‘7ç'ÙÙ#±ÍN¾­¥0 ÕNi~‘Q`¸¼å âg…ƒSZ f+$»œ¢h{¤‰j‘ Œa"Ã%Ó!dõ.aØy†7x?Å@uç3:Íb·¦¬•wj?«ıº&ÓìĞzV9áÏ´\ÏèÑlø{ÎÉ‰j*IMÀï5=WŞ·ÊòR¦íKœ¹ÔNæT•ŠJW\»g:VôöSóaI[ÇMI_º†ßpJF@úB‚útXŠïêƒ{†ÁËÉDO›à„ˆô„“ôD8"»BÎÇVé
+"Î]êG7å‘®L°Ç¾ğÀ{ªüvªå“ğwU÷<W“dHU¸¬}Âû…>§Ü%EûMí}P7	à-¡ç7§U½LìuJò5+@“”“è²GŞ„´ÊèƒJÏ¥çáÕ	ÁÒı¢ÀtëaÇ€RÂ‡„,¹”e¡KæP©B¹ú(n\—BÁÏ”M"·Õ~Şı	wÿ€¶Ã5FÒdõ  ÷|é+]y†ğIÂy‚_ŸHq ÄàLÕ0ÀÙû¿jµŠc5'w£¯5àÍ²•“SÓ353´È)zÇ$Q|-WuÄcD’xÄ[=:À‰Æ \g‹ÓÃØ¸[g$Usç£»lî2+Fê”)…8¦âNm€*´+ÆŠÿÚ"¸Ö l£Ãæfg§gå•·*ËèäËşqô5ª"JÌIÿÓœƒ¡;"\â†ù€Ôë<;o$1Mˆbş”:73DŸï)ù_¾r:œqÕ‘Ôê[7ëïİ#d%dğËrbü]æÕ`»SîÁ›
+¦Á/cÓG"à¢Ğ•À+;t^?H¯’÷¯«?IeŸBÓ¬Öhú¥Z¦âLF™Ù”Ñ¸ršIiñ_jc”HåàA:™}•A„<àÂŒì»Œ]tÀc€ÃRéöRdMi$Ì¡¼ <;ç+Ğ„v²15gó¡ÒUù
+5Ô!ÙÓ]<Zê &Ùv<!G¯Rä\|´±æ…ñ)s›Ù†‰ãJ¸¢xYÍ\…L>x¢á>Í$CHy:ÜºL±
+×§<—Ü îr„äw aßè~5o–…"<ÈÎq3"æïÔÒ}Î€CFïò
+•ü‰-$kîo!ĞA’ût„Ë"Ş£mî‹ôØó\$;^­xÉ+%cˆùJ/?å'×İ-u>–œ{G¡()ÏB!ä!‰ÔCò“3Ä-u|Gæx.…ğ³OŞ¼Ê²"î<Ò,*ã5—}¦æ"ÿ8'È¶"¦|øñü`’g7ó!¹ûÂh`,ª&ĞË-†+E_)*8§h¬È£.I±
+eMwGÉ°İ#¼ÇeuBF¯c™ú,C¥åêÏU@wPäa–L›x´?z“vjO¦Ê`ù£»
+/‹óHù¤ƒ,6©Ì#-IgFÍÜ2¢i=V>!§â‰ ê™‘ÛËù*.S‘–v¢Ììy	E*jÉ*L±w¢xÛ‰1áSe"ËMæG~œv€}H§€“‰Ì›âa«9/Iµr@ÕXDèi8Ò@ê¯„Ò$mBÌi]!ûÆ`›JIÊg¢,¤CQ;‰h•øWÙBİ¾îqùU)#Êd›ô•Z;‘–% Æ<v*TÃ>Ghq"#^ä7\”Cÿ­(òàáx´Ã×#¤!.¿çnÏ¿Q8¸Ï‘dO§?õ©P3Úí@â·%F`0¾^>€•Ÿ¨îRÀĞÒIúùØ÷<•¢FU³İÎĞ[–G9ÙàÓhÃÁ­€õ¢¼—KêR°õ­
+¹¨ˆ¢·9¨–¥5«OªÛ>sJFñÕ³‹1ˆÑì}í}±,‡¿‡…’<èßÅèö”üÉ?œ{õrKú/l½ğ¢Nfè[!*ò,ÒX>8?ñno>1k&“T¸_T*×¨iñh°ˆ«DÎŠpûf V-3&¸K3ŞÅ{7'tKBÁ®áT•W—Û±»òìXŞŞpOñc~ö}í&Ùë±Ç‹ÌrÛMK~¡óà
+hT¶;3òò¼0&Œªd°3ôÒ$uRf¯…üøD–†ãËyß»wDvµOeİ _ß3{ÚãyÖf%	³Ó ´ÆH©W¿´— ‹¬pÄûÛ".ÇU1FR^/[ƒÓF¨rD>³¿/s$zf<§H@—Å,=UT£âu>+¿È¸{+Win¶.\ª	›°ÕFnG¯|¥Òã™FZwÀaÏ¬½äŠ¨c2È)\?Ü®fÑœ87wBRz€ÒË í_…®UOöó4ÈÜ³#š{dîrU\VyÇ½m'„^æôLîıÄüWuş±›´
+_¶4_sÄcŞQêå_då7ÕIy(’Ÿ)jÃ‚·ÿŒ?<á¬°××ºA°¨½vë¬E]ù‚×ğ[I>%xûzöºuvÍâù¹9ƒ&@ì©Æ$DîOypŒu	Z”Ø³æ›‚ıá¹±ßğCü¿ôÒØßt?ué¬'{É{§êè4«4«l»ÊÜ	v—U¶?q?ÅóRøK?!¥´fi¼ŸÛµç->áÔÔäÔìÌäô½mX•\Qå®ß\OaomËO¢xß½…)ßİl;ñ5w m37×íÆNê­âƒ7a*×Ó›¾š´ Şâe_0×IİVÅÃ~ÁğÖ–³–Ô¬mxéÛ×öÂ4ysgÕÙø•Óö*– ÅÄ'O«,¡†nìÁ|¢mÖ¢ÊÖáqF1œ#¬uœZı*jz5?L¼8}Ó[b¯’TYˆ+ZdI©]ÇèÏøáÂez¿'1~«4kA$ÎÊwYØ2o"${#»\à—ÖûfÕëm·&^ëˆ»õ6gA}é‚™¿®E/vhÈO¢µÛ›²ğÎ§n«YsšÍ··`cïûIê…^\±~şÁ/ÅUy?rš 0@øß	(ïÁt]¯Ğ·/&*ÍÈí"«âà]•Y|]·Ä¢n¹ ÕkÀÃÄÒşÄAö÷–HÚ³7ÁÌÑêR¬Tİ¿%>’mÁYK¢ 4{‘á‹6ö<ü`aŸŸgÅ¤:e¯ç“:Õ/Ò§:ÿ«	Kuş—nşS»Ï¡úF  
+0
+
+
+15:26:13,661 DEBUG Thread-1 HttpClient:run:124 - 
+* CLIENT: Hooray! I've got necessary information
+ Servers Response is :
+HTTP/1.1 200 OK
+Server: nginx/1.6.3
+Date: Mon, 07 Mar 2016 13:26:14 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/5.3.29
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Encoding: gzip
+
+1759
+‹      ½\{oÜÖ•ÿÛş·L°Ã™ÑÓÖ3hÒd“mÚ¸ˆ6AÅ¡4´8ä„äHœ ’×ìF@ĞÅ-š6»öb±cYõ2O0óöœs¼—CÊrĞV‰Gò>Ïãw^—ZúÉÏ?xkõ77ßf­´¬\]Â_,pÂe+îZxÃsš+W¯2øYJı4ğV†íÏ‡‡Ã>ü>öØğ|tox<Ú=İƒ÷ÙğÜÚ…›ĞŠ}ÎnFqú¡ë„µ¸»TçcĞx4fÛK?<íØŞg]kÙz+
+S/LíÕg1—[¶RïNZÇÕ-2·åÄ‰—.ÿûê;öK,üp“µbo}ÙZw¶|è\ƒ‹Å^°láW‹¥0,\·¯~Ç¦{|5¼3µt:À³Ó¨ë¶x1¦ßŞ¨çŸÕ:á†U‚&¸•Ä®Ş·„H€v;ğ¨§$-‘!tÚ°¶¦—¸±ßI}œXíøÑûp8íé%bŸÁƒóáÉè İc£}¸q6ì;³Ñ0/÷¡#4ëÂ9&ğØ: ±úÔKİ¼í¿„×ğq6<ö†Ï‡g5IWmk›ŞÎv7}_/òÒ¤Xeã/Z@®ı€ Tå±ò‰{Õ‹(¨ZY+9Á#Æ'éNà%-ÏK¥¬‘äºI"%.ëkQ”&iìt²«ZÛkØlL–ô!³!Ö‚¶³í%QÛ«ço\n°òõµÕ?Û$K½×mgËáw-²¾lİNê »á‡Iıög]/Ş±'k“Ú$­ç6·TçíÅº^mH“V?~8Ğ·å¹›¯<ÄÊO+ëİĞEÕ¬L°»?­\{-ñb Ï^"wóÚDM^™XübbQS…k;NØôîØ[^ì¯û®ƒC^SZqmnİm6<gİm4ççæ××@ÌRƒñÒZÔÜÆ,…‘±ô¦¿ÅÜÀI@°À‹SFŸvĞÜ‹îÅvat/R ,[m'Â.°©FçsºiÄ‹l4Ô‹á&Ük: *MöÚ;x°í7ÓÖ»Ş€Ö‹¬ã4›~¸Á;/êÊĞšY~#¡¦?<eÃ' b=Ò)T¶¾PbÀ«¯G (ã ôàæ" ÁØö{x!¬°f|H›®-­Å+Ã¿Â¨g€¿…v¨İ½á	è+ª8ª(Î¼O#(Â†Ohf¡Öà‚`®Î†ç5 ïŒ eh‰Ï(|•Èë7—­m@kœäÈ;Ğ nF
+EÙ7:A´ÉîP¹:ˆ!.¡†¥ÀÖd(€™€–ğÿvü”64¾@AvÄ°­X[N»µiş¦§3é'¶Í>úK¢nìzÌ¶W^IÏëõ­Íšµë NNÇ¯G/„ß PoÌßÈëÔ%ôÊ ØG¿¨ù¡ŸVîÂˆï5Øô©¹©Æt•Ea°ó±ßÜğÒd¥q×ËfPsmr›ú?›ÌHs‹“Fğ|Œu¯¶p±¼Úû0fE^ew±ÿ³ ¸|øÚòüVŠºS¼cR‹×§‰`m_QË¤ã„Óm¯ê¶½ ’:ÚÜKİ@¶û h[ ^I`t´V6bW¡rgs`àpôÔ´W9:£G9J~éÀòxŒ+¦VÉÇë[wìN´íÅv´¾üöWØ¸/«Ì;ªMˆsh£JÕM¯¡?:>IÚ’£‡c"¨v?å¢±×œÄ+,j‚†ÂvıØ<9ËŸ`î­?ô/³ ï’y¼;àbƒÑPD‚!Ï†OYX´‹ˆ@L¸sHœëM”Í±İŠü¤d?\Ì|üîï}È ®Ï‡§´‘Òµ£Ñ>Æ^Ò‰ÂRr¹Ñ†ÜÁ·r±™xágé Ã0:Ñ»dğ Z“ÿ×·Wp Ç]JtMƒ—M“Ir7¦†TKh÷ÕR0ä$;¡+1¸1†ÓœªmDÑ8u;aSxÍü)!t3YÛáŠ\DIiXXÛ»
+)—ÀëRú•be:(‰¦ŸtggÁÁÓÎĞ"÷¦È]€7×Zï¦“:¶Ó´İÀ§`Àí®Ù³3ëSóÓ“³3³³éÉ™‚IAû¹éÆøG×oL'ÂÄ VmñlìAØŒ¶kúÍÏ?gŸ|
+Ş[7iUîJLÎè$ÙSÆb@¤‹$í"Ü\}X~G^Ê—£/¯c_N\ë4‰VØ&|*Ú`?ùö.¼?ü”CETvŒıpR¦ bFåíj`(ı?::2n+Æp$ó`øÆ½ öÃßPğŞâ#h³e:òã(ÿªôşO‚éàNLÑÉèñğL?#é0—d†§> š}úA(³	Ş÷f†á «è…¢G'bSˆ¥ÓøKÎñ?h|nÌÒ9ìí½›6\!¦öŞxéD8º³sÉ¹¸]=´Ø:ä^f’4r£ÀÆœĞ«LF–÷uÂŞ]]½y(É’Ii\nxËÀ[	ş…â‡=²ñÏDP!8'C@g<XH"×w‚[”²^ÍõFº,Ôë<~¬%iáŸˆî*=fuÓu»Ø×V²ãPO£?İn‹c¬¸ÿşd#¤T qw•ÖF¡gŞÿu×w7?äq‚¾5ÆD›©WM·ıˆ[İ€P>©®;®‡<¬·«;NÜ­FÍ0ÚÄõ„ş¦o¸âÏÔÅz·•<ÀµxNì¶Ì ×¡ ]QK:m7Õys.Z`îÒVa ?p‹¥#án%^ !L`§«sÄR<¤qlJsXÌŸëµ¢ „dÙª²ì]Š?tğ†%’a|0¤;XëNà¥p=SV/?¹å7›^(»ò©ı¦Å¶œ 7¦s³Óó×/Ó7 ª~ÈXÊ, !á·.)ù\‡UÓ©M|B\Ã\ûÔš¨AÓkÛŞÚ¦Ÿ&Ïs[Ü¼VeúH ›«~Û‹ºéEÀhIw­aàÄâÕ™FƒÒ)h™µ@Oä.èC,;ÿ“&š›	Êühç‰¼¦¿£w43Ó?Ÿ™™¼q£ 	’ÚF(ÿç© ¤½t¨:o]Ğ8Ë;MÊ>?¾”†şÂ¯5Y0°>{Ë‹#»K°Hé#İwA°]šR“âŠz¶uc0ç
+a4Dcínê5±õ•á7?Xã½À&çgk“sÚÔôtmjvšÁX‚²WôM®ÚNÜC>„€ãqÛkúİ¶‰¢rÁ–&Ô}ƒ¤… m€#æÔx{ ³ÎÀ7ÒÖ²5[„y´¨µnšFÊè®¥!ƒvÒuÁ?$|1	@tšã)eù—ê¼÷ŠNğù:İÀ‰¹g,Vû~è6Õ£`†ñ^ \ŸŒ`Ì³œ#\ìOÎšîÉ†òhòJM]oLÎ–<›™™.ë5;;Ç{]á.ÍØ¥‘8"³²µ]8ÜÃo`/?R=]¨Dj¾üÁé+º[|dÄ8èN0´Då¡øÿÑé1wŒI£Œ±™Xsq‡`½¤Ê¸_)€…‹ ÁHµ‚xÆÀ;§Y¢ÿ@à›Ê0beFªÑhıR›ÿy‰Èÿ¼ºÍ(ÛÉéÉ¹é¹¹ù—éRjSJøSŸ?ÒæŒSÙD/³@Ebçİøa™Ìµ¦V¤ßw®òq=Y{ÈiÍ¸Îdp	‘ŒÅ£P`\{]§ŠËR’ÆQ¸±"²¼>	[æw†W‚Ú€£ æSoª$Ê=èÌkEéÎ6‹eşØº	İ_DüåkåY/‘;±LWw8™XT±‡ÀšĞ1ı‚¶S¬+K¨…ËCÌb<(üœ9	AœğÅD`¼MÎuAj—Œ–€Î!ø’øM4~J¥ŸS?ç‘*4=ƒ_çÀ¸7z×?nÄÀ±ªBRÏ}œóÆ$=†®çTÛRÉ{ªgyOñÉ	6è‰?{ ¦çcíË„-‘?úZÑ^±¢Õã‰xòœs@M`ÊT`“ìş?`u4ì!†ÚœFz?oÍe:úÀ{fqÛÒùiUOü®D¨ïÓBÎñ<°	ó=&É}[ûJĞö\)8&v¾ ê}.2‡²É<5+
+£ûXƒJC>«­èh"¥öûBŠáÙ·ïy-ñ	e²ç
+OsûyA"p‰Ë¢âx ªñÄVœœ²G|+°¼ú¶”ú2!™H£l-\nq·HÃ
+iÜásn[Õşeèœ
+–»TÃ$¡“Â"ÅÈ”ï,„û$³ıLÆjB!3à!4z‚¾ÇŒİõÆf ­åËDqc Œxš‚§w} ÚËAÌiàÎc`ÁI}%Œ|'B–P|aq¶ÏQ“Ñı}.*yIøË®Z™Pè²,Ó^ßKÕay¦ˆ„LUFd3…K£*ãİrucìÁƒYõ&6ŠúaFÁ
+LB¥•	¾ÚCB£¾ µqä¸i‚¥RZü9UÏèpqîXT¹û”­RuvšÊ¿;ÑİCcQ{$éÿQV)o&Á%Qà7ÙkoÏã?Â:iœ+±NPğ]`ˆt9)<e0H”Şø1#S‘Ä‡gÀï	 Ú™ß?ğCé	DŸ1HÖ¼ŞÆS‹’ÇTjÚ#™)ÃÉ1ƒ U[‚[¯J»!‰Åy9*i:Pi%ğÊ÷qÄa,^&Û—f¡ÜNç
+ÁhäM³_åûR+æC•Ïø	·C÷àƒRJeQ›ÙtXYCb-=3-hÃ³Ó#N{B…Q±ª~Ç÷D»?äÜbbçç Š÷¤©(À@ƒ’N”f¢‘7ç'ÙÙ#±ÍN¾­¥0 ÕNi~‘Q`¸¼å âg…ƒSZ f+$»œ¢h{¤‰j‘ Œa"Ã%Ó!dõ.aØy†7x?Å@uç3:Íb·¦¬•wj?«ıº&ÓìĞzV9áÏ´\ÏèÑlø{ÎÉ‰j*IMÀï5=WŞ·ÊòR¦íKœ¹ÔNæT•ŠJW\»g:VôöSóaI[ÇMI_º†ßpJF@úB‚útXŠïêƒ{†ÁËÉDO›à„ˆô„“ôD8"»BÎÇVé
+"Î]êG7å‘®L°Ç¾ğÀ{ªüvªå“ğwU÷<W“dHU¸¬}Âû…>§Ü%EûMí}P7	à-¡ç7§U½LìuJò5+@“”“è²GŞ„´ÊèƒJÏ¥çáÕ	ÁÒı¢ÀtëaÇ€RÂ‡„,¹”e¡KæP©B¹ú(n\—BÁÏ”M"·Õ~Şı	wÿ€¶Ã5FÒdõ  ÷|é+]y†ğIÂy‚_ŸHq ÄàLÕ0ÀÙû¿jµŠc5'w£¯5àÍ²•“SÓ353´È)zÇ$Q|-WuÄcD’xÄ[=:À‰Æ \g‹ÓÃØ¸[g$Usç£»lî2+Fê”)…8¦âNm€*´+ÆŠÿÚ"¸Ö l£Ãæfg§gå•·*ËèäËşqô5ª"JÌIÿÓœƒ¡;"\â†ù€Ôë<;o$1Mˆbş”:73DŸï)ù_¾r:œqÕ‘Ôê[7ëïİ#d%dğËrbü]æÕ`»SîÁ›
+¦Á/cÓG"à¢Ğ•À+;t^?H¯’÷¯«?IeŸBÓ¬Öhú¥Z¦âLF™Ù”Ñ¸ršIiñ_jc”HåàA:™}•A„<àÂŒì»Œ]tÀc€ÃRéöRdMi$Ì¡¼ <;ç+Ğ„v²15gó¡ÒUù
+5Ô!ÙÓ]<Zê &Ùv<!G¯Rä\|´±æ…ñ)s›Ù†‰ãJ¸¢xYÍ\…L>x¢á>Í$CHy:ÜºL±
+×§<—Ü îr„äw aßè~5o–…"<ÈÎq3"æïÔÒ}Î€CFïò
+•ü‰-$kîo!ĞA’ût„Ë"Ş£mî‹ôØó\$;^­xÉ+%cˆùJ/?å'×İ-u>–œ{G¡()ÏB!ä!‰ÔCò“3Ä-u|Gæx.…ğ³OŞ¼Ê²"î<Ò,*ã5—}¦æ"ÿ8'È¶"¦|øñü`’g7ó!¹ûÂh`,ª&ĞË-†+E_)*8§h¬È£.I±
+eMwGÉ°İ#¼ÇeuBF¯c™ú,C¥åêÏU@wPäa–L›x´?z“vjO¦Ê`ù£»
+/‹óHù¤ƒ,6©Ì#-IgFÍÜ2¢i=V>!§â‰ ê™‘ÛËù*.S‘–v¢Ììy	E*jÉ*L±w¢xÛ‰1áSe"ËMæG~œv€}H§€“‰Ì›âa«9/Iµr@ÕXDèi8Ò@ê¯„Ò$mBÌi]!ûÆ`›JIÊg¢,¤CQ;‰h•øWÙBİ¾îqùU)#Êd›ô•Z;‘–% Æ<v*TÃ>Ghq"#^ä7\”Cÿ­(òàáx´Ã×#¤!.¿çnÏ¿Q8¸Ï‘dO§?õ©P3Úí@â·%F`0¾^>€•Ÿ¨îRÀĞÒIúùØ÷<•¢FU³İÎĞ[–G9ÙàÓhÃÁ­€õ¢¼—KêR°õ­
+¹¨ˆ¢·9¨–¥5«OªÛ>sJFñÕ³‹1ˆÑì}í}±,‡¿‡…’<èßÅèö”üÉ?œ{õrKú/l½ğ¢Nfè[!*ò,ÒX>8?ñno>1k&“T¸_T*×¨iñh°ˆ«DÎŠpûf V-3&¸K3ŞÅ{7'tKBÁ®áT•W—Û±»òìXŞŞpOñc~ö}í&Ùë±Ç‹ÌrÛMK~¡óà
+hT¶;3òò¼0&Œªd°3ôÒ$uRf¯…üøD–†ãËyß»wDvµOeİ _ß3{ÚãyÖf%	³Ó ´ÆH©W¿´— ‹¬pÄûÛ".ÇU1FR^/[ƒÓF¨rD>³¿/s$zf<§H@—Å,=UT£âu>+¿È¸{+Win¶.\ª	›°ÕFnG¯|¥Òã™FZwÀaÏ¬½äŠ¨c2È)\?Ü®fÑœ87wBRz€ÒË í_…®UOöó4ÈÜ³#š{dîrU\VyÇ½m'„^æôLîıÄüWuş±›´
+_¶4_sÄcŞQêå_då7ÕIy(’Ÿ)jÃ‚·ÿŒ?<á¬°××ºA°¨½vë¬E]ù‚×ğ[I>%xûzöºuvÍâù¹9ƒ&@ì©Æ$DîOypŒu	Z”Ø³æ›‚ıá¹±ßğCü¿ôÒØßt?ué¬'{É{§êè4«4«l»ÊÜ	v—U¶?q?ÅóRøK?!¥´fi¼ŸÛµç->áÔÔäÔìÌäô½mX•\Qå®ß\OaomËO¢xß½…)ßİl;ñ5w m37×íÆNê­âƒ7a*×Ó›¾š´ Şâe_0×IİVÅÃ~ÁğÖ–³–Ô¬mxéÛ×öÂ4ysgÕÙø•Óö*– ÅÄ'O«,¡†nìÁ|¢mÖ¢ÊÖáqF1œ#¬uœZı*jz5?L¼8}Ó[b¯’TYˆ+ZdI©]ÇèÏøáÂez¿'1~«4kA$ÎÊwYØ2o"${#»\à—ÖûfÕëm·&^ëˆ»õ6gA}é‚™¿®E/vhÈO¢µÛ›²ğÎ§n«YsšÍ··`cïûIê…^\±~şÁ/ÅUy?rš 0@øß	(ïÁt]¯Ğ·/&*ÍÈí"«âà]•Y|]·Ä¢n¹ ÕkÀÃÄÒşÄAö÷–HÚ³7ÁÌÑêR¬Tİ¿%>’mÁYK¢ 4{‘á‹6ö<ü`aŸŸgÅ¤:e¯ç“:Õ/Ò§:ÿ«	Kuş—nşS»Ï¡úF  
+0
+
+
+15:26:13,728 DEBUG Thread-9 HttpClient:run:124 - 
+* CLIENT: Hooray! I've got necessary information
+ Servers Response is :
+HTTP/1.1 200 OK
+Server: nginx/1.6.3
+Date: Mon, 07 Mar 2016 13:26:14 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/5.3.29
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Encoding: gzip
+
+1759
+‹      ½\{oÜÖ•ÿÛş·L°Ã™ÑÓÖ3hÒd“mÚ¸ˆ6AÅ¡4´8ä„äHœ ’×ìF@ĞÅ-š6»öb±cYõ2O0óöœs¼—CÊrĞV‰Gò>Ïãw^—ZúÉÏ?xkõ77ßf­´¬\]Â_,pÂe+îZxÃsš+W¯2øYJı4ğV†íÏ‡‡Ã>ü>öØğ|tox<Ú=İƒ÷ÙğÜÚ…›ĞŠ}ÎnFqú¡ë„µ¸»TçcĞx4fÛK?<íØŞg]kÙz+
+S/LíÕg1—[¶RïNZÇÕ-2·åÄ‰—.ÿûê;öK,üp“µbo}ÙZw¶|è\ƒ‹Å^°láW‹¥0,\·¯~Ç¦{|5¼3µt:À³Ó¨ë¶x1¦ßŞ¨çŸÕ:á†U‚&¸•Ä®Ş·„H€v;ğ¨§$-‘!tÚ°¶¦—¸±ßI}œXíøÑûp8íé%bŸÁƒóáÉè İc£}¸q6ì;³Ñ0/÷¡#4ëÂ9&ğØ: ±úÔKİ¼í¿„×ğq6<ö†Ï‡g5IWmk›ŞÎv7}_/òÒ¤Xeã/Z@®ı€ Tå±ò‰{Õ‹(¨ZY+9Á#Æ'éNà%-ÏK¥¬‘äºI"%.ëkQ”&iìt²«ZÛkØlL–ô!³!Ö‚¶³í%QÛ«ço\n°òõµÕ?Û$K½×mgËáw-²¾lİNê »á‡Iıög]/Ş±'k“Ú$­ç6·TçíÅº^mH“V?~8Ğ·å¹›¯<ÄÊO+ëİĞEÕ¬L°»?­\{-ñb Ï^"wóÚDM^™XübbQS…k;NØôîØ[^ì¯û®ƒC^SZqmnİm6<gİm4ççæ××@ÌRƒñÒZÔÜÆ,…‘±ô¦¿ÅÜÀI@°À‹SFŸvĞÜ‹îÅvat/R ,[m'Â.°©FçsºiÄ‹l4Ô‹á&Ük: *MöÚ;x°í7ÓÖ»Ş€Ö‹¬ã4›~¸Á;/êÊĞšY~#¡¦?<eÃ' b=Ò)T¶¾PbÀ«¯G (ã ôàæ" ÁØö{x!¬°f|H›®-­Å+Ã¿Â¨g€¿…v¨İ½á	è+ª8ª(Î¼O#(Â†Ohf¡Öà‚`®Î†ç5 ïŒ eh‰Ï(|•Èë7—­m@kœäÈ;Ğ nF
+EÙ7:A´ÉîP¹:ˆ!.¡†¥ÀÖd(€™€–ğÿvü”64¾@AvÄ°­X[N»µiş¦§3é'¶Í>úK¢nìzÌ¶W^IÏëõ­Íšµë NNÇ¯G/„ß PoÌßÈëÔ%ôÊ ØG¿¨ù¡ŸVîÂˆï5Øô©¹©Æt•Ea°ó±ßÜğÒd¥q×ËfPsmr›ú?›ÌHs‹“Fğ|Œu¯¶p±¼Úû0fE^ew±ÿ³ ¸|øÚòüVŠºS¼cR‹×§‰`m_QË¤ã„Óm¯ê¶½ ’:ÚÜKİ@¶û h[ ^I`t´V6bW¡rgs`àpôÔ´W9:£G9J~éÀòxŒ+¦VÉÇë[wìN´íÅv´¾üöWØ¸/«Ì;ªMˆsh£JÕM¯¡?:>IÚ’£‡c"¨v?å¢±×œÄ+,j‚†ÂvıØ<9ËŸ`î­?ô/³ ï’y¼;àbƒÑPD‚!Ï†OYX´‹ˆ@L¸sHœëM”Í±İŠü¤d?\Ì|üîï}È ®Ï‡§´‘Òµ£Ñ>Æ^Ò‰ÂRr¹Ñ†ÜÁ·r±™xágé Ã0:Ñ»dğ Z“ÿ×·Wp Ç]JtMƒ—M“Ir7¦†TKh÷ÕR0ä$;¡+1¸1†ÓœªmDÑ8u;aSxÍü)!t3YÛáŠ\DIiXXÛ»
+)—ÀëRú•be:(‰¦ŸtggÁÁÓÎĞ"÷¦È]€7×Zï¦“:¶Ó´İÀ§`Àí®Ù³3ëSóÓ“³3³³éÉ™‚IAû¹éÆøG×oL'ÂÄ VmñlìAØŒ¶kúÍÏ?gŸ|
+Ş[7iUîJLÎè$ÙSÆb@¤‹$í"Ü\}X~G^Ê—£/¯c_N\ë4‰VØ&|*Ú`?ùö.¼?ü”CETvŒıpR¦ bFåíj`(ı?::2n+Æp$ó`øÆ½ öÃßPğŞâ#h³e:òã(ÿªôşO‚éàNLÑÉèñğL?#é0—d†§> š}úA(³	Ş÷f†á «è…¢G'bSˆ¥ÓøKÎñ?h|nÌÒ9ìí½›6\!¦öŞxéD8º³sÉ¹¸]=´Ø:ä^f’4r£ÀÆœĞ«LF–÷uÂŞ]]½y(É’Ii\nxËÀ[	ş…â‡=²ñÏDP!8'C@g<XH"×w‚[”²^ÍõFº,Ôë<~¬%iáŸˆî*=fuÓu»Ø×V²ãPO£?İn‹c¬¸ÿşd#¤T qw•ÖF¡gŞÿu×w7?äq‚¾5ÆD›©WM·ıˆ[İ€P>©®;®‡<¬·«;NÜ­FÍ0ÚÄõ„ş¦o¸âÏÔÅz·•<ÀµxNì¶Ì ×¡ ]QK:m7Õys.Z`îÒVa ?p‹¥#án%^ !L`§«sÄR<¤qlJsXÌŸëµ¢ „dÙª²ì]Š?tğ†%’a|0¤;XëNà¥p=SV/?¹å7›^(»ò©ı¦Å¶œ 7¦s³Óó×/Ó7 ª~ÈXÊ, !á·.)ù\‡UÓ©M|B\Ã\ûÔš¨AÓkÛŞÚ¦Ÿ&Ïs[Ü¼VeúH ›«~Û‹ºéEÀhIw­aàÄâÕ™FƒÒ)h™µ@Oä.èC,;ÿ“&š›	Êühç‰¼¦¿£w43Ó?Ÿ™™¼q£ 	’ÚF(ÿç© ¤½t¨:o]Ğ8Ë;MÊ>?¾”†şÂ¯5Y0°>{Ë‹#»K°Hé#İwA°]šR“âŠz¶uc0ç
+a4Dcínê5±õ•á7?Xã½À&çgk“sÚÔôtmjvšÁX‚²WôM®ÚNÜC>„€ãqÛkúİ¶‰¢rÁ–&Ô}ƒ¤… m€#æÔx{ ³ÎÀ7ÒÖ²5[„y´¨µnšFÊè®¥!ƒvÒuÁ?$|1	@tšã)eù—ê¼÷ŠNğù:İÀ‰¹g,Vû~è6Õ£`†ñ^ \ŸŒ`Ì³œ#\ìOÎšîÉ†òhòJM]oLÎ–<›™™.ë5;;Ç{]á.ÍØ¥‘8"³²µ]8ÜÃo`/?R=]¨Dj¾üÁé+º[|dÄ8èN0´Då¡øÿÑé1wŒI£Œ±™Xsq‡`½¤Ê¸_)€…‹ ÁHµ‚xÆÀ;§Y¢ÿ@à›Ê0beFªÑhıR›ÿy‰Èÿ¼ºÍ(ÛÉéÉ¹é¹¹ù—éRjSJøSŸ?ÒæŒSÙD/³@Ebçİøa™Ìµ¦V¤ßw®òq=Y{ÈiÍ¸Îdp	‘ŒÅ£P`\{]§ŠËR’ÆQ¸±"²¼>	[æw†W‚Ú€£ æSoª$Ê=èÌkEéÎ6‹eşØº	İ_DüåkåY/‘;±LWw8™XT±‡ÀšĞ1ı‚¶S¬+K¨…ËCÌb<(üœ9	AœğÅD`¼MÎuAj—Œ–€Î!ø’øM4~J¥ŸS?ç‘*4=ƒ_çÀ¸7z×?nÄÀ±ªBRÏ}œóÆ$=†®çTÛRÉ{ªgyOñÉ	6è‰?{ ¦çcíË„-‘?úZÑ^±¢Õã‰xòœs@M`ÊT`“ìş?`u4ì!†ÚœFz?oÍe:úÀ{fqÛÒùiUOü®D¨ïÓBÎñ<°	ó=&É}[ûJĞö\)8&v¾ ê}.2‡²É<5+
+£ûXƒJC>«­èh"¥öûBŠáÙ·ïy-ñ	e²ç
+OsûyA"p‰Ë¢âx ªñÄVœœ²G|+°¼ú¶”ú2!™H£l-\nq·HÃ
+iÜásn[Õşeèœ
+–»TÃ$¡“Â"ÅÈ”ï,„û$³ıLÆjB!3à!4z‚¾ÇŒİõÆf ­åËDqc Œxš‚§w} ÚËAÌiàÎc`ÁI}%Œ|'B–P|aq¶ÏQ“Ñı}.*yIøË®Z™Pè²,Ó^ßKÕay¦ˆ„LUFd3…K£*ãİrucìÁƒYõ&6ŠúaFÁ
+LB¥•	¾ÚCB£¾ µqä¸i‚¥RZü9UÏèpqîXT¹û”­RuvšÊ¿;ÑİCcQ{$éÿQV)o&Á%Qà7ÙkoÏã?Â:iœ+±NPğ]`ˆt9)<e0H”Şø1#S‘Ä‡gÀï	 Ú™ß?ğCé	DŸ1HÖ¼ŞÆS‹’ÇTjÚ#™)ÃÉ1ƒ U[‚[¯J»!‰Åy9*i:Pi%ğÊ÷qÄa,^&Û—f¡ÜNç
+ÁhäM³_åûR+æC•Ïø	·C÷àƒRJeQ›ÙtXYCb-=3-hÃ³Ó#N{B…Q±ª~Ç÷D»?äÜbbçç Š÷¤©(À@ƒ’N”f¢‘7ç'ÙÙ#±ÍN¾­¥0 ÕNi~‘Q`¸¼å âg…ƒSZ f+$»œ¢h{¤‰j‘ Œa"Ã%Ó!dõ.aØy†7x?Å@uç3:Íb·¦¬•wj?«ıº&ÓìĞzV9áÏ´\ÏèÑlø{ÎÉ‰j*IMÀï5=WŞ·ÊòR¦íKœ¹ÔNæT•ŠJW\»g:VôöSóaI[ÇMI_º†ßpJF@úB‚útXŠïêƒ{†ÁËÉDO›à„ˆô„“ôD8"»BÎÇVé
+"Î]êG7å‘®L°Ç¾ğÀ{ªüvªå“ğwU÷<W“dHU¸¬}Âû…>§Ü%EûMí}P7	à-¡ç7§U½LìuJò5+@“”“è²GŞ„´ÊèƒJÏ¥çáÕ	ÁÒı¢ÀtëaÇ€RÂ‡„,¹”e¡KæP©B¹ú(n\—BÁÏ”M"·Õ~Şı	wÿ€¶Ã5FÒdõ  ÷|é+]y†ğIÂy‚_ŸHq ÄàLÕ0ÀÙû¿jµŠc5'w£¯5àÍ²•“SÓ353´È)zÇ$Q|-WuÄcD’xÄ[=:À‰Æ \g‹ÓÃØ¸[g$Usç£»lî2+Fê”)…8¦âNm€*´+ÆŠÿÚ"¸Ö l£Ãæfg§gå•·*ËèäËşqô5ª"JÌIÿÓœƒ¡;"\â†ù€Ôë<;o$1Mˆbş”:73DŸï)ù_¾r:œqÕ‘Ôê[7ëïİ#d%dğËrbü]æÕ`»SîÁ›
+¦Á/cÓG"à¢Ğ•À+;t^?H¯’÷¯«?IeŸBÓ¬Öhú¥Z¦âLF™Ù”Ñ¸ršIiñ_jc”HåàA:™}•A„<àÂŒì»Œ]tÀc€ÃRéöRdMi$Ì¡¼ <;ç+Ğ„v²15gó¡ÒUù
+5Ô!ÙÓ]<Zê &Ùv<!G¯Rä\|´±æ…ñ)s›Ù†‰ãJ¸¢xYÍ\…L>x¢á>Í$CHy:ÜºL±
+×§<—Ü îr„äw aßè~5o–…"<ÈÎq3"æïÔÒ}Î€CFïò
+•ü‰-$kîo!ĞA’ût„Ë"Ş£mî‹ôØó\$;^­xÉ+%cˆùJ/?å'×İ-u>–œ{G¡()ÏB!ä!‰ÔCò“3Ä-u|Gæx.…ğ³OŞ¼Ê²"î<Ò,*ã5—}¦æ"ÿ8'È¶"¦|øñü`’g7ó!¹ûÂh`,ª&ĞË-†+E_)*8§h¬È£.I±
+eMwGÉ°İ#¼ÇeuBF¯c™ú,C¥åêÏU@wPäa–L›x´?z“vjO¦Ê`ù£»
+/‹óHù¤ƒ,6©Ì#-IgFÍÜ2¢i=V>!§â‰ ê™‘ÛËù*.S‘–v¢Ììy	E*jÉ*L±w¢xÛ‰1áSe"ËMæG~œv€}H§€“‰Ì›âa«9/Iµr@ÕXDèi8Ò@ê¯„Ò$mBÌi]!ûÆ`›JIÊg¢,¤CQ;‰h•øWÙBİ¾îqùU)#Êd›ô•Z;‘–% Æ<v*TÃ>Ghq"#^ä7\”Cÿ­(òàáx´Ã×#¤!.¿çnÏ¿Q8¸Ï‘dO§?õ©P3Úí@â·%F`0¾^>€•Ÿ¨îRÀĞÒIúùØ÷<•¢FU³İÎĞ[–G9ÙàÓhÃÁ­€õ¢¼—KêR°õ­
+¹¨ˆ¢·9¨–¥5«OªÛ>sJFñÕ³‹1ˆÑì}í}±,‡¿‡…’<èßÅèö”üÉ?œ{õrKú/l½ğ¢Nfè[!*ò,ÒX>8?ñno>1k&“T¸_T*×¨iñh°ˆ«DÎŠpûf V-3&¸K3ŞÅ{7'tKBÁ®áT•W—Û±»òìXŞŞpOñc~ö}í&Ùë±Ç‹ÌrÛMK~¡óà
+hT¶;3òò¼0&Œªd°3ôÒ$uRf¯…üøD–†ãËyß»wDvµOeİ _ß3{ÚãyÖf%	³Ó ´ÆH©W¿´— ‹¬pÄûÛ".ÇU1FR^/[ƒÓF¨rD>³¿/s$zf<§H@—Å,=UT£âu>+¿È¸{+Win¶.\ª	›°ÕFnG¯|¥Òã™FZwÀaÏ¬½äŠ¨c2È)\?Ü®fÑœ87wBRz€ÒË í_…®UOöó4ÈÜ³#š{dîrU\VyÇ½m'„^æôLîıÄüWuş±›´
+_¶4_sÄcŞQêå_då7ÕIy(’Ÿ)jÃ‚·ÿŒ?<á¬°××ºA°¨½vë¬E]ù‚×ğ[I>%xûzöºuvÍâù¹9ƒ&@ì©Æ$DîOypŒu	Z”Ø³æ›‚ıá¹±ßğCü¿ôÒØßt?ué¬'{É{§êè4«4«l»ÊÜ	v—U¶?q?ÅóRøK?!¥´fi¼ŸÛµç->áÔÔäÔìÌäô½mX•\Qå®ß\OaomËO¢xß½…)ßİl;ñ5w m37×íÆNê­âƒ7a*×Ó›¾š´ Şâe_0×IİVÅÃ~ÁğÖ–³–Ô¬mxéÛ×öÂ4ysgÕÙø•Óö*– ÅÄ'O«,¡†nìÁ|¢mÖ¢ÊÖáqF1œ#¬uœZı*jz5?L¼8}Ó[b¯’TYˆ+ZdI©]ÇèÏøáÂez¿'1~«4kA$ÎÊwYØ2o"${#»\à—ÖûfÕëm·&^ëˆ»õ6gA}é‚™¿®E/vhÈO¢µÛ›²ğÎ§n«YsšÍ··`cïûIê…^\±~şÁ/ÅUy?rš 0@øß	(ïÁt]¯Ğ·/&*ÍÈí"«âà]•Y|]·Ä¢n¹ ÕkÀÃÄÒşÄAö÷–HÚ³7ÁÌÑêR¬Tİ¿%>’mÁYK¢ 4{‘á‹6ö<ü`aŸŸgÅ¤:e¯ç“:Õ/Ò§:ÿ«	Kuş—nşS»Ï¡úF  
+0
+
+
+15:26:13,836 DEBUG Thread-8 HttpClient:run:124 - 
+* CLIENT: Hooray! I've got necessary information
+ Servers Response is :
+HTTP/1.1 200 OK
+Server: nginx/1.6.3
+Date: Mon, 07 Mar 2016 13:26:14 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/5.3.29
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Encoding: gzip
+
+1759
+‹      ½\{oÜÖ•ÿÛş·L°Ã™ÑÓÖ3hÒd“mÚ¸ˆ6AÅ¡4´8ä„äHœ ’×ìF@ĞÅ-š6»öb±cYõ2O0óöœs¼—CÊrĞV‰Gò>Ïãw^—ZúÉÏ?xkõ77ßf­´¬\]Â_,pÂe+îZxÃsš+W¯2øYJı4ğV†íÏ‡‡Ã>ü>öØğ|tox<Ú=İƒ÷ÙğÜÚ…›ĞŠ}ÎnFqú¡ë„µ¸»TçcĞx4fÛK?<íØŞg]kÙz+
+S/LíÕg1—[¶RïNZÇÕ-2·åÄ‰—.ÿûê;öK,üp“µbo}ÙZw¶|è\ƒ‹Å^°láW‹¥0,\·¯~Ç¦{|5¼3µt:À³Ó¨ë¶x1¦ßŞ¨çŸÕ:á†U‚&¸•Ä®Ş·„H€v;ğ¨§$-‘!tÚ°¶¦—¸±ßI}œXíøÑûp8íé%bŸÁƒóáÉè İc£}¸q6ì;³Ñ0/÷¡#4ëÂ9&ğØ: ±úÔKİ¼í¿„×ğq6<ö†Ï‡g5IWmk›ŞÎv7}_/òÒ¤Xeã/Z@®ı€ Tå±ò‰{Õ‹(¨ZY+9Á#Æ'éNà%-ÏK¥¬‘äºI"%.ëkQ”&iìt²«ZÛkØlL–ô!³!Ö‚¶³í%QÛ«ço\n°òõµÕ?Û$K½×mgËáw-²¾lİNê »á‡Iıög]/Ş±'k“Ú$­ç6·TçíÅº^mH“V?~8Ğ·å¹›¯<ÄÊO+ëİĞEÕ¬L°»?­\{-ñb Ï^"wóÚDM^™XübbQS…k;NØôîØ[^ì¯û®ƒC^SZqmnİm6<gİm4ççæ××@ÌRƒñÒZÔÜÆ,…‘±ô¦¿ÅÜÀI@°À‹SFŸvĞÜ‹îÅvat/R ,[m'Â.°©FçsºiÄ‹l4Ô‹á&Ük: *MöÚ;x°í7ÓÖ»Ş€Ö‹¬ã4›~¸Á;/êÊĞšY~#¡¦?<eÃ' b=Ò)T¶¾PbÀ«¯G (ã ôàæ" ÁØö{x!¬°f|H›®-­Å+Ã¿Â¨g€¿…v¨İ½á	è+ª8ª(Î¼O#(Â†Ohf¡Öà‚`®Î†ç5 ïŒ eh‰Ï(|•Èë7—­m@kœäÈ;Ğ nF
+EÙ7:A´ÉîP¹:ˆ!.¡†¥ÀÖd(€™€–ğÿvü”64¾@AvÄ°­X[N»µiş¦§3é'¶Í>úK¢nìzÌ¶W^IÏëõ­Íšµë NNÇ¯G/„ß PoÌßÈëÔ%ôÊ ØG¿¨ù¡ŸVîÂˆï5Øô©¹©Æt•Ea°ó±ßÜğÒd¥q×ËfPsmr›ú?›ÌHs‹“Fğ|Œu¯¶p±¼Úû0fE^ew±ÿ³ ¸|øÚòüVŠºS¼cR‹×§‰`m_QË¤ã„Óm¯ê¶½ ’:ÚÜKİ@¶û h[ ^I`t´V6bW¡rgs`àpôÔ´W9:£G9J~éÀòxŒ+¦VÉÇë[wìN´íÅv´¾üöWØ¸/«Ì;ªMˆsh£JÕM¯¡?:>IÚ’£‡c"¨v?å¢±×œÄ+,j‚†ÂvıØ<9ËŸ`î­?ô/³ ï’y¼;àbƒÑPD‚!Ï†OYX´‹ˆ@L¸sHœëM”Í±İŠü¤d?\Ì|üîï}È ®Ï‡§´‘Òµ£Ñ>Æ^Ò‰ÂRr¹Ñ†ÜÁ·r±™xágé Ã0:Ñ»dğ Z“ÿ×·Wp Ç]JtMƒ—M“Ir7¦†TKh÷ÕR0ä$;¡+1¸1†ÓœªmDÑ8u;aSxÍü)!t3YÛáŠ\DIiXXÛ»
+)—ÀëRú•be:(‰¦ŸtggÁÁÓÎĞ"÷¦È]€7×Zï¦“:¶Ó´İÀ§`Àí®Ù³3ëSóÓ“³3³³éÉ™‚IAû¹éÆøG×oL'ÂÄ VmñlìAØŒ¶kúÍÏ?gŸ|
+Ş[7iUîJLÎè$ÙSÆb@¤‹$í"Ü\}X~G^Ê—£/¯c_N\ë4‰VØ&|*Ú`?ùö.¼?ü”CETvŒıpR¦ bFåíj`(ı?::2n+Æp$ó`øÆ½ öÃßPğŞâ#h³e:òã(ÿªôşO‚éàNLÑÉèñğL?#é0—d†§> š}úA(³	Ş÷f†á «è…¢G'bSˆ¥ÓøKÎñ?h|nÌÒ9ìí½›6\!¦öŞxéD8º³sÉ¹¸]=´Ø:ä^f’4r£ÀÆœĞ«LF–÷uÂŞ]]½y(É’Ii\nxËÀ[	ş…â‡=²ñÏDP!8'C@g<XH"×w‚[”²^ÍõFº,Ôë<~¬%iáŸˆî*=fuÓu»Ø×V²ãPO£?İn‹c¬¸ÿşd#¤T qw•ÖF¡gŞÿu×w7?äq‚¾5ÆD›©WM·ıˆ[İ€P>©®;®‡<¬·«;NÜ­FÍ0ÚÄõ„ş¦o¸âÏÔÅz·•<ÀµxNì¶Ì ×¡ ]QK:m7Õys.Z`îÒVa ?p‹¥#án%^ !L`§«sÄR<¤qlJsXÌŸëµ¢ „dÙª²ì]Š?tğ†%’a|0¤;XëNà¥p=SV/?¹å7›^(»ò©ı¦Å¶œ 7¦s³Óó×/Ó7 ª~ÈXÊ, !á·.)ù\‡UÓ©M|B\Ã\ûÔš¨AÓkÛŞÚ¦Ÿ&Ïs[Ü¼VeúH ›«~Û‹ºéEÀhIw­aàÄâÕ™FƒÒ)h™µ@Oä.èC,;ÿ“&š›	Êühç‰¼¦¿£w43Ó?Ÿ™™¼q£ 	’ÚF(ÿç© ¤½t¨:o]Ğ8Ë;MÊ>?¾”†şÂ¯5Y0°>{Ë‹#»K°Hé#İwA°]šR“âŠz¶uc0ç
+a4Dcínê5±õ•á7?Xã½À&çgk“sÚÔôtmjvšÁX‚²WôM®ÚNÜC>„€ãqÛkúİ¶‰¢rÁ–&Ô}ƒ¤… m€#æÔx{ ³ÎÀ7ÒÖ²5[„y´¨µnšFÊè®¥!ƒvÒuÁ?$|1	@tšã)eù—ê¼÷ŠNğù:İÀ‰¹g,Vû~è6Õ£`†ñ^ \ŸŒ`Ì³œ#\ìOÎšîÉ†òhòJM]oLÎ–<›™™.ë5;;Ç{]á.ÍØ¥‘8"³²µ]8ÜÃo`/?R=]¨Dj¾üÁé+º[|dÄ8èN0´Då¡øÿÑé1wŒI£Œ±™Xsq‡`½¤Ê¸_)€…‹ ÁHµ‚xÆÀ;§Y¢ÿ@à›Ê0beFªÑhıR›ÿy‰Èÿ¼ºÍ(ÛÉéÉ¹é¹¹ù—éRjSJøSŸ?ÒæŒSÙD/³@Ebçİøa™Ìµ¦V¤ßw®òq=Y{ÈiÍ¸Îdp	‘ŒÅ£P`\{]§ŠËR’ÆQ¸±"²¼>	[æw†W‚Ú€£ æSoª$Ê=èÌkEéÎ6‹eşØº	İ_DüåkåY/‘;±LWw8™XT±‡ÀšĞ1ı‚¶S¬+K¨…ËCÌb<(üœ9	AœğÅD`¼MÎuAj—Œ–€Î!ø’øM4~J¥ŸS?ç‘*4=ƒ_çÀ¸7z×?nÄÀ±ªBRÏ}œóÆ$=†®çTÛRÉ{ªgyOñÉ	6è‰?{ ¦çcíË„-‘?úZÑ^±¢Õã‰xòœs@M`ÊT`“ìş?`u4ì!†ÚœFz?oÍe:úÀ{fqÛÒùiUOü®D¨ïÓBÎñ<°	ó=&É}[ûJĞö\)8&v¾ ê}.2‡²É<5+
+£ûXƒJC>«­èh"¥öûBŠáÙ·ïy-ñ	e²ç
+OsûyA"p‰Ë¢âx ªñÄVœœ²G|+°¼ú¶”ú2!™H£l-\nq·HÃ
+iÜásn[Õşeèœ
+–»TÃ$¡“Â"ÅÈ”ï,„û$³ıLÆjB!3à!4z‚¾ÇŒİõÆf ­åËDqc Œxš‚§w} ÚËAÌiàÎc`ÁI}%Œ|'B–P|aq¶ÏQ“Ñı}.*yIøË®Z™Pè²,Ó^ßKÕay¦ˆ„LUFd3…K£*ãİrucìÁƒYõ&6ŠúaFÁ
+LB¥•	¾ÚCB£¾ µqä¸i‚¥RZü9UÏèpqîXT¹û”­RuvšÊ¿;ÑİCcQ{$éÿQV)o&Á%Qà7ÙkoÏã?Â:iœ+±NPğ]`ˆt9)<e0H”Şø1#S‘Ä‡gÀï	 Ú™ß?ğCé	DŸ1HÖ¼ŞÆS‹’ÇTjÚ#™)ÃÉ1ƒ U[‚[¯J»!‰Åy9*i:Pi%ğÊ÷qÄa,^&Û—f¡ÜNç
+ÁhäM³_åûR+æC•Ïø	·C÷àƒRJeQ›ÙtXYCb-=3-hÃ³Ó#N{B…Q±ª~Ç÷D»?äÜbbçç Š÷¤©(À@ƒ’N”f¢‘7ç'ÙÙ#±ÍN¾­¥0 ÕNi~‘Q`¸¼å âg…ƒSZ f+$»œ¢h{¤‰j‘ Œa"Ã%Ó!dõ.aØy†7x?Å@uç3:Íb·¦¬•wj?«ıº&ÓìĞzV9áÏ´\ÏèÑlø{ÎÉ‰j*IMÀï5=WŞ·ÊòR¦íKœ¹ÔNæT•ŠJW\»g:VôöSóaI[ÇMI_º†ßpJF@úB‚útXŠïêƒ{†ÁËÉDO›à„ˆô„“ôD8"»BÎÇVé
+"Î]êG7å‘®L°Ç¾ğÀ{ªüvªå“ğwU÷<W“dHU¸¬}Âû…>§Ü%EûMí}P7	à-¡ç7§U½LìuJò5+@“”“è²GŞ„´ÊèƒJÏ¥çáÕ	ÁÒı¢ÀtëaÇ€RÂ‡„,¹”e¡KæP©B¹ú(n\—BÁÏ”M"·Õ~Şı	wÿ€¶Ã5FÒdõ  ÷|é+]y†ğIÂy‚_ŸHq ÄàLÕ0ÀÙû¿jµŠc5'w£¯5àÍ²•“SÓ353´È)zÇ$Q|-WuÄcD’xÄ[=:À‰Æ \g‹ÓÃØ¸[g$Usç£»lî2+Fê”)…8¦âNm€*´+ÆŠÿÚ"¸Ö l£Ãæfg§gå•·*ËèäËşqô5ª"JÌIÿÓœƒ¡;"\â†ù€Ôë<;o$1Mˆbş”:73DŸï)ù_¾r:œqÕ‘Ôê[7ëïİ#d%dğËrbü]æÕ`»SîÁ›
+¦Á/cÓG"à¢Ğ•À+;t^?H¯’÷¯«?IeŸBÓ¬Öhú¥Z¦âLF™Ù”Ñ¸ršIiñ_jc”HåàA:™}•A„<àÂŒì»Œ]tÀc€ÃRéöRdMi$Ì¡¼ <;ç+Ğ„v²15gó¡ÒUù
+5Ô!ÙÓ]<Zê &Ùv<!G¯Rä\|´±æ…ñ)s›Ù†‰ãJ¸¢xYÍ\…L>x¢á>Í$CHy:ÜºL±
+×§<—Ü îr„äw aßè~5o–…"<ÈÎq3"æïÔÒ}Î€CFïò
+•ü‰-$kîo!ĞA’ût„Ë"Ş£mî‹ôØó\$;^­xÉ+%cˆùJ/?å'×İ-u>–œ{G¡()ÏB!ä!‰ÔCò“3Ä-u|Gæx.…ğ³OŞ¼Ê²"î<Ò,*ã5—}¦æ"ÿ8'È¶"¦|øñü`’g7ó!¹ûÂh`,ª&ĞË-†+E_)*8§h¬È£.I±
+eMwGÉ°İ#¼ÇeuBF¯c™ú,C¥åêÏU@wPäa–L›x´?z“vjO¦Ê`ù£»
+/‹óHù¤ƒ,6©Ì#-IgFÍÜ2¢i=V>!§â‰ ê™‘ÛËù*.S‘–v¢Ììy	E*jÉ*L±w¢xÛ‰1áSe"ËMæG~œv€}H§€“‰Ì›âa«9/Iµr@ÕXDèi8Ò@ê¯„Ò$mBÌi]!ûÆ`›JIÊg¢,¤CQ;‰h•øWÙBİ¾îqùU)#Êd›ô•Z;‘–% Æ<v*TÃ>Ghq"#^ä7\”Cÿ­(òàáx´Ã×#¤!.¿çnÏ¿Q8¸Ï‘dO§?õ©P3Úí@â·%F`0¾^>€•Ÿ¨îRÀĞÒIúùØ÷<•¢FU³İÎĞ[–G9ÙàÓhÃÁ­€õ¢¼—KêR°õ­
+¹¨ˆ¢·9¨–¥5«OªÛ>sJFñÕ³‹1ˆÑì}í}±,‡¿‡…’<èßÅèö”üÉ?œ{õrKú/l½ğ¢Nfè[!*ò,ÒX>8?ñno>1k&“T¸_T*×¨iñh°ˆ«DÎŠpûf V-3&¸K3ŞÅ{7'tKBÁ®áT•W—Û±»òìXŞŞpOñc~ö}í&Ùë±Ç‹ÌrÛMK~¡óà
+hT¶;3òò¼0&Œªd°3ôÒ$uRf¯…üøD–†ãËyß»wDvµOeİ _ß3{ÚãyÖf%	³Ó ´ÆH©W¿´— ‹¬pÄûÛ".ÇU1FR^/[ƒÓF¨rD>³¿/s$zf<§H@—Å,=UT£âu>+¿È¸{+Win¶.\ª	›°ÕFnG¯|¥Òã™FZwÀaÏ¬½äŠ¨c2È)\?Ü®fÑœ87wBRz€ÒË í_…®UOöó4ÈÜ³#š{dîrU\VyÇ½m'„^æôLîıÄüWuş±›´
+_¶4_sÄcŞQêå_då7ÕIy(’Ÿ)jÃ‚·ÿŒ?<á¬°××ºA°¨½vë¬E]ù‚×ğ[I>%xûzöºuvÍâù¹9ƒ&@ì©Æ$DîOypŒu	Z”Ø³æ›‚ıá¹±ßğCü¿ôÒØßt?ué¬'{É{§êè4«4«l»ÊÜ	v—U¶?q?ÅóRøK?!¥´fi¼ŸÛµç->áÔÔäÔìÌäô½mX•\Qå®ß\OaomËO¢xß½…)ßİl;ñ5w m37×íÆNê­âƒ7a*×Ó›¾š´ Şâe_0×IİVÅÃ~ÁğÖ–³–Ô¬mxéÛ×öÂ4ysgÕÙø•Óö*– ÅÄ'O«,¡†nìÁ|¢mÖ¢ÊÖáqF1œ#¬uœZı*jz5?L¼8}Ó[b¯’TYˆ+ZdI©]ÇèÏøáÂez¿'1~«4kA$ÎÊwYØ2o"${#»\à—ÖûfÕëm·&^ëˆ»õ6gA}é‚™¿®E/vhÈO¢µÛ›²ğÎ§n«YsšÍ··`cïûIê…^\±~şÁ/ÅUy?rš 0@øß	(ïÁt]¯Ğ·/&*ÍÈí"«âà]•Y|]·Ä¢n¹ ÕkÀÃÄÒşÄAö÷–HÚ³7ÁÌÑêR¬Tİ¿%>’mÁYK¢ 4{‘á‹6ö<ü`aŸŸgÅ¤:e¯ç“:Õ/Ò§:ÿ«	Kuş—nşS»Ï¡úF  
+0
+
+
+15:26:13,884 DEBUG Thread-2 HttpClient:run:124 - 
+* CLIENT: Hooray! I've got necessary information
+ Servers Response is :
+HTTP/1.1 200 OK
+Server: nginx/1.6.3
+Date: Mon, 07 Mar 2016 13:26:14 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/5.3.29
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Encoding: gzip
+
+1759
+‹      ½\{oÜÖ•ÿÛş·L°Ã™ÑÓÖ3hÒd“mÚ¸ˆ6AÅ¡4´8ä„äHœ ’×ìF@ĞÅ-š6»öb±cYõ2O0óöœs¼—CÊrĞV‰Gò>Ïãw^—ZúÉÏ?xkõ77ßf­´¬\]Â_,pÂe+îZxÃsš+W¯2øYJı4ğV†íÏ‡‡Ã>ü>öØğ|tox<Ú=İƒ÷ÙğÜÚ…›ĞŠ}ÎnFqú¡ë„µ¸»TçcĞx4fÛK?<íØŞg]kÙz+
+S/LíÕg1—[¶RïNZÇÕ-2·åÄ‰—.ÿûê;öK,üp“µbo}ÙZw¶|è\ƒ‹Å^°láW‹¥0,\·¯~Ç¦{|5¼3µt:À³Ó¨ë¶x1¦ßŞ¨çŸÕ:á†U‚&¸•Ä®Ş·„H€v;ğ¨§$-‘!tÚ°¶¦—¸±ßI}œXíøÑûp8íé%bŸÁƒóáÉè İc£}¸q6ì;³Ñ0/÷¡#4ëÂ9&ğØ: ±úÔKİ¼í¿„×ğq6<ö†Ï‡g5IWmk›ŞÎv7}_/òÒ¤Xeã/Z@®ı€ Tå±ò‰{Õ‹(¨ZY+9Á#Æ'éNà%-ÏK¥¬‘äºI"%.ëkQ”&iìt²«ZÛkØlL–ô!³!Ö‚¶³í%QÛ«ço\n°òõµÕ?Û$K½×mgËáw-²¾lİNê »á‡Iıög]/Ş±'k“Ú$­ç6·TçíÅº^mH“V?~8Ğ·å¹›¯<ÄÊO+ëİĞEÕ¬L°»?­\{-ñb Ï^"wóÚDM^™XübbQS…k;NØôîØ[^ì¯û®ƒC^SZqmnİm6<gİm4ççæ××@ÌRƒñÒZÔÜÆ,…‘±ô¦¿ÅÜÀI@°À‹SFŸvĞÜ‹îÅvat/R ,[m'Â.°©FçsºiÄ‹l4Ô‹á&Ük: *MöÚ;x°í7ÓÖ»Ş€Ö‹¬ã4›~¸Á;/êÊĞšY~#¡¦?<eÃ' b=Ò)T¶¾PbÀ«¯G (ã ôàæ" ÁØö{x!¬°f|H›®-­Å+Ã¿Â¨g€¿…v¨İ½á	è+ª8ª(Î¼O#(Â†Ohf¡Öà‚`®Î†ç5 ïŒ eh‰Ï(|•Èë7—­m@kœäÈ;Ğ nF
+EÙ7:A´ÉîP¹:ˆ!.¡†¥ÀÖd(€™€–ğÿvü”64¾@AvÄ°­X[N»µiş¦§3é'¶Í>úK¢nìzÌ¶W^IÏëõ­Íšµë NNÇ¯G/„ß PoÌßÈëÔ%ôÊ ØG¿¨ù¡ŸVîÂˆï5Øô©¹©Æt•Ea°ó±ßÜğÒd¥q×ËfPsmr›ú?›ÌHs‹“Fğ|Œu¯¶p±¼Úû0fE^ew±ÿ³ ¸|øÚòüVŠºS¼cR‹×§‰`m_QË¤ã„Óm¯ê¶½ ’:ÚÜKİ@¶û h[ ^I`t´V6bW¡rgs`àpôÔ´W9:£G9J~éÀòxŒ+¦VÉÇë[wìN´íÅv´¾üöWØ¸/«Ì;ªMˆsh£JÕM¯¡?:>IÚ’£‡c"¨v?å¢±×œÄ+,j‚†ÂvıØ<9ËŸ`î­?ô/³ ï’y¼;àbƒÑPD‚!Ï†OYX´‹ˆ@L¸sHœëM”Í±İŠü¤d?\Ì|üîï}È ®Ï‡§´‘Òµ£Ñ>Æ^Ò‰ÂRr¹Ñ†ÜÁ·r±™xágé Ã0:Ñ»dğ Z“ÿ×·Wp Ç]JtMƒ—M“Ir7¦†TKh÷ÕR0ä$;¡+1¸1†ÓœªmDÑ8u;aSxÍü)!t3YÛáŠ\DIiXXÛ»
+)—ÀëRú•be:(‰¦ŸtggÁÁÓÎĞ"÷¦È]€7×Zï¦“:¶Ó´İÀ§`Àí®Ù³3ëSóÓ“³3³³éÉ™‚IAû¹éÆøG×oL'ÂÄ VmñlìAØŒ¶kúÍÏ?gŸ|
+Ş[7iUîJLÎè$ÙSÆb@¤‹$í"Ü\}X~G^Ê—£/¯c_N\ë4‰VØ&|*Ú`?ùö.¼?ü”CETvŒıpR¦ bFåíj`(ı?::2n+Æp$ó`øÆ½ öÃßPğŞâ#h³e:òã(ÿªôşO‚éàNLÑÉèñğL?#é0—d†§> š}úA(³	Ş÷f†á «è…¢G'bSˆ¥ÓøKÎñ?h|nÌÒ9ìí½›6\!¦öŞxéD8º³sÉ¹¸]=´Ø:ä^f’4r£ÀÆœĞ«LF–÷uÂŞ]]½y(É’Ii\nxËÀ[	ş…â‡=²ñÏDP!8'C@g<XH"×w‚[”²^ÍõFº,Ôë<~¬%iáŸˆî*=fuÓu»Ø×V²ãPO£?İn‹c¬¸ÿşd#¤T qw•ÖF¡gŞÿu×w7?äq‚¾5ÆD›©WM·ıˆ[İ€P>©®;®‡<¬·«;NÜ­FÍ0ÚÄõ„ş¦o¸âÏÔÅz·•<ÀµxNì¶Ì ×¡ ]QK:m7Õys.Z`îÒVa ?p‹¥#án%^ !L`§«sÄR<¤qlJsXÌŸëµ¢ „dÙª²ì]Š?tğ†%’a|0¤;XëNà¥p=SV/?¹å7›^(»ò©ı¦Å¶œ 7¦s³Óó×/Ó7 ª~ÈXÊ, !á·.)ù\‡UÓ©M|B\Ã\ûÔš¨AÓkÛŞÚ¦Ÿ&Ïs[Ü¼VeúH ›«~Û‹ºéEÀhIw­aàÄâÕ™FƒÒ)h™µ@Oä.èC,;ÿ“&š›	Êühç‰¼¦¿£w43Ó?Ÿ™™¼q£ 	’ÚF(ÿç© ¤½t¨:o]Ğ8Ë;MÊ>?¾”†şÂ¯5Y0°>{Ë‹#»K°Hé#İwA°]šR“âŠz¶uc0ç
+a4Dcínê5±õ•á7?Xã½À&çgk“sÚÔôtmjvšÁX‚²WôM®ÚNÜC>„€ãqÛkúİ¶‰¢rÁ–&Ô}ƒ¤… m€#æÔx{ ³ÎÀ7ÒÖ²5[„y´¨µnšFÊè®¥!ƒvÒuÁ?$|1	@tšã)eù—ê¼÷ŠNğù:İÀ‰¹g,Vû~è6Õ£`†ñ^ \ŸŒ`Ì³œ#\ìOÎšîÉ†òhòJM]oLÎ–<›™™.ë5;;Ç{]á.ÍØ¥‘8"³²µ]8ÜÃo`/?R=]¨Dj¾üÁé+º[|dÄ8èN0´Då¡øÿÑé1wŒI£Œ±™Xsq‡`½¤Ê¸_)€…‹ ÁHµ‚xÆÀ;§Y¢ÿ@à›Ê0beFªÑhıR›ÿy‰Èÿ¼ºÍ(ÛÉéÉ¹é¹¹ù—éRjSJøSŸ?ÒæŒSÙD/³@Ebçİøa™Ìµ¦V¤ßw®òq=Y{ÈiÍ¸Îdp	‘ŒÅ£P`\{]§ŠËR’ÆQ¸±"²¼>	[æw†W‚Ú€£ æSoª$Ê=èÌkEéÎ6‹eşØº	İ_DüåkåY/‘;±LWw8™XT±‡ÀšĞ1ı‚¶S¬+K¨…ËCÌb<(üœ9	AœğÅD`¼MÎuAj—Œ–€Î!ø’øM4~J¥ŸS?ç‘*4=ƒ_çÀ¸7z×?nÄÀ±ªBRÏ}œóÆ$=†®çTÛRÉ{ªgyOñÉ	6è‰?{ ¦çcíË„-‘?úZÑ^±¢Õã‰xòœs@M`ÊT`“ìş?`u4ì!†ÚœFz?oÍe:úÀ{fqÛÒùiUOü®D¨ïÓBÎñ<°	ó=&É}[ûJĞö\)8&v¾ ê}.2‡²É<5+
+£ûXƒJC>«­èh"¥öûBŠáÙ·ïy-ñ	e²ç
+OsûyA"p‰Ë¢âx ªñÄVœœ²G|+°¼ú¶”ú2!™H£l-\nq·HÃ
+iÜásn[Õşeèœ
+–»TÃ$¡“Â"ÅÈ”ï,„û$³ıLÆjB!3à!4z‚¾ÇŒİõÆf ­åËDqc Œxš‚§w} ÚËAÌiàÎc`ÁI}%Œ|'B–P|aq¶ÏQ“Ñı}.*yIøË®Z™Pè²,Ó^ßKÕay¦ˆ„LUFd3…K£*ãİrucìÁƒYõ&6ŠúaFÁ
+LB¥•	¾ÚCB£¾ µqä¸i‚¥RZü9UÏèpqîXT¹û”­RuvšÊ¿;ÑİCcQ{$éÿQV)o&Á%Qà7ÙkoÏã?Â:iœ+±NPğ]`ˆt9)<e0H”Şø1#S‘Ä‡gÀï	 Ú™ß?ğCé	DŸ1HÖ¼ŞÆS‹’ÇTjÚ#™)ÃÉ1ƒ U[‚[¯J»!‰Åy9*i:Pi%ğÊ÷qÄa,^&Û—f¡ÜNç
+ÁhäM³_åûR+æC•Ïø	·C÷àƒRJeQ›ÙtXYCb-=3-hÃ³Ó#N{B…Q±ª~Ç÷D»?äÜbbçç Š÷¤©(À@ƒ’N”f¢‘7ç'ÙÙ#±ÍN¾­¥0 ÕNi~‘Q`¸¼å âg…ƒSZ f+$»œ¢h{¤‰j‘ Œa"Ã%Ó!dõ.aØy†7x?Å@uç3:Íb·¦¬•wj?«ıº&ÓìĞzV9áÏ´\ÏèÑlø{ÎÉ‰j*IMÀï5=WŞ·ÊòR¦íKœ¹ÔNæT•ŠJW\»g:VôöSóaI[ÇMI_º†ßpJF@úB‚útXŠïêƒ{†ÁËÉDO›à„ˆô„“ôD8"»BÎÇVé
+"Î]êG7å‘®L°Ç¾ğÀ{ªüvªå“ğwU÷<W“dHU¸¬}Âû…>§Ü%EûMí}P7	à-¡ç7§U½LìuJò5+@“”“è²GŞ„´ÊèƒJÏ¥çáÕ	ÁÒı¢ÀtëaÇ€RÂ‡„,¹”e¡KæP©B¹ú(n\—BÁÏ”M"·Õ~Şı	wÿ€¶Ã5FÒdõ  ÷|é+]y†ğIÂy‚_ŸHq ÄàLÕ0ÀÙû¿jµŠc5'w£¯5àÍ²•“SÓ353´È)zÇ$Q|-WuÄcD’xÄ[=:À‰Æ \g‹ÓÃØ¸[g$Usç£»lî2+Fê”)…8¦âNm€*´+ÆŠÿÚ"¸Ö l£Ãæfg§gå•·*ËèäËşqô5ª"JÌIÿÓœƒ¡;"\â†ù€Ôë<;o$1Mˆbş”:73DŸï)ù_¾r:œqÕ‘Ôê[7ëïİ#d%dğËrbü]æÕ`»SîÁ›
+¦Á/cÓG"à¢Ğ•À+;t^?H¯’÷¯«?IeŸBÓ¬Öhú¥Z¦âLF™Ù”Ñ¸ršIiñ_jc”HåàA:™}•A„<àÂŒì»Œ]tÀc€ÃRéöRdMi$Ì¡¼ <;ç+Ğ„v²15gó¡ÒUù
+5Ô!ÙÓ]<Zê &Ùv<!G¯Rä\|´±æ…ñ)s›Ù†‰ãJ¸¢xYÍ\…L>x¢á>Í$CHy:ÜºL±
+×§<—Ü îr„äw aßè~5o–…"<ÈÎq3"æïÔÒ}Î€CFïò
+•ü‰-$kîo!ĞA’ût„Ë"Ş£mî‹ôØó\$;^­xÉ+%cˆùJ/?å'×İ-u>–œ{G¡()ÏB!ä!‰ÔCò“3Ä-u|Gæx.…ğ³OŞ¼Ê²"î<Ò,*ã5—}¦æ"ÿ8'È¶"¦|øñü`’g7ó!¹ûÂh`,ª&ĞË-†+E_)*8§h¬È£.I±
+eMwGÉ°İ#¼ÇeuBF¯c™ú,C¥åêÏU@wPäa–L›x´?z“vjO¦Ê`ù£»
+/‹óHù¤ƒ,6©Ì#-IgFÍÜ2¢i=V>!§â‰ ê™‘ÛËù*.S‘–v¢Ììy	E*jÉ*L±w¢xÛ‰1áSe"ËMæG~œv€}H§€“‰Ì›âa«9/Iµr@ÕXDèi8Ò@ê¯„Ò$mBÌi]!ûÆ`›JIÊg¢,¤CQ;‰h•øWÙBİ¾îqùU)#Êd›ô•Z;‘–% Æ<v*TÃ>Ghq"#^ä7\”Cÿ­(òàáx´Ã×#¤!.¿çnÏ¿Q8¸Ï‘dO§?õ©P3Úí@â·%F`0¾^>€•Ÿ¨îRÀĞÒIúùØ÷<•¢FU³İÎĞ[–G9ÙàÓhÃÁ­€õ¢¼—KêR°õ­
+¹¨ˆ¢·9¨–¥5«OªÛ>sJFñÕ³‹1ˆÑì}í}±,‡¿‡…’<èßÅèö”üÉ?œ{õrKú/l½ğ¢Nfè[!*ò,ÒX>8?ñno>1k&“T¸_T*×¨iñh°ˆ«DÎŠpûf V-3&¸K3ŞÅ{7'tKBÁ®áT•W—Û±»òìXŞŞpOñc~ö}í&Ùë±Ç‹ÌrÛMK~¡óà
+hT¶;3òò¼0&Œªd°3ôÒ$uRf¯…üøD–†ãËyß»wDvµOeİ _ß3{ÚãyÖf%	³Ó ´ÆH©W¿´— ‹¬pÄûÛ".ÇU1FR^/[ƒÓF¨rD>³¿/s$zf<§H@—Å,=UT£âu>+¿È¸{+Win¶.\ª	›°ÕFnG¯|¥Òã™FZwÀaÏ¬½äŠ¨c2È)\?Ü®fÑœ87wBRz€ÒË í_…®UOöó4ÈÜ³#š{dîrU\VyÇ½m'„^æôLîıÄüWuş±›´
+_¶4_sÄcŞQêå_då7ÕIy(’Ÿ)jÃ‚·ÿŒ?<á¬°××ºA°¨½vë¬E]ù‚×ğ[I>%xûzöºuvÍâù¹9ƒ&@ì©Æ$DîOypŒu	Z”Ø³æ›‚ıá¹±ßğCü¿ôÒØßt?ué¬'{É{§êè4«4«l»ÊÜ	v—U¶?q?ÅóRøK?!¥´fi¼ŸÛµç->áÔÔäÔìÌäô½mX•\Qå®ß\OaomËO¢xß½…)ßİl;ñ5w m37×íÆNê­âƒ7a*×Ó›¾š´ Şâe_0×IİVÅÃ~ÁğÖ–³–Ô¬mxéÛ×öÂ4ysgÕÙø•Óö*– ÅÄ'O«,¡†nìÁ|¢mÖ¢ÊÖáqF1œ#¬uœZı*jz5?L¼8}Ó[b¯’TYˆ+ZdI©]ÇèÏøáÂez¿'1~«4kA$ÎÊwYØ2o"${#»\à—ÖûfÕëm·&^ëˆ»õ6gA}é‚™¿®E/vhÈO¢µÛ›²ğÎ§n«YsšÍ··`cïûIê…^\±~şÁ/ÅUy?rš 0@øß	(ïÁt]¯Ğ·/&*ÍÈí"«âà]•Y|]·Ä¢n¹ ÕkÀÃÄÒşÄAö÷–HÚ³7ÁÌÑêR¬Tİ¿%>’mÁYK¢ 4{‘á‹6ö<ü`aŸŸgÅ¤:e¯ç“:Õ/Ò§:ÿ«	Kuş—nşS»Ï¡úF  
+0
+
+
+15:26:14,119 DEBUG Thread-3 HttpClient:run:124 - 
+* CLIENT: Hooray! I've got necessary information
+ Servers Response is :
+HTTP/1.1 200 OK
+Server: nginx/1.6.3
+Date: Mon, 07 Mar 2016 13:26:14 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/5.3.29
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Encoding: gzip
+
+1759
+‹      ½\{oÜÖ•ÿÛş·L°Ã™ÑÓÖ3hÒd“mÚ¸ˆ6AÅ¡4´8ä„äHœ ’×ìF@ĞÅ-š6»öb±cYõ2O0óöœs¼—CÊrĞV‰Gò>Ïãw^—ZúÉÏ?xkõ77ßf­´¬\]Â_,pÂe+îZxÃsš+W¯2øYJı4ğV†íÏ‡‡Ã>ü>öØğ|tox<Ú=İƒ÷ÙğÜÚ…›ĞŠ}ÎnFqú¡ë„µ¸»TçcĞx4fÛK?<íØŞg]kÙz+
+S/LíÕg1—[¶RïNZÇÕ-2·åÄ‰—.ÿûê;öK,üp“µbo}ÙZw¶|è\ƒ‹Å^°láW‹¥0,\·¯~Ç¦{|5¼3µt:À³Ó¨ë¶x1¦ßŞ¨çŸÕ:á†U‚&¸•Ä®Ş·„H€v;ğ¨§$-‘!tÚ°¶¦—¸±ßI}œXíøÑûp8íé%bŸÁƒóáÉè İc£}¸q6ì;³Ñ0/÷¡#4ëÂ9&ğØ: ±úÔKİ¼í¿„×ğq6<ö†Ï‡g5IWmk›ŞÎv7}_/òÒ¤Xeã/Z@®ı€ Tå±ò‰{Õ‹(¨ZY+9Á#Æ'éNà%-ÏK¥¬‘äºI"%.ëkQ”&iìt²«ZÛkØlL–ô!³!Ö‚¶³í%QÛ«ço\n°òõµÕ?Û$K½×mgËáw-²¾lİNê »á‡Iıög]/Ş±'k“Ú$­ç6·TçíÅº^mH“V?~8Ğ·å¹›¯<ÄÊO+ëİĞEÕ¬L°»?­\{-ñb Ï^"wóÚDM^™XübbQS…k;NØôîØ[^ì¯û®ƒC^SZqmnİm6<gİm4ççæ××@ÌRƒñÒZÔÜÆ,…‘±ô¦¿ÅÜÀI@°À‹SFŸvĞÜ‹îÅvat/R ,[m'Â.°©FçsºiÄ‹l4Ô‹á&Ük: *MöÚ;x°í7ÓÖ»Ş€Ö‹¬ã4›~¸Á;/êÊĞšY~#¡¦?<eÃ' b=Ò)T¶¾PbÀ«¯G (ã ôàæ" ÁØö{x!¬°f|H›®-­Å+Ã¿Â¨g€¿…v¨İ½á	è+ª8ª(Î¼O#(Â†Ohf¡Öà‚`®Î†ç5 ïŒ eh‰Ï(|•Èë7—­m@kœäÈ;Ğ nF
+EÙ7:A´ÉîP¹:ˆ!.¡†¥ÀÖd(€™€–ğÿvü”64¾@AvÄ°­X[N»µiş¦§3é'¶Í>úK¢nìzÌ¶W^IÏëõ­Íšµë NNÇ¯G/„ß PoÌßÈëÔ%ôÊ ØG¿¨ù¡ŸVîÂˆï5Øô©¹©Æt•Ea°ó±ßÜğÒd¥q×ËfPsmr›ú?›ÌHs‹“Fğ|Œu¯¶p±¼Úû0fE^ew±ÿ³ ¸|øÚòüVŠºS¼cR‹×§‰`m_QË¤ã„Óm¯ê¶½ ’:ÚÜKİ@¶û h[ ^I`t´V6bW¡rgs`àpôÔ´W9:£G9J~éÀòxŒ+¦VÉÇë[wìN´íÅv´¾üöWØ¸/«Ì;ªMˆsh£JÕM¯¡?:>IÚ’£‡c"¨v?å¢±×œÄ+,j‚†ÂvıØ<9ËŸ`î­?ô/³ ï’y¼;àbƒÑPD‚!Ï†OYX´‹ˆ@L¸sHœëM”Í±İŠü¤d?\Ì|üîï}È ®Ï‡§´‘Òµ£Ñ>Æ^Ò‰ÂRr¹Ñ†ÜÁ·r±™xágé Ã0:Ñ»dğ Z“ÿ×·Wp Ç]JtMƒ—M“Ir7¦†TKh÷ÕR0ä$;¡+1¸1†ÓœªmDÑ8u;aSxÍü)!t3YÛáŠ\DIiXXÛ»
+)—ÀëRú•be:(‰¦ŸtggÁÁÓÎĞ"÷¦È]€7×Zï¦“:¶Ó´İÀ§`Àí®Ù³3ëSóÓ“³3³³éÉ™‚IAû¹éÆøG×oL'ÂÄ VmñlìAØŒ¶kúÍÏ?gŸ|
+Ş[7iUîJLÎè$ÙSÆb@¤‹$í"Ü\}X~G^Ê—£/¯c_N\ë4‰VØ&|*Ú`?ùö.¼?ü”CETvŒıpR¦ bFåíj`(ı?::2n+Æp$ó`øÆ½ öÃßPğŞâ#h³e:òã(ÿªôşO‚éàNLÑÉèñğL?#é0—d†§> š}úA(³	Ş÷f†á «è…¢G'bSˆ¥ÓøKÎñ?h|nÌÒ9ìí½›6\!¦öŞxéD8º³sÉ¹¸]=´Ø:ä^f’4r£ÀÆœĞ«LF–÷uÂŞ]]½y(É’Ii\nxËÀ[	ş…â‡=²ñÏDP!8'C@g<XH"×w‚[”²^ÍõFº,Ôë<~¬%iáŸˆî*=fuÓu»Ø×V²ãPO£?İn‹c¬¸ÿşd#¤T qw•ÖF¡gŞÿu×w7?äq‚¾5ÆD›©WM·ıˆ[İ€P>©®;®‡<¬·«;NÜ­FÍ0ÚÄõ„ş¦o¸âÏÔÅz·•<ÀµxNì¶Ì ×¡ ]QK:m7Õys.Z`îÒVa ?p‹¥#án%^ !L`§«sÄR<¤qlJsXÌŸëµ¢ „dÙª²ì]Š?tğ†%’a|0¤;XëNà¥p=SV/?¹å7›^(»ò©ı¦Å¶œ 7¦s³Óó×/Ó7 ª~ÈXÊ, !á·.)ù\‡UÓ©M|B\Ã\ûÔš¨AÓkÛŞÚ¦Ÿ&Ïs[Ü¼VeúH ›«~Û‹ºéEÀhIw­aàÄâÕ™FƒÒ)h™µ@Oä.èC,;ÿ“&š›	Êühç‰¼¦¿£w43Ó?Ÿ™™¼q£ 	’ÚF(ÿç© ¤½t¨:o]Ğ8Ë;MÊ>?¾”†şÂ¯5Y0°>{Ë‹#»K°Hé#İwA°]šR“âŠz¶uc0ç
+a4Dcínê5±õ•á7?Xã½À&çgk“sÚÔôtmjvšÁX‚²WôM®ÚNÜC>„€ãqÛkúİ¶‰¢rÁ–&Ô}ƒ¤… m€#æÔx{ ³ÎÀ7ÒÖ²5[„y´¨µnšFÊè®¥!ƒvÒuÁ?$|1	@tšã)eù—ê¼÷ŠNğù:İÀ‰¹g,Vû~è6Õ£`†ñ^ \ŸŒ`Ì³œ#\ìOÎšîÉ†òhòJM]oLÎ–<›™™.ë5;;Ç{]á.ÍØ¥‘8"³²µ]8ÜÃo`/?R=]¨Dj¾üÁé+º[|dÄ8èN0´Då¡øÿÑé1wŒI£Œ±™Xsq‡`½¤Ê¸_)€…‹ ÁHµ‚xÆÀ;§Y¢ÿ@à›Ê0beFªÑhıR›ÿy‰Èÿ¼ºÍ(ÛÉéÉ¹é¹¹ù—éRjSJøSŸ?ÒæŒSÙD/³@Ebçİøa™Ìµ¦V¤ßw®òq=Y{ÈiÍ¸Îdp	‘ŒÅ£P`\{]§ŠËR’ÆQ¸±"²¼>	[æw†W‚Ú€£ æSoª$Ê=èÌkEéÎ6‹eşØº	İ_DüåkåY/‘;±LWw8™XT±‡ÀšĞ1ı‚¶S¬+K¨…ËCÌb<(üœ9	AœğÅD`¼MÎuAj—Œ–€Î!ø’øM4~J¥ŸS?ç‘*4=ƒ_çÀ¸7z×?nÄÀ±ªBRÏ}œóÆ$=†®çTÛRÉ{ªgyOñÉ	6è‰?{ ¦çcíË„-‘?úZÑ^±¢Õã‰xòœs@M`ÊT`“ìş?`u4ì!†ÚœFz?oÍe:úÀ{fqÛÒùiUOü®D¨ïÓBÎñ<°	ó=&É}[ûJĞö\)8&v¾ ê}.2‡²É<5+
+£ûXƒJC>«­èh"¥öûBŠáÙ·ïy-ñ	e²ç
+OsûyA"p‰Ë¢âx ªñÄVœœ²G|+°¼ú¶”ú2!™H£l-\nq·HÃ
+iÜásn[Õşeèœ
+–»TÃ$¡“Â"ÅÈ”ï,„û$³ıLÆjB!3à!4z‚¾ÇŒİõÆf ­åËDqc Œxš‚§w} ÚËAÌiàÎc`ÁI}%Œ|'B–P|aq¶ÏQ“Ñı}.*yIøË®Z™Pè²,Ó^ßKÕay¦ˆ„LUFd3…K£*ãİrucìÁƒYõ&6ŠúaFÁ
+LB¥•	¾ÚCB£¾ µqä¸i‚¥RZü9UÏèpqîXT¹û”­RuvšÊ¿;ÑİCcQ{$éÿQV)o&Á%Qà7ÙkoÏã?Â:iœ+±NPğ]`ˆt9)<e0H”Şø1#S‘Ä‡gÀï	 Ú™ß?ğCé	DŸ1HÖ¼ŞÆS‹’ÇTjÚ#™)ÃÉ1ƒ U[‚[¯J»!‰Åy9*i:Pi%ğÊ÷qÄa,^&Û—f¡ÜNç
+ÁhäM³_åûR+æC•Ïø	·C÷àƒRJeQ›ÙtXYCb-=3-hÃ³Ó#N{B…Q±ª~Ç÷D»?äÜbbçç Š÷¤©(À@ƒ’N”f¢‘7ç'ÙÙ#±ÍN¾­¥0 ÕNi~‘Q`¸¼å âg…ƒSZ f+$»œ¢h{¤‰j‘ Œa"Ã%Ó!dõ.aØy†7x?Å@uç3:Íb·¦¬•wj?«ıº&ÓìĞzV9áÏ´\ÏèÑlø{ÎÉ‰j*IMÀï5=WŞ·ÊòR¦íKœ¹ÔNæT•ŠJW\»g:VôöSóaI[ÇMI_º†ßpJF@úB‚útXŠïêƒ{†ÁËÉDO›à„ˆô„“ôD8"»BÎÇVé
+"Î]êG7å‘®L°Ç¾ğÀ{ªüvªå“ğwU÷<W“dHU¸¬}Âû…>§Ü%EûMí}P7	à-¡ç7§U½LìuJò5+@“”“è²GŞ„´ÊèƒJÏ¥çáÕ	ÁÒı¢ÀtëaÇ€RÂ‡„,¹”e¡KæP©B¹ú(n\—BÁÏ”M"·Õ~Şı	wÿ€¶Ã5FÒdõ  ÷|é+]y†ğIÂy‚_ŸHq ÄàLÕ0ÀÙû¿jµŠc5'w£¯5àÍ²•“SÓ353´È)zÇ$Q|-WuÄcD’xÄ[=:À‰Æ \g‹ÓÃØ¸[g$Usç£»lî2+Fê”)…8¦âNm€*´+ÆŠÿÚ"¸Ö l£Ãæfg§gå•·*ËèäËşqô5ª"JÌIÿÓœƒ¡;"\â†ù€Ôë<;o$1Mˆbş”:73DŸï)ù_¾r:œqÕ‘Ôê[7ëïİ#d%dğËrbü]æÕ`»SîÁ›
+¦Á/cÓG"à¢Ğ•À+;t^?H¯’÷¯«?IeŸBÓ¬Öhú¥Z¦âLF™Ù”Ñ¸ršIiñ_jc”HåàA:™}•A„<àÂŒì»Œ]tÀc€ÃRéöRdMi$Ì¡¼ <;ç+Ğ„v²15gó¡ÒUù
+5Ô!ÙÓ]<Zê &Ùv<!G¯Rä\|´±æ…ñ)s›Ù†‰ãJ¸¢xYÍ\…L>x¢á>Í$CHy:ÜºL±
+×§<—Ü îr„äw aßè~5o–…"<ÈÎq3"æïÔÒ}Î€CFïò
+•ü‰-$kîo!ĞA’ût„Ë"Ş£mî‹ôØó\$;^­xÉ+%cˆùJ/?å'×İ-u>–œ{G¡()ÏB!ä!‰ÔCò“3Ä-u|Gæx.…ğ³OŞ¼Ê²"î<Ò,*ã5—}¦æ"ÿ8'È¶"¦|øñü`’g7ó!¹ûÂh`,ª&ĞË-†+E_)*8§h¬È£.I±
+eMwGÉ°İ#¼ÇeuBF¯c™ú,C¥åêÏU@wPäa–L›x´?z“vjO¦Ê`ù£»
+/‹óHù¤ƒ,6©Ì#-IgFÍÜ2¢i=V>!§â‰ ê™‘ÛËù*.S‘–v¢Ììy	E*jÉ*L±w¢xÛ‰1áSe"ËMæG~œv€}H§€“‰Ì›âa«9/Iµr@ÕXDèi8Ò@ê¯„Ò$mBÌi]!ûÆ`›JIÊg¢,¤CQ;‰h•øWÙBİ¾îqùU)#Êd›ô•Z;‘–% Æ<v*TÃ>Ghq"#^ä7\”Cÿ­(òàáx´Ã×#¤!.¿çnÏ¿Q8¸Ï‘dO§?õ©P3Úí@â·%F`0¾^>€•Ÿ¨îRÀĞÒIúùØ÷<•¢FU³İÎĞ[–G9ÙàÓhÃÁ­€õ¢¼—KêR°õ­
+¹¨ˆ¢·9¨–¥5«OªÛ>sJFñÕ³‹1ˆÑì}í}±,‡¿‡…’<èßÅèö”üÉ?œ{õrKú/l½ğ¢Nfè[!*ò,ÒX>8?ñno>1k&“T¸_T*×¨iñh°ˆ«DÎŠpûf V-3&¸K3ŞÅ{7'tKBÁ®áT•W—Û±»òìXŞŞpOñc~ö}í&Ùë±Ç‹ÌrÛMK~¡óà
+hT¶;3òò¼0&Œªd°3ôÒ$uRf¯…üøD–†ãËyß»wDvµOeİ _ß3{ÚãyÖf%	³Ó ´ÆH©W¿´— ‹¬pÄûÛ".ÇU1FR^/[ƒÓF¨rD>³¿/s$zf<§H@—Å,=UT£âu>+¿È¸{+Win¶.\ª	›°ÕFnG¯|¥Òã™FZwÀaÏ¬½äŠ¨c2È)\?Ü®fÑœ87wBRz€ÒË í_…®UOöó4ÈÜ³#š{dîrU\VyÇ½m'„^æôLîıÄüWuş±›´
+_¶4_sÄcŞQêå_då7ÕIy(’Ÿ)jÃ‚·ÿŒ?<á¬°××ºA°¨½vë¬E]ù‚×ğ[I>%xûzöºuvÍâù¹9ƒ&@ì©Æ$DîOypŒu	Z”Ø³æ›‚ıá¹±ßğCü¿ôÒØßt?ué¬'{É{§êè4«4«l»ÊÜ	v—U¶?q?ÅóRøK?!¥´fi¼ŸÛµç->áÔÔäÔìÌäô½mX•\Qå®ß\OaomËO¢xß½…)ßİl;ñ5w m37×íÆNê­âƒ7a*×Ó›¾š´ Şâe_0×IİVÅÃ~ÁğÖ–³–Ô¬mxéÛ×öÂ4ysgÕÙø•Óö*– ÅÄ'O«,¡†nìÁ|¢mÖ¢ÊÖáqF1œ#¬uœZı*jz5?L¼8}Ó[b¯’TYˆ+ZdI©]ÇèÏøáÂez¿'1~«4kA$ÎÊwYØ2o"${#»\à—ÖûfÕëm·&^ëˆ»õ6gA}é‚™¿®E/vhÈO¢µÛ›²ğÎ§n«YsšÍ··`cïûIê…^\±~şÁ/ÅUy?rš 0@øß	(ïÁt]¯Ğ·/&*ÍÈí"«âà]•Y|]·Ä¢n¹ ÕkÀÃÄÒşÄAö÷–HÚ³7ÁÌÑêR¬Tİ¿%>’mÁYK¢ 4{‘á‹6ö<ü`aŸŸgÅ¤:e¯ç“:Õ/Ò§:ÿ«	Kuş—nşS»Ï¡úF  
+0
+
+

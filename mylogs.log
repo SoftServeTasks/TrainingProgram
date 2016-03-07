@@ -1,61 +1,42 @@
-07-03-2016 13:22:02 INFO  ProxyServer:68 - Proxy server started on port: 1002
+07-03-2016 15:26:10 INFO  ProxyServer:68 - Proxy server started on port: 1002
 
-07-03-2016 13:22:05 INFO  HttpClient:100 - Client number 4 started
-07-03-2016 13:22:05 INFO  HttpClient:100 - Client number 3 started
-07-03-2016 13:22:05 INFO  HttpClient:100 - Client number 5 started
-07-03-2016 13:22:05 DEBUG HttpClient:102 - * CLIENT: Message sent to server localhost:1002!
+07-03-2016 15:26:10 ERROR ProxyServer:71 - Port 1002 is blocked.
+java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:128)
+	at com.mycompany.forwardproxyserver.ProxyServer.startServer(ProxyServer.java:67)
+	at com.mycompany.forwardproxyserver.ProxyServer.run(ProxyServer.java:48)
+07-03-2016 15:26:13 INFO  ProxyServer:88 -  + PROXY: * Client number 1  accepted
 
-07-03-2016 13:22:05 INFO  HttpClient:100 - Client number 1 started
-07-03-2016 13:22:05 DEBUG HttpClient:102 - * CLIENT: Message sent to server localhost:1002!
+07-03-2016 15:26:13 INFO  ProxyServer:88 -  + PROXY: * Client number 1  accepted
 
-07-03-2016 13:22:05 DEBUG HttpClient:102 - * CLIENT: Message sent to server localhost:1002!
+07-03-2016 15:26:13 INFO  ProxyServer:88 -  + PROXY: * Client number 1  accepted
 
-07-03-2016 13:22:05 INFO  HttpClient:100 - Client number 9 started
-07-03-2016 13:22:05 INFO  HttpClient:100 - Client number 0 started
-07-03-2016 13:22:05 INFO  HttpClient:100 - Client number 8 started
-07-03-2016 13:22:05 INFO  HttpClient:100 - Client number 7 started
-07-03-2016 13:22:05 DEBUG HttpClient:102 - * CLIENT: Message sent to server localhost:1002!
+07-03-2016 15:26:13 INFO  ProxyServer:88 -  + PROXY: * Client number 1  accepted
 
-07-03-2016 13:22:05 INFO  HttpClient:100 - Client number 2 started
-07-03-2016 13:22:05 INFO  HttpClient:100 - Client number 6 started
-07-03-2016 13:22:05 DEBUG HttpClient:102 - * CLIENT: Message sent to server localhost:1002!
+07-03-2016 15:26:13 INFO  ProxyServer:88 -  + PROXY: * Client number 1  accepted
 
-07-03-2016 13:22:05 DEBUG HttpClient:102 - * CLIENT: Message sent to server localhost:1002!
+07-03-2016 15:26:13 INFO  ProxyServer:88 -  + PROXY: * Client number 1  accepted
 
-07-03-2016 13:22:05 DEBUG HttpClient:102 - * CLIENT: Message sent to server localhost:1002!
+07-03-2016 15:26:13 INFO  ProxyServer:88 -  + PROXY: * Client number 1  accepted
 
-07-03-2016 13:22:05 DEBUG HttpClient:102 - * CLIENT: Message sent to server localhost:1002!
+07-03-2016 15:26:13 INFO  ProxyServer:88 -  + PROXY: * Client number 1  accepted
 
-07-03-2016 13:22:05 DEBUG HttpClient:102 - * CLIENT: Message sent to server localhost:1002!
+07-03-2016 15:26:13 INFO  ProxyServer:88 -  + PROXY: * Client number 1  accepted
 
-07-03-2016 13:22:05 DEBUG HttpClient:102 - * CLIENT: Message sent to server localhost:1002!
+07-03-2016 15:26:13 DEBUG ClientsBrowserAnalyzer:40 - Добавляю 1-й браузер Google Chrome в базу
 
-07-03-2016 13:22:06 INFO  ProxyServer:88 -  + PROXY: * Client number 1  accepted
+07-03-2016 15:26:13 DEBUG ClientsBrowserAnalyzer:40 - Добавляю 1-й браузер Google Chrome в базу
 
-07-03-2016 13:22:06 INFO  ProxyServer:88 -  + PROXY: * Client number 1  accepted
+07-03-2016 15:26:13 INFO  ProxyServer:88 -  + PROXY: * Client number 1  accepted
 
-07-03-2016 13:22:06 INFO  ProxyServer:88 -  + PROXY: * Client number 1  accepted
-
-07-03-2016 13:22:06 INFO  ProxyServer:88 -  + PROXY: * Client number 1  accepted
-
-07-03-2016 13:22:06 INFO  ProxyServer:88 -  + PROXY: * Client number 1  accepted
-
-07-03-2016 13:22:06 INFO  ProxyServer:88 -  + PROXY: * Client number 1  accepted
-
-07-03-2016 13:22:06 INFO  ProxyServer:88 -  + PROXY: * Client number 1  accepted
-
-07-03-2016 13:22:06 INFO  ProxyServer:88 -  + PROXY: * Client number 1  accepted
-
-07-03-2016 13:22:06 DEBUG ClientsBrowserAnalyzer:40 - Добавляю 1-й браузер Google Chrome в базу
-
-07-03-2016 13:22:06 INFO  ProxyServer:88 -  + PROXY: * Client number 1  accepted
-
-07-03-2016 13:22:06 DEBUG ClientsBrowserAnalyzer:40 - Добавляю 2-й браузер Google Chrome в базу
-
-07-03-2016 13:22:06 DEBUG ClientsBrowserAnalyzer:40 - Добавляю 3-й браузер Google Chrome в базу
-
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:154 - 
-+ PROXY: CURRENT TIME IS: 13:22:06
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:152 - 
++ PROXY: CURRENT TIME IS: 15:26:13
 CLIENTS 1 REQUEST: 
 GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
@@ -69,13 +50,13 @@ Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
 Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
 
 
-07-03-2016 13:22:06 INFO  HttpRequestHandler:157 - 
+07-03-2016 15:26:13 INFO  HttpRequestHandler:155 - 
 * PROXY: Необходима NTLM аутентификация, возвращаю ошибку 407 клиенту!
 
-07-03-2016 13:22:06 DEBUG ClientsBrowserAnalyzer:40 - Добавляю 1-й браузер Google Chrome в базу
+07-03-2016 15:26:13 DEBUG ClientsBrowserAnalyzer:40 - Добавляю 2-й браузер Google Chrome в базу
 
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:154 - 
-+ PROXY: CURRENT TIME IS: 13:22:06
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:152 - 
++ PROXY: CURRENT TIME IS: 15:26:13
 CLIENTS 1 REQUEST: 
 GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
@@ -89,17 +70,8 @@ Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
 Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
 
 
-07-03-2016 13:22:06 INFO  HttpRequestHandler:157 - 
-* PROXY: Необходима NTLM аутентификация, возвращаю ошибку 407 клиенту!
-
-07-03-2016 13:22:06 DEBUG ClientsBrowserAnalyzer:40 - Добавляю 4-й браузер Google Chrome в базу
-
-07-03-2016 13:22:06 DEBUG ClientsBrowserAnalyzer:40 - Добавляю 4-й браузер Google Chrome в базу
-
-07-03-2016 13:22:06 DEBUG ClientsBrowserAnalyzer:40 - Добавляю 4-й браузер Google Chrome в базу
-
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:154 - 
-+ PROXY: CURRENT TIME IS: 13:22:06
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:152 - 
++ PROXY: CURRENT TIME IS: 15:26:13
 CLIENTS 1 REQUEST: 
 GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
@@ -113,10 +85,16 @@ Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
 Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
 
 
-07-03-2016 13:22:06 DEBUG ClientsBrowserAnalyzer:40 - Добавляю 4-й браузер Google Chrome в базу
+07-03-2016 15:26:13 DEBUG ClientsBrowserAnalyzer:40 - Добавляю 3-й браузер Google Chrome в базу
 
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:154 - 
-+ PROXY: CURRENT TIME IS: 13:22:06
+07-03-2016 15:26:13 DEBUG ClientsBrowserAnalyzer:40 - Добавляю 3-й браузер Google Chrome в базу
+
+07-03-2016 15:26:13 DEBUG ClientsBrowserAnalyzer:40 - Добавляю 3-й браузер Google Chrome в базу
+
+07-03-2016 15:26:13 DEBUG ClientsBrowserAnalyzer:40 - Добавляю 4-й браузер Google Chrome в базу
+
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:152 - 
++ PROXY: CURRENT TIME IS: 15:26:13
 CLIENTS 1 REQUEST: 
 GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
@@ -130,13 +108,8 @@ Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
 Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
 
 
-07-03-2016 13:22:06 INFO  HttpRequestHandler:157 - 
-* PROXY: Необходима NTLM аутентификация, возвращаю ошибку 407 клиенту!
-
-07-03-2016 13:22:06 DEBUG ClientsBrowserAnalyzer:40 - Добавляю 2-й браузер Google Chrome в базу
-
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:154 - 
-+ PROXY: CURRENT TIME IS: 13:22:06
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:152 - 
++ PROXY: CURRENT TIME IS: 15:26:13
 CLIENTS 1 REQUEST: 
 GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
@@ -150,13 +123,14 @@ Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
 Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
 
 
-07-03-2016 13:22:06 INFO  HttpRequestHandler:157 - 
+07-03-2016 15:26:13 INFO  HttpRequestHandler:155 - 
 * PROXY: Необходима NTLM аутентификация, возвращаю ошибку 407 клиенту!
 
-07-03-2016 13:22:06 INFO  ProxyServer:88 -  + PROXY: * Client number 1  accepted
+07-03-2016 15:26:13 INFO  HttpRequestHandler:155 - 
+* PROXY: Необходима NTLM аутентификация, возвращаю ошибку 407 клиенту!
 
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:154 - 
-+ PROXY: CURRENT TIME IS: 13:22:06
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:152 - 
++ PROXY: CURRENT TIME IS: 15:26:13
 CLIENTS 1 REQUEST: 
 GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
@@ -170,11 +144,86 @@ Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
 Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
 
 
-07-03-2016 13:22:06 INFO  HttpRequestHandler:157 - 
+07-03-2016 15:26:13 INFO  HttpRequestHandler:155 - 
 * PROXY: Необходима NTLM аутентификация, возвращаю ошибку 407 клиенту!
 
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:154 - 
-+ PROXY: CURRENT TIME IS: 13:22:06
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:165 - 
++ PROXY: Client sent after 407: GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:167 - 
++ PROXY: type1: TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:165 - 
++ PROXY: Client sent after 407: GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:167 - 
++ PROXY: type1: TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+07-03-2016 15:26:13 INFO  AuthNtlmType1Handler:38 - Domain: SOFTSERVE
+Workstation: DP852
+07-03-2016 15:26:13 DEBUG AuthNtlmType1Handler:57 - Check: true
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:165 - 
++ PROXY: Client sent after 407: GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:167 - 
++ PROXY: type1: TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+07-03-2016 15:26:13 INFO  HttpRequestHandler:155 - 
+* PROXY: Необходима NTLM аутентификация, возвращаю ошибку 407 клиенту!
+
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:165 - 
++ PROXY: Client sent after 407: GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:167 - 
++ PROXY: type1: TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+07-03-2016 15:26:13 INFO  AuthNtlmType1Handler:38 - Domain: SOFTSERVE
+Workstation: DP852
+07-03-2016 15:26:13 INFO  HttpRequestHandler:155 - 
+* PROXY: Необходима NTLM аутентификация, возвращаю ошибку 407 клиенту!
+
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:152 - 
++ PROXY: CURRENT TIME IS: 15:26:13
 CLIENTS 1 REQUEST: 
 GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
@@ -188,14 +237,86 @@ Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
 Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
 
 
-07-03-2016 13:22:06 INFO  HttpRequestHandler:157 - 
+07-03-2016 15:26:13 DEBUG AuthNtlmType2Maker:40 - 
+type2 decoded value: Type2Message[target=testTarget,challenge=<13 bytes>,context=<11 bytes>,targetInformation=<17 bytes>,flags=0xA208B207]
+
+07-03-2016 15:26:13 INFO  HttpRequestHandler:172 - 
++ PROXY: Chellenge was sent to client
+07-03-2016 15:26:13 INFO  HttpRequestHandler:155 - 
 * PROXY: Необходима NTLM аутентификация, возвращаю ошибку 407 клиенту!
 
-07-03-2016 13:22:06 INFO  HttpRequestHandler:157 - 
-* PROXY: Необходима NTLM аутентификация, возвращаю ошибку 407 клиенту!
+07-03-2016 15:26:13 DEBUG AuthNtlmType1Handler:57 - Check: true
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:165 - 
++ PROXY: Client sent after 407: GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
 
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:154 - 
-+ PROXY: CURRENT TIME IS: 13:22:06
+
+07-03-2016 15:26:13 INFO  AuthNtlmType1Handler:38 - Domain: SOFTSERVE
+Workstation: DP852
+07-03-2016 15:26:13 INFO  AuthNtlmType1Handler:38 - Domain: SOFTSERVE
+Workstation: DP852
+07-03-2016 15:26:13 DEBUG AuthNtlmType1Handler:57 - Check: true
+07-03-2016 15:26:13 DEBUG AuthNtlmType2Maker:40 - 
+type2 decoded value: Type2Message[target=testTarget,challenge=<13 bytes>,context=<11 bytes>,targetInformation=<17 bytes>,flags=0xA208B207]
+
+07-03-2016 15:26:13 DEBUG ClientsBrowserAnalyzer:40 - Добавляю 4-й браузер Google Chrome в базу
+
+07-03-2016 15:26:13 DEBUG AuthNtlmType1Handler:57 - Check: true
+07-03-2016 15:26:13 DEBUG AuthNtlmType2Maker:40 - 
+type2 decoded value: Type2Message[target=testTarget,challenge=<13 bytes>,context=<11 bytes>,targetInformation=<17 bytes>,flags=0xA208B207]
+
+07-03-2016 15:26:13 INFO  HttpRequestHandler:172 - 
++ PROXY: Chellenge was sent to client
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:165 - 
++ PROXY: Client sent after 407: GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:167 - 
++ PROXY: type1: TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+07-03-2016 15:26:13 DEBUG ClientsBrowserAnalyzer:40 - Добавляю 4-й браузер Google Chrome в базу
+
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:167 - 
++ PROXY: type1: TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+07-03-2016 15:26:13 DEBUG AuthNtlmType2Maker:40 - 
+type2 decoded value: Type2Message[target=testTarget,challenge=<13 bytes>,context=<11 bytes>,targetInformation=<17 bytes>,flags=0xA208B207]
+
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:165 - 
++ PROXY: Client sent after 407: GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:167 - 
++ PROXY: type1: TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:152 - 
++ PROXY: CURRENT TIME IS: 15:26:13
 CLIENTS 1 REQUEST: 
 GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
@@ -209,11 +330,53 @@ Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
 Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
 
 
-07-03-2016 13:22:06 INFO  HttpRequestHandler:157 - 
+07-03-2016 15:26:13 INFO  HttpRequestHandler:155 - 
 * PROXY: Необходима NTLM аутентификация, возвращаю ошибку 407 клиенту!
 
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:154 - 
-+ PROXY: CURRENT TIME IS: 13:22:06
+07-03-2016 15:26:13 INFO  AuthNtlmType1Handler:38 - Domain: SOFTSERVE
+Workstation: DP852
+07-03-2016 15:26:13 DEBUG AuthNtlmType1Handler:57 - Check: true
+07-03-2016 15:26:13 DEBUG AuthNtlmType2Maker:40 - 
+type2 decoded value: Type2Message[target=testTarget,challenge=<13 bytes>,context=<11 bytes>,targetInformation=<17 bytes>,flags=0xA208B207]
+
+07-03-2016 15:26:13 INFO  HttpRequestHandler:172 - 
++ PROXY: Chellenge was sent to client
+07-03-2016 15:26:13 INFO  AuthNtlmType1Handler:38 - Domain: SOFTSERVE
+Workstation: DP852
+07-03-2016 15:26:13 DEBUG AuthNtlmType1Handler:57 - Check: true
+07-03-2016 15:26:13 DEBUG AuthNtlmType2Maker:40 - 
+type2 decoded value: Type2Message[target=testTarget,challenge=<13 bytes>,context=<11 bytes>,targetInformation=<17 bytes>,flags=0xA208B207]
+
+07-03-2016 15:26:13 INFO  HttpRequestHandler:172 - 
++ PROXY: Chellenge was sent to client
+07-03-2016 15:26:13 INFO  HttpRequestHandler:172 - 
++ PROXY: Chellenge was sent to client
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:165 - 
++ PROXY: Client sent after 407: GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:167 - 
++ PROXY: type1: TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+07-03-2016 15:26:13 INFO  AuthNtlmType1Handler:38 - Domain: SOFTSERVE
+Workstation: DP852
+07-03-2016 15:26:13 DEBUG AuthNtlmType1Handler:57 - Check: true
+07-03-2016 15:26:13 DEBUG AuthNtlmType2Maker:40 - 
+type2 decoded value: Type2Message[target=testTarget,challenge=<13 bytes>,context=<11 bytes>,targetInformation=<17 bytes>,flags=0xA208B207]
+
+07-03-2016 15:26:13 INFO  HttpRequestHandler:172 - 
++ PROXY: Chellenge was sent to client
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:152 - 
++ PROXY: CURRENT TIME IS: 15:26:13
 CLIENTS 1 REQUEST: 
 GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
@@ -227,13 +390,10 @@ Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
 Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
 
 
-07-03-2016 13:22:06 INFO  HttpRequestHandler:157 - 
-* PROXY: Необходима NTLM аутентификация, возвращаю ошибку 407 клиенту!
+07-03-2016 15:26:13 DEBUG ClientsBrowserAnalyzer:40 - Добавляю 4-й браузер Google Chrome в базу
 
-07-03-2016 13:22:06 DEBUG ClientsBrowserAnalyzer:40 - Добавляю 3-й браузер Google Chrome в базу
-
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:154 - 
-+ PROXY: CURRENT TIME IS: 13:22:06
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:152 - 
++ PROXY: CURRENT TIME IS: 15:26:13
 CLIENTS 1 REQUEST: 
 GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
@@ -247,290 +407,10 @@ Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
 Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
 
 
-07-03-2016 13:22:06 INFO  HttpRequestHandler:157 - 
+07-03-2016 15:26:13 INFO  HttpRequestHandler:155 - 
 * PROXY: Необходима NTLM аутентификация, возвращаю ошибку 407 клиенту!
 
-07-03-2016 13:22:06 DEBUG HttpClient:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
-
- HTTP/1.1 407 Proxy Authentication Required
-Server: squid/2.5.STABLE3
-Mime-Version: 1.0
-Content-Type: text/htmlContent-Length: 21
-Proxy-Authenticate: NTLM
-Connection: close
-
-
- ************************************************** 
-
-07-03-2016 13:22:06 DEBUG HttpClient:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
-
-07-03-2016 13:22:06 DEBUG HttpClient:111 - * CLIENT: Отправляю Type1Message 
-GET http://portscan.ru/ HTTP/1.1
-Host: portscan.ru
-Proxy-Connection: keep-alive
-Cache-Control: max-age=0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
-Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-
-
-07-03-2016 13:22:06 DEBUG HttpClient:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
-
- HTTP/1.1 407 Proxy Authentication Required
-Server: squid/2.5.STABLE3
-Mime-Version: 1.0
-Content-Type: text/htmlContent-Length: 21
-Proxy-Authenticate: NTLM
-Connection: close
-
-
- ************************************************** 
-
-07-03-2016 13:22:06 DEBUG HttpClient:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
-
-07-03-2016 13:22:06 DEBUG HttpClient:111 - * CLIENT: Отправляю Type1Message 
-GET http://portscan.ru/ HTTP/1.1
-Host: portscan.ru
-Proxy-Connection: keep-alive
-Cache-Control: max-age=0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
-Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-
-
-07-03-2016 13:22:06 DEBUG HttpClient:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
-
- HTTP/1.1 407 Proxy Authentication Required
-Server: squid/2.5.STABLE3
-Mime-Version: 1.0
-Content-Type: text/htmlContent-Length: 21
-Proxy-Authenticate: NTLM
-Connection: close
-
-
- ************************************************** 
-
-07-03-2016 13:22:06 DEBUG HttpClient:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
-
-07-03-2016 13:22:06 DEBUG HttpClient:111 - * CLIENT: Отправляю Type1Message 
-GET http://portscan.ru/ HTTP/1.1
-Host: portscan.ru
-Proxy-Connection: keep-alive
-Cache-Control: max-age=0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
-Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-
-
-07-03-2016 13:22:06 DEBUG HttpClient:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
-
- HTTP/1.1 407 Proxy Authentication Required
-Server: squid/2.5.STABLE3
-Mime-Version: 1.0
-Content-Type: text/htmlContent-Length: 21
-Proxy-Authenticate: NTLM
-Connection: close
-
-
- ************************************************** 
-
-07-03-2016 13:22:06 DEBUG HttpClient:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
-
-07-03-2016 13:22:06 DEBUG HttpClient:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
-
- HTTP/1.1 407 Proxy Authentication Required
-Server: squid/2.5.STABLE3
-Mime-Version: 1.0
-Content-Type: text/htmlContent-Length: 21
-Proxy-Authenticate: NTLM
-Connection: close
-
-
- ************************************************** 
-
-07-03-2016 13:22:06 DEBUG HttpClient:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
-
-07-03-2016 13:22:06 DEBUG HttpClient:111 - * CLIENT: Отправляю Type1Message 
-GET http://portscan.ru/ HTTP/1.1
-Host: portscan.ru
-Proxy-Connection: keep-alive
-Cache-Control: max-age=0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
-Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-
-
-07-03-2016 13:22:06 DEBUG HttpClient:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
-
- HTTP/1.1 407 Proxy Authentication Required
-Server: squid/2.5.STABLE3
-Mime-Version: 1.0
-Content-Type: text/htmlContent-Length: 21
-Proxy-Authenticate: NTLM
-Connection: close
-
-
- ************************************************** 
-
-07-03-2016 13:22:06 DEBUG HttpClient:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
-
-07-03-2016 13:22:06 DEBUG HttpClient:111 - * CLIENT: Отправляю Type1Message 
-GET http://portscan.ru/ HTTP/1.1
-Host: portscan.ru
-Proxy-Connection: keep-alive
-Cache-Control: max-age=0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
-Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-
-
-07-03-2016 13:22:06 DEBUG HttpClient:111 - * CLIENT: Отправляю Type1Message 
-GET http://portscan.ru/ HTTP/1.1
-Host: portscan.ru
-Proxy-Connection: keep-alive
-Cache-Control: max-age=0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
-Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-
-
-07-03-2016 13:22:06 DEBUG HttpClient:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
-
- HTTP/1.1 407 Proxy Authentication Required
-Server: squid/2.5.STABLE3
-Mime-Version: 1.0
-Content-Type: text/htmlContent-Length: 21
-Proxy-Authenticate: NTLM
-Connection: close
-
-
- ************************************************** 
-
-07-03-2016 13:22:06 DEBUG HttpClient:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
-
-07-03-2016 13:22:06 DEBUG HttpClient:111 - * CLIENT: Отправляю Type1Message 
-GET http://portscan.ru/ HTTP/1.1
-Host: portscan.ru
-Proxy-Connection: keep-alive
-Cache-Control: max-age=0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
-Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-
-
-07-03-2016 13:22:06 DEBUG HttpClient:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
-
- HTTP/1.1 407 Proxy Authentication Required
-Server: squid/2.5.STABLE3
-Mime-Version: 1.0
-Content-Type: text/htmlContent-Length: 21
-Proxy-Authenticate: NTLM
-Connection: close
-
-
- ************************************************** 
-
-07-03-2016 13:22:06 DEBUG HttpClient:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
-
-07-03-2016 13:22:06 DEBUG HttpClient:111 - * CLIENT: Отправляю Type1Message 
-GET http://portscan.ru/ HTTP/1.1
-Host: portscan.ru
-Proxy-Connection: keep-alive
-Cache-Control: max-age=0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
-Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-
-
-07-03-2016 13:22:06 DEBUG HttpClient:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
-
- HTTP/1.1 407 Proxy Authentication Required
-Server: squid/2.5.STABLE3
-Mime-Version: 1.0
-Content-Type: text/htmlContent-Length: 21
-Proxy-Authenticate: NTLM
-Connection: close
-
-
- ************************************************** 
-
-07-03-2016 13:22:06 DEBUG HttpClient:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
-
- HTTP/1.1 407 Proxy Authentication Required
-Server: squid/2.5.STABLE3
-Mime-Version: 1.0
-Content-Type: text/htmlContent-Length: 21
-Proxy-Authenticate: NTLM
-Connection: close
-
-
- ************************************************** 
-
-07-03-2016 13:22:06 DEBUG HttpClient:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
-
-07-03-2016 13:22:06 DEBUG HttpClient:111 - * CLIENT: Отправляю Type1Message 
-GET http://portscan.ru/ HTTP/1.1
-Host: portscan.ru
-Proxy-Connection: keep-alive
-Cache-Control: max-age=0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
-Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-
-
-07-03-2016 13:22:06 DEBUG HttpClient:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
-
-07-03-2016 13:22:06 DEBUG HttpClient:111 - * CLIENT: Отправляю Type1Message 
-GET http://portscan.ru/ HTTP/1.1
-Host: portscan.ru
-Proxy-Connection: keep-alive
-Cache-Control: max-age=0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
-Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-
-
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:167 - 
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:165 - 
 + PROXY: Client sent after 407: GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
 Proxy-Connection: keep-alive
@@ -544,7 +424,30 @@ Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
 Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
 
 
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:167 - 
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:167 - 
++ PROXY: type1: TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+07-03-2016 15:26:13 INFO  AuthNtlmType1Handler:38 - Domain: SOFTSERVE
+Workstation: DP852
+07-03-2016 15:26:13 DEBUG AuthNtlmType1Handler:57 - Check: true
+07-03-2016 15:26:13 DEBUG AuthNtlmType2Maker:40 - 
+type2 decoded value: Type2Message[target=testTarget,challenge=<13 bytes>,context=<11 bytes>,targetInformation=<17 bytes>,flags=0xA208B207]
+
+07-03-2016 15:26:13 INFO  HttpRequestHandler:172 - 
++ PROXY: Chellenge was sent to client
+07-03-2016 15:26:13 INFO  HttpRequestHandler:155 - 
+* PROXY: Необходима NTLM аутентификация, возвращаю ошибку 407 клиенту!
+
+07-03-2016 15:26:13 INFO  AuthNtlmType1Handler:38 - Domain: SOFTSERVE
+Workstation: DP852
+07-03-2016 15:26:13 DEBUG AuthNtlmType1Handler:57 - Check: true
+07-03-2016 15:26:13 DEBUG AuthNtlmType2Maker:40 - 
+type2 decoded value: Type2Message[target=testTarget,challenge=<13 bytes>,context=<11 bytes>,targetInformation=<17 bytes>,flags=0xA208B207]
+
+07-03-2016 15:26:13 INFO  HttpRequestHandler:172 - 
++ PROXY: Chellenge was sent to client
+07-03-2016 15:26:13 INFO  HttpRequestHandler:172 - 
++ PROXY: Chellenge was sent to client
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:165 - 
 + PROXY: Client sent after 407: GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
 Proxy-Connection: keep-alive
@@ -558,339 +461,17 @@ Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
 Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
 
 
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:169 - 
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:167 - 
 + PROXY: type1: TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:167 - 
-+ PROXY: Client sent after 407: GET http://portscan.ru/ HTTP/1.1
-Host: portscan.ru
-Proxy-Connection: keep-alive
-Cache-Control: max-age=0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
-Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-
-
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:169 - 
-+ PROXY: type1: TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:167 - 
-+ PROXY: Client sent after 407: GET http://portscan.ru/ HTTP/1.1
-Host: portscan.ru
-Proxy-Connection: keep-alive
-Cache-Control: max-age=0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
-Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-
-
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:169 - 
-+ PROXY: type1: TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-07-03-2016 13:22:06 INFO  AuthNtlmType1Handler:38 - Domain: SOFTSERVE
+07-03-2016 15:26:13 INFO  AuthNtlmType1Handler:38 - Domain: SOFTSERVE
 Workstation: DP852
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:167 - 
-+ PROXY: Client sent after 407: GET http://portscan.ru/ HTTP/1.1
-Host: portscan.ru
-Proxy-Connection: keep-alive
-Cache-Control: max-age=0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
-Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-
-
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:169 - 
-+ PROXY: type1: TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-07-03-2016 13:22:06 DEBUG AuthNtlmType1Handler:57 - Check: true
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:169 - 
-+ PROXY: type1: TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:167 - 
-+ PROXY: Client sent after 407: GET http://portscan.ru/ HTTP/1.1
-Host: portscan.ru
-Proxy-Connection: keep-alive
-Cache-Control: max-age=0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
-Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-
-
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:169 - 
-+ PROXY: type1: TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-07-03-2016 13:22:06 INFO  AuthNtlmType1Handler:38 - Domain: SOFTSERVE
-Workstation: DP852
-07-03-2016 13:22:06 DEBUG AuthNtlmType1Handler:57 - Check: true
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:167 - 
-+ PROXY: Client sent after 407: GET http://portscan.ru/ HTTP/1.1
-Host: portscan.ru
-Proxy-Connection: keep-alive
-Cache-Control: max-age=0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
-Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-
-
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:169 - 
-+ PROXY: type1: TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-07-03-2016 13:22:06 INFO  AuthNtlmType1Handler:38 - Domain: SOFTSERVE
-Workstation: DP852
-07-03-2016 13:22:06 DEBUG AuthNtlmType1Handler:57 - Check: true
-07-03-2016 13:22:06 INFO  AuthNtlmType1Handler:38 - Domain: SOFTSERVE
-Workstation: DP852
-07-03-2016 13:22:06 DEBUG AuthNtlmType1Handler:57 - Check: true
-07-03-2016 13:22:06 INFO  AuthNtlmType1Handler:38 - Domain: SOFTSERVE
-Workstation: DP852
-07-03-2016 13:22:06 DEBUG AuthNtlmType1Handler:57 - Check: true
-07-03-2016 13:22:06 DEBUG AuthNtlmType2Maker:40 - 
+07-03-2016 15:26:13 DEBUG AuthNtlmType1Handler:57 - Check: true
+07-03-2016 15:26:13 DEBUG AuthNtlmType2Maker:40 - 
 type2 decoded value: Type2Message[target=testTarget,challenge=<13 bytes>,context=<11 bytes>,targetInformation=<17 bytes>,flags=0xA208B207]
 
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:167 - 
-+ PROXY: Client sent after 407: GET http://portscan.ru/ HTTP/1.1
-Host: portscan.ru
-Proxy-Connection: keep-alive
-Cache-Control: max-age=0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
-Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-
-
-07-03-2016 13:22:06 DEBUG HttpClient:115 - 
-* CLIENT: I've got challenge fron proxy: 
-HTTP/1.1 407 Proxy Authentication Required
-Server: squid/2.5.STABLE3
-Mime-Version: 1.0
-Content-Type: text/htmlContent-Length: 21
-Connection: close
-Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
-
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:167 - 
-+ PROXY: Client sent after 407: GET http://portscan.ru/ HTTP/1.1
-Host: portscan.ru
-Proxy-Connection: keep-alive
-Cache-Control: max-age=0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
-Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-
-
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:169 - 
-+ PROXY: type1: TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-07-03-2016 13:22:06 INFO  AuthNtlmType1Handler:38 - Domain: SOFTSERVE
-Workstation: DP852
-07-03-2016 13:22:06 DEBUG AuthNtlmType1Handler:57 - Check: true
-07-03-2016 13:22:06 DEBUG AuthNtlmType2Maker:40 - 
-type2 decoded value: Type2Message[target=testTarget,challenge=<13 bytes>,context=<11 bytes>,targetInformation=<17 bytes>,flags=0xA208B207]
-
-07-03-2016 13:22:06 INFO  HttpRequestHandler:174 - 
+07-03-2016 15:26:13 INFO  HttpRequestHandler:172 - 
 + PROXY: Chellenge was sent to client
-07-03-2016 13:22:06 DEBUG HttpClient:115 - 
-* CLIENT: I've got challenge fron proxy: 
-HTTP/1.1 407 Proxy Authentication Required
-Server: squid/2.5.STABLE3
-Mime-Version: 1.0
-Content-Type: text/htmlContent-Length: 21
-Connection: close
-Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
-
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:167 - 
-+ PROXY: Client sent after 407: GET http://portscan.ru/ HTTP/1.1
-Host: portscan.ru
-Proxy-Connection: keep-alive
-Cache-Control: max-age=0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
-Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-
-
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:169 - 
-+ PROXY: type1: TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-07-03-2016 13:22:06 INFO  AuthNtlmType1Handler:38 - Domain: SOFTSERVE
-Workstation: DP852
-07-03-2016 13:22:06 DEBUG AuthNtlmType1Handler:57 - Check: true
-07-03-2016 13:22:06 DEBUG AuthNtlmType2Maker:40 - 
-type2 decoded value: Type2Message[target=testTarget,challenge=<13 bytes>,context=<11 bytes>,targetInformation=<17 bytes>,flags=0xA208B207]
-
-07-03-2016 13:22:06 DEBUG HttpClient:115 - 
-* CLIENT: I've got challenge fron proxy: 
-HTTP/1.1 407 Proxy Authentication Required
-Server: squid/2.5.STABLE3
-Mime-Version: 1.0
-Content-Type: text/htmlContent-Length: 21
-Connection: close
-Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
-
-07-03-2016 13:22:06 INFO  HttpRequestHandler:174 - 
-+ PROXY: Chellenge was sent to client
-07-03-2016 13:22:06 DEBUG HttpRequestHandler:169 - 
-+ PROXY: type1: TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
-07-03-2016 13:22:06 INFO  AuthNtlmType1Handler:38 - Domain: SOFTSERVE
-Workstation: DP852
-07-03-2016 13:22:06 DEBUG AuthNtlmType1Handler:57 - Check: true
-07-03-2016 13:22:06 DEBUG AuthNtlmType2Maker:40 - 
-type2 decoded value: Type2Message[target=testTarget,challenge=<13 bytes>,context=<11 bytes>,targetInformation=<17 bytes>,flags=0xA208B207]
-
-07-03-2016 13:22:06 INFO  HttpRequestHandler:174 - 
-+ PROXY: Chellenge was sent to client
-07-03-2016 13:22:06 DEBUG HttpClient:115 - 
-* CLIENT: I've got challenge fron proxy: 
-HTTP/1.1 407 Proxy Authentication Required
-Server: squid/2.5.STABLE3
-Mime-Version: 1.0
-Content-Type: text/htmlContent-Length: 21
-Connection: close
-Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
-
-07-03-2016 13:22:06 INFO  HttpRequestHandler:174 - 
-+ PROXY: Chellenge was sent to client
-07-03-2016 13:22:06 DEBUG AuthNtlmType2Maker:40 - 
-type2 decoded value: Type2Message[target=testTarget,challenge=<13 bytes>,context=<11 bytes>,targetInformation=<17 bytes>,flags=0xA208B207]
-
-07-03-2016 13:22:06 DEBUG AuthNtlmType2Maker:40 - 
-type2 decoded value: Type2Message[target=testTarget,challenge=<13 bytes>,context=<11 bytes>,targetInformation=<17 bytes>,flags=0xA208B207]
-
-07-03-2016 13:22:06 DEBUG AuthNtlmType2Maker:40 - 
-type2 decoded value: Type2Message[target=testTarget,challenge=<13 bytes>,context=<11 bytes>,targetInformation=<17 bytes>,flags=0xA208B207]
-
-07-03-2016 13:22:06 DEBUG AuthNtlmType2Maker:40 - 
-type2 decoded value: Type2Message[target=testTarget,challenge=<13 bytes>,context=<11 bytes>,targetInformation=<17 bytes>,flags=0xA208B207]
-
-07-03-2016 13:22:06 DEBUG HttpClient:115 - 
-* CLIENT: I've got challenge fron proxy: 
-HTTP/1.1 407 Proxy Authentication Required
-Server: squid/2.5.STABLE3
-Mime-Version: 1.0
-Content-Type: text/htmlContent-Length: 21
-Connection: close
-Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
-
-07-03-2016 13:22:06 INFO  HttpRequestHandler:174 - 
-+ PROXY: Chellenge was sent to client
-07-03-2016 13:22:06 DEBUG HttpClient:115 - 
-* CLIENT: I've got challenge fron proxy: 
-HTTP/1.1 407 Proxy Authentication Required
-Server: squid/2.5.STABLE3
-Mime-Version: 1.0
-Content-Type: text/htmlContent-Length: 21
-Connection: close
-Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
-
-07-03-2016 13:22:06 INFO  AuthNtlmType1Handler:38 - Domain: SOFTSERVE
-Workstation: DP852
-07-03-2016 13:22:06 DEBUG AuthNtlmType1Handler:57 - Check: true
-07-03-2016 13:22:06 DEBUG AuthNtlmType2Maker:40 - 
-type2 decoded value: Type2Message[target=testTarget,challenge=<13 bytes>,context=<11 bytes>,targetInformation=<17 bytes>,flags=0xA208B207]
-
-07-03-2016 13:22:06 INFO  AuthNtlmType1Handler:38 - Domain: SOFTSERVE
-Workstation: DP852
-07-03-2016 13:22:06 DEBUG HttpClient:115 - 
-* CLIENT: I've got challenge fron proxy: 
-HTTP/1.1 407 Proxy Authentication Required
-Server: squid/2.5.STABLE3
-Mime-Version: 1.0
-Content-Type: text/htmlContent-Length: 21
-Connection: close
-Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
-
-07-03-2016 13:22:06 INFO  HttpRequestHandler:174 - 
-+ PROXY: Chellenge was sent to client
-07-03-2016 13:22:06 DEBUG HttpClient:115 - 
-* CLIENT: I've got challenge fron proxy: 
-HTTP/1.1 407 Proxy Authentication Required
-Server: squid/2.5.STABLE3
-Mime-Version: 1.0
-Content-Type: text/htmlContent-Length: 21
-Connection: close
-Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
-
-07-03-2016 13:22:06 INFO  HttpRequestHandler:174 - 
-+ PROXY: Chellenge was sent to client
-07-03-2016 13:22:06 INFO  HttpRequestHandler:174 - 
-+ PROXY: Chellenge was sent to client
-07-03-2016 13:22:06 DEBUG HttpClient:115 - 
-* CLIENT: I've got challenge fron proxy: 
-HTTP/1.1 407 Proxy Authentication Required
-Server: squid/2.5.STABLE3
-Mime-Version: 1.0
-Content-Type: text/htmlContent-Length: 21
-Connection: close
-Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
-
-07-03-2016 13:22:06 INFO  HttpRequestHandler:174 - 
-+ PROXY: Chellenge was sent to client
-07-03-2016 13:22:06 DEBUG AuthNtlmType1Handler:57 - Check: true
-07-03-2016 13:22:06 DEBUG AuthNtlmType2Maker:40 - 
-type2 decoded value: Type2Message[target=testTarget,challenge=<13 bytes>,context=<11 bytes>,targetInformation=<17 bytes>,flags=0xA208B207]
-
-07-03-2016 13:22:06 INFO  HttpRequestHandler:174 - 
-+ PROXY: Chellenge was sent to client
-07-03-2016 13:22:06 DEBUG HttpClient:115 - 
-* CLIENT: I've got challenge fron proxy: 
-HTTP/1.1 407 Proxy Authentication Required
-Server: squid/2.5.STABLE3
-Mime-Version: 1.0
-Content-Type: text/htmlContent-Length: 21
-Connection: close
-Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
-
-07-03-2016 13:22:06 DEBUG HttpClient:121 - 
-Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
-
-07-03-2016 13:22:06 DEBUG HttpClient:121 - 
-Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
-
-07-03-2016 13:22:06 DEBUG HttpClient:121 - 
-Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
-
-07-03-2016 13:22:06 DEBUG HttpClient:121 - 
-Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
-
-07-03-2016 13:22:06 DEBUG HttpClient:121 - 
-Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
-
-07-03-2016 13:22:06 DEBUG HttpClient:121 - 
-Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
-
-07-03-2016 13:22:06 DEBUG HttpClient:121 - 
-Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
-
-07-03-2016 13:22:06 DEBUG HttpClient:121 - 
-Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
-
-07-03-2016 13:22:06 DEBUG HttpClient:121 - 
-Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
-
-07-03-2016 13:22:06 DEBUG HttpClient:121 - 
-Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
-
-07-03-2016 13:22:08 DEBUG HttpRequestHandler:178 - 
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:175 - 
 + PROXY: Clients Response (with Type3): GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
 Proxy-Connection: keep-alive
@@ -901,8 +482,8 @@ User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like 
 Accept-Encoding: gzip, deflate, sdch
 Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
 Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAEAAAABBAEEAWAAAABIAEgCZAAAAEAAQAKsAAAAKAAoAuwAAAAAAAAAAAAAAB7KIomZoT4ymyKD+y4hnAytDSuOUP+Q11cnxSX8BcGPeeRDg3OgIJpsEKEsBAQAAAAAAAKCzqZRjeNEBlCnW+yuPjV4AAAAAdGFyZ2V0SW5mb3JtYXRpb24AAAAAUwBPAEYAVABTAEUAUgBWAEUAbwBzAHkAbgBpAGEAZQB2AEQAUAA4ADUAMgA=
-07-03-2016 13:22:08 DEBUG HttpRequestHandler:178 - 
+Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAEAAAABBAEEAWAAAABIAEgCZAAAAEAAQAKsAAAAKAAoAuwAAAAAAAAAAAAAAB7KIouxuwa3mkWaVu6dXCw8Md26W8kYFs9/ZvcCWAlaVYJWS9SiLjTHvozoBAQAAAAAAANBmbet0eNEBsD0A0SGkfgYAAAAAdGFyZ2V0SW5mb3JtYXRpb24AAAAAUwBPAEYAVABTAEUAUgBWAEUAbwBzAHkAbgBpAGEAZQB2AEQAUAA4ADUAMgA=
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:175 - 
 + PROXY: Clients Response (with Type3): GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
 Proxy-Connection: keep-alive
@@ -913,8 +494,8 @@ User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like 
 Accept-Encoding: gzip, deflate, sdch
 Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
 Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAEAAAABBAEEAWAAAABIAEgCZAAAAEAAQAKsAAAAKAAoAuwAAAAAAAAAAAAAAB7KIokawbDIieZHYtVry/lIGnH0+6xQLWR16MtuJfHxFTN/2p3EdpHKQwUABAQAAAAAAAKCzqZRjeNEBjCpheBey6lsAAAAAdGFyZ2V0SW5mb3JtYXRpb24AAAAAUwBPAEYAVABTAEUAUgBWAEUAbwBzAHkAbgBpAGEAZQB2AEQAUAA4ADUAMgA=
-07-03-2016 13:22:08 DEBUG HttpRequestHandler:178 - 
+Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAEAAAABBAEEAWAAAABIAEgCZAAAAEAAQAKsAAAAKAAoAuwAAAAAAAAAAAAAAB7KIol6cZ3Yf7dyEx2MXVYl0M7pxCmw33MKccIHNK6EQYmBA+Bl88Qs3Q0IBAQAAAAAAAMA/bet0eNEB46cg2txXRU8AAAAAdGFyZ2V0SW5mb3JtYXRpb24AAAAAUwBPAEYAVABTAEUAUgBWAEUAbwBzAHkAbgBpAGEAZQB2AEQAUAA4ADUAMgA=
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:175 - 
 + PROXY: Clients Response (with Type3): GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
 Proxy-Connection: keep-alive
@@ -925,8 +506,8 @@ User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like 
 Accept-Encoding: gzip, deflate, sdch
 Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
 Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAEAAAABBAEEAWAAAABIAEgCZAAAAEAAQAKsAAAAKAAoAuwAAAAAAAAAAAAAAB7KIou/nHlzFzFjelVd2oEoJ/mek1bWjYRJvdb5QYn5d0xkOK98cr2LhFW8BAQAAAAAAAJCMqZRjeNEBrmDJM30HdTAAAAAAdGFyZ2V0SW5mb3JtYXRpb24AAAAAUwBPAEYAVABTAEUAUgBWAEUAbwBzAHkAbgBpAGEAZQB2AEQAUAA4ADUAMgA=
-07-03-2016 13:22:08 DEBUG HttpRequestHandler:178 - 
+Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAEAAAABBAEEAWAAAABIAEgCZAAAAEAAQAKsAAAAKAAoAuwAAAAAAAAAAAAAAB7KIomCq5VYs9OlN6H3I6AMEEPXkX+JREDXhNc51biRJAUeombrXLB0T8MMBAQAAAAAAAMA/bet0eNEBOT+0K8l541wAAAAAdGFyZ2V0SW5mb3JtYXRpb24AAAAAUwBPAEYAVABTAEUAUgBWAEUAbwBzAHkAbgBpAGEAZQB2AEQAUAA4ADUAMgA=
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:175 - 
 + PROXY: Clients Response (with Type3): GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
 Proxy-Connection: keep-alive
@@ -937,8 +518,9 @@ User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like 
 Accept-Encoding: gzip, deflate, sdch
 Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
 Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAEAAAABBAEEAWAAAABIAEgCZAAAAEAAQAKsAAAAKAAoAuwAAAAAAAAAAAAAAB7KIogQ5IrSxSMeLyN7qeoVwLL4eSOQsW0quX6LYEDgkQxdthAWMfimgEt4BAQAAAAAAAKCzqZRjeNEB6p0BLc31hasAAAAAdGFyZ2V0SW5mb3JtYXRpb24AAAAAUwBPAEYAVABTAEUAUgBWAEUAbwBzAHkAbgBpAGEAZQB2AEQAUAA4ADUAMgA=
-07-03-2016 13:22:08 DEBUG HttpRequestHandler:178 - 
+Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAEAAAABBAEEAWAAAABIAEgCZAAAAEAAQAKsAAAAKAAoAuwAAAAAAAAAAAAAAB7KIongykdpPvjOzxAB+n1a0Kpz5bi121XgcpN1nZSRl0zgOqXI3U44jX3gBAQAAAAAAANBmbet0eNEB4WkdTx/ud+gAAAAAdGFyZ2V0SW5mb3JtYXRpb24AAAAAUwBPAEYAVABTAEUAUgBWAEUAbwBzAHkAbgBpAGEAZQB2AEQAUAA4ADUAMgA=
+07-03-2016 15:26:13 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:175 - 
 + PROXY: Clients Response (with Type3): GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
 Proxy-Connection: keep-alive
@@ -949,8 +531,11 @@ User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like 
 Accept-Encoding: gzip, deflate, sdch
 Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
 Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAEAAAABBAEEAWAAAABIAEgCZAAAAEAAQAKsAAAAKAAoAuwAAAAAAAAAAAAAAB7KIoujnu0Y9nRJS1Rk458VlcrlSPLhOZ0XCnMVmMOdgGFNIvFLO4ATM1JkBAQAAAAAAAKCzqZRjeNEBSu+p4wmJxhoAAAAAdGFyZ2V0SW5mb3JtYXRpb24AAAAAUwBPAEYAVABTAEUAUgBWAEUAbwBzAHkAbgBpAGEAZQB2AEQAUAA4ADUAMgA=
-07-03-2016 13:22:08 DEBUG HttpRequestHandler:178 - 
+Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAEAAAABBAEEAWAAAABIAEgCZAAAAEAAQAKsAAAAKAAoAuwAAAAAAAAAAAAAAB7KIorYQAWAN5NfWaFTd2dbaMLVV4fnEnlHUe7Zh2vm9w4+WUxODhrCXZicBAQAAAAAAANBmbet0eNEBCCeNRhlChMQAAAAAdGFyZ2V0SW5mb3JtYXRpb24AAAAAUwBPAEYAVABTAEUAUgBWAEUAbwBzAHkAbgBpAGEAZQB2AEQAUAA4ADUAMgA=
+07-03-2016 15:26:13 DEBUG HttpRequestParser:100 - host: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:175 - 
 + PROXY: Clients Response (with Type3): GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
 Proxy-Connection: keep-alive
@@ -961,9 +546,8 @@ User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like 
 Accept-Encoding: gzip, deflate, sdch
 Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
 Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAEAAAABBAEEAWAAAABIAEgCZAAAAEAAQAKsAAAAKAAoAuwAAAAAAAAAAAAAAB7KIos6+hXZHDNJIJw2te20Y6kJHewss6++TLz8al/ISaNDTu/ne1omgxhwBAQAAAAAAAKCzqZRjeNEBOCsnN6y8Ly0AAAAAdGFyZ2V0SW5mb3JtYXRpb24AAAAAUwBPAEYAVABTAEUAUgBWAEUAbwBzAHkAbgBpAGEAZQB2AEQAUAA4ADUAMgA=
-07-03-2016 13:22:08 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestHandler:178 - 
+Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAEAAAABBAEEAWAAAABIAEgCZAAAAEAAQAKsAAAAKAAoAuwAAAAAAAAAAAAAAB7KIojfmHuKWhMAFYqNJc5mpzMGj2cXo1uMnGx72GpBP79ekMSZifuYCXvYBAQAAAAAAAPC0bet0eNEBJ1tWKxPCBAkAAAAAdGFyZ2V0SW5mb3JtYXRpb24AAAAAUwBPAEYAVABTAEUAUgBWAEUAbwBzAHkAbgBpAGEAZQB2AEQAUAA4ADUAMgA=
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:175 - 
 + PROXY: Clients Response (with Type3): GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
 Proxy-Connection: keep-alive
@@ -974,34 +558,23 @@ User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like 
 Accept-Encoding: gzip, deflate, sdch
 Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
 Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAEAAAABBAEEAWAAAABIAEgCZAAAAEAAQAKsAAAAKAAoAuwAAAAAAAAAAAAAAB7KIou/vy574zB4xfX4NeIs+nX2VdsTtF438sPYM+ZReNtNZKuMQHmw4RjMBAQAAAAAAAIBlqZRjeNEBcbqEP+E8IyMAAAAAdGFyZ2V0SW5mb3JtYXRpb24AAAAAUwBPAEYAVABTAEUAUgBWAEUAbwBzAHkAbgBpAGEAZQB2AEQAUAA4ADUAMgA=
-07-03-2016 13:22:08 DEBUG HttpRequestParser:100 - host: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:125 - port = 80
-07-03-2016 13:22:08 INFO  HttpRequestHandler:98 -  * PROXY: Подключение к portscan.ru:80
-07-03-2016 13:22:08 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:100 - host: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:125 - port = 80
-07-03-2016 13:22:08 INFO  HttpRequestHandler:98 -  * PROXY: Подключение к portscan.ru:80
-07-03-2016 13:22:08 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:100 - host: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:125 - port = 80
-07-03-2016 13:22:08 INFO  HttpRequestHandler:98 -  * PROXY: Подключение к portscan.ru:80
-07-03-2016 13:22:08 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:100 - host: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:125 - port = 80
-07-03-2016 13:22:08 INFO  HttpRequestHandler:98 -  * PROXY: Подключение к portscan.ru:80
-07-03-2016 13:22:08 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:100 - host: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:100 - host: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:125 - port = 80
-07-03-2016 13:22:08 INFO  HttpRequestHandler:98 -  * PROXY: Подключение к portscan.ru:80
-07-03-2016 13:22:08 DEBUG HttpRequestHandler:178 - 
+Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAEAAAABBAEEAWAAAABIAEgCZAAAAEAAQAKsAAAAKAAoAuwAAAAAAAAAAAAAAB7KIov2tcl1qIh9gdxvpjhmXgRmz8LiA02KH2w+RWmvVnWQalII5zV1n3+IBAQAAAAAAAADcbet0eNEBJl4fTnV4lCwAAAAAdGFyZ2V0SW5mb3JtYXRpb24AAAAAUwBPAEYAVABTAEUAUgBWAEUAbwBzAHkAbgBpAGEAZQB2AEQAUAA4ADUAMgA=
+07-03-2016 15:26:13 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:100 - host: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:125 - port = 80
+07-03-2016 15:26:13 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:100 - host: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:125 - port = 80
+07-03-2016 15:26:13 INFO  HttpRequestHandler:98 -  * PROXY: Подключение к portscan.ru:80
+07-03-2016 15:26:13 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:100 - host: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
+07-03-2016 15:26:13 INFO  HttpRequestHandler:98 -  * PROXY: Подключение к portscan.ru:80
+07-03-2016 15:26:13 DEBUG HttpRequestParser:125 - port = 80
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:175 - 
 + PROXY: Clients Response (with Type3): GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
 Proxy-Connection: keep-alive
@@ -1012,13 +585,26 @@ User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like 
 Accept-Encoding: gzip, deflate, sdch
 Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
 Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAEAAAABBAEEAWAAAABIAEgCZAAAAEAAQAKsAAAAKAAoAuwAAAAAAAAAAAAAAB7KIosjlxHx9TxWeRs0UEVq7LmeJ6N8pgBRdo0EHcnBjBJcW3BR2Ph5qLiMBAQAAAAAAAJCMqZRjeNEBeIhFBeiJg3sAAAAAdGFyZ2V0SW5mb3JtYXRpb24AAAAAUwBPAEYAVABTAEUAUgBWAEUAbwBzAHkAbgBpAGEAZQB2AEQAUAA4ADUAMgA=
-07-03-2016 13:22:08 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:100 - host: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:125 - port = 80
-07-03-2016 13:22:08 INFO  HttpRequestHandler:98 -  * PROXY: Подключение к portscan.ru:80
-07-03-2016 13:22:08 DEBUG HttpRequestHandler:178 - 
+Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAEAAAABBAEEAWAAAABIAEgCZAAAAEAAQAKsAAAAKAAoAuwAAAAAAAAAAAAAAB7KIoqT6uSYTofQftuWF8gg7CJ5Lmi8emLIb+1mws2iRoFsu4RH46X61ihMBAQAAAAAAAADcbet0eNEBwJjNa7t8rjoAAAAAdGFyZ2V0SW5mb3JtYXRpb24AAAAAUwBPAEYAVABTAEUAUgBWAEUAbwBzAHkAbgBpAGEAZQB2AEQAUAA4ADUAMgA=
+07-03-2016 15:26:13 DEBUG HttpRequestParser:100 - host: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:100 - host: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:125 - port = 80
+07-03-2016 15:26:13 INFO  HttpRequestHandler:98 -  * PROXY: Подключение к portscan.ru:80
+07-03-2016 15:26:13 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:125 - port = 80
+07-03-2016 15:26:13 INFO  HttpRequestHandler:98 -  * PROXY: Подключение к portscan.ru:80
+07-03-2016 15:26:13 INFO  HttpRequestHandler:98 -  * PROXY: Подключение к portscan.ru:80
+07-03-2016 15:26:13 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:125 - port = 80
+07-03-2016 15:26:13 INFO  HttpRequestHandler:98 -  * PROXY: Подключение к portscan.ru:80
+07-03-2016 15:26:13 DEBUG HttpRequestParser:100 - host: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:125 - port = 80
+07-03-2016 15:26:13 INFO  HttpRequestHandler:98 -  * PROXY: Подключение к portscan.ru:80
+07-03-2016 15:26:13 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:100 - host: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:175 - 
 + PROXY: Clients Response (with Type3): GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
 Proxy-Connection: keep-alive
@@ -1029,12 +615,16 @@ User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like 
 Accept-Encoding: gzip, deflate, sdch
 Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
 Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAEAAAABBAEEAWAAAABIAEgCZAAAAEAAQAKsAAAAKAAoAuwAAAAAAAAAAAAAAB7KIolxelkk5CdrF4UQHMWkAgFW0RsgqYksbtPTWVGlzt1uChbWvrmz69bsBAQAAAAAAAKCzqZRjeNEBi0d2vV6azk8AAAAAdGFyZ2V0SW5mb3JtYXRpb24AAAAAUwBPAEYAVABTAEUAUgBWAEUAbwBzAHkAbgBpAGEAZQB2AEQAUAA4ADUAMgA=
-07-03-2016 13:22:08 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:100 - host: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:125 - port = 80
-07-03-2016 13:22:08 DEBUG HttpRequestHandler:178 - 
+Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAEAAAABBAEEAWAAAABIAEgCZAAAAEAAQAKsAAAAKAAoAuwAAAAAAAAAAAAAAB7KIoiOtnNAbHuONRWl9R0X4QlzsK2q+XqKCpWKZmVr+0CNoOfEEdT5fivkBAQAAAAAAAADcbet0eNEBhfVdOjHQDBYAAAAAdGFyZ2V0SW5mb3JtYXRpb24AAAAAUwBPAEYAVABTAEUAUgBWAEUAbwBzAHkAbgBpAGEAZQB2AEQAUAA4ADUAMgA=
+07-03-2016 15:26:13 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:125 - port = 80
+07-03-2016 15:26:13 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
+07-03-2016 15:26:13 INFO  HttpRequestHandler:98 -  * PROXY: Подключение к portscan.ru:80
+07-03-2016 15:26:13 DEBUG HttpRequestParser:100 - host: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:125 - port = 80
+07-03-2016 15:26:13 INFO  HttpRequestHandler:98 -  * PROXY: Подключение к portscan.ru:80
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:175 - 
 + PROXY: Clients Response (with Type3): GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
 Proxy-Connection: keep-alive
@@ -1045,22 +635,13 @@ User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like 
 Accept-Encoding: gzip, deflate, sdch
 Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
 Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
-Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAEAAAABBAEEAWAAAABIAEgCZAAAAEAAQAKsAAAAKAAoAuwAAAAAAAAAAAAAAB7KIotYBonHVLL7alA5WR0nEY+48voPShlq9uFm02ap/W65GA1qIZ+NbbocBAQAAAAAAAJCMqZRjeNEBXoN/UPdZvIEAAAAAdGFyZ2V0SW5mb3JtYXRpb24AAAAAUwBPAEYAVABTAEUAUgBWAEUAbwBzAHkAbgBpAGEAZQB2AEQAUAA4ADUAMgA=
-07-03-2016 13:22:08 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:100 - host: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:125 - port = 80
-07-03-2016 13:22:08 INFO  HttpRequestHandler:98 -  * PROXY: Подключение к portscan.ru:80
-07-03-2016 13:22:08 INFO  HttpRequestHandler:98 -  * PROXY: Подключение к portscan.ru:80
-07-03-2016 13:22:08 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:125 - port = 80
-07-03-2016 13:22:08 INFO  HttpRequestHandler:98 -  * PROXY: Подключение к portscan.ru:80
-07-03-2016 13:22:08 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:100 - host: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
-07-03-2016 13:22:08 DEBUG HttpRequestParser:125 - port = 80
-07-03-2016 13:22:08 INFO  HttpRequestHandler:98 -  * PROXY: Подключение к portscan.ru:80
-07-03-2016 13:22:08 DEBUG HttpRequestHandler:104 -  * PROXY: Header GET http://portscan.ru/ HTTP/1.1
+Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAEAAAABBAEEAWAAAABIAEgCZAAAAEAAQAKsAAAAKAAoAuwAAAAAAAAAAAAAAB7KIop2raOLiqUsamXQe7ZOoPjZuJiPIIO6GNXlYadNdnguxvf7UukbWwl0BAQAAAAAAANBmbet0eNEBiZ58ZgJamawAAAAAdGFyZ2V0SW5mb3JtYXRpb24AAAAAUwBPAEYAVABTAEUAUgBWAEUAbwBzAHkAbgBpAGEAZQB2AEQAUAA4ADUAMgA=
+07-03-2016 15:26:13 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:100 - host: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:81 - hostLine: portscan.ru
+07-03-2016 15:26:13 DEBUG HttpRequestParser:125 - port = 80
+07-03-2016 15:26:13 INFO  HttpRequestHandler:98 -  * PROXY: Подключение к portscan.ru:80
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:104 -  * PROXY: Header GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
 Proxy-Connection: keep-alive
 Cache-Control: max-age=0
@@ -1075,7 +656,8 @@ Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
 
 Oтправлен portscan.ru:80
 
-07-03-2016 13:22:08 DEBUG HttpRequestHandler:104 -  * PROXY: Header GET http://portscan.ru/ HTTP/1.1
+07-03-2016 15:26:13 INFO  HttpRequestHandler:106 -  * PROXY: Читаю ответ от portscan.ru:80
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:104 -  * PROXY: Header GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
 Proxy-Connection: keep-alive
 Cache-Control: max-age=0
@@ -1090,7 +672,8 @@ Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
 
 Oтправлен portscan.ru:80
 
-07-03-2016 13:22:08 DEBUG HttpRequestHandler:104 -  * PROXY: Header GET http://portscan.ru/ HTTP/1.1
+07-03-2016 15:26:13 INFO  HttpRequestHandler:106 -  * PROXY: Читаю ответ от portscan.ru:80
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:104 -  * PROXY: Header GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
 Proxy-Connection: keep-alive
 Cache-Control: max-age=0
@@ -1105,7 +688,7 @@ Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
 
 Oтправлен portscan.ru:80
 
-07-03-2016 13:22:08 DEBUG HttpRequestHandler:104 -  * PROXY: Header GET http://portscan.ru/ HTTP/1.1
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:104 -  * PROXY: Header GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
 Proxy-Connection: keep-alive
 Cache-Control: max-age=0
@@ -1120,7 +703,8 @@ Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
 
 Oтправлен portscan.ru:80
 
-07-03-2016 13:22:08 DEBUG HttpRequestHandler:104 -  * PROXY: Header GET http://portscan.ru/ HTTP/1.1
+07-03-2016 15:26:13 INFO  HttpRequestHandler:106 -  * PROXY: Читаю ответ от portscan.ru:80
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:104 -  * PROXY: Header GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
 Proxy-Connection: keep-alive
 Cache-Control: max-age=0
@@ -1135,7 +719,7 @@ Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
 
 Oтправлен portscan.ru:80
 
-07-03-2016 13:22:08 DEBUG HttpRequestHandler:104 -  * PROXY: Header GET http://portscan.ru/ HTTP/1.1
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:104 -  * PROXY: Header GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
 Proxy-Connection: keep-alive
 Cache-Control: max-age=0
@@ -1150,7 +734,7 @@ Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
 
 Oтправлен portscan.ru:80
 
-07-03-2016 13:22:08 DEBUG HttpRequestHandler:104 -  * PROXY: Header GET http://portscan.ru/ HTTP/1.1
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:104 -  * PROXY: Header GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
 Proxy-Connection: keep-alive
 Cache-Control: max-age=0
@@ -1165,7 +749,10 @@ Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
 
 Oтправлен portscan.ru:80
 
-07-03-2016 13:22:08 DEBUG HttpRequestHandler:104 -  * PROXY: Header GET http://portscan.ru/ HTTP/1.1
+07-03-2016 15:26:13 INFO  HttpRequestHandler:106 -  * PROXY: Читаю ответ от portscan.ru:80
+07-03-2016 15:26:13 INFO  HttpRequestHandler:106 -  * PROXY: Читаю ответ от portscan.ru:80
+07-03-2016 15:26:13 INFO  HttpRequestHandler:106 -  * PROXY: Читаю ответ от portscan.ru:80
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:104 -  * PROXY: Header GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
 Proxy-Connection: keep-alive
 Cache-Control: max-age=0
@@ -1180,7 +767,9 @@ Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
 
 Oтправлен portscan.ru:80
 
-07-03-2016 13:22:08 DEBUG HttpRequestHandler:104 -  * PROXY: Header GET http://portscan.ru/ HTTP/1.1
+07-03-2016 15:26:13 INFO  HttpRequestHandler:106 -  * PROXY: Читаю ответ от portscan.ru:80
+07-03-2016 15:26:13 INFO  HttpRequestHandler:106 -  * PROXY: Читаю ответ от portscan.ru:80
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:104 -  * PROXY: Header GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
 Proxy-Connection: keep-alive
 Cache-Control: max-age=0
@@ -1195,7 +784,8 @@ Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
 
 Oтправлен portscan.ru:80
 
-07-03-2016 13:22:08 DEBUG HttpRequestHandler:104 -  * PROXY: Header GET http://portscan.ru/ HTTP/1.1
+07-03-2016 15:26:13 INFO  HttpRequestHandler:106 -  * PROXY: Читаю ответ от portscan.ru:80
+07-03-2016 15:26:13 DEBUG HttpRequestHandler:104 -  * PROXY: Header GET http://portscan.ru/ HTTP/1.1
 Host: portscan.ru
 Proxy-Connection: keep-alive
 Cache-Control: max-age=0
@@ -1210,450 +800,373 @@ Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
 
 Oтправлен portscan.ru:80
 
-07-03-2016 13:22:10 INFO  HttpRequestHandler:107 -  * PROXY: Читаю ответ от portscan.ru:80
-07-03-2016 13:22:10 INFO  HttpRequestHandler:107 -  * PROXY: Читаю ответ от portscan.ru:80
-07-03-2016 13:22:10 INFO  HttpRequestHandler:107 -  * PROXY: Читаю ответ от portscan.ru:80
-07-03-2016 13:22:10 INFO  HttpRequestHandler:107 -  * PROXY: Читаю ответ от portscan.ru:80
-07-03-2016 13:22:10 INFO  HttpRequestHandler:107 -  * PROXY: Читаю ответ от portscan.ru:80
-07-03-2016 13:22:10 INFO  HttpRequestHandler:107 -  * PROXY: Читаю ответ от portscan.ru:80
-07-03-2016 13:22:10 INFO  HttpRequestHandler:107 -  * PROXY: Читаю ответ от portscan.ru:80
-07-03-2016 13:22:10 INFO  HttpRequestHandler:107 -  * PROXY: Читаю ответ от portscan.ru:80
-07-03-2016 13:22:10 INFO  HttpRequestHandler:107 -  * PROXY: Читаю ответ от portscan.ru:80
-07-03-2016 13:22:10 INFO  HttpRequestHandler:107 -  * PROXY: Читаю ответ от portscan.ru:80
-07-03-2016 13:22:13 DEBUG HttpClient:124 - 
-* CLIENT: Hooray! I've got necessary information
- Servers Response is :
-HTTP/1.1 200 OK
-Server: nginx/1.6.3
-Date: Mon, 07 Mar 2016 11:22:08 GMT
-Content-Type: text/html; charset=utf-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-Vary: Accept-Encoding
-X-Powered-By: PHP/5.3.29
-Expires: Thu, 19 Nov 1981 08:52:00 GMT
-Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-Pragma: no-cache
-Content-Encoding: gzip
+07-03-2016 15:26:13 INFO  HttpRequestHandler:106 -  * PROXY: Читаю ответ от portscan.ru:80
+07-03-2016 15:26:33 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 19 милисекунд
+07-03-2016 15:26:33 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 372 милисекунд
+07-03-2016 15:26:33 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 310 милисекунд
+07-03-2016 15:26:33 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 250 милисекунд
+07-03-2016 15:26:33 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 700 милисекунд
+07-03-2016 15:26:33 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 477 милисекунд
+07-03-2016 15:26:33 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 544 милисекунд
+07-03-2016 15:26:33 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 1 милисекунд
+07-03-2016 15:26:33 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 2 милисекунд
+07-03-2016 15:26:33 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 3 милисекунд
+07-03-2016 15:26:33 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 4 милисекунд
+07-03-2016 15:26:33 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 7 милисекунд
+07-03-2016 15:26:33 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 8 милисекунд
+07-03-2016 15:26:33 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 647 милисекунд
+07-03-2016 15:26:33 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 9 милисекунд
+07-03-2016 15:26:33 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 204 милисекунд
+07-03-2016 15:26:33 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:14 количество живых подключений 10 время ответа сервера 938 милисекунд
+07-03-2016 15:26:33 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 13 милисекунд
+07-03-2016 15:26:33 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 430 милисекунд
+07-03-2016 15:27:53 ERROR HttpRequestHandler:191 - Error: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:127)
+	at com.mycompany.forwardproxyserver.HttpRequestHandler.dawnloadFromInet(HttpRequestHandler.java:112)
+	at com.mycompany.forwardproxyserver.HttpRequestHandler.run(HttpRequestHandler.java:181)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+07-03-2016 15:27:53 INFO  ClientsBrowserAnalyzer:106 - 
 
-1759
-‹      Ѕ\{oЬЦ•яЫю·LЏ°Г™СУЦ3hТd“mЪё€6AЕЎ4ґ8д„дHњ ’ЧмF@РЕ-љ6»цЏb±cYЏх2ђO0уЌцњsј—CКrРV‰Gт>Пгw^—ZъЙП?xkх77Яf­ґ¬\]В_,pВЌe+оZxГsљ+WЇ2шYJэ4рV†нП‡‡Г>ь>цШр|tox<Ъ=ЭѓчЩрЬЪ…›РЉ}ОnFqъЎл„µё»TзcРx4fЫK?<нШЮg]kЩz+
-S/LнХќЋg1—[¶RпNZЗХ-2·еД‰—.яык;цK,Ћьp“µbo}ЩZw¶|и\ѓ‹Е^°lбW‹Ґ0,\·ќЇ~З¦{|5ј3µt:ќАіУЁл¶x1¦ЯЮЁзџХ:б†U‚&ё•Д®Ю·„HЂv;рЁ§$-‘!tЪ°¶¦—ё±ЯI}њXншСыp8нй%bџБѓубЙи ЭcЈ}ёq6м;іС0/чЎ#4лЌВ9&рќШ: ±ъФKЭјнї„Чрq6<ц†П‡g5IWmk›ЮОv7}_/тТ¤XeгЏ/Z@®эЂ TЌе±т‰{Х‹(ЁZY+9Б#Ж'йNа%-ПKҐ¬‘дєI"%.лkQ”&iмtІ«ZЫkШlL–ф!і!ЦЃ‚¶ін%QЫ«зo\n°тхµХ?Ы$KЅЧmgЛбw-ІѕlЭNкќ »б‡Iэцg]/Ю±'k“ЌЪ$­з6·TзнЕє^mH“V?~8Р·е№›Ї<ДКO+лЭРEХ¬L°»?­\{-сb П^"wуЪDM^™XьbbQЌћS…k;NШфоШ[^мЇы®ѓC^SZqmnЭm6<gЭm4ззжЧЧ@МRќѓсТZФЬЖ,…‘±ф¦їЕЬАI@°А‹SFџvРЬ‹оЕvat/R ,[m'В.°©FзsєiД‹l4Ф‹б&Ьk: *MцЪ;x°н7УЦ»ЮЂЦ‹¬г4›~ёБ;/кКРљY~#Ў¦?<eГ' b=Т)T¶ѕPbА«ЇG (г фаж" БШц{x!¬Ѓ°f|H›®-­Е+ГїВЁgЂї…vЁЭЅб	и+Є8Є(ОјO#(В†OhfЎЦа‚`®О†з5 пЊ eh‰П(|•Ил7—­m@kњдИ;Р nF
-EЩ7Ќ:AґЙоЋP№:€!.Ў†ҐАЦd(Ђ™Ђ–ряvь”64ѕ@AvД°­X[N»µiю¦§3й'¶Н>ъKўnмzМ¶W^IПлх­Нљµл NNЗЇG/„Я PoМЯИлФ%фК ШGїЁщЎџVоВ€п5ШфЌ©№©Жt•Ea°у±ЯЬрТdЃҐqЧЛfPsЋmr›ъ?›МHs‹“Fр|ЊuЇ¶p±јЪы0fE^ew±яі ё|шЪтьЌVЉєSјcR‹Ч§‰`m_QЛ¤г„УmЇкЌ¶Ѕ ђ’:ЪЬKЭ@¶Ѓы h[ ^Iћ`tґV6bWЎrђgs`аpфФґW9:ЈG9J~йАтxЊ+¦VЙЗл[wмNґнЕvґѕЋьцWШё/«М;ЄM€shЈJХMЇЎ?:>IЪ’Ј‡c"ЁЌv?еў±ЧњД+,j‚†ВvэШ<9Лџ`о­?ф/і п’yј;аbѓСPD‚!П†OYXґ‹€@LёsHњлM”Н±ЭЉь¤d?\ЏМЌ|ьоп}И ®П‡§ґ‘ТµЈС>Ж^Т‰ВRr№С†ЬБ·r±™xбgй Г0:С»dрЌ Z“яЧ·Wp З]JtMѓ—M“Ir7ђ¦†TKhчХR0д$;Ў+1ё1†УњЄmDС8u;aSxНь)!t3YЫбЌЉ\DIiXXЫ»
-)—АлRъ•be:(‰¦џtggББУОР"ч¦И]Ђ7ЧZп¦“:¶УґЭА§`Ан®Щі3ЌлSуУ“і3ііЌйЙ™‚IAы№йЖшGЧoL'ВД VmсlмAШЊ¶kъНП?gџ|
-Ю[7iUоJLОи$ЩSЖќb@¤‹$н"Ь\}X~G^К—Ј/Їc_N\л4‰ЌVШ&|*Ъ`?щц.ј?ьЌ”CETvЊэpR¦ bFенj`(э?::2n+Жp$у`шЖЅ цГЯPрЮв#hіe:тг(яЄфюO‚йаNЏLСЙисрL?#й0—d†§> љ}ъA(і	Ючf†б «и…ўG'bS€ҐђУшќKОс?h|nМТ9мнЅ›6\!¦ЏцЮxйDќ8єіsЙ№ё]=ґШ:д^f’4rЈАЖњР«LF–чuВЮ]]ЅyЃ(ЌЙ’Ii\nxЛА[	ю…в‡=ІсПDP!8'C@g<XH"Чw‚[”І^НхFє,Фл<~¬%iќбџ€о*=fuУu»ШЧVІгPOЈ?Эn‹c¬ёяюd#¤T qw•ЦFЎgЮяuЧw7?дq‚ѕ5ЖD›©WM·э€[ЭЂP>©®;®‡<¬·«;NЬ­FН0ЪДх„ю¦oёвПФЕz·•<АµќxNм¶М ЧЎ ]QK:m7Хys.Z`оТVa ?p‹Ґ#бn%^ !L`§«sДR<¤qlJsXМџлµў „dЩЄІм]Љ?tр†%’a|0¤;XлNаҐp=SV/?№е7›^(»т©э¦Е¶њ 7¦sіУуЧ/У7 ЋЄ~ИXК, !б·.)щ\‡UУ©M|B\Гќ\ыФљЁAУkЫЮЪ¦џ&Пs[ЬЌјVeъH ›«~Ы‹єйEАhIw­aаДвХ™FѓТ)h™µ@Oд.иC,;я“ќ&љ›	Кьhз‰ј¦їЈw43У?џ™ћ™јqЈ 	’ЪЃF(яз© ¤ЅtЁ:o]Р8Л;MК>?ѕ”†юВЇ5Y0°>{Л‹#»K°Hй#ЭwA°]љR“вЉz¶uc0з
-a4Dcнnк5±х•б7?XгЅА&зgk“sЌЪФфtmjvљБX‚ІWфMђ®ЪNЬC>„ЂгqЫkъЭ¶‰ўrБ–Ѓ&Ф}ѓ¤… mЂЋ#жФx{ іОќА7ТЦІ5[„yґЁµnљFКи®Ґ!ѓvТuБ?$|1	@tљг)eщ—кјчЉNрщ:ЭА‰№g,Vы~и6ХЈ`†с^ \џЊ`Міњ#\мOОљоЙЌ†тhтJM]oLО–<›™™.л5;;З{]б.НШҐ‘8"іІµ]8ЬГo`/?R=Ѓ]ЁDjѕьБй+є[|dД8иN0ґDеЎшяСй1wЊIЈЊ±Ѓ™Xsq‡`Ѕ¤Кё_)Ђ…‹ БHµ‚xЖА;§YўЃя@а›К0beFЄСhэR›ђяy‰ЌИяјєН(ЃЫђЙйЙ№й№№щ—йRjSJшSџ?ТжЊSЩD/і@EbзЭшa™Мµ¦V¤Яw®тq=Y{ИiНёОdp	‘ЊЕќЈPЃ`\{Ѓ]§ЉЛR’ЖQё±"Іј>	[жwЌ†W‚ЪЂЈ жSoЄ$К=иМkEќйО6‹eюШЋє	Э_DьеkеY/‘;±ЋLWw8™XЏT±‡АљР1эЋ‚¶S¬+KЁ…ЛCМb<Ћ(ьњЃ9	AњрЕD`јMОuAj—Њ–ЂО!ш’шM4~JҐџS?з‘*4=ѓ_зАё7zЧ?nДА±ЄBќRП}њуђЖ$=†®зTЫRЙ{ЄgyOсЙ	6и‰?{ ¦зcнЛ„-‘?ъZС^±ўХг‰xтњs@M`КT`“мю?`u4м!†ЪњFz?oНe:ъАђ{fqЫТщiUOь®DЁпУBОс<°	у=&Й}[ыJРц\)8&vѕ к}Ќ.2‡ІЙ<5+
-ЈыXѓJC>«Ѓ­иh"ҐцыBЉбЩ·пy-с	eІзЋ
-OsыyA"p‰Лўвxћ ЄсДVњњІG|+°јъ¶”ъ2!™HЈl-\nq·HГ
-iЬбsn[Хюeињ
-–»TГ$Ў“В"ЕИ”п,„ы$іэLЖjB!3а!4z‚ѕЗЊЭхЖf ­еЛDqc Њxљ‚§wђ} ЪЛAМiаОc`БI}%Њ|Ћ'B–P|aq¶ПQ“Сэ}.*yIшЛ®Z™PиІ,У^ЯKХay¦€„LUFd3…KЈ*гЭruђcмБѓYх&6ЉъaFБ
-LBҐ•	ѕЪCBЈѕ µqдёi‚ҐRZь9UПиpqоXT№ы”­RuvљКї;СЭCcQ{$йяQV)oђ&Б%Qа7ЩkoПг?В:iњ+±NPр]`€t9)<e0H”Юш1#S‘Д‡gАп	 Ъ™Я?рCй	DџЋ1HЦјЮЖS‹’ЗTjЪ#™)ГЙ1ѓ U[‚[ЇJ»!‰Еy9*i:Pi%рКђчqДa,^&Ы—fЎЬNз
-БhдMі_еыR+жC•Пш	·CчаѓRJeQ›ЩtXYCb-=3-hГіУ#N{B…Q±Є~ЗчD»?дЬbbзз Љч¤©(А@ѓ’N”fў‘7з'ЩЩ#±НNѕ­Ґ0 ХNi~‘Q`ёје вg…ѓSZ Ѓf+$»њўh{¤‰j‘ Њa"Г%У!dх.aШy†7x?Е@Ќuз3:Нb·¦¬•wj?«эє&УмРzV9бПґ\ПиСlш{ОЙќ‰j*IMАпћ5=WЮ·КтR¦нKњ№ФNжT•ЉJWђ\»g:VфцSуЃaI[ЗMI_є†ЯpJF@ъB‚ъtXЉпкѓ{†БЛЙDO›а„€ф„“фD8"»BОЗЏVй
-"О]кG7е‘®L°ЗѕрА{ЄьvЄе“рwUчћ<W“dHUё¬}Вы…>§Ь%EыMн}P7Џ	а-Ўз7§UќЅLмuJт5+@“”“иІGЏЮ„ґКиѓJПҐзбХ	БћТэўАtлaЗЂRВ‡„,№”eЎKжP©B№ъ(n\—BБП”M"·Х~Юэ	wяЂ¶Г5FТЌdх  ч|й+]y†рIВy‚_џHq ДаLХ0АЩыїjµЌЉc5'wЈЇ5аНІ•“SУ353ґИ)zЗ$Q|-WuДcDќ’xДђ[=:А‰Ж \g‹УЋГШё[g$UsзЈ»lо2+Fк”)…8¦вNmЂ*ґ+ЖЉяЪ"ёЦ ќlђЈГжfg§gе•·*ЛидЛюqф5Є"JМIяУњѓЎ;"\в†щЂФл<;o$1M€bю”:73Dџп)щ_ѕr:њqХ‘Фк[7лпЭ#d%dрЛrbь]жХ`»SоБ›
-¦Б/cУЃG"аўР•А+;t^?HЇ’чЇ«?IeџBУ¬ЦhъҐZ¦вLF™Щ”СёrљIiс_jc”HеаA:™}•A„ђ<аВЊм»Њ]tћђАcЂћГRйцRdMi$МЎј <;з+Р„vІ15ќgуЎТUщ
-5Ф!ЩУ]<ZкЃ &Щv<!GЇRд\|ґ±жЋ…Ќс)s›ЋЩЌ†‰гJёўxYН\…L>xўб>Н$CHy:ЃЬєL±
-Ч§<—Ь оr„дw aЯи~5o–…"<ИОq3Ѓ"жпЃФТ}ОЂCFпт
-•ь‰-$Ќkоo!РA’ыt„Л"ЮЈmо‹фШу\$;^­xЙ+%c€щJ/?е'ЧЭ-u>ћ–њ{GЎ()ПB!д!‰ФCт“ћ3Д-u|Gжx.…ріOЮјКІ"о<Т,*г5—}¦ж"я8'И¶"¦|шсь`’g7у!Џ№ыВh`,Є&РЛ-†+E_)*8§h¬ИЈ.I±
-eMwGЙ°Э#јЗeuBFЇc™ъ,CҐекПU@wPдa–L›xґ?ћz“vjO¦К`щЈ»
-/‹уHщ¤ѓ,6©М#-IgFНЬ2ўi=V>!§в‰ кЃ™‘ЫЛщ*.S‘–vўМмy	E*jЙ*L±wўxЫ‰1бSe"ЛMжG~њvќЂ}H§Ђ“‰М›вa«ћ9/Iµr@ХXDиi8Т@кЇ„Т$mBЏМi]!ыЖ`›JIКgў,¤CQ;‰h•шWЩBЭѕоqщU)#Кdђ›ф•Z;‘–% Ж<v*TГ>Ghq"ќ#^д7\”Cя­(табxґГЧ#¤!Џ.їзnПїQ8ёП‘dO§?х©P3Ън@в·%F`0ѕ^>Ђ•џЁоRАРТIъщШч<•ўЃFUіЭОР[–G9ЩаУhГБ­Ђхўј—KкR°х­
-Џ№Ёќ€ў·9Ё–Ґ5«OЄЫ>sJFсХі‹1€См}н}±,‡ї‡…Ћ’<иЯЕиц”ьЙ?њ{хrKъ/lЅрўNfи[!*т,ТX>8?сno>1k&“TёЃ_T*ЧЁiсh°€«DОЉpЃыf V-3&ёK3ќЃЮЕ{7'tKBБ®бЏT•W—ЫЃ±»тмXЮЮpOсc~ц}н&ЏЩл±З‹МrЫMK~Ўуа
-hT¶;3ттј0&ЊЄd°3фТ$uRfЇ…ьшD–†гЛyЯ»wDvµOeЭЃ _Яђ3{ЪгyЦf%	іУ ґЖH©Wїґ— ‹¬pДЃыЫ".ЗU1FRЃ^/[ѓУЃFЁrD>ії/s$zf<§H@—Е,=UTЈвu>+їИё{+Win¶.\Є	›°ХFnGЇ|ҐТг™FZwАaП¬ЅдЉЁc2И)\?Ь®fСњ87wBRzЂТЛ н_…®UOцу4ИЬі#љ{ЏdоrU\VyЗЏЅm'„Ћ^жфLоэДьWuю±›ґ
-_¶4_sДcЮQке_dе7ХIy(’џ)jГ‚Ќ·яЊ?<б¬°ЧЧєA°ЁЅvл¬E]щ‚Чр[Iћ>%xыzцєuvНвщ№9ѓ&@м©Ж$DоOypЊu	Z”Шіж›‚эб№±ЯрCьїфТШЯt?uй¬'ћ{Й{§ки4«4«l»КЬ	v—U¶?q?ЕуRшK?!ҐґfiјџЫµз->бФФдФмМдфЅmX•\Qе®Я\ђOaomЛOўxЯЅ…)ЯЭl;с5Ќw m37ЧнЖNк­вѓ7a*ЧУ›ѕљґ Ювe_0ЧIЭVЕГ~БрЦ–і–Ф¬mxйЫЃЧцВ4ysgХЩш•Уц*– ЕД'ЌO«,Ў†nмБ|ўmЦўКЦбqF1њ#¬uњZэ*jz5?Lј8}У[ЏbЇ’TY€+ZdI©]ЗиЏПшбВezї'1~«4kA$ОКwYШ2Ѓo"${#»\а—ЦыfХлm·&^л€»х6gA}й‚™ї®E/vhИOўµЫћ›ІрО§n«YsљН··`cпыIк…^\±~юБ/ЕUy?rљ 0@шЯ	Џ(пБt]ЇР·/&*НИн"«ва]•Y|]·Дўn№ ХkАГДТюДAцч–HЪі7БМќСЋкR¬TЭї%>’mБYKў 4{‘б‹6ц<ь`aџџgЕ¤:eЇз“:Х/Т§:я«	Kuю—nюS»ПЎъF  
-0
+*****************************
+Информация о браузерах: {Mozilla Firefox=0, Internet Explirer=0, Google Chrome=4, Safary=0, Opera=0, Other=0}
+*****************************
 
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 19 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 372 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 310 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 250 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 700 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 477 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 544 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 1 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 2 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 3 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 4 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 7 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 8 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 647 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 9 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 204 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:14 количество живых подключений 10 время ответа сервера 938 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 13 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 430 милисекунд
+07-03-2016 15:27:53 ERROR HttpRequestHandler:191 - Error: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:127)
+	at com.mycompany.forwardproxyserver.HttpRequestHandler.dawnloadFromInet(HttpRequestHandler.java:112)
+	at com.mycompany.forwardproxyserver.HttpRequestHandler.run(HttpRequestHandler.java:181)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+07-03-2016 15:27:53 INFO  ClientsBrowserAnalyzer:106 - 
 
-07-03-2016 13:22:13 DEBUG HttpClient:124 - 
-* CLIENT: Hooray! I've got necessary information
- Servers Response is :
-HTTP/1.1 200 OK
-Server: nginx/1.6.3
-Date: Mon, 07 Mar 2016 11:22:08 GMT
-Content-Type: text/html; charset=utf-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-Vary: Accept-Encoding
-X-Powered-By: PHP/5.3.29
-Expires: Thu, 19 Nov 1981 08:52:00 GMT
-Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-Pragma: no-cache
-Content-Encoding: gzip
+*****************************
+Информация о браузерах: {Mozilla Firefox=0, Internet Explirer=0, Google Chrome=4, Safary=0, Opera=0, Other=0}
+*****************************
 
-1759
-‹      Ѕ\{oЬЦ•яЫю·LЏ°Г™СУЦ3hТd“mЪё€6AЕЎ4ґ8д„дHњ ’ЧмF@РЕ-љ6»цЏb±cYЏх2ђO0уЌцњsј—CКrРV‰Gт>Пгw^—ZъЙП?xkх77Яf­ґ¬\]В_,pВЌe+оZxГsљ+WЇ2шYJэ4рV†нП‡‡Г>ь>цШр|tox<Ъ=ЭѓчЩрЬЪ…›РЉ}ОnFqъЎл„µё»TзcРx4fЫK?<нШЮg]kЩz+
-S/LнХќЋg1—[¶RпNZЗХ-2·еД‰—.яык;цK,Ћьp“µbo}ЩZw¶|и\ѓ‹Е^°lбW‹Ґ0,\·ќЇ~З¦{|5ј3µt:ќАіУЁл¶x1¦ЯЮЁзџХ:б†U‚&ё•Д®Ю·„HЂv;рЁ§$-‘!tЪ°¶¦—ё±ЯI}њXншСыp8нй%bџБѓубЙи ЭcЈ}ёq6м;іС0/чЎ#4лЌВ9&рќШ: ±ъФKЭјнї„Чрq6<ц†П‡g5IWmk›ЮОv7}_/тТ¤XeгЏ/Z@®эЂ TЌе±т‰{Х‹(ЁZY+9Б#Ж'йNа%-ПKҐ¬‘дєI"%.лkQ”&iмtІ«ZЫkШlL–ф!і!ЦЃ‚¶ін%QЫ«зo\n°тхµХ?Ы$KЅЧmgЛбw-ІѕlЭNкќ »б‡Iэцg]/Ю±'k“ЌЪ$­з6·TзнЕє^mH“V?~8Р·е№›Ї<ДКO+лЭРEХ¬L°»?­\{-сb П^"wуЪDM^™XьbbQЌћS…k;NШфоШ[^мЇы®ѓC^SZqmnЭm6<gЭm4ззжЧЧ@МRќѓсТZФЬЖ,…‘±ф¦їЕЬАI@°А‹SFџvРЬ‹оЕvat/R ,[m'В.°©FзsєiД‹l4Ф‹б&Ьk: *MцЪ;x°н7УЦ»ЮЂЦ‹¬г4›~ёБ;/кКРљY~#Ў¦?<eГ' b=Т)T¶ѕPbА«ЇG (г фаж" БШц{x!¬Ѓ°f|H›®-­Е+ГїВЁgЂї…vЁЭЅб	и+Є8Є(ОјO#(В†OhfЎЦа‚`®О†з5 пЊ eh‰П(|•Ил7—­m@kњдИ;Р nF
-EЩ7Ќ:AґЙоЋP№:€!.Ў†ҐАЦd(Ђ™Ђ–ряvь”64ѕ@AvД°­X[N»µiю¦§3й'¶Н>ъKўnмzМ¶W^IПлх­Нљµл NNЗЇG/„Я PoМЯИлФ%фК ШGїЁщЎџVоВ€п5ШфЌ©№©Жt•Ea°у±ЯЬрТdЃҐqЧЛfPsЋmr›ъ?›МHs‹“Fр|ЊuЇ¶p±јЪы0fE^ew±яі ё|шЪтьЌVЉєSјcR‹Ч§‰`m_QЛ¤г„УmЇкЌ¶Ѕ ђ’:ЪЬKЭ@¶Ѓы h[ ^Iћ`tґV6bWЎrђgs`аpфФґW9:ЈG9J~йАтxЊ+¦VЙЗл[wмNґнЕvґѕЋьцWШё/«М;ЄM€shЈJХMЇЎ?:>IЪ’Ј‡c"ЁЌv?еў±ЧњД+,j‚†ВvэШ<9Лџ`о­?ф/і п’yј;аbѓСPD‚!П†OYXґ‹€@LёsHњлM”Н±ЭЉь¤d?\ЏМЌ|ьоп}И ®П‡§ґ‘ТµЈС>Ж^Т‰ВRr№С†ЬБ·r±™xбgй Г0:С»dрЌ Z“яЧ·Wp З]JtMѓ—M“Ir7ђ¦†TKhчХR0д$;Ў+1ё1†УњЄmDС8u;aSxНь)!t3YЫбЌЉ\DIiXXЫ»
-)—АлRъ•be:(‰¦џtggББУОР"ч¦И]Ђ7ЧZп¦“:¶УґЭА§`Ан®Щі3ЌлSуУ“і3ііЌйЙ™‚IAы№йЖшGЧoL'ВД VmсlмAШЊ¶kъНП?gџ|
-Ю[7iUоJLОи$ЩSЖќb@¤‹$н"Ь\}X~G^К—Ј/Їc_N\л4‰ЌVШ&|*Ъ`?щц.ј?ьЌ”CETvЊэpR¦ bFенj`(э?::2n+Жp$у`шЖЅ цГЯPрЮв#hіe:тг(яЄфюO‚йаNЏLСЙисрL?#й0—d†§> љ}ъA(і	Ючf†б «и…ўG'bS€ҐђУшќKОс?h|nМТ9мнЅ›6\!¦ЏцЮxйDќ8єіsЙ№ё]=ґШ:д^f’4rЈАЖњР«LF–чuВЮ]]ЅyЃ(ЌЙ’Ii\nxЛА[	ю…в‡=ІсПDP!8'C@g<XH"Чw‚[”І^НхFє,Фл<~¬%iќбџ€о*=fuУu»ШЧVІгPOЈ?Эn‹c¬ёяюd#¤T qw•ЦFЎgЮяuЧw7?дq‚ѕ5ЖD›©WM·э€[ЭЂP>©®;®‡<¬·«;NЬ­FН0ЪДх„ю¦oёвПФЕz·•<АµќxNм¶М ЧЎ ]QK:m7Хys.Z`оТVa ?p‹Ґ#бn%^ !L`§«sДR<¤qlJsXМџлµў „dЩЄІм]Љ?tр†%’a|0¤;XлNаҐp=SV/?№е7›^(»т©э¦Е¶њ 7¦sіУуЧ/У7 ЋЄ~ИXК, !б·.)щ\‡UУ©M|B\Гќ\ыФљЁAУkЫЮЪ¦џ&Пs[ЬЌјVeъH ›«~Ы‹єйEАhIw­aаДвХ™FѓТ)h™µ@Oд.иC,;я“ќ&љ›	Кьhз‰ј¦їЈw43У?џ™ћ™јqЈ 	’ЪЃF(яз© ¤ЅtЁ:o]Р8Л;MК>?ѕ”†юВЇ5Y0°>{Л‹#»K°Hй#ЭwA°]љR“вЉz¶uc0з
-a4Dcнnк5±х•б7?XгЅА&зgk“sЌЪФфtmjvљБX‚ІWфMђ®ЪNЬC>„ЂгqЫkъЭ¶‰ўrБ–Ѓ&Ф}ѓ¤… mЂЋ#жФx{ іОќА7ТЦІ5[„yґЁµnљFКи®Ґ!ѓvТuБ?$|1	@tљг)eщ—кјчЉNрщ:ЭА‰№g,Vы~и6ХЈ`†с^ \џЊ`Міњ#\мOОљоЙЌ†тhтJM]oLО–<›™™.л5;;З{]б.НШҐ‘8"іІµ]8ЬГo`/?R=Ѓ]ЁDjѕьБй+є[|dД8иN0ґDеЎшяСй1wЊIЈЊ±Ѓ™Xsq‡`Ѕ¤Кё_)Ђ…‹ БHµ‚xЖА;§YўЃя@а›К0beFЄСhэR›ђяy‰ЌИяјєН(ЃЫђЙйЙ№й№№щ—йRjSJшSџ?ТжЊSЩD/і@EbзЭшa™Мµ¦V¤Яw®тq=Y{ИiНёОdp	‘ЊЕќЈPЃ`\{Ѓ]§ЉЛR’ЖQё±"Іј>	[жwЌ†W‚ЪЂЈ жSoЄ$К=иМkEќйО6‹eюШЋє	Э_DьеkеY/‘;±ЋLWw8™XЏT±‡АљР1эЋ‚¶S¬+KЁ…ЛCМb<Ћ(ьњЃ9	AњрЕD`јMОuAj—Њ–ЂО!ш’шM4~JҐџS?з‘*4=ѓ_зАё7zЧ?nДА±ЄBќRП}њуђЖ$=†®зTЫRЙ{ЄgyOсЙ	6и‰?{ ¦зcнЛ„-‘?ъZС^±ўХг‰xтњs@M`КT`“мю?`u4м!†ЪњFz?oНe:ъАђ{fqЫТщiUOь®DЁпУBОс<°	у=&Й}[ыJРц\)8&vѕ к}Ќ.2‡ІЙ<5+
-ЈыXѓJC>«Ѓ­иh"ҐцыBЉбЩ·пy-с	eІзЋ
-OsыyA"p‰Лўвxћ ЄсДVњњІG|+°јъ¶”ъ2!™HЈl-\nq·HГ
-iЬбsn[Хюeињ
-–»TГ$Ў“В"ЕИ”п,„ы$іэLЖjB!3а!4z‚ѕЗЊЭхЖf ­еЛDqc Њxљ‚§wђ} ЪЛAМiаОc`БI}%Њ|Ћ'B–P|aq¶ПQ“Сэ}.*yIшЛ®Z™PиІ,У^ЯKХay¦€„LUFd3…KЈ*гЭruђcмБѓYх&6ЉъaFБ
-LBҐ•	ѕЪCBЈѕ µqдёi‚ҐRZь9UПиpqоXT№ы”­RuvљКї;СЭCcQ{$йяQV)oђ&Б%Qа7ЩkoПг?В:iњ+±NPр]`€t9)<e0H”Юш1#S‘Д‡gАп	 Ъ™Я?рCй	DџЋ1HЦјЮЖS‹’ЗTjЪ#™)ГЙ1ѓ U[‚[ЇJ»!‰Еy9*i:Pi%рКђчqДa,^&Ы—fЎЬNз
-БhдMі_еыR+жC•Пш	·CчаѓRJeQ›ЩtXYCb-=3-hГіУ#N{B…Q±Є~ЗчD»?дЬbbзз Љч¤©(А@ѓ’N”fў‘7з'ЩЩ#±НNѕ­Ґ0 ХNi~‘Q`ёје вg…ѓSZ Ѓf+$»њўh{¤‰j‘ Њa"Г%У!dх.aШy†7x?Е@Ќuз3:Нb·¦¬•wj?«эє&УмРzV9бПґ\ПиСlш{ОЙќ‰j*IMАпћ5=WЮ·КтR¦нKњ№ФNжT•ЉJWђ\»g:VфцSуЃaI[ЗMI_є†ЯpJF@ъB‚ъtXЉпкѓ{†БЛЙDO›а„€ф„“фD8"»BОЗЏVй
-"О]кG7е‘®L°ЗѕрА{ЄьvЄе“рwUчћ<W“dHUё¬}Вы…>§Ь%EыMн}P7Џ	а-Ўз7§UќЅLмuJт5+@“”“иІGЏЮ„ґКиѓJПҐзбХ	БћТэўАtлaЗЂRВ‡„,№”eЎKжP©B№ъ(n\—BБП”M"·Х~Юэ	wяЂ¶Г5FТЌdх  ч|й+]y†рIВy‚_џHq ДаLХ0АЩыїjµЌЉc5'wЈЇ5аНІ•“SУ353ґИ)zЗ$Q|-WuДcDќ’xДђ[=:А‰Ж \g‹УЋГШё[g$UsзЈ»lо2+Fк”)…8¦вNmЂ*ґ+ЖЉяЪ"ёЦ ќlђЈГжfg§gе•·*ЛидЛюqф5Є"JМIяУњѓЎ;"\в†щЂФл<;o$1M€bю”:73Dџп)щ_ѕr:њqХ‘Фк[7лпЭ#d%dрЛrbь]жХ`»SоБ›
-¦Б/cУЃG"аўР•А+;t^?HЇ’чЇ«?IeџBУ¬ЦhъҐZ¦вLF™Щ”СёrљIiс_jc”HеаA:™}•A„ђ<аВЊм»Њ]tћђАcЂћГRйцRdMi$МЎј <;з+Р„vІ15ќgуЎТUщ
-5Ф!ЩУ]<ZкЃ &Щv<!GЇRд\|ґ±жЋ…Ќс)s›ЋЩЌ†‰гJёўxYН\…L>xўб>Н$CHy:ЃЬєL±
-Ч§<—Ь оr„дw aЯи~5o–…"<ИОq3Ѓ"жпЃФТ}ОЂCFпт
-•ь‰-$Ќkоo!РA’ыt„Л"ЮЈmо‹фШу\$;^­xЙ+%c€щJ/?е'ЧЭ-u>ћ–њ{GЎ()ПB!д!‰ФCт“ћ3Д-u|Gжx.…ріOЮјКІ"о<Т,*г5—}¦ж"я8'И¶"¦|шсь`’g7у!Џ№ыВh`,Є&РЛ-†+E_)*8§h¬ИЈ.I±
-eMwGЙ°Э#јЗeuBFЇc™ъ,CҐекПU@wPдa–L›xґ?ћz“vjO¦К`щЈ»
-/‹уHщ¤ѓ,6©М#-IgFНЬ2ўi=V>!§в‰ кЃ™‘ЫЛщ*.S‘–vўМмy	E*jЙ*L±wўxЫ‰1бSe"ЛMжG~њvќЂ}H§Ђ“‰М›вa«ћ9/Iµr@ХXDиi8Т@кЇ„Т$mBЏМi]!ыЖ`›JIКgў,¤CQ;‰h•шWЩBЭѕоqщU)#Кdђ›ф•Z;‘–% Ж<v*TГ>Ghq"ќ#^д7\”Cя­(табxґГЧ#¤!Џ.їзnПїQ8ёП‘dO§?х©P3Ън@в·%F`0ѕ^>Ђ•џЁоRАРТIъщШч<•ўЃFUіЭОР[–G9ЩаУhГБ­Ђхўј—KкR°х­
-Џ№Ёќ€ў·9Ё–Ґ5«OЄЫ>sJFсХі‹1€См}н}±,‡ї‡…Ћ’<иЯЕиц”ьЙ?њ{хrKъ/lЅрўNfи[!*т,ТX>8?сno>1k&“TёЃ_T*ЧЁiсh°€«DОЉpЃыf V-3&ёK3ќЃЮЕ{7'tKBБ®бЏT•W—ЫЃ±»тмXЮЮpOсc~ц}н&ЏЩл±З‹МrЫMK~Ўуа
-hT¶;3ттј0&ЊЄd°3фТ$uRfЇ…ьшD–†гЛyЯ»wDvµOeЭЃ _Яђ3{ЪгyЦf%	іУ ґЖH©Wїґ— ‹¬pДЃыЫ".ЗU1FRЃ^/[ѓУЃFЁrD>ії/s$zf<§H@—Е,=UTЈвu>+їИё{+Win¶.\Є	›°ХFnGЇ|ҐТг™FZwАaП¬ЅдЉЁc2И)\?Ь®fСњ87wBRzЂТЛ н_…®UOцу4ИЬі#љ{ЏdоrU\VyЗЏЅm'„Ћ^жфLоэДьWuю±›ґ
-_¶4_sДcЮQке_dе7ХIy(’џ)jГ‚Ќ·яЊ?<б¬°ЧЧєA°ЁЅvл¬E]щ‚Чр[Iћ>%xыzцєuvНвщ№9ѓ&@м©Ж$DоOypЊu	Z”Шіж›‚эб№±ЯрCьїфТШЯt?uй¬'ћ{Й{§ки4«4«l»КЬ	v—U¶?q?ЕуRшK?!ҐґfiјџЫµз->бФФдФмМдфЅmX•\Qе®Я\ђOaomЛOўxЯЅ…)ЯЭl;с5Ќw m37ЧнЖNк­вѓ7a*ЧУ›ѕљґ Ювe_0ЧIЭVЕГ~БрЦ–і–Ф¬mxйЫЃЧцВ4ysgХЩш•Уц*– ЕД'ЌO«,Ў†nмБ|ўmЦўКЦбqF1њ#¬uњZэ*jz5?Lј8}У[ЏbЇ’TY€+ZdI©]ЗиЏПшбВezї'1~«4kA$ОКwYШ2Ѓo"${#»\а—ЦыfХлm·&^л€»х6gA}й‚™ї®E/vhИOўµЫћ›ІрО§n«YsљН··`cпыIк…^\±~юБ/ЕUy?rљ 0@шЯ	Џ(пБt]ЇР·/&*НИн"«ва]•Y|]·Дўn№ ХkАГДТюДAцч–HЪі7БМќСЋкR¬TЭї%>’mБYKў 4{‘б‹6ц<ь`aџџgЕ¤:eЇз“:Х/Т§:я«	Kuю—nюS»ПЎъF  
-0
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 19 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 372 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 310 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 250 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 700 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 477 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 544 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 1 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 2 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 3 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 4 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 7 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 8 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 647 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 9 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 204 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:14 количество живых подключений 10 время ответа сервера 938 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 13 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 430 милисекунд
+07-03-2016 15:27:53 ERROR HttpRequestHandler:191 - Error: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:127)
+	at com.mycompany.forwardproxyserver.HttpRequestHandler.dawnloadFromInet(HttpRequestHandler.java:112)
+	at com.mycompany.forwardproxyserver.HttpRequestHandler.run(HttpRequestHandler.java:181)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+07-03-2016 15:27:53 INFO  ClientsBrowserAnalyzer:106 - 
 
+*****************************
+Информация о браузерах: {Mozilla Firefox=0, Internet Explirer=0, Google Chrome=4, Safary=0, Opera=0, Other=0}
+*****************************
 
-07-03-2016 13:22:13 DEBUG HttpClient:124 - 
-* CLIENT: Hooray! I've got necessary information
- Servers Response is :
-HTTP/1.1 200 OK
-Server: nginx/1.6.3
-Date: Mon, 07 Mar 2016 11:22:08 GMT
-Content-Type: text/html; charset=utf-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-Vary: Accept-Encoding
-X-Powered-By: PHP/5.3.29
-Expires: Thu, 19 Nov 1981 08:52:00 GMT
-Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-Pragma: no-cache
-Content-Encoding: gzip
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 19 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 372 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 310 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 250 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 700 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 477 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 544 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 1 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 2 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 3 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 4 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 7 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 8 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 647 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 9 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 204 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:14 количество живых подключений 10 время ответа сервера 938 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 13 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 430 милисекунд
+07-03-2016 15:27:53 ERROR HttpRequestHandler:191 - Error: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:127)
+	at com.mycompany.forwardproxyserver.HttpRequestHandler.dawnloadFromInet(HttpRequestHandler.java:112)
+	at com.mycompany.forwardproxyserver.HttpRequestHandler.run(HttpRequestHandler.java:181)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+07-03-2016 15:27:53 INFO  ClientsBrowserAnalyzer:106 - 
 
-1759
-‹      Ѕ\{oЬЦ•яЫю·LЏ°Г™СУЦ3hТd“mЪё€6AЕЎ4ґ8д„дHњ ’ЧмF@РЕ-љ6»цЏb±cYЏх2ђO0уЌцњsј—CКrРV‰Gт>Пгw^—ZъЙП?xkх77Яf­ґ¬\]В_,pВЌe+оZxГsљ+WЇ2шYJэ4рV†нП‡‡Г>ь>цШр|tox<Ъ=ЭѓчЩрЬЪ…›РЉ}ОnFqъЎл„µё»TзcРx4fЫK?<нШЮg]kЩz+
-S/LнХќЋg1—[¶RпNZЗХ-2·еД‰—.яык;цK,Ћьp“µbo}ЩZw¶|и\ѓ‹Е^°lбW‹Ґ0,\·ќЇ~З¦{|5ј3µt:ќАіУЁл¶x1¦ЯЮЁзџХ:б†U‚&ё•Д®Ю·„HЂv;рЁ§$-‘!tЪ°¶¦—ё±ЯI}њXншСыp8нй%bџБѓубЙи ЭcЈ}ёq6м;іС0/чЎ#4лЌВ9&рќШ: ±ъФKЭјнї„Чрq6<ц†П‡g5IWmk›ЮОv7}_/тТ¤XeгЏ/Z@®эЂ TЌе±т‰{Х‹(ЁZY+9Б#Ж'йNа%-ПKҐ¬‘дєI"%.лkQ”&iмtІ«ZЫkШlL–ф!і!ЦЃ‚¶ін%QЫ«зo\n°тхµХ?Ы$KЅЧmgЛбw-ІѕlЭNкќ »б‡Iэцg]/Ю±'k“ЌЪ$­з6·TзнЕє^mH“V?~8Р·е№›Ї<ДКO+лЭРEХ¬L°»?­\{-сb П^"wуЪDM^™XьbbQЌћS…k;NШфоШ[^мЇы®ѓC^SZqmnЭm6<gЭm4ззжЧЧ@МRќѓсТZФЬЖ,…‘±ф¦їЕЬАI@°А‹SFџvРЬ‹оЕvat/R ,[m'В.°©FзsєiД‹l4Ф‹б&Ьk: *MцЪ;x°н7УЦ»ЮЂЦ‹¬г4›~ёБ;/кКРљY~#Ў¦?<eГ' b=Т)T¶ѕPbА«ЇG (г фаж" БШц{x!¬Ѓ°f|H›®-­Е+ГїВЁgЂї…vЁЭЅб	и+Є8Є(ОјO#(В†OhfЎЦа‚`®О†з5 пЊ eh‰П(|•Ил7—­m@kњдИ;Р nF
-EЩ7Ќ:AґЙоЋP№:€!.Ў†ҐАЦd(Ђ™Ђ–ряvь”64ѕ@AvД°­X[N»µiю¦§3й'¶Н>ъKўnмzМ¶W^IПлх­Нљµл NNЗЇG/„Я PoМЯИлФ%фК ШGїЁщЎџVоВ€п5ШфЌ©№©Жt•Ea°у±ЯЬрТdЃҐqЧЛfPsЋmr›ъ?›МHs‹“Fр|ЊuЇ¶p±јЪы0fE^ew±яі ё|шЪтьЌVЉєSјcR‹Ч§‰`m_QЛ¤г„УmЇкЌ¶Ѕ ђ’:ЪЬKЭ@¶Ѓы h[ ^Iћ`tґV6bWЎrђgs`аpфФґW9:ЈG9J~йАтxЊ+¦VЙЗл[wмNґнЕvґѕЋьцWШё/«М;ЄM€shЈJХMЇЎ?:>IЪ’Ј‡c"ЁЌv?еў±ЧњД+,j‚†ВvэШ<9Лџ`о­?ф/і п’yј;аbѓСPD‚!П†OYXґ‹€@LёsHњлM”Н±ЭЉь¤d?\ЏМЌ|ьоп}И ®П‡§ґ‘ТµЈС>Ж^Т‰ВRr№С†ЬБ·r±™xбgй Г0:С»dрЌ Z“яЧ·Wp З]JtMѓ—M“Ir7ђ¦†TKhчХR0д$;Ў+1ё1†УњЄmDС8u;aSxНь)!t3YЫбЌЉ\DIiXXЫ»
-)—АлRъ•be:(‰¦џtggББУОР"ч¦И]Ђ7ЧZп¦“:¶УґЭА§`Ан®Щі3ЌлSуУ“і3ііЌйЙ™‚IAы№йЖшGЧoL'ВД VmсlмAШЊ¶kъНП?gџ|
-Ю[7iUоJLОи$ЩSЖќb@¤‹$н"Ь\}X~G^К—Ј/Їc_N\л4‰ЌVШ&|*Ъ`?щц.ј?ьЌ”CETvЊэpR¦ bFенj`(э?::2n+Жp$у`шЖЅ цГЯPрЮв#hіe:тг(яЄфюO‚йаNЏLСЙисрL?#й0—d†§> љ}ъA(і	Ючf†б «и…ўG'bS€ҐђУшќKОс?h|nМТ9мнЅ›6\!¦ЏцЮxйDќ8єіsЙ№ё]=ґШ:д^f’4rЈАЖњР«LF–чuВЮ]]ЅyЃ(ЌЙ’Ii\nxЛА[	ю…в‡=ІсПDP!8'C@g<XH"Чw‚[”І^НхFє,Фл<~¬%iќбџ€о*=fuУu»ШЧVІгPOЈ?Эn‹c¬ёяюd#¤T qw•ЦFЎgЮяuЧw7?дq‚ѕ5ЖD›©WM·э€[ЭЂP>©®;®‡<¬·«;NЬ­FН0ЪДх„ю¦oёвПФЕz·•<АµќxNм¶М ЧЎ ]QK:m7Хys.Z`оТVa ?p‹Ґ#бn%^ !L`§«sДR<¤qlJsXМџлµў „dЩЄІм]Љ?tр†%’a|0¤;XлNаҐp=SV/?№е7›^(»т©э¦Е¶њ 7¦sіУуЧ/У7 ЋЄ~ИXК, !б·.)щ\‡UУ©M|B\Гќ\ыФљЁAУkЫЮЪ¦џ&Пs[ЬЌјVeъH ›«~Ы‹єйEАhIw­aаДвХ™FѓТ)h™µ@Oд.иC,;я“ќ&љ›	Кьhз‰ј¦їЈw43У?џ™ћ™јqЈ 	’ЪЃF(яз© ¤ЅtЁ:o]Р8Л;MК>?ѕ”†юВЇ5Y0°>{Л‹#»K°Hй#ЭwA°]љR“вЉz¶uc0з
-a4Dcнnк5±х•б7?XгЅА&зgk“sЌЪФфtmjvљБX‚ІWфMђ®ЪNЬC>„ЂгqЫkъЭ¶‰ўrБ–Ѓ&Ф}ѓ¤… mЂЋ#жФx{ іОќА7ТЦІ5[„yґЁµnљFКи®Ґ!ѓvТuБ?$|1	@tљг)eщ—кјчЉNрщ:ЭА‰№g,Vы~и6ХЈ`†с^ \џЊ`Міњ#\мOОљоЙЌ†тhтJM]oLО–<›™™.л5;;З{]б.НШҐ‘8"іІµ]8ЬГo`/?R=Ѓ]ЁDjѕьБй+є[|dД8иN0ґDеЎшяСй1wЊIЈЊ±Ѓ™Xsq‡`Ѕ¤Кё_)Ђ…‹ БHµ‚xЖА;§YўЃя@а›К0beFЄСhэR›ђяy‰ЌИяјєН(ЃЫђЙйЙ№й№№щ—йRjSJшSџ?ТжЊSЩD/і@EbзЭшa™Мµ¦V¤Яw®тq=Y{ИiНёОdp	‘ЊЕќЈPЃ`\{Ѓ]§ЉЛR’ЖQё±"Іј>	[жwЌ†W‚ЪЂЈ жSoЄ$К=иМkEќйО6‹eюШЋє	Э_DьеkеY/‘;±ЋLWw8™XЏT±‡АљР1эЋ‚¶S¬+KЁ…ЛCМb<Ћ(ьњЃ9	AњрЕD`јMОuAj—Њ–ЂО!ш’шM4~JҐџS?з‘*4=ѓ_зАё7zЧ?nДА±ЄBќRП}њуђЖ$=†®зTЫRЙ{ЄgyOсЙ	6и‰?{ ¦зcнЛ„-‘?ъZС^±ўХг‰xтњs@M`КT`“мю?`u4м!†ЪњFz?oНe:ъАђ{fqЫТщiUOь®DЁпУBОс<°	у=&Й}[ыJРц\)8&vѕ к}Ќ.2‡ІЙ<5+
-ЈыXѓJC>«Ѓ­иh"ҐцыBЉбЩ·пy-с	eІзЋ
-OsыyA"p‰Лўвxћ ЄсДVњњІG|+°јъ¶”ъ2!™HЈl-\nq·HГ
-iЬбsn[Хюeињ
-–»TГ$Ў“В"ЕИ”п,„ы$іэLЖjB!3а!4z‚ѕЗЊЭхЖf ­еЛDqc Њxљ‚§wђ} ЪЛAМiаОc`БI}%Њ|Ћ'B–P|aq¶ПQ“Сэ}.*yIшЛ®Z™PиІ,У^ЯKХay¦€„LUFd3…KЈ*гЭruђcмБѓYх&6ЉъaFБ
-LBҐ•	ѕЪCBЈѕ µqдёi‚ҐRZь9UПиpqоXT№ы”­RuvљКї;СЭCcQ{$йяQV)oђ&Б%Qа7ЩkoПг?В:iњ+±NPр]`€t9)<e0H”Юш1#S‘Д‡gАп	 Ъ™Я?рCй	DџЋ1HЦјЮЖS‹’ЗTjЪ#™)ГЙ1ѓ U[‚[ЇJ»!‰Еy9*i:Pi%рКђчqДa,^&Ы—fЎЬNз
-БhдMі_еыR+жC•Пш	·CчаѓRJeQ›ЩtXYCb-=3-hГіУ#N{B…Q±Є~ЗчD»?дЬbbзз Љч¤©(А@ѓ’N”fў‘7з'ЩЩ#±НNѕ­Ґ0 ХNi~‘Q`ёје вg…ѓSZ Ѓf+$»њўh{¤‰j‘ Њa"Г%У!dх.aШy†7x?Е@Ќuз3:Нb·¦¬•wj?«эє&УмРzV9бПґ\ПиСlш{ОЙќ‰j*IMАпћ5=WЮ·КтR¦нKњ№ФNжT•ЉJWђ\»g:VфцSуЃaI[ЗMI_є†ЯpJF@ъB‚ъtXЉпкѓ{†БЛЙDO›а„€ф„“фD8"»BОЗЏVй
-"О]кG7е‘®L°ЗѕрА{ЄьvЄе“рwUчћ<W“dHUё¬}Вы…>§Ь%EыMн}P7Џ	а-Ўз7§UќЅLмuJт5+@“”“иІGЏЮ„ґКиѓJПҐзбХ	БћТэўАtлaЗЂRВ‡„,№”eЎKжP©B№ъ(n\—BБП”M"·Х~Юэ	wяЂ¶Г5FТЌdх  ч|й+]y†рIВy‚_џHq ДаLХ0АЩыїjµЌЉc5'wЈЇ5аНІ•“SУ353ґИ)zЗ$Q|-WuДcDќ’xДђ[=:А‰Ж \g‹УЋГШё[g$UsзЈ»lо2+Fк”)…8¦вNmЂ*ґ+ЖЉяЪ"ёЦ ќlђЈГжfg§gе•·*ЛидЛюqф5Є"JМIяУњѓЎ;"\в†щЂФл<;o$1M€bю”:73Dџп)щ_ѕr:њqХ‘Фк[7лпЭ#d%dрЛrbь]жХ`»SоБ›
-¦Б/cУЃG"аўР•А+;t^?HЇ’чЇ«?IeџBУ¬ЦhъҐZ¦вLF™Щ”СёrљIiс_jc”HеаA:™}•A„ђ<аВЊм»Њ]tћђАcЂћГRйцRdMi$МЎј <;з+Р„vІ15ќgуЎТUщ
-5Ф!ЩУ]<ZкЃ &Щv<!GЇRд\|ґ±жЋ…Ќс)s›ЋЩЌ†‰гJёўxYН\…L>xўб>Н$CHy:ЃЬєL±
-Ч§<—Ь оr„дw aЯи~5o–…"<ИОq3Ѓ"жпЃФТ}ОЂCFпт
-•ь‰-$Ќkоo!РA’ыt„Л"ЮЈmо‹фШу\$;^­xЙ+%c€щJ/?е'ЧЭ-u>ћ–њ{GЎ()ПB!д!‰ФCт“ћ3Д-u|Gжx.…ріOЮјКІ"о<Т,*г5—}¦ж"я8'И¶"¦|шсь`’g7у!Џ№ыВh`,Є&РЛ-†+E_)*8§h¬ИЈ.I±
-eMwGЙ°Э#јЗeuBFЇc™ъ,CҐекПU@wPдa–L›xґ?ћz“vjO¦К`щЈ»
-/‹уHщ¤ѓ,6©М#-IgFНЬ2ўi=V>!§в‰ кЃ™‘ЫЛщ*.S‘–vўМмy	E*jЙ*L±wўxЫ‰1бSe"ЛMжG~њvќЂ}H§Ђ“‰М›вa«ћ9/Iµr@ХXDиi8Т@кЇ„Т$mBЏМi]!ыЖ`›JIКgў,¤CQ;‰h•шWЩBЭѕоqщU)#Кdђ›ф•Z;‘–% Ж<v*TГ>Ghq"ќ#^д7\”Cя­(табxґГЧ#¤!Џ.їзnПїQ8ёП‘dO§?х©P3Ън@в·%F`0ѕ^>Ђ•џЁоRАРТIъщШч<•ўЃFUіЭОР[–G9ЩаУhГБ­Ђхўј—KкR°х­
-Џ№Ёќ€ў·9Ё–Ґ5«OЄЫ>sJFсХі‹1€См}н}±,‡ї‡…Ћ’<иЯЕиц”ьЙ?њ{хrKъ/lЅрўNfи[!*т,ТX>8?сno>1k&“TёЃ_T*ЧЁiсh°€«DОЉpЃыf V-3&ёK3ќЃЮЕ{7'tKBБ®бЏT•W—ЫЃ±»тмXЮЮpOсc~ц}н&ЏЩл±З‹МrЫMK~Ўуа
-hT¶;3ттј0&ЊЄd°3фТ$uRfЇ…ьшD–†гЛyЯ»wDvµOeЭЃ _Яђ3{ЪгyЦf%	іУ ґЖH©Wїґ— ‹¬pДЃыЫ".ЗU1FRЃ^/[ѓУЃFЁrD>ії/s$zf<§H@—Е,=UTЈвu>+їИё{+Win¶.\Є	›°ХFnGЇ|ҐТг™FZwАaП¬ЅдЉЁc2И)\?Ь®fСњ87wBRzЂТЛ н_…®UOцу4ИЬі#љ{ЏdоrU\VyЗЏЅm'„Ћ^жфLоэДьWuю±›ґ
-_¶4_sДcЮQке_dе7ХIy(’џ)jГ‚Ќ·яЊ?<б¬°ЧЧєA°ЁЅvл¬E]щ‚Чр[Iћ>%xыzцєuvНвщ№9ѓ&@м©Ж$DоOypЊu	Z”Шіж›‚эб№±ЯрCьїфТШЯt?uй¬'ћ{Й{§ки4«4«l»КЬ	v—U¶?q?ЕуRшK?!ҐґfiјџЫµз->бФФдФмМдфЅmX•\Qе®Я\ђOaomЛOўxЯЅ…)ЯЭl;с5Ќw m37ЧнЖNк­вѓ7a*ЧУ›ѕљґ Ювe_0ЧIЭVЕГ~БрЦ–і–Ф¬mxйЫЃЧцВ4ysgХЩш•Уц*– ЕД'ЌO«,Ў†nмБ|ўmЦўКЦбqF1њ#¬uњZэ*jz5?Lј8}У[ЏbЇ’TY€+ZdI©]ЗиЏПшбВezї'1~«4kA$ОКwYШ2Ѓo"${#»\а—ЦыfХлm·&^л€»х6gA}й‚™ї®E/vhИOўµЫћ›ІрО§n«YsљН··`cпыIк…^\±~юБ/ЕUy?rљ 0@шЯ	Џ(пБt]ЇР·/&*НИн"«ва]•Y|]·Дўn№ ХkАГДТюДAцч–HЪі7БМќСЋкR¬TЭї%>’mБYKў 4{‘б‹6ц<ь`aџџgЕ¤:eЇз“:Х/Т§:я«	Kuю—nюS»ПЎъF  
-0
+*****************************
+Информация о браузерах: {Mozilla Firefox=0, Internet Explirer=0, Google Chrome=4, Safary=0, Opera=0, Other=0}
+*****************************
 
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 19 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 372 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 310 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 250 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 700 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 477 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 544 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 1 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 2 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 3 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 4 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 7 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 8 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 647 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 9 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 204 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:14 количество живых подключений 10 время ответа сервера 938 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 13 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 430 милисекунд
+07-03-2016 15:27:53 ERROR HttpRequestHandler:191 - Error: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:127)
+	at com.mycompany.forwardproxyserver.HttpRequestHandler.dawnloadFromInet(HttpRequestHandler.java:112)
+	at com.mycompany.forwardproxyserver.HttpRequestHandler.run(HttpRequestHandler.java:181)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+07-03-2016 15:27:53 INFO  ClientsBrowserAnalyzer:106 - 
 
-07-03-2016 13:22:13 DEBUG HttpClient:124 - 
-* CLIENT: Hooray! I've got necessary information
- Servers Response is :
-HTTP/1.1 200 OK
-Server: nginx/1.6.3
-Date: Mon, 07 Mar 2016 11:22:08 GMT
-Content-Type: text/html; charset=utf-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-Vary: Accept-Encoding
-X-Powered-By: PHP/5.3.29
-Expires: Thu, 19 Nov 1981 08:52:00 GMT
-Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-Pragma: no-cache
-Content-Encoding: gzip
+*****************************
+Информация о браузерах: {Mozilla Firefox=0, Internet Explirer=0, Google Chrome=4, Safary=0, Opera=0, Other=0}
+*****************************
 
-1759
-‹      Ѕ\{oЬЦ•яЫю·LЏ°Г™СУЦ3hТd“mЪё€6AЕЎ4ґ8д„дHњ ’ЧмF@РЕ-љ6»цЏb±cYЏх2ђO0уЌцњsј—CКrРV‰Gт>Пгw^—ZъЙП?xkх77Яf­ґ¬\]В_,pВЌe+оZxГsљ+WЇ2шYJэ4рV†нП‡‡Г>ь>цШр|tox<Ъ=ЭѓчЩрЬЪ…›РЉ}ОnFqъЎл„µё»TзcРx4fЫK?<нШЮg]kЩz+
-S/LнХќЋg1—[¶RпNZЗХ-2·еД‰—.яык;цK,Ћьp“µbo}ЩZw¶|и\ѓ‹Е^°lбW‹Ґ0,\·ќЇ~З¦{|5ј3µt:ќАіУЁл¶x1¦ЯЮЁзџХ:б†U‚&ё•Д®Ю·„HЂv;рЁ§$-‘!tЪ°¶¦—ё±ЯI}њXншСыp8нй%bџБѓубЙи ЭcЈ}ёq6м;іС0/чЎ#4лЌВ9&рќШ: ±ъФKЭјнї„Чрq6<ц†П‡g5IWmk›ЮОv7}_/тТ¤XeгЏ/Z@®эЂ TЌе±т‰{Х‹(ЁZY+9Б#Ж'йNа%-ПKҐ¬‘дєI"%.лkQ”&iмtІ«ZЫkШlL–ф!і!ЦЃ‚¶ін%QЫ«зo\n°тхµХ?Ы$KЅЧmgЛбw-ІѕlЭNкќ »б‡Iэцg]/Ю±'k“ЌЪ$­з6·TзнЕє^mH“V?~8Р·е№›Ї<ДКO+лЭРEХ¬L°»?­\{-сb П^"wуЪDM^™XьbbQЌћS…k;NШфоШ[^мЇы®ѓC^SZqmnЭm6<gЭm4ззжЧЧ@МRќѓсТZФЬЖ,…‘±ф¦їЕЬАI@°А‹SFџvРЬ‹оЕvat/R ,[m'В.°©FзsєiД‹l4Ф‹б&Ьk: *MцЪ;x°н7УЦ»ЮЂЦ‹¬г4›~ёБ;/кКРљY~#Ў¦?<eГ' b=Т)T¶ѕPbА«ЇG (г фаж" БШц{x!¬Ѓ°f|H›®-­Е+ГїВЁgЂї…vЁЭЅб	и+Є8Є(ОјO#(В†OhfЎЦа‚`®О†з5 пЊ eh‰П(|•Ил7—­m@kњдИ;Р nF
-EЩ7Ќ:AґЙоЋP№:€!.Ў†ҐАЦd(Ђ™Ђ–ряvь”64ѕ@AvД°­X[N»µiю¦§3й'¶Н>ъKўnмzМ¶W^IПлх­Нљµл NNЗЇG/„Я PoМЯИлФ%фК ШGїЁщЎџVоВ€п5ШфЌ©№©Жt•Ea°у±ЯЬрТdЃҐqЧЛfPsЋmr›ъ?›МHs‹“Fр|ЊuЇ¶p±јЪы0fE^ew±яі ё|шЪтьЌVЉєSјcR‹Ч§‰`m_QЛ¤г„УmЇкЌ¶Ѕ ђ’:ЪЬKЭ@¶Ѓы h[ ^Iћ`tґV6bWЎrђgs`аpфФґW9:ЈG9J~йАтxЊ+¦VЙЗл[wмNґнЕvґѕЋьцWШё/«М;ЄM€shЈJХMЇЎ?:>IЪ’Ј‡c"ЁЌv?еў±ЧњД+,j‚†ВvэШ<9Лџ`о­?ф/і п’yј;аbѓСPD‚!П†OYXґ‹€@LёsHњлM”Н±ЭЉь¤d?\ЏМЌ|ьоп}И ®П‡§ґ‘ТµЈС>Ж^Т‰ВRr№С†ЬБ·r±™xбgй Г0:С»dрЌ Z“яЧ·Wp З]JtMѓ—M“Ir7ђ¦†TKhчХR0д$;Ў+1ё1†УњЄmDС8u;aSxНь)!t3YЫбЌЉ\DIiXXЫ»
-)—АлRъ•be:(‰¦џtggББУОР"ч¦И]Ђ7ЧZп¦“:¶УґЭА§`Ан®Щі3ЌлSуУ“і3ііЌйЙ™‚IAы№йЖшGЧoL'ВД VmсlмAШЊ¶kъНП?gџ|
-Ю[7iUоJLОи$ЩSЖќb@¤‹$н"Ь\}X~G^К—Ј/Їc_N\л4‰ЌVШ&|*Ъ`?щц.ј?ьЌ”CETvЊэpR¦ bFенj`(э?::2n+Жp$у`шЖЅ цГЯPрЮв#hіe:тг(яЄфюO‚йаNЏLСЙисрL?#й0—d†§> љ}ъA(і	Ючf†б «и…ўG'bS€ҐђУшќKОс?h|nМТ9мнЅ›6\!¦ЏцЮxйDќ8єіsЙ№ё]=ґШ:д^f’4rЈАЖњР«LF–чuВЮ]]ЅyЃ(ЌЙ’Ii\nxЛА[	ю…в‡=ІсПDP!8'C@g<XH"Чw‚[”І^НхFє,Фл<~¬%iќбџ€о*=fuУu»ШЧVІгPOЈ?Эn‹c¬ёяюd#¤T qw•ЦFЎgЮяuЧw7?дq‚ѕ5ЖD›©WM·э€[ЭЂP>©®;®‡<¬·«;NЬ­FН0ЪДх„ю¦oёвПФЕz·•<АµќxNм¶М ЧЎ ]QK:m7Хys.Z`оТVa ?p‹Ґ#бn%^ !L`§«sДR<¤qlJsXМџлµў „dЩЄІм]Љ?tр†%’a|0¤;XлNаҐp=SV/?№е7›^(»т©э¦Е¶њ 7¦sіУуЧ/У7 ЋЄ~ИXК, !б·.)щ\‡UУ©M|B\Гќ\ыФљЁAУkЫЮЪ¦џ&Пs[ЬЌјVeъH ›«~Ы‹єйEАhIw­aаДвХ™FѓТ)h™µ@Oд.иC,;я“ќ&љ›	Кьhз‰ј¦їЈw43У?џ™ћ™јqЈ 	’ЪЃF(яз© ¤ЅtЁ:o]Р8Л;MК>?ѕ”†юВЇ5Y0°>{Л‹#»K°Hй#ЭwA°]љR“вЉz¶uc0з
-a4Dcнnк5±х•б7?XгЅА&зgk“sЌЪФфtmjvљБX‚ІWфMђ®ЪNЬC>„ЂгqЫkъЭ¶‰ўrБ–Ѓ&Ф}ѓ¤… mЂЋ#жФx{ іОќА7ТЦІ5[„yґЁµnљFКи®Ґ!ѓvТuБ?$|1	@tљг)eщ—кјчЉNрщ:ЭА‰№g,Vы~и6ХЈ`†с^ \џЊ`Міњ#\мOОљоЙЌ†тhтJM]oLО–<›™™.л5;;З{]б.НШҐ‘8"іІµ]8ЬГo`/?R=Ѓ]ЁDjѕьБй+є[|dД8иN0ґDеЎшяСй1wЊIЈЊ±Ѓ™Xsq‡`Ѕ¤Кё_)Ђ…‹ БHµ‚xЖА;§YўЃя@а›К0beFЄСhэR›ђяy‰ЌИяјєН(ЃЫђЙйЙ№й№№щ—йRjSJшSџ?ТжЊSЩD/і@EbзЭшa™Мµ¦V¤Яw®тq=Y{ИiНёОdp	‘ЊЕќЈPЃ`\{Ѓ]§ЉЛR’ЖQё±"Іј>	[жwЌ†W‚ЪЂЈ жSoЄ$К=иМkEќйО6‹eюШЋє	Э_DьеkеY/‘;±ЋLWw8™XЏT±‡АљР1эЋ‚¶S¬+KЁ…ЛCМb<Ћ(ьњЃ9	AњрЕD`јMОuAj—Њ–ЂО!ш’шM4~JҐџS?з‘*4=ѓ_зАё7zЧ?nДА±ЄBќRП}њуђЖ$=†®зTЫRЙ{ЄgyOсЙ	6и‰?{ ¦зcнЛ„-‘?ъZС^±ўХг‰xтњs@M`КT`“мю?`u4м!†ЪњFz?oНe:ъАђ{fqЫТщiUOь®DЁпУBОс<°	у=&Й}[ыJРц\)8&vѕ к}Ќ.2‡ІЙ<5+
-ЈыXѓJC>«Ѓ­иh"ҐцыBЉбЩ·пy-с	eІзЋ
-OsыyA"p‰Лўвxћ ЄсДVњњІG|+°јъ¶”ъ2!™HЈl-\nq·HГ
-iЬбsn[Хюeињ
-–»TГ$Ў“В"ЕИ”п,„ы$іэLЖjB!3а!4z‚ѕЗЊЭхЖf ­еЛDqc Њxљ‚§wђ} ЪЛAМiаОc`БI}%Њ|Ћ'B–P|aq¶ПQ“Сэ}.*yIшЛ®Z™PиІ,У^ЯKХay¦€„LUFd3…KЈ*гЭruђcмБѓYх&6ЉъaFБ
-LBҐ•	ѕЪCBЈѕ µqдёi‚ҐRZь9UПиpqоXT№ы”­RuvљКї;СЭCcQ{$йяQV)oђ&Б%Qа7ЩkoПг?В:iњ+±NPр]`€t9)<e0H”Юш1#S‘Д‡gАп	 Ъ™Я?рCй	DџЋ1HЦјЮЖS‹’ЗTjЪ#™)ГЙ1ѓ U[‚[ЇJ»!‰Еy9*i:Pi%рКђчqДa,^&Ы—fЎЬNз
-БhдMі_еыR+жC•Пш	·CчаѓRJeQ›ЩtXYCb-=3-hГіУ#N{B…Q±Є~ЗчD»?дЬbbзз Љч¤©(А@ѓ’N”fў‘7з'ЩЩ#±НNѕ­Ґ0 ХNi~‘Q`ёје вg…ѓSZ Ѓf+$»њўh{¤‰j‘ Њa"Г%У!dх.aШy†7x?Е@Ќuз3:Нb·¦¬•wj?«эє&УмРzV9бПґ\ПиСlш{ОЙќ‰j*IMАпћ5=WЮ·КтR¦нKњ№ФNжT•ЉJWђ\»g:VфцSуЃaI[ЗMI_є†ЯpJF@ъB‚ъtXЉпкѓ{†БЛЙDO›а„€ф„“фD8"»BОЗЏVй
-"О]кG7е‘®L°ЗѕрА{ЄьvЄе“рwUчћ<W“dHUё¬}Вы…>§Ь%EыMн}P7Џ	а-Ўз7§UќЅLмuJт5+@“”“иІGЏЮ„ґКиѓJПҐзбХ	БћТэўАtлaЗЂRВ‡„,№”eЎKжP©B№ъ(n\—BБП”M"·Х~Юэ	wяЂ¶Г5FТЌdх  ч|й+]y†рIВy‚_џHq ДаLХ0АЩыїjµЌЉc5'wЈЇ5аНІ•“SУ353ґИ)zЗ$Q|-WuДcDќ’xДђ[=:А‰Ж \g‹УЋГШё[g$UsзЈ»lо2+Fк”)…8¦вNmЂ*ґ+ЖЉяЪ"ёЦ ќlђЈГжfg§gе•·*ЛидЛюqф5Є"JМIяУњѓЎ;"\в†щЂФл<;o$1M€bю”:73Dџп)щ_ѕr:њqХ‘Фк[7лпЭ#d%dрЛrbь]жХ`»SоБ›
-¦Б/cУЃG"аўР•А+;t^?HЇ’чЇ«?IeџBУ¬ЦhъҐZ¦вLF™Щ”СёrљIiс_jc”HеаA:™}•A„ђ<аВЊм»Њ]tћђАcЂћГRйцRdMi$МЎј <;з+Р„vІ15ќgуЎТUщ
-5Ф!ЩУ]<ZкЃ &Щv<!GЇRд\|ґ±жЋ…Ќс)s›ЋЩЌ†‰гJёўxYН\…L>xўб>Н$CHy:ЃЬєL±
-Ч§<—Ь оr„дw aЯи~5o–…"<ИОq3Ѓ"жпЃФТ}ОЂCFпт
-•ь‰-$Ќkоo!РA’ыt„Л"ЮЈmо‹фШу\$;^­xЙ+%c€щJ/?е'ЧЭ-u>ћ–њ{GЎ()ПB!д!‰ФCт“ћ3Д-u|Gжx.…ріOЮјКІ"о<Т,*г5—}¦ж"я8'И¶"¦|шсь`’g7у!Џ№ыВh`,Є&РЛ-†+E_)*8§h¬ИЈ.I±
-eMwGЙ°Э#јЗeuBFЇc™ъ,CҐекПU@wPдa–L›xґ?ћz“vjO¦К`щЈ»
-/‹уHщ¤ѓ,6©М#-IgFНЬ2ўi=V>!§в‰ кЃ™‘ЫЛщ*.S‘–vўМмy	E*jЙ*L±wўxЫ‰1бSe"ЛMжG~њvќЂ}H§Ђ“‰М›вa«ћ9/Iµr@ХXDиi8Т@кЇ„Т$mBЏМi]!ыЖ`›JIКgў,¤CQ;‰h•шWЩBЭѕоqщU)#Кdђ›ф•Z;‘–% Ж<v*TГ>Ghq"ќ#^д7\”Cя­(табxґГЧ#¤!Џ.їзnПїQ8ёП‘dO§?х©P3Ън@в·%F`0ѕ^>Ђ•џЁоRАРТIъщШч<•ўЃFUіЭОР[–G9ЩаУhГБ­Ђхўј—KкR°х­
-Џ№Ёќ€ў·9Ё–Ґ5«OЄЫ>sJFсХі‹1€См}н}±,‡ї‡…Ћ’<иЯЕиц”ьЙ?њ{хrKъ/lЅрўNfи[!*т,ТX>8?сno>1k&“TёЃ_T*ЧЁiсh°€«DОЉpЃыf V-3&ёK3ќЃЮЕ{7'tKBБ®бЏT•W—ЫЃ±»тмXЮЮpOсc~ц}н&ЏЩл±З‹МrЫMK~Ўуа
-hT¶;3ттј0&ЊЄd°3фТ$uRfЇ…ьшD–†гЛyЯ»wDvµOeЭЃ _Яђ3{ЪгyЦf%	іУ ґЖH©Wїґ— ‹¬pДЃыЫ".ЗU1FRЃ^/[ѓУЃFЁrD>ії/s$zf<§H@—Е,=UTЈвu>+їИё{+Win¶.\Є	›°ХFnGЇ|ҐТг™FZwАaП¬ЅдЉЁc2И)\?Ь®fСњ87wBRzЂТЛ н_…®UOцу4ИЬі#љ{ЏdоrU\VyЗЏЅm'„Ћ^жфLоэДьWuю±›ґ
-_¶4_sДcЮQке_dе7ХIy(’џ)jГ‚Ќ·яЊ?<б¬°ЧЧєA°ЁЅvл¬E]щ‚Чр[Iћ>%xыzцєuvНвщ№9ѓ&@м©Ж$DоOypЊu	Z”Шіж›‚эб№±ЯрCьїфТШЯt?uй¬'ћ{Й{§ки4«4«l»КЬ	v—U¶?q?ЕуRшK?!ҐґfiјџЫµз->бФФдФмМдфЅmX•\Qе®Я\ђOaomЛOўxЯЅ…)ЯЭl;с5Ќw m37ЧнЖNк­вѓ7a*ЧУ›ѕљґ Ювe_0ЧIЭVЕГ~БрЦ–і–Ф¬mxйЫЃЧцВ4ysgХЩш•Уц*– ЕД'ЌO«,Ў†nмБ|ўmЦўКЦбqF1њ#¬uњZэ*jz5?Lј8}У[ЏbЇ’TY€+ZdI©]ЗиЏПшбВezї'1~«4kA$ОКwYШ2Ѓo"${#»\а—ЦыfХлm·&^л€»х6gA}й‚™ї®E/vhИOўµЫћ›ІрО§n«YsљН··`cпыIк…^\±~юБ/ЕUy?rљ 0@шЯ	Џ(пБt]ЇР·/&*НИн"«ва]•Y|]·Дўn№ ХkАГДТюДAцч–HЪі7БМќСЋкR¬TЭї%>’mБYKў 4{‘б‹6ц<ь`aџџgЕ¤:eЇз“:Х/Т§:я«	Kuю—nюS»ПЎъF  
-0
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 19 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 372 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 310 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 250 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 700 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 477 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 544 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 1 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 2 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 3 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 4 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 7 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 8 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 647 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 9 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 204 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:14 количество живых подключений 10 время ответа сервера 938 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 13 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 430 милисекунд
+07-03-2016 15:27:53 ERROR HttpRequestHandler:191 - Error: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:127)
+	at com.mycompany.forwardproxyserver.HttpRequestHandler.dawnloadFromInet(HttpRequestHandler.java:112)
+	at com.mycompany.forwardproxyserver.HttpRequestHandler.run(HttpRequestHandler.java:181)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+07-03-2016 15:27:53 INFO  ClientsBrowserAnalyzer:106 - 
 
+*****************************
+Информация о браузерах: {Mozilla Firefox=0, Internet Explirer=0, Google Chrome=4, Safary=0, Opera=0, Other=0}
+*****************************
 
-07-03-2016 13:22:13 DEBUG HttpClient:124 - 
-* CLIENT: Hooray! I've got necessary information
- Servers Response is :
-HTTP/1.1 200 OK
-Server: nginx/1.6.3
-Date: Mon, 07 Mar 2016 11:22:08 GMT
-Content-Type: text/html; charset=utf-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-Vary: Accept-Encoding
-X-Powered-By: PHP/5.3.29
-Expires: Thu, 19 Nov 1981 08:52:00 GMT
-Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-Pragma: no-cache
-Content-Encoding: gzip
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 19 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 372 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 310 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 250 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 700 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 477 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 544 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 1 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 2 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 3 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 4 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 7 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 8 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 647 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 9 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 204 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:14 количество живых подключений 10 время ответа сервера 938 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 13 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 430 милисекунд
+07-03-2016 15:27:53 ERROR HttpRequestHandler:191 - Error: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:127)
+	at com.mycompany.forwardproxyserver.HttpRequestHandler.dawnloadFromInet(HttpRequestHandler.java:112)
+	at com.mycompany.forwardproxyserver.HttpRequestHandler.run(HttpRequestHandler.java:181)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+07-03-2016 15:27:53 INFO  ClientsBrowserAnalyzer:106 - 
 
-1759
-‹      Ѕ\{oЬЦ•яЫю·LЏ°Г™СУЦ3hТd“mЪё€6AЕЎ4ґ8д„дHњ ’ЧмF@РЕ-љ6»цЏb±cYЏх2ђO0уЌцњsј—CКrРV‰Gт>Пгw^—ZъЙП?xkх77Яf­ґ¬\]В_,pВЌe+оZxГsљ+WЇ2шYJэ4рV†нП‡‡Г>ь>цШр|tox<Ъ=ЭѓчЩрЬЪ…›РЉ}ОnFqъЎл„µё»TзcРx4fЫK?<нШЮg]kЩz+
-S/LнХќЋg1—[¶RпNZЗХ-2·еД‰—.яык;цK,Ћьp“µbo}ЩZw¶|и\ѓ‹Е^°lбW‹Ґ0,\·ќЇ~З¦{|5ј3µt:ќАіУЁл¶x1¦ЯЮЁзџХ:б†U‚&ё•Д®Ю·„HЂv;рЁ§$-‘!tЪ°¶¦—ё±ЯI}њXншСыp8нй%bџБѓубЙи ЭcЈ}ёq6м;іС0/чЎ#4лЌВ9&рќШ: ±ъФKЭјнї„Чрq6<ц†П‡g5IWmk›ЮОv7}_/тТ¤XeгЏ/Z@®эЂ TЌе±т‰{Х‹(ЁZY+9Б#Ж'йNа%-ПKҐ¬‘дєI"%.лkQ”&iмtІ«ZЫkШlL–ф!і!ЦЃ‚¶ін%QЫ«зo\n°тхµХ?Ы$KЅЧmgЛбw-ІѕlЭNкќ »б‡Iэцg]/Ю±'k“ЌЪ$­з6·TзнЕє^mH“V?~8Р·е№›Ї<ДКO+лЭРEХ¬L°»?­\{-сb П^"wуЪDM^™XьbbQЌћS…k;NШфоШ[^мЇы®ѓC^SZqmnЭm6<gЭm4ззжЧЧ@МRќѓсТZФЬЖ,…‘±ф¦їЕЬАI@°А‹SFџvРЬ‹оЕvat/R ,[m'В.°©FзsєiД‹l4Ф‹б&Ьk: *MцЪ;x°н7УЦ»ЮЂЦ‹¬г4›~ёБ;/кКРљY~#Ў¦?<eГ' b=Т)T¶ѕPbА«ЇG (г фаж" БШц{x!¬Ѓ°f|H›®-­Е+ГїВЁgЂї…vЁЭЅб	и+Є8Є(ОјO#(В†OhfЎЦа‚`®О†з5 пЊ eh‰П(|•Ил7—­m@kњдИ;Р nF
-EЩ7Ќ:AґЙоЋP№:€!.Ў†ҐАЦd(Ђ™Ђ–ряvь”64ѕ@AvД°­X[N»µiю¦§3й'¶Н>ъKўnмzМ¶W^IПлх­Нљµл NNЗЇG/„Я PoМЯИлФ%фК ШGїЁщЎџVоВ€п5ШфЌ©№©Жt•Ea°у±ЯЬрТdЃҐqЧЛfPsЋmr›ъ?›МHs‹“Fр|ЊuЇ¶p±јЪы0fE^ew±яі ё|шЪтьЌVЉєSјcR‹Ч§‰`m_QЛ¤г„УmЇкЌ¶Ѕ ђ’:ЪЬKЭ@¶Ѓы h[ ^Iћ`tґV6bWЎrђgs`аpфФґW9:ЈG9J~йАтxЊ+¦VЙЗл[wмNґнЕvґѕЋьцWШё/«М;ЄM€shЈJХMЇЎ?:>IЪ’Ј‡c"ЁЌv?еў±ЧњД+,j‚†ВvэШ<9Лџ`о­?ф/і п’yј;аbѓСPD‚!П†OYXґ‹€@LёsHњлM”Н±ЭЉь¤d?\ЏМЌ|ьоп}И ®П‡§ґ‘ТµЈС>Ж^Т‰ВRr№С†ЬБ·r±™xбgй Г0:С»dрЌ Z“яЧ·Wp З]JtMѓ—M“Ir7ђ¦†TKhчХR0д$;Ў+1ё1†УњЄmDС8u;aSxНь)!t3YЫбЌЉ\DIiXXЫ»
-)—АлRъ•be:(‰¦џtggББУОР"ч¦И]Ђ7ЧZп¦“:¶УґЭА§`Ан®Щі3ЌлSуУ“і3ііЌйЙ™‚IAы№йЖшGЧoL'ВД VmсlмAШЊ¶kъНП?gџ|
-Ю[7iUоJLОи$ЩSЖќb@¤‹$н"Ь\}X~G^К—Ј/Їc_N\л4‰ЌVШ&|*Ъ`?щц.ј?ьЌ”CETvЊэpR¦ bFенj`(э?::2n+Жp$у`шЖЅ цГЯPрЮв#hіe:тг(яЄфюO‚йаNЏLСЙисрL?#й0—d†§> љ}ъA(і	Ючf†б «и…ўG'bS€ҐђУшќKОс?h|nМТ9мнЅ›6\!¦ЏцЮxйDќ8єіsЙ№ё]=ґШ:д^f’4rЈАЖњР«LF–чuВЮ]]ЅyЃ(ЌЙ’Ii\nxЛА[	ю…в‡=ІсПDP!8'C@g<XH"Чw‚[”І^НхFє,Фл<~¬%iќбџ€о*=fuУu»ШЧVІгPOЈ?Эn‹c¬ёяюd#¤T qw•ЦFЎgЮяuЧw7?дq‚ѕ5ЖD›©WM·э€[ЭЂP>©®;®‡<¬·«;NЬ­FН0ЪДх„ю¦oёвПФЕz·•<АµќxNм¶М ЧЎ ]QK:m7Хys.Z`оТVa ?p‹Ґ#бn%^ !L`§«sДR<¤qlJsXМџлµў „dЩЄІм]Љ?tр†%’a|0¤;XлNаҐp=SV/?№е7›^(»т©э¦Е¶њ 7¦sіУуЧ/У7 ЋЄ~ИXК, !б·.)щ\‡UУ©M|B\Гќ\ыФљЁAУkЫЮЪ¦џ&Пs[ЬЌјVeъH ›«~Ы‹єйEАhIw­aаДвХ™FѓТ)h™µ@Oд.иC,;я“ќ&љ›	Кьhз‰ј¦їЈw43У?џ™ћ™јqЈ 	’ЪЃF(яз© ¤ЅtЁ:o]Р8Л;MК>?ѕ”†юВЇ5Y0°>{Л‹#»K°Hй#ЭwA°]љR“вЉz¶uc0з
-a4Dcнnк5±х•б7?XгЅА&зgk“sЌЪФфtmjvљБX‚ІWфMђ®ЪNЬC>„ЂгqЫkъЭ¶‰ўrБ–Ѓ&Ф}ѓ¤… mЂЋ#жФx{ іОќА7ТЦІ5[„yґЁµnљFКи®Ґ!ѓvТuБ?$|1	@tљг)eщ—кјчЉNрщ:ЭА‰№g,Vы~и6ХЈ`†с^ \џЊ`Міњ#\мOОљоЙЌ†тhтJM]oLО–<›™™.л5;;З{]б.НШҐ‘8"іІµ]8ЬГo`/?R=Ѓ]ЁDjѕьБй+є[|dД8иN0ґDеЎшяСй1wЊIЈЊ±Ѓ™Xsq‡`Ѕ¤Кё_)Ђ…‹ БHµ‚xЖА;§YўЃя@а›К0beFЄСhэR›ђяy‰ЌИяјєН(ЃЫђЙйЙ№й№№щ—йRjSJшSџ?ТжЊSЩD/і@EbзЭшa™Мµ¦V¤Яw®тq=Y{ИiНёОdp	‘ЊЕќЈPЃ`\{Ѓ]§ЉЛR’ЖQё±"Іј>	[жwЌ†W‚ЪЂЈ жSoЄ$К=иМkEќйО6‹eюШЋє	Э_DьеkеY/‘;±ЋLWw8™XЏT±‡АљР1эЋ‚¶S¬+KЁ…ЛCМb<Ћ(ьњЃ9	AњрЕD`јMОuAj—Њ–ЂО!ш’шM4~JҐџS?з‘*4=ѓ_зАё7zЧ?nДА±ЄBќRП}њуђЖ$=†®зTЫRЙ{ЄgyOсЙ	6и‰?{ ¦зcнЛ„-‘?ъZС^±ўХг‰xтњs@M`КT`“мю?`u4м!†ЪњFz?oНe:ъАђ{fqЫТщiUOь®DЁпУBОс<°	у=&Й}[ыJРц\)8&vѕ к}Ќ.2‡ІЙ<5+
-ЈыXѓJC>«Ѓ­иh"ҐцыBЉбЩ·пy-с	eІзЋ
-OsыyA"p‰Лўвxћ ЄсДVњњІG|+°јъ¶”ъ2!™HЈl-\nq·HГ
-iЬбsn[Хюeињ
-–»TГ$Ў“В"ЕИ”п,„ы$іэLЖjB!3а!4z‚ѕЗЊЭхЖf ­еЛDqc Њxљ‚§wђ} ЪЛAМiаОc`БI}%Њ|Ћ'B–P|aq¶ПQ“Сэ}.*yIшЛ®Z™PиІ,У^ЯKХay¦€„LUFd3…KЈ*гЭruђcмБѓYх&6ЉъaFБ
-LBҐ•	ѕЪCBЈѕ µqдёi‚ҐRZь9UПиpqоXT№ы”­RuvљКї;СЭCcQ{$йяQV)oђ&Б%Qа7ЩkoПг?В:iњ+±NPр]`€t9)<e0H”Юш1#S‘Д‡gАп	 Ъ™Я?рCй	DџЋ1HЦјЮЖS‹’ЗTjЪ#™)ГЙ1ѓ U[‚[ЇJ»!‰Еy9*i:Pi%рКђчqДa,^&Ы—fЎЬNз
-БhдMі_еыR+жC•Пш	·CчаѓRJeQ›ЩtXYCb-=3-hГіУ#N{B…Q±Є~ЗчD»?дЬbbзз Љч¤©(А@ѓ’N”fў‘7з'ЩЩ#±НNѕ­Ґ0 ХNi~‘Q`ёје вg…ѓSZ Ѓf+$»њўh{¤‰j‘ Њa"Г%У!dх.aШy†7x?Е@Ќuз3:Нb·¦¬•wj?«эє&УмРzV9бПґ\ПиСlш{ОЙќ‰j*IMАпћ5=WЮ·КтR¦нKњ№ФNжT•ЉJWђ\»g:VфцSуЃaI[ЗMI_є†ЯpJF@ъB‚ъtXЉпкѓ{†БЛЙDO›а„€ф„“фD8"»BОЗЏVй
-"О]кG7е‘®L°ЗѕрА{ЄьvЄе“рwUчћ<W“dHUё¬}Вы…>§Ь%EыMн}P7Џ	а-Ўз7§UќЅLмuJт5+@“”“иІGЏЮ„ґКиѓJПҐзбХ	БћТэўАtлaЗЂRВ‡„,№”eЎKжP©B№ъ(n\—BБП”M"·Х~Юэ	wяЂ¶Г5FТЌdх  ч|й+]y†рIВy‚_џHq ДаLХ0АЩыїjµЌЉc5'wЈЇ5аНІ•“SУ353ґИ)zЗ$Q|-WuДcDќ’xДђ[=:А‰Ж \g‹УЋГШё[g$UsзЈ»lо2+Fк”)…8¦вNmЂ*ґ+ЖЉяЪ"ёЦ ќlђЈГжfg§gе•·*ЛидЛюqф5Є"JМIяУњѓЎ;"\в†щЂФл<;o$1M€bю”:73Dџп)щ_ѕr:њqХ‘Фк[7лпЭ#d%dрЛrbь]жХ`»SоБ›
-¦Б/cУЃG"аўР•А+;t^?HЇ’чЇ«?IeџBУ¬ЦhъҐZ¦вLF™Щ”СёrљIiс_jc”HеаA:™}•A„ђ<аВЊм»Њ]tћђАcЂћГRйцRdMi$МЎј <;з+Р„vІ15ќgуЎТUщ
-5Ф!ЩУ]<ZкЃ &Щv<!GЇRд\|ґ±жЋ…Ќс)s›ЋЩЌ†‰гJёўxYН\…L>xўб>Н$CHy:ЃЬєL±
-Ч§<—Ь оr„дw aЯи~5o–…"<ИОq3Ѓ"жпЃФТ}ОЂCFпт
-•ь‰-$Ќkоo!РA’ыt„Л"ЮЈmо‹фШу\$;^­xЙ+%c€щJ/?е'ЧЭ-u>ћ–њ{GЎ()ПB!д!‰ФCт“ћ3Д-u|Gжx.…ріOЮјКІ"о<Т,*г5—}¦ж"я8'И¶"¦|шсь`’g7у!Џ№ыВh`,Є&РЛ-†+E_)*8§h¬ИЈ.I±
-eMwGЙ°Э#јЗeuBFЇc™ъ,CҐекПU@wPдa–L›xґ?ћz“vjO¦К`щЈ»
-/‹уHщ¤ѓ,6©М#-IgFНЬ2ўi=V>!§в‰ кЃ™‘ЫЛщ*.S‘–vўМмy	E*jЙ*L±wўxЫ‰1бSe"ЛMжG~њvќЂ}H§Ђ“‰М›вa«ћ9/Iµr@ХXDиi8Т@кЇ„Т$mBЏМi]!ыЖ`›JIКgў,¤CQ;‰h•шWЩBЭѕоqщU)#Кdђ›ф•Z;‘–% Ж<v*TГ>Ghq"ќ#^д7\”Cя­(табxґГЧ#¤!Џ.їзnПїQ8ёП‘dO§?х©P3Ън@в·%F`0ѕ^>Ђ•џЁоRАРТIъщШч<•ўЃFUіЭОР[–G9ЩаУhГБ­Ђхўј—KкR°х­
-Џ№Ёќ€ў·9Ё–Ґ5«OЄЫ>sJFсХі‹1€См}н}±,‡ї‡…Ћ’<иЯЕиц”ьЙ?њ{хrKъ/lЅрўNfи[!*т,ТX>8?сno>1k&“TёЃ_T*ЧЁiсh°€«DОЉpЃыf V-3&ёK3ќЃЮЕ{7'tKBБ®бЏT•W—ЫЃ±»тмXЮЮpOсc~ц}н&ЏЩл±З‹МrЫMK~Ўуа
-hT¶;3ттј0&ЊЄd°3фТ$uRfЇ…ьшD–†гЛyЯ»wDvµOeЭЃ _Яђ3{ЪгyЦf%	іУ ґЖH©Wїґ— ‹¬pДЃыЫ".ЗU1FRЃ^/[ѓУЃFЁrD>ії/s$zf<§H@—Е,=UTЈвu>+їИё{+Win¶.\Є	›°ХFnGЇ|ҐТг™FZwАaП¬ЅдЉЁc2И)\?Ь®fСњ87wBRzЂТЛ н_…®UOцу4ИЬі#љ{ЏdоrU\VyЗЏЅm'„Ћ^жфLоэДьWuю±›ґ
-_¶4_sДcЮQке_dе7ХIy(’џ)jГ‚Ќ·яЊ?<б¬°ЧЧєA°ЁЅvл¬E]щ‚Чр[Iћ>%xыzцєuvНвщ№9ѓ&@м©Ж$DоOypЊu	Z”Шіж›‚эб№±ЯрCьїфТШЯt?uй¬'ћ{Й{§ки4«4«l»КЬ	v—U¶?q?ЕуRшK?!ҐґfiјџЫµз->бФФдФмМдфЅmX•\Qе®Я\ђOaomЛOўxЯЅ…)ЯЭl;с5Ќw m37ЧнЖNк­вѓ7a*ЧУ›ѕљґ Ювe_0ЧIЭVЕГ~БрЦ–і–Ф¬mxйЫЃЧцВ4ysgХЩш•Уц*– ЕД'ЌO«,Ў†nмБ|ўmЦўКЦбqF1њ#¬uњZэ*jz5?Lј8}У[ЏbЇ’TY€+ZdI©]ЗиЏПшбВezї'1~«4kA$ОКwYШ2Ѓo"${#»\а—ЦыfХлm·&^л€»х6gA}й‚™ї®E/vhИOўµЫћ›ІрО§n«YsљН··`cпыIк…^\±~юБ/ЕUy?rљ 0@шЯ	Џ(пБt]ЇР·/&*НИн"«ва]•Y|]·Дўn№ ХkАГДТюДAцч–HЪі7БМќСЋкR¬TЭї%>’mБYKў 4{‘б‹6ц<ь`aџџgЕ¤:eЇз“:Х/Т§:я«	Kuю—nюS»ПЎъF  
-0
+*****************************
+Информация о браузерах: {Mozilla Firefox=0, Internet Explirer=0, Google Chrome=4, Safary=0, Opera=0, Other=0}
+*****************************
 
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 19 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 372 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 310 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 250 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 700 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 477 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 544 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 1 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 2 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 3 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 4 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 7 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 8 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 647 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 9 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 204 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:14 количество живых подключений 10 время ответа сервера 938 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 13 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 430 милисекунд
+07-03-2016 15:27:53 ERROR HttpRequestHandler:191 - Error: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:127)
+	at com.mycompany.forwardproxyserver.HttpRequestHandler.dawnloadFromInet(HttpRequestHandler.java:112)
+	at com.mycompany.forwardproxyserver.HttpRequestHandler.run(HttpRequestHandler.java:181)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+07-03-2016 15:27:53 INFO  ClientsBrowserAnalyzer:106 - 
 
-07-03-2016 13:22:13 DEBUG HttpClient:124 - 
-* CLIENT: Hooray! I've got necessary information
- Servers Response is :
-HTTP/1.1 200 OK
-Server: nginx/1.6.3
-Date: Mon, 07 Mar 2016 11:22:08 GMT
-Content-Type: text/html; charset=utf-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-Vary: Accept-Encoding
-X-Powered-By: PHP/5.3.29
-Expires: Thu, 19 Nov 1981 08:52:00 GMT
-Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-Pragma: no-cache
-Content-Encoding: gzip
+*****************************
+Информация о браузерах: {Mozilla Firefox=0, Internet Explirer=0, Google Chrome=4, Safary=0, Opera=0, Other=0}
+*****************************
 
-1759
-‹      Ѕ\{oЬЦ•яЫю·LЏ°Г™СУЦ3hТd“mЪё€6AЕЎ4ґ8д„дHњ ’ЧмF@РЕ-љ6»цЏb±cYЏх2ђO0уЌцњsј—CКrРV‰Gт>Пгw^—ZъЙП?xkх77Яf­ґ¬\]В_,pВЌe+оZxГsљ+WЇ2шYJэ4рV†нП‡‡Г>ь>цШр|tox<Ъ=ЭѓчЩрЬЪ…›РЉ}ОnFqъЎл„µё»TзcРx4fЫK?<нШЮg]kЩz+
-S/LнХќЋg1—[¶RпNZЗХ-2·еД‰—.яык;цK,Ћьp“µbo}ЩZw¶|и\ѓ‹Е^°lбW‹Ґ0,\·ќЇ~З¦{|5ј3µt:ќАіУЁл¶x1¦ЯЮЁзџХ:б†U‚&ё•Д®Ю·„HЂv;рЁ§$-‘!tЪ°¶¦—ё±ЯI}њXншСыp8нй%bџБѓубЙи ЭcЈ}ёq6м;іС0/чЎ#4лЌВ9&рќШ: ±ъФKЭјнї„Чрq6<ц†П‡g5IWmk›ЮОv7}_/тТ¤XeгЏ/Z@®эЂ TЌе±т‰{Х‹(ЁZY+9Б#Ж'йNа%-ПKҐ¬‘дєI"%.лkQ”&iмtІ«ZЫkШlL–ф!і!ЦЃ‚¶ін%QЫ«зo\n°тхµХ?Ы$KЅЧmgЛбw-ІѕlЭNкќ »б‡Iэцg]/Ю±'k“ЌЪ$­з6·TзнЕє^mH“V?~8Р·е№›Ї<ДКO+лЭРEХ¬L°»?­\{-сb П^"wуЪDM^™XьbbQЌћS…k;NШфоШ[^мЇы®ѓC^SZqmnЭm6<gЭm4ззжЧЧ@МRќѓсТZФЬЖ,…‘±ф¦їЕЬАI@°А‹SFџvРЬ‹оЕvat/R ,[m'В.°©FзsєiД‹l4Ф‹б&Ьk: *MцЪ;x°н7УЦ»ЮЂЦ‹¬г4›~ёБ;/кКРљY~#Ў¦?<eГ' b=Т)T¶ѕPbА«ЇG (г фаж" БШц{x!¬Ѓ°f|H›®-­Е+ГїВЁgЂї…vЁЭЅб	и+Є8Є(ОјO#(В†OhfЎЦа‚`®О†з5 пЊ eh‰П(|•Ил7—­m@kњдИ;Р nF
-EЩ7Ќ:AґЙоЋP№:€!.Ў†ҐАЦd(Ђ™Ђ–ряvь”64ѕ@AvД°­X[N»µiю¦§3й'¶Н>ъKўnмzМ¶W^IПлх­Нљµл NNЗЇG/„Я PoМЯИлФ%фК ШGїЁщЎџVоВ€п5ШфЌ©№©Жt•Ea°у±ЯЬрТdЃҐqЧЛfPsЋmr›ъ?›МHs‹“Fр|ЊuЇ¶p±јЪы0fE^ew±яі ё|шЪтьЌVЉєSјcR‹Ч§‰`m_QЛ¤г„УmЇкЌ¶Ѕ ђ’:ЪЬKЭ@¶Ѓы h[ ^Iћ`tґV6bWЎrђgs`аpфФґW9:ЈG9J~йАтxЊ+¦VЙЗл[wмNґнЕvґѕЋьцWШё/«М;ЄM€shЈJХMЇЎ?:>IЪ’Ј‡c"ЁЌv?еў±ЧњД+,j‚†ВvэШ<9Лџ`о­?ф/і п’yј;аbѓСPD‚!П†OYXґ‹€@LёsHњлM”Н±ЭЉь¤d?\ЏМЌ|ьоп}И ®П‡§ґ‘ТµЈС>Ж^Т‰ВRr№С†ЬБ·r±™xбgй Г0:С»dрЌ Z“яЧ·Wp З]JtMѓ—M“Ir7ђ¦†TKhчХR0д$;Ў+1ё1†УњЄmDС8u;aSxНь)!t3YЫбЌЉ\DIiXXЫ»
-)—АлRъ•be:(‰¦џtggББУОР"ч¦И]Ђ7ЧZп¦“:¶УґЭА§`Ан®Щі3ЌлSуУ“і3ііЌйЙ™‚IAы№йЖшGЧoL'ВД VmсlмAШЊ¶kъНП?gџ|
-Ю[7iUоJLОи$ЩSЖќb@¤‹$н"Ь\}X~G^К—Ј/Їc_N\л4‰ЌVШ&|*Ъ`?щц.ј?ьЌ”CETvЊэpR¦ bFенj`(э?::2n+Жp$у`шЖЅ цГЯPрЮв#hіe:тг(яЄфюO‚йаNЏLСЙисрL?#й0—d†§> љ}ъA(і	Ючf†б «и…ўG'bS€ҐђУшќKОс?h|nМТ9мнЅ›6\!¦ЏцЮxйDќ8єіsЙ№ё]=ґШ:д^f’4rЈАЖњР«LF–чuВЮ]]ЅyЃ(ЌЙ’Ii\nxЛА[	ю…в‡=ІсПDP!8'C@g<XH"Чw‚[”І^НхFє,Фл<~¬%iќбџ€о*=fuУu»ШЧVІгPOЈ?Эn‹c¬ёяюd#¤T qw•ЦFЎgЮяuЧw7?дq‚ѕ5ЖD›©WM·э€[ЭЂP>©®;®‡<¬·«;NЬ­FН0ЪДх„ю¦oёвПФЕz·•<АµќxNм¶М ЧЎ ]QK:m7Хys.Z`оТVa ?p‹Ґ#бn%^ !L`§«sДR<¤qlJsXМџлµў „dЩЄІм]Љ?tр†%’a|0¤;XлNаҐp=SV/?№е7›^(»т©э¦Е¶њ 7¦sіУуЧ/У7 ЋЄ~ИXК, !б·.)щ\‡UУ©M|B\Гќ\ыФљЁAУkЫЮЪ¦џ&Пs[ЬЌјVeъH ›«~Ы‹єйEАhIw­aаДвХ™FѓТ)h™µ@Oд.иC,;я“ќ&љ›	Кьhз‰ј¦їЈw43У?џ™ћ™јqЈ 	’ЪЃF(яз© ¤ЅtЁ:o]Р8Л;MК>?ѕ”†юВЇ5Y0°>{Л‹#»K°Hй#ЭwA°]љR“вЉz¶uc0з
-a4Dcнnк5±х•б7?XгЅА&зgk“sЌЪФфtmjvљБX‚ІWфMђ®ЪNЬC>„ЂгqЫkъЭ¶‰ўrБ–Ѓ&Ф}ѓ¤… mЂЋ#жФx{ іОќА7ТЦІ5[„yґЁµnљFКи®Ґ!ѓvТuБ?$|1	@tљг)eщ—кјчЉNрщ:ЭА‰№g,Vы~и6ХЈ`†с^ \џЊ`Міњ#\мOОљоЙЌ†тhтJM]oLО–<›™™.л5;;З{]б.НШҐ‘8"іІµ]8ЬГo`/?R=Ѓ]ЁDjѕьБй+є[|dД8иN0ґDеЎшяСй1wЊIЈЊ±Ѓ™Xsq‡`Ѕ¤Кё_)Ђ…‹ БHµ‚xЖА;§YўЃя@а›К0beFЄСhэR›ђяy‰ЌИяјєН(ЃЫђЙйЙ№й№№щ—йRjSJшSџ?ТжЊSЩD/і@EbзЭшa™Мµ¦V¤Яw®тq=Y{ИiНёОdp	‘ЊЕќЈPЃ`\{Ѓ]§ЉЛR’ЖQё±"Іј>	[жwЌ†W‚ЪЂЈ жSoЄ$К=иМkEќйО6‹eюШЋє	Э_DьеkеY/‘;±ЋLWw8™XЏT±‡АљР1эЋ‚¶S¬+KЁ…ЛCМb<Ћ(ьњЃ9	AњрЕD`јMОuAj—Њ–ЂО!ш’шM4~JҐџS?з‘*4=ѓ_зАё7zЧ?nДА±ЄBќRП}њуђЖ$=†®зTЫRЙ{ЄgyOсЙ	6и‰?{ ¦зcнЛ„-‘?ъZС^±ўХг‰xтњs@M`КT`“мю?`u4м!†ЪњFz?oНe:ъАђ{fqЫТщiUOь®DЁпУBОс<°	у=&Й}[ыJРц\)8&vѕ к}Ќ.2‡ІЙ<5+
-ЈыXѓJC>«Ѓ­иh"ҐцыBЉбЩ·пy-с	eІзЋ
-OsыyA"p‰Лўвxћ ЄсДVњњІG|+°јъ¶”ъ2!™HЈl-\nq·HГ
-iЬбsn[Хюeињ
-–»TГ$Ў“В"ЕИ”п,„ы$іэLЖjB!3а!4z‚ѕЗЊЭхЖf ­еЛDqc Њxљ‚§wђ} ЪЛAМiаОc`БI}%Њ|Ћ'B–P|aq¶ПQ“Сэ}.*yIшЛ®Z™PиІ,У^ЯKХay¦€„LUFd3…KЈ*гЭruђcмБѓYх&6ЉъaFБ
-LBҐ•	ѕЪCBЈѕ µqдёi‚ҐRZь9UПиpqоXT№ы”­RuvљКї;СЭCcQ{$йяQV)oђ&Б%Qа7ЩkoПг?В:iњ+±NPр]`€t9)<e0H”Юш1#S‘Д‡gАп	 Ъ™Я?рCй	DџЋ1HЦјЮЖS‹’ЗTjЪ#™)ГЙ1ѓ U[‚[ЇJ»!‰Еy9*i:Pi%рКђчqДa,^&Ы—fЎЬNз
-БhдMі_еыR+жC•Пш	·CчаѓRJeQ›ЩtXYCb-=3-hГіУ#N{B…Q±Є~ЗчD»?дЬbbзз Љч¤©(А@ѓ’N”fў‘7з'ЩЩ#±НNѕ­Ґ0 ХNi~‘Q`ёје вg…ѓSZ Ѓf+$»њўh{¤‰j‘ Њa"Г%У!dх.aШy†7x?Е@Ќuз3:Нb·¦¬•wj?«эє&УмРzV9бПґ\ПиСlш{ОЙќ‰j*IMАпћ5=WЮ·КтR¦нKњ№ФNжT•ЉJWђ\»g:VфцSуЃaI[ЗMI_є†ЯpJF@ъB‚ъtXЉпкѓ{†БЛЙDO›а„€ф„“фD8"»BОЗЏVй
-"О]кG7е‘®L°ЗѕрА{ЄьvЄе“рwUчћ<W“dHUё¬}Вы…>§Ь%EыMн}P7Џ	а-Ўз7§UќЅLмuJт5+@“”“иІGЏЮ„ґКиѓJПҐзбХ	БћТэўАtлaЗЂRВ‡„,№”eЎKжP©B№ъ(n\—BБП”M"·Х~Юэ	wяЂ¶Г5FТЌdх  ч|й+]y†рIВy‚_џHq ДаLХ0АЩыїjµЌЉc5'wЈЇ5аНІ•“SУ353ґИ)zЗ$Q|-WuДcDќ’xДђ[=:А‰Ж \g‹УЋГШё[g$UsзЈ»lо2+Fк”)…8¦вNmЂ*ґ+ЖЉяЪ"ёЦ ќlђЈГжfg§gе•·*ЛидЛюqф5Є"JМIяУњѓЎ;"\в†щЂФл<;o$1M€bю”:73Dџп)щ_ѕr:њqХ‘Фк[7лпЭ#d%dрЛrbь]жХ`»SоБ›
-¦Б/cУЃG"аўР•А+;t^?HЇ’чЇ«?IeџBУ¬ЦhъҐZ¦вLF™Щ”СёrљIiс_jc”HеаA:™}•A„ђ<аВЊм»Њ]tћђАcЂћГRйцRdMi$МЎј <;з+Р„vІ15ќgуЎТUщ
-5Ф!ЩУ]<ZкЃ &Щv<!GЇRд\|ґ±жЋ…Ќс)s›ЋЩЌ†‰гJёўxYН\…L>xўб>Н$CHy:ЃЬєL±
-Ч§<—Ь оr„дw aЯи~5o–…"<ИОq3Ѓ"жпЃФТ}ОЂCFпт
-•ь‰-$Ќkоo!РA’ыt„Л"ЮЈmо‹фШу\$;^­xЙ+%c€щJ/?е'ЧЭ-u>ћ–њ{GЎ()ПB!д!‰ФCт“ћ3Д-u|Gжx.…ріOЮјКІ"о<Т,*г5—}¦ж"я8'И¶"¦|шсь`’g7у!Џ№ыВh`,Є&РЛ-†+E_)*8§h¬ИЈ.I±
-eMwGЙ°Э#јЗeuBFЇc™ъ,CҐекПU@wPдa–L›xґ?ћz“vjO¦К`щЈ»
-/‹уHщ¤ѓ,6©М#-IgFНЬ2ўi=V>!§в‰ кЃ™‘ЫЛщ*.S‘–vўМмy	E*jЙ*L±wўxЫ‰1бSe"ЛMжG~њvќЂ}H§Ђ“‰М›вa«ћ9/Iµr@ХXDиi8Т@кЇ„Т$mBЏМi]!ыЖ`›JIКgў,¤CQ;‰h•шWЩBЭѕоqщU)#Кdђ›ф•Z;‘–% Ж<v*TГ>Ghq"ќ#^д7\”Cя­(табxґГЧ#¤!Џ.їзnПїQ8ёП‘dO§?х©P3Ън@в·%F`0ѕ^>Ђ•џЁоRАРТIъщШч<•ўЃFUіЭОР[–G9ЩаУhГБ­Ђхўј—KкR°х­
-Џ№Ёќ€ў·9Ё–Ґ5«OЄЫ>sJFсХі‹1€См}н}±,‡ї‡…Ћ’<иЯЕиц”ьЙ?њ{хrKъ/lЅрўNfи[!*т,ТX>8?сno>1k&“TёЃ_T*ЧЁiсh°€«DОЉpЃыf V-3&ёK3ќЃЮЕ{7'tKBБ®бЏT•W—ЫЃ±»тмXЮЮpOсc~ц}н&ЏЩл±З‹МrЫMK~Ўуа
-hT¶;3ттј0&ЊЄd°3фТ$uRfЇ…ьшD–†гЛyЯ»wDvµOeЭЃ _Яђ3{ЪгyЦf%	іУ ґЖH©Wїґ— ‹¬pДЃыЫ".ЗU1FRЃ^/[ѓУЃFЁrD>ії/s$zf<§H@—Е,=UTЈвu>+їИё{+Win¶.\Є	›°ХFnGЇ|ҐТг™FZwАaП¬ЅдЉЁc2И)\?Ь®fСњ87wBRzЂТЛ н_…®UOцу4ИЬі#љ{ЏdоrU\VyЗЏЅm'„Ћ^жфLоэДьWuю±›ґ
-_¶4_sДcЮQке_dе7ХIy(’џ)jГ‚Ќ·яЊ?<б¬°ЧЧєA°ЁЅvл¬E]щ‚Чр[Iћ>%xыzцєuvНвщ№9ѓ&@м©Ж$DоOypЊu	Z”Шіж›‚эб№±ЯрCьїфТШЯt?uй¬'ћ{Й{§ки4«4«l»КЬ	v—U¶?q?ЕуRшK?!ҐґfiјџЫµз->бФФдФмМдфЅmX•\Qе®Я\ђOaomЛOўxЯЅ…)ЯЭl;с5Ќw m37ЧнЖNк­вѓ7a*ЧУ›ѕљґ Ювe_0ЧIЭVЕГ~БрЦ–і–Ф¬mxйЫЃЧцВ4ysgХЩш•Уц*– ЕД'ЌO«,Ў†nмБ|ўmЦўКЦбqF1њ#¬uњZэ*jz5?Lј8}У[ЏbЇ’TY€+ZdI©]ЗиЏПшбВezї'1~«4kA$ОКwYШ2Ѓo"${#»\а—ЦыfХлm·&^л€»х6gA}й‚™ї®E/vhИOўµЫћ›ІрО§n«YsљН··`cпыIк…^\±~юБ/ЕUy?rљ 0@шЯ	Џ(пБt]ЇР·/&*НИн"«ва]•Y|]·Дўn№ ХkАГДТюДAцч–HЪі7БМќСЋкR¬TЭї%>’mБYKў 4{‘б‹6ц<ь`aџџgЕ¤:eЇз“:Х/Т§:я«	Kuю—nюS»ПЎъF  
-0
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 19 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 372 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 310 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 250 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 700 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 477 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 544 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 1 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 2 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 3 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 4 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 7 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 8 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 647 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 9 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 204 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:14 количество живых подключений 10 время ответа сервера 938 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 13 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 430 милисекунд
+07-03-2016 15:27:53 ERROR HttpRequestHandler:191 - Error: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:127)
+	at com.mycompany.forwardproxyserver.HttpRequestHandler.dawnloadFromInet(HttpRequestHandler.java:112)
+	at com.mycompany.forwardproxyserver.HttpRequestHandler.run(HttpRequestHandler.java:181)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+07-03-2016 15:27:53 INFO  ClientsBrowserAnalyzer:106 - 
 
+*****************************
+Информация о браузерах: {Mozilla Firefox=0, Internet Explirer=0, Google Chrome=4, Safary=0, Opera=0, Other=0}
+*****************************
 
-07-03-2016 13:22:13 DEBUG HttpClient:124 - 
-* CLIENT: Hooray! I've got necessary information
- Servers Response is :
-HTTP/1.1 200 OK
-Server: nginx/1.6.3
-Date: Mon, 07 Mar 2016 11:22:08 GMT
-Content-Type: text/html; charset=utf-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-Vary: Accept-Encoding
-X-Powered-By: PHP/5.3.29
-Expires: Thu, 19 Nov 1981 08:52:00 GMT
-Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-Pragma: no-cache
-Content-Encoding: gzip
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 19 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 372 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 310 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 250 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 700 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 477 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 544 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 1 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 2 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 3 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 4 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 7 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 8 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 647 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 9 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 204 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:14 количество живых подключений 10 время ответа сервера 938 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 13 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 430 милисекунд
+07-03-2016 15:27:53 ERROR HttpRequestHandler:191 - Error: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:127)
+	at com.mycompany.forwardproxyserver.HttpRequestHandler.dawnloadFromInet(HttpRequestHandler.java:112)
+	at com.mycompany.forwardproxyserver.HttpRequestHandler.run(HttpRequestHandler.java:181)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+07-03-2016 15:27:53 INFO  ClientsBrowserAnalyzer:106 - 
 
-1759
-‹      Ѕ\{oЬЦ•яЫю·LЏ°Г™СУЦ3hТd“mЪё€6AЕЎ4ґ8д„дHњ ’ЧмF@РЕ-љ6»цЏb±cYЏх2ђO0уЌцњsј—CКrРV‰Gт>Пгw^—ZъЙП?xkх77Яf­ґ¬\]В_,pВЌe+оZxГsљ+WЇ2шYJэ4рV†нП‡‡Г>ь>цШр|tox<Ъ=ЭѓчЩрЬЪ…›РЉ}ОnFqъЎл„µё»TзcРx4fЫK?<нШЮg]kЩz+
-S/LнХќЋg1—[¶RпNZЗХ-2·еД‰—.яык;цK,Ћьp“µbo}ЩZw¶|и\ѓ‹Е^°lбW‹Ґ0,\·ќЇ~З¦{|5ј3µt:ќАіУЁл¶x1¦ЯЮЁзџХ:б†U‚&ё•Д®Ю·„HЂv;рЁ§$-‘!tЪ°¶¦—ё±ЯI}њXншСыp8нй%bџБѓубЙи ЭcЈ}ёq6м;іС0/чЎ#4лЌВ9&рќШ: ±ъФKЭјнї„Чрq6<ц†П‡g5IWmk›ЮОv7}_/тТ¤XeгЏ/Z@®эЂ TЌе±т‰{Х‹(ЁZY+9Б#Ж'йNа%-ПKҐ¬‘дєI"%.лkQ”&iмtІ«ZЫkШlL–ф!і!ЦЃ‚¶ін%QЫ«зo\n°тхµХ?Ы$KЅЧmgЛбw-ІѕlЭNкќ »б‡Iэцg]/Ю±'k“ЌЪ$­з6·TзнЕє^mH“V?~8Р·е№›Ї<ДКO+лЭРEХ¬L°»?­\{-сb П^"wуЪDM^™XьbbQЌћS…k;NШфоШ[^мЇы®ѓC^SZqmnЭm6<gЭm4ззжЧЧ@МRќѓсТZФЬЖ,…‘±ф¦їЕЬАI@°А‹SFџvРЬ‹оЕvat/R ,[m'В.°©FзsєiД‹l4Ф‹б&Ьk: *MцЪ;x°н7УЦ»ЮЂЦ‹¬г4›~ёБ;/кКРљY~#Ў¦?<eГ' b=Т)T¶ѕPbА«ЇG (г фаж" БШц{x!¬Ѓ°f|H›®-­Е+ГїВЁgЂї…vЁЭЅб	и+Є8Є(ОјO#(В†OhfЎЦа‚`®О†з5 пЊ eh‰П(|•Ил7—­m@kњдИ;Р nF
-EЩ7Ќ:AґЙоЋP№:€!.Ў†ҐАЦd(Ђ™Ђ–ряvь”64ѕ@AvД°­X[N»µiю¦§3й'¶Н>ъKўnмzМ¶W^IПлх­Нљµл NNЗЇG/„Я PoМЯИлФ%фК ШGїЁщЎџVоВ€п5ШфЌ©№©Жt•Ea°у±ЯЬрТdЃҐqЧЛfPsЋmr›ъ?›МHs‹“Fр|ЊuЇ¶p±јЪы0fE^ew±яі ё|шЪтьЌVЉєSјcR‹Ч§‰`m_QЛ¤г„УmЇкЌ¶Ѕ ђ’:ЪЬKЭ@¶Ѓы h[ ^Iћ`tґV6bWЎrђgs`аpфФґW9:ЈG9J~йАтxЊ+¦VЙЗл[wмNґнЕvґѕЋьцWШё/«М;ЄM€shЈJХMЇЎ?:>IЪ’Ј‡c"ЁЌv?еў±ЧњД+,j‚†ВvэШ<9Лџ`о­?ф/і п’yј;аbѓСPD‚!П†OYXґ‹€@LёsHњлM”Н±ЭЉь¤d?\ЏМЌ|ьоп}И ®П‡§ґ‘ТµЈС>Ж^Т‰ВRr№С†ЬБ·r±™xбgй Г0:С»dрЌ Z“яЧ·Wp З]JtMѓ—M“Ir7ђ¦†TKhчХR0д$;Ў+1ё1†УњЄmDС8u;aSxНь)!t3YЫбЌЉ\DIiXXЫ»
-)—АлRъ•be:(‰¦џtggББУОР"ч¦И]Ђ7ЧZп¦“:¶УґЭА§`Ан®Щі3ЌлSуУ“і3ііЌйЙ™‚IAы№йЖшGЧoL'ВД VmсlмAШЊ¶kъНП?gџ|
-Ю[7iUоJLОи$ЩSЖќb@¤‹$н"Ь\}X~G^К—Ј/Їc_N\л4‰ЌVШ&|*Ъ`?щц.ј?ьЌ”CETvЊэpR¦ bFенj`(э?::2n+Жp$у`шЖЅ цГЯPрЮв#hіe:тг(яЄфюO‚йаNЏLСЙисрL?#й0—d†§> љ}ъA(і	Ючf†б «и…ўG'bS€ҐђУшќKОс?h|nМТ9мнЅ›6\!¦ЏцЮxйDќ8єіsЙ№ё]=ґШ:д^f’4rЈАЖњР«LF–чuВЮ]]ЅyЃ(ЌЙ’Ii\nxЛА[	ю…в‡=ІсПDP!8'C@g<XH"Чw‚[”І^НхFє,Фл<~¬%iќбџ€о*=fuУu»ШЧVІгPOЈ?Эn‹c¬ёяюd#¤T qw•ЦFЎgЮяuЧw7?дq‚ѕ5ЖD›©WM·э€[ЭЂP>©®;®‡<¬·«;NЬ­FН0ЪДх„ю¦oёвПФЕz·•<АµќxNм¶М ЧЎ ]QK:m7Хys.Z`оТVa ?p‹Ґ#бn%^ !L`§«sДR<¤qlJsXМџлµў „dЩЄІм]Љ?tр†%’a|0¤;XлNаҐp=SV/?№е7›^(»т©э¦Е¶њ 7¦sіУуЧ/У7 ЋЄ~ИXК, !б·.)щ\‡UУ©M|B\Гќ\ыФљЁAУkЫЮЪ¦џ&Пs[ЬЌјVeъH ›«~Ы‹єйEАhIw­aаДвХ™FѓТ)h™µ@Oд.иC,;я“ќ&љ›	Кьhз‰ј¦їЈw43У?џ™ћ™јqЈ 	’ЪЃF(яз© ¤ЅtЁ:o]Р8Л;MК>?ѕ”†юВЇ5Y0°>{Л‹#»K°Hй#ЭwA°]љR“вЉz¶uc0з
-a4Dcнnк5±х•б7?XгЅА&зgk“sЌЪФфtmjvљБX‚ІWфMђ®ЪNЬC>„ЂгqЫkъЭ¶‰ўrБ–Ѓ&Ф}ѓ¤… mЂЋ#жФx{ іОќА7ТЦІ5[„yґЁµnљFКи®Ґ!ѓvТuБ?$|1	@tљг)eщ—кјчЉNрщ:ЭА‰№g,Vы~и6ХЈ`†с^ \џЊ`Міњ#\мOОљоЙЌ†тhтJM]oLО–<›™™.л5;;З{]б.НШҐ‘8"іІµ]8ЬГo`/?R=Ѓ]ЁDjѕьБй+є[|dД8иN0ґDеЎшяСй1wЊIЈЊ±Ѓ™Xsq‡`Ѕ¤Кё_)Ђ…‹ БHµ‚xЖА;§YўЃя@а›К0beFЄСhэR›ђяy‰ЌИяјєН(ЃЫђЙйЙ№й№№щ—йRjSJшSџ?ТжЊSЩD/і@EbзЭшa™Мµ¦V¤Яw®тq=Y{ИiНёОdp	‘ЊЕќЈPЃ`\{Ѓ]§ЉЛR’ЖQё±"Іј>	[жwЌ†W‚ЪЂЈ жSoЄ$К=иМkEќйО6‹eюШЋє	Э_DьеkеY/‘;±ЋLWw8™XЏT±‡АљР1эЋ‚¶S¬+KЁ…ЛCМb<Ћ(ьњЃ9	AњрЕD`јMОuAj—Њ–ЂО!ш’шM4~JҐџS?з‘*4=ѓ_зАё7zЧ?nДА±ЄBќRП}њуђЖ$=†®зTЫRЙ{ЄgyOсЙ	6и‰?{ ¦зcнЛ„-‘?ъZС^±ўХг‰xтњs@M`КT`“мю?`u4м!†ЪњFz?oНe:ъАђ{fqЫТщiUOь®DЁпУBОс<°	у=&Й}[ыJРц\)8&vѕ к}Ќ.2‡ІЙ<5+
-ЈыXѓJC>«Ѓ­иh"ҐцыBЉбЩ·пy-с	eІзЋ
-OsыyA"p‰Лўвxћ ЄсДVњњІG|+°јъ¶”ъ2!™HЈl-\nq·HГ
-iЬбsn[Хюeињ
-–»TГ$Ў“В"ЕИ”п,„ы$іэLЖjB!3а!4z‚ѕЗЊЭхЖf ­еЛDqc Њxљ‚§wђ} ЪЛAМiаОc`БI}%Њ|Ћ'B–P|aq¶ПQ“Сэ}.*yIшЛ®Z™PиІ,У^ЯKХay¦€„LUFd3…KЈ*гЭruђcмБѓYх&6ЉъaFБ
-LBҐ•	ѕЪCBЈѕ µqдёi‚ҐRZь9UПиpqоXT№ы”­RuvљКї;СЭCcQ{$йяQV)oђ&Б%Qа7ЩkoПг?В:iњ+±NPр]`€t9)<e0H”Юш1#S‘Д‡gАп	 Ъ™Я?рCй	DџЋ1HЦјЮЖS‹’ЗTjЪ#™)ГЙ1ѓ U[‚[ЇJ»!‰Еy9*i:Pi%рКђчqДa,^&Ы—fЎЬNз
-БhдMі_еыR+жC•Пш	·CчаѓRJeQ›ЩtXYCb-=3-hГіУ#N{B…Q±Є~ЗчD»?дЬbbзз Љч¤©(А@ѓ’N”fў‘7з'ЩЩ#±НNѕ­Ґ0 ХNi~‘Q`ёје вg…ѓSZ Ѓf+$»њўh{¤‰j‘ Њa"Г%У!dх.aШy†7x?Е@Ќuз3:Нb·¦¬•wj?«эє&УмРzV9бПґ\ПиСlш{ОЙќ‰j*IMАпћ5=WЮ·КтR¦нKњ№ФNжT•ЉJWђ\»g:VфцSуЃaI[ЗMI_є†ЯpJF@ъB‚ъtXЉпкѓ{†БЛЙDO›а„€ф„“фD8"»BОЗЏVй
-"О]кG7е‘®L°ЗѕрА{ЄьvЄе“рwUчћ<W“dHUё¬}Вы…>§Ь%EыMн}P7Џ	а-Ўз7§UќЅLмuJт5+@“”“иІGЏЮ„ґКиѓJПҐзбХ	БћТэўАtлaЗЂRВ‡„,№”eЎKжP©B№ъ(n\—BБП”M"·Х~Юэ	wяЂ¶Г5FТЌdх  ч|й+]y†рIВy‚_џHq ДаLХ0АЩыїjµЌЉc5'wЈЇ5аНІ•“SУ353ґИ)zЗ$Q|-WuДcDќ’xДђ[=:А‰Ж \g‹УЋГШё[g$UsзЈ»lо2+Fк”)…8¦вNmЂ*ґ+ЖЉяЪ"ёЦ ќlђЈГжfg§gе•·*ЛидЛюqф5Є"JМIяУњѓЎ;"\в†щЂФл<;o$1M€bю”:73Dџп)щ_ѕr:њqХ‘Фк[7лпЭ#d%dрЛrbь]жХ`»SоБ›
-¦Б/cУЃG"аўР•А+;t^?HЇ’чЇ«?IeџBУ¬ЦhъҐZ¦вLF™Щ”СёrљIiс_jc”HеаA:™}•A„ђ<аВЊм»Њ]tћђАcЂћГRйцRdMi$МЎј <;з+Р„vІ15ќgуЎТUщ
-5Ф!ЩУ]<ZкЃ &Щv<!GЇRд\|ґ±жЋ…Ќс)s›ЋЩЌ†‰гJёўxYН\…L>xўб>Н$CHy:ЃЬєL±
-Ч§<—Ь оr„дw aЯи~5o–…"<ИОq3Ѓ"жпЃФТ}ОЂCFпт
-•ь‰-$Ќkоo!РA’ыt„Л"ЮЈmо‹фШу\$;^­xЙ+%c€щJ/?е'ЧЭ-u>ћ–њ{GЎ()ПB!д!‰ФCт“ћ3Д-u|Gжx.…ріOЮјКІ"о<Т,*г5—}¦ж"я8'И¶"¦|шсь`’g7у!Џ№ыВh`,Є&РЛ-†+E_)*8§h¬ИЈ.I±
-eMwGЙ°Э#јЗeuBFЇc™ъ,CҐекПU@wPдa–L›xґ?ћz“vjO¦К`щЈ»
-/‹уHщ¤ѓ,6©М#-IgFНЬ2ўi=V>!§в‰ кЃ™‘ЫЛщ*.S‘–vўМмy	E*jЙ*L±wўxЫ‰1бSe"ЛMжG~њvќЂ}H§Ђ“‰М›вa«ћ9/Iµr@ХXDиi8Т@кЇ„Т$mBЏМi]!ыЖ`›JIКgў,¤CQ;‰h•шWЩBЭѕоqщU)#Кdђ›ф•Z;‘–% Ж<v*TГ>Ghq"ќ#^д7\”Cя­(табxґГЧ#¤!Џ.їзnПїQ8ёП‘dO§?х©P3Ън@в·%F`0ѕ^>Ђ•џЁоRАРТIъщШч<•ўЃFUіЭОР[–G9ЩаУhГБ­Ђхўј—KкR°х­
-Џ№Ёќ€ў·9Ё–Ґ5«OЄЫ>sJFсХі‹1€См}н}±,‡ї‡…Ћ’<иЯЕиц”ьЙ?њ{хrKъ/lЅрўNfи[!*т,ТX>8?сno>1k&“TёЃ_T*ЧЁiсh°€«DОЉpЃыf V-3&ёK3ќЃЮЕ{7'tKBБ®бЏT•W—ЫЃ±»тмXЮЮpOсc~ц}н&ЏЩл±З‹МrЫMK~Ўуа
-hT¶;3ттј0&ЊЄd°3фТ$uRfЇ…ьшD–†гЛyЯ»wDvµOeЭЃ _Яђ3{ЪгyЦf%	іУ ґЖH©Wїґ— ‹¬pДЃыЫ".ЗU1FRЃ^/[ѓУЃFЁrD>ії/s$zf<§H@—Е,=UTЈвu>+їИё{+Win¶.\Є	›°ХFnGЇ|ҐТг™FZwАaП¬ЅдЉЁc2И)\?Ь®fСњ87wBRzЂТЛ н_…®UOцу4ИЬі#љ{ЏdоrU\VyЗЏЅm'„Ћ^жфLоэДьWuю±›ґ
-_¶4_sДcЮQке_dе7ХIy(’џ)jГ‚Ќ·яЊ?<б¬°ЧЧєA°ЁЅvл¬E]щ‚Чр[Iћ>%xыzцєuvНвщ№9ѓ&@м©Ж$DоOypЊu	Z”Шіж›‚эб№±ЯрCьїфТШЯt?uй¬'ћ{Й{§ки4«4«l»КЬ	v—U¶?q?ЕуRшK?!ҐґfiјџЫµз->бФФдФмМдфЅmX•\Qе®Я\ђOaomЛOўxЯЅ…)ЯЭl;с5Ќw m37ЧнЖNк­вѓ7a*ЧУ›ѕљґ Ювe_0ЧIЭVЕГ~БрЦ–і–Ф¬mxйЫЃЧцВ4ysgХЩш•Уц*– ЕД'ЌO«,Ў†nмБ|ўmЦўКЦбqF1њ#¬uњZэ*jz5?Lј8}У[ЏbЇ’TY€+ZdI©]ЗиЏПшбВezї'1~«4kA$ОКwYШ2Ѓo"${#»\а—ЦыfХлm·&^л€»х6gA}й‚™ї®E/vhИOўµЫћ›ІрО§n«YsљН··`cпыIк…^\±~юБ/ЕUy?rљ 0@шЯ	Џ(пБt]ЇР·/&*НИн"«ва]•Y|]·Дўn№ ХkАГДТюДAцч–HЪі7БМќСЋкR¬TЭї%>’mБYKў 4{‘б‹6ц<ь`aџџgЕ¤:eЇз“:Х/Т§:я«	Kuю—nюS»ПЎъF  
-0
+*****************************
+Информация о браузерах: {Mozilla Firefox=0, Internet Explirer=0, Google Chrome=4, Safary=0, Opera=0, Other=0}
+*****************************
 
-
-07-03-2016 13:22:13 DEBUG HttpClient:124 - 
-* CLIENT: Hooray! I've got necessary information
- Servers Response is :
-HTTP/1.1 200 OK
-Server: nginx/1.6.3
-Date: Mon, 07 Mar 2016 11:22:08 GMT
-Content-Type: text/html; charset=utf-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-Vary: Accept-Encoding
-X-Powered-By: PHP/5.3.29
-Expires: Thu, 19 Nov 1981 08:52:00 GMT
-Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-Pragma: no-cache
-Content-Encoding: gzip
-
-1759
-‹      Ѕ\{oЬЦ•яЫю·LЏ°Г™СУЦ3hТd“mЪё€6AЕЎ4ґ8д„дHњ ’ЧмF@РЕ-љ6»цЏb±cYЏх2ђO0уЌцњsј—CКrРV‰Gт>Пгw^—ZъЙП?xkх77Яf­ґ¬\]В_,pВЌe+оZxГsљ+WЇ2шYJэ4рV†нП‡‡Г>ь>цШр|tox<Ъ=ЭѓчЩрЬЪ…›РЉ}ОnFqъЎл„µё»TзcРx4fЫK?<нШЮg]kЩz+
-S/LнХќЋg1—[¶RпNZЗХ-2·еД‰—.яык;цK,Ћьp“µbo}ЩZw¶|и\ѓ‹Е^°lбW‹Ґ0,\·ќЇ~З¦{|5ј3µt:ќАіУЁл¶x1¦ЯЮЁзџХ:б†U‚&ё•Д®Ю·„HЂv;рЁ§$-‘!tЪ°¶¦—ё±ЯI}њXншСыp8нй%bџБѓубЙи ЭcЈ}ёq6м;іС0/чЎ#4лЌВ9&рќШ: ±ъФKЭјнї„Чрq6<ц†П‡g5IWmk›ЮОv7}_/тТ¤XeгЏ/Z@®эЂ TЌе±т‰{Х‹(ЁZY+9Б#Ж'йNа%-ПKҐ¬‘дєI"%.лkQ”&iмtІ«ZЫkШlL–ф!і!ЦЃ‚¶ін%QЫ«зo\n°тхµХ?Ы$KЅЧmgЛбw-ІѕlЭNкќ »б‡Iэцg]/Ю±'k“ЌЪ$­з6·TзнЕє^mH“V?~8Р·е№›Ї<ДКO+лЭРEХ¬L°»?­\{-сb П^"wуЪDM^™XьbbQЌћS…k;NШфоШ[^мЇы®ѓC^SZqmnЭm6<gЭm4ззжЧЧ@МRќѓсТZФЬЖ,…‘±ф¦їЕЬАI@°А‹SFџvРЬ‹оЕvat/R ,[m'В.°©FзsєiД‹l4Ф‹б&Ьk: *MцЪ;x°н7УЦ»ЮЂЦ‹¬г4›~ёБ;/кКРљY~#Ў¦?<eГ' b=Т)T¶ѕPbА«ЇG (г фаж" БШц{x!¬Ѓ°f|H›®-­Е+ГїВЁgЂї…vЁЭЅб	и+Є8Є(ОјO#(В†OhfЎЦа‚`®О†з5 пЊ eh‰П(|•Ил7—­m@kњдИ;Р nF
-EЩ7Ќ:AґЙоЋP№:€!.Ў†ҐАЦd(Ђ™Ђ–ряvь”64ѕ@AvД°­X[N»µiю¦§3й'¶Н>ъKўnмzМ¶W^IПлх­Нљµл NNЗЇG/„Я PoМЯИлФ%фК ШGїЁщЎџVоВ€п5ШфЌ©№©Жt•Ea°у±ЯЬрТdЃҐqЧЛfPsЋmr›ъ?›МHs‹“Fр|ЊuЇ¶p±јЪы0fE^ew±яі ё|шЪтьЌVЉєSјcR‹Ч§‰`m_QЛ¤г„УmЇкЌ¶Ѕ ђ’:ЪЬKЭ@¶Ѓы h[ ^Iћ`tґV6bWЎrђgs`аpфФґW9:ЈG9J~йАтxЊ+¦VЙЗл[wмNґнЕvґѕЋьцWШё/«М;ЄM€shЈJХMЇЎ?:>IЪ’Ј‡c"ЁЌv?еў±ЧњД+,j‚†ВvэШ<9Лџ`о­?ф/і п’yј;аbѓСPD‚!П†OYXґ‹€@LёsHњлM”Н±ЭЉь¤d?\ЏМЌ|ьоп}И ®П‡§ґ‘ТµЈС>Ж^Т‰ВRr№С†ЬБ·r±™xбgй Г0:С»dрЌ Z“яЧ·Wp З]JtMѓ—M“Ir7ђ¦†TKhчХR0д$;Ў+1ё1†УњЄmDС8u;aSxНь)!t3YЫбЌЉ\DIiXXЫ»
-)—АлRъ•be:(‰¦џtggББУОР"ч¦И]Ђ7ЧZп¦“:¶УґЭА§`Ан®Щі3ЌлSуУ“і3ііЌйЙ™‚IAы№йЖшGЧoL'ВД VmсlмAШЊ¶kъНП?gџ|
-Ю[7iUоJLОи$ЩSЖќb@¤‹$н"Ь\}X~G^К—Ј/Їc_N\л4‰ЌVШ&|*Ъ`?щц.ј?ьЌ”CETvЊэpR¦ bFенj`(э?::2n+Жp$у`шЖЅ цГЯPрЮв#hіe:тг(яЄфюO‚йаNЏLСЙисрL?#й0—d†§> љ}ъA(і	Ючf†б «и…ўG'bS€ҐђУшќKОс?h|nМТ9мнЅ›6\!¦ЏцЮxйDќ8єіsЙ№ё]=ґШ:д^f’4rЈАЖњР«LF–чuВЮ]]ЅyЃ(ЌЙ’Ii\nxЛА[	ю…в‡=ІсПDP!8'C@g<XH"Чw‚[”І^НхFє,Фл<~¬%iќбџ€о*=fuУu»ШЧVІгPOЈ?Эn‹c¬ёяюd#¤T qw•ЦFЎgЮяuЧw7?дq‚ѕ5ЖD›©WM·э€[ЭЂP>©®;®‡<¬·«;NЬ­FН0ЪДх„ю¦oёвПФЕz·•<АµќxNм¶М ЧЎ ]QK:m7Хys.Z`оТVa ?p‹Ґ#бn%^ !L`§«sДR<¤qlJsXМџлµў „dЩЄІм]Љ?tр†%’a|0¤;XлNаҐp=SV/?№е7›^(»т©э¦Е¶њ 7¦sіУуЧ/У7 ЋЄ~ИXК, !б·.)щ\‡UУ©M|B\Гќ\ыФљЁAУkЫЮЪ¦џ&Пs[ЬЌјVeъH ›«~Ы‹єйEАhIw­aаДвХ™FѓТ)h™µ@Oд.иC,;я“ќ&љ›	Кьhз‰ј¦їЈw43У?џ™ћ™јqЈ 	’ЪЃF(яз© ¤ЅtЁ:o]Р8Л;MК>?ѕ”†юВЇ5Y0°>{Л‹#»K°Hй#ЭwA°]љR“вЉz¶uc0з
-a4Dcнnк5±х•б7?XгЅА&зgk“sЌЪФфtmjvљБX‚ІWфMђ®ЪNЬC>„ЂгqЫkъЭ¶‰ўrБ–Ѓ&Ф}ѓ¤… mЂЋ#жФx{ іОќА7ТЦІ5[„yґЁµnљFКи®Ґ!ѓvТuБ?$|1	@tљг)eщ—кјчЉNрщ:ЭА‰№g,Vы~и6ХЈ`†с^ \џЊ`Міњ#\мOОљоЙЌ†тhтJM]oLО–<›™™.л5;;З{]б.НШҐ‘8"іІµ]8ЬГo`/?R=Ѓ]ЁDjѕьБй+є[|dД8иN0ґDеЎшяСй1wЊIЈЊ±Ѓ™Xsq‡`Ѕ¤Кё_)Ђ…‹ БHµ‚xЖА;§YўЃя@а›К0beFЄСhэR›ђяy‰ЌИяјєН(ЃЫђЙйЙ№й№№щ—йRjSJшSџ?ТжЊSЩD/і@EbзЭшa™Мµ¦V¤Яw®тq=Y{ИiНёОdp	‘ЊЕќЈPЃ`\{Ѓ]§ЉЛR’ЖQё±"Іј>	[жwЌ†W‚ЪЂЈ жSoЄ$К=иМkEќйО6‹eюШЋє	Э_DьеkеY/‘;±ЋLWw8™XЏT±‡АљР1эЋ‚¶S¬+KЁ…ЛCМb<Ћ(ьњЃ9	AњрЕD`јMОuAj—Њ–ЂО!ш’шM4~JҐџS?з‘*4=ѓ_зАё7zЧ?nДА±ЄBќRП}њуђЖ$=†®зTЫRЙ{ЄgyOсЙ	6и‰?{ ¦зcнЛ„-‘?ъZС^±ўХг‰xтњs@M`КT`“мю?`u4м!†ЪњFz?oНe:ъАђ{fqЫТщiUOь®DЁпУBОс<°	у=&Й}[ыJРц\)8&vѕ к}Ќ.2‡ІЙ<5+
-ЈыXѓJC>«Ѓ­иh"ҐцыBЉбЩ·пy-с	eІзЋ
-OsыyA"p‰Лўвxћ ЄсДVњњІG|+°јъ¶”ъ2!™HЈl-\nq·HГ
-iЬбsn[Хюeињ
-–»TГ$Ў“В"ЕИ”п,„ы$іэLЖjB!3а!4z‚ѕЗЊЭхЖf ­еЛDqc Њxљ‚§wђ} ЪЛAМiаОc`БI}%Њ|Ћ'B–P|aq¶ПQ“Сэ}.*yIшЛ®Z™PиІ,У^ЯKХay¦€„LUFd3…KЈ*гЭruђcмБѓYх&6ЉъaFБ
-LBҐ•	ѕЪCBЈѕ µqдёi‚ҐRZь9UПиpqоXT№ы”­RuvљКї;СЭCcQ{$йяQV)oђ&Б%Qа7ЩkoПг?В:iњ+±NPр]`€t9)<e0H”Юш1#S‘Д‡gАп	 Ъ™Я?рCй	DџЋ1HЦјЮЖS‹’ЗTjЪ#™)ГЙ1ѓ U[‚[ЇJ»!‰Еy9*i:Pi%рКђчqДa,^&Ы—fЎЬNз
-БhдMі_еыR+жC•Пш	·CчаѓRJeQ›ЩtXYCb-=3-hГіУ#N{B…Q±Є~ЗчD»?дЬbbзз Љч¤©(А@ѓ’N”fў‘7з'ЩЩ#±НNѕ­Ґ0 ХNi~‘Q`ёје вg…ѓSZ Ѓf+$»њўh{¤‰j‘ Њa"Г%У!dх.aШy†7x?Е@Ќuз3:Нb·¦¬•wj?«эє&УмРzV9бПґ\ПиСlш{ОЙќ‰j*IMАпћ5=WЮ·КтR¦нKњ№ФNжT•ЉJWђ\»g:VфцSуЃaI[ЗMI_є†ЯpJF@ъB‚ъtXЉпкѓ{†БЛЙDO›а„€ф„“фD8"»BОЗЏVй
-"О]кG7е‘®L°ЗѕрА{ЄьvЄе“рwUчћ<W“dHUё¬}Вы…>§Ь%EыMн}P7Џ	а-Ўз7§UќЅLмuJт5+@“”“иІGЏЮ„ґКиѓJПҐзбХ	БћТэўАtлaЗЂRВ‡„,№”eЎKжP©B№ъ(n\—BБП”M"·Х~Юэ	wяЂ¶Г5FТЌdх  ч|й+]y†рIВy‚_џHq ДаLХ0АЩыїjµЌЉc5'wЈЇ5аНІ•“SУ353ґИ)zЗ$Q|-WuДcDќ’xДђ[=:А‰Ж \g‹УЋГШё[g$UsзЈ»lо2+Fк”)…8¦вNmЂ*ґ+ЖЉяЪ"ёЦ ќlђЈГжfg§gе•·*ЛидЛюqф5Є"JМIяУњѓЎ;"\в†щЂФл<;o$1M€bю”:73Dџп)щ_ѕr:њqХ‘Фк[7лпЭ#d%dрЛrbь]жХ`»SоБ›
-¦Б/cУЃG"аўР•А+;t^?HЇ’чЇ«?IeџBУ¬ЦhъҐZ¦вLF™Щ”СёrљIiс_jc”HеаA:™}•A„ђ<аВЊм»Њ]tћђАcЂћГRйцRdMi$МЎј <;з+Р„vІ15ќgуЎТUщ
-5Ф!ЩУ]<ZкЃ &Щv<!GЇRд\|ґ±жЋ…Ќс)s›ЋЩЌ†‰гJёўxYН\…L>xўб>Н$CHy:ЃЬєL±
-Ч§<—Ь оr„дw aЯи~5o–…"<ИОq3Ѓ"жпЃФТ}ОЂCFпт
-•ь‰-$Ќkоo!РA’ыt„Л"ЮЈmо‹фШу\$;^­xЙ+%c€щJ/?е'ЧЭ-u>ћ–њ{GЎ()ПB!д!‰ФCт“ћ3Д-u|Gжx.…ріOЮјКІ"о<Т,*г5—}¦ж"я8'И¶"¦|шсь`’g7у!Џ№ыВh`,Є&РЛ-†+E_)*8§h¬ИЈ.I±
-eMwGЙ°Э#јЗeuBFЇc™ъ,CҐекПU@wPдa–L›xґ?ћz“vjO¦К`щЈ»
-/‹уHщ¤ѓ,6©М#-IgFНЬ2ўi=V>!§в‰ кЃ™‘ЫЛщ*.S‘–vўМмy	E*jЙ*L±wўxЫ‰1бSe"ЛMжG~њvќЂ}H§Ђ“‰М›вa«ћ9/Iµr@ХXDиi8Т@кЇ„Т$mBЏМi]!ыЖ`›JIКgў,¤CQ;‰h•шWЩBЭѕоqщU)#Кdђ›ф•Z;‘–% Ж<v*TГ>Ghq"ќ#^д7\”Cя­(табxґГЧ#¤!Џ.їзnПїQ8ёП‘dO§?х©P3Ън@в·%F`0ѕ^>Ђ•џЁоRАРТIъщШч<•ўЃFUіЭОР[–G9ЩаУhГБ­Ђхўј—KкR°х­
-Џ№Ёќ€ў·9Ё–Ґ5«OЄЫ>sJFсХі‹1€См}н}±,‡ї‡…Ћ’<иЯЕиц”ьЙ?њ{хrKъ/lЅрўNfи[!*т,ТX>8?сno>1k&“TёЃ_T*ЧЁiсh°€«DОЉpЃыf V-3&ёK3ќЃЮЕ{7'tKBБ®бЏT•W—ЫЃ±»тмXЮЮpOсc~ц}н&ЏЩл±З‹МrЫMK~Ўуа
-hT¶;3ттј0&ЊЄd°3фТ$uRfЇ…ьшD–†гЛyЯ»wDvµOeЭЃ _Яђ3{ЪгyЦf%	іУ ґЖH©Wїґ— ‹¬pДЃыЫ".ЗU1FRЃ^/[ѓУЃFЁrD>ії/s$zf<§H@—Е,=UTЈвu>+їИё{+Win¶.\Є	›°ХFnGЇ|ҐТг™FZwАaП¬ЅдЉЁc2И)\?Ь®fСњ87wBRzЂТЛ н_…®UOцу4ИЬі#љ{ЏdоrU\VyЗЏЅm'„Ћ^жфLоэДьWuю±›ґ
-_¶4_sДcЮQке_dе7ХIy(’џ)jГ‚Ќ·яЊ?<б¬°ЧЧєA°ЁЅvл¬E]щ‚Чр[Iћ>%xыzцєuvНвщ№9ѓ&@м©Ж$DоOypЊu	Z”Шіж›‚эб№±ЯрCьїфТШЯt?uй¬'ћ{Й{§ки4«4«l»КЬ	v—U¶?q?ЕуRшK?!ҐґfiјџЫµз->бФФдФмМдфЅmX•\Qе®Я\ђOaomЛOўxЯЅ…)ЯЭl;с5Ќw m37ЧнЖNк­вѓ7a*ЧУ›ѕљґ Ювe_0ЧIЭVЕГ~БрЦ–і–Ф¬mxйЫЃЧцВ4ysgХЩш•Уц*– ЕД'ЌO«,Ў†nмБ|ўmЦўКЦбqF1њ#¬uњZэ*jz5?Lј8}У[ЏbЇ’TY€+ZdI©]ЗиЏПшбВezї'1~«4kA$ОКwYШ2Ѓo"${#»\а—ЦыfХлm·&^л€»х6gA}й‚™ї®E/vhИOўµЫћ›ІрО§n«YsљН··`cпыIк…^\±~юБ/ЕUy?rљ 0@шЯ	Џ(пБt]ЇР·/&*НИн"«ва]•Y|]·Дўn№ ХkАГДТюДAцч–HЪі7БМќСЋкR¬TЭї%>’mБYKў 4{‘б‹6ц<ь`aџџgЕ¤:eЇз“:Х/Т§:я«	Kuю—nюS»ПЎъF  
-0
-
-
-07-03-2016 13:22:13 DEBUG HttpClient:124 - 
-* CLIENT: Hooray! I've got necessary information
- Servers Response is :
-HTTP/1.1 200 OK
-Server: nginx/1.6.3
-Date: Mon, 07 Mar 2016 11:22:08 GMT
-Content-Type: text/html; charset=utf-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-Vary: Accept-Encoding
-X-Powered-By: PHP/5.3.29
-Expires: Thu, 19 Nov 1981 08:52:00 GMT
-Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-Pragma: no-cache
-Content-Encoding: gzip
-
-1759
-‹      Ѕ\{oЬЦ•яЫю·LЏ°Г™СУЦ3hТd“mЪё€6AЕЎ4ґ8д„дHњ ’ЧмF@РЕ-љ6»цЏb±cYЏх2ђO0уЌцњsј—CКrРV‰Gт>Пгw^—ZъЙП?xkх77Яf­ґ¬\]В_,pВЌe+оZxГsљ+WЇ2шYJэ4рV†нП‡‡Г>ь>цШр|tox<Ъ=ЭѓчЩрЬЪ…›РЉ}ОnFqъЎл„µё»TзcРx4fЫK?<нШЮg]kЩz+
-S/LнХќЋg1—[¶RпNZЗХ-2·еД‰—.яык;цK,Ћьp“µbo}ЩZw¶|и\ѓ‹Е^°lбW‹Ґ0,\·ќЇ~З¦{|5ј3µt:ќАіУЁл¶x1¦ЯЮЁзџХ:б†U‚&ё•Д®Ю·„HЂv;рЁ§$-‘!tЪ°¶¦—ё±ЯI}њXншСыp8нй%bџБѓубЙи ЭcЈ}ёq6м;іС0/чЎ#4лЌВ9&рќШ: ±ъФKЭјнї„Чрq6<ц†П‡g5IWmk›ЮОv7}_/тТ¤XeгЏ/Z@®эЂ TЌе±т‰{Х‹(ЁZY+9Б#Ж'йNа%-ПKҐ¬‘дєI"%.лkQ”&iмtІ«ZЫkШlL–ф!і!ЦЃ‚¶ін%QЫ«зo\n°тхµХ?Ы$KЅЧmgЛбw-ІѕlЭNкќ »б‡Iэцg]/Ю±'k“ЌЪ$­з6·TзнЕє^mH“V?~8Р·е№›Ї<ДКO+лЭРEХ¬L°»?­\{-сb П^"wуЪDM^™XьbbQЌћS…k;NШфоШ[^мЇы®ѓC^SZqmnЭm6<gЭm4ззжЧЧ@МRќѓсТZФЬЖ,…‘±ф¦їЕЬАI@°А‹SFџvРЬ‹оЕvat/R ,[m'В.°©FзsєiД‹l4Ф‹б&Ьk: *MцЪ;x°н7УЦ»ЮЂЦ‹¬г4›~ёБ;/кКРљY~#Ў¦?<eГ' b=Т)T¶ѕPbА«ЇG (г фаж" БШц{x!¬Ѓ°f|H›®-­Е+ГїВЁgЂї…vЁЭЅб	и+Є8Є(ОјO#(В†OhfЎЦа‚`®О†з5 пЊ eh‰П(|•Ил7—­m@kњдИ;Р nF
-EЩ7Ќ:AґЙоЋP№:€!.Ў†ҐАЦd(Ђ™Ђ–ряvь”64ѕ@AvД°­X[N»µiю¦§3й'¶Н>ъKўnмzМ¶W^IПлх­Нљµл NNЗЇG/„Я PoМЯИлФ%фК ШGїЁщЎџVоВ€п5ШфЌ©№©Жt•Ea°у±ЯЬрТdЃҐqЧЛfPsЋmr›ъ?›МHs‹“Fр|ЊuЇ¶p±јЪы0fE^ew±яі ё|шЪтьЌVЉєSјcR‹Ч§‰`m_QЛ¤г„УmЇкЌ¶Ѕ ђ’:ЪЬKЭ@¶Ѓы h[ ^Iћ`tґV6bWЎrђgs`аpфФґW9:ЈG9J~йАтxЊ+¦VЙЗл[wмNґнЕvґѕЋьцWШё/«М;ЄM€shЈJХMЇЎ?:>IЪ’Ј‡c"ЁЌv?еў±ЧњД+,j‚†ВvэШ<9Лџ`о­?ф/і п’yј;аbѓСPD‚!П†OYXґ‹€@LёsHњлM”Н±ЭЉь¤d?\ЏМЌ|ьоп}И ®П‡§ґ‘ТµЈС>Ж^Т‰ВRr№С†ЬБ·r±™xбgй Г0:С»dрЌ Z“яЧ·Wp З]JtMѓ—M“Ir7ђ¦†TKhчХR0д$;Ў+1ё1†УњЄmDС8u;aSxНь)!t3YЫбЌЉ\DIiXXЫ»
-)—АлRъ•be:(‰¦џtggББУОР"ч¦И]Ђ7ЧZп¦“:¶УґЭА§`Ан®Щі3ЌлSуУ“і3ііЌйЙ™‚IAы№йЖшGЧoL'ВД VmсlмAШЊ¶kъНП?gџ|
-Ю[7iUоJLОи$ЩSЖќb@¤‹$н"Ь\}X~G^К—Ј/Їc_N\л4‰ЌVШ&|*Ъ`?щц.ј?ьЌ”CETvЊэpR¦ bFенj`(э?::2n+Жp$у`шЖЅ цГЯPрЮв#hіe:тг(яЄфюO‚йаNЏLСЙисрL?#й0—d†§> љ}ъA(і	Ючf†б «и…ўG'bS€ҐђУшќKОс?h|nМТ9мнЅ›6\!¦ЏцЮxйDќ8єіsЙ№ё]=ґШ:д^f’4rЈАЖњР«LF–чuВЮ]]ЅyЃ(ЌЙ’Ii\nxЛА[	ю…в‡=ІсПDP!8'C@g<XH"Чw‚[”І^НхFє,Фл<~¬%iќбџ€о*=fuУu»ШЧVІгPOЈ?Эn‹c¬ёяюd#¤T qw•ЦFЎgЮяuЧw7?дq‚ѕ5ЖD›©WM·э€[ЭЂP>©®;®‡<¬·«;NЬ­FН0ЪДх„ю¦oёвПФЕz·•<АµќxNм¶М ЧЎ ]QK:m7Хys.Z`оТVa ?p‹Ґ#бn%^ !L`§«sДR<¤qlJsXМџлµў „dЩЄІм]Љ?tр†%’a|0¤;XлNаҐp=SV/?№е7›^(»т©э¦Е¶њ 7¦sіУуЧ/У7 ЋЄ~ИXК, !б·.)щ\‡UУ©M|B\Гќ\ыФљЁAУkЫЮЪ¦џ&Пs[ЬЌјVeъH ›«~Ы‹єйEАhIw­aаДвХ™FѓТ)h™µ@Oд.иC,;я“ќ&љ›	Кьhз‰ј¦їЈw43У?џ™ћ™јqЈ 	’ЪЃF(яз© ¤ЅtЁ:o]Р8Л;MК>?ѕ”†юВЇ5Y0°>{Л‹#»K°Hй#ЭwA°]љR“вЉz¶uc0з
-a4Dcнnк5±х•б7?XгЅА&зgk“sЌЪФфtmjvљБX‚ІWфMђ®ЪNЬC>„ЂгqЫkъЭ¶‰ўrБ–Ѓ&Ф}ѓ¤… mЂЋ#жФx{ іОќА7ТЦІ5[„yґЁµnљFКи®Ґ!ѓvТuБ?$|1	@tљг)eщ—кјчЉNрщ:ЭА‰№g,Vы~и6ХЈ`†с^ \џЊ`Міњ#\мOОљоЙЌ†тhтJM]oLО–<›™™.л5;;З{]б.НШҐ‘8"іІµ]8ЬГo`/?R=Ѓ]ЁDjѕьБй+є[|dД8иN0ґDеЎшяСй1wЊIЈЊ±Ѓ™Xsq‡`Ѕ¤Кё_)Ђ…‹ БHµ‚xЖА;§YўЃя@а›К0beFЄСhэR›ђяy‰ЌИяјєН(ЃЫђЙйЙ№й№№щ—йRjSJшSџ?ТжЊSЩD/і@EbзЭшa™Мµ¦V¤Яw®тq=Y{ИiНёОdp	‘ЊЕќЈPЃ`\{Ѓ]§ЉЛR’ЖQё±"Іј>	[жwЌ†W‚ЪЂЈ жSoЄ$К=иМkEќйО6‹eюШЋє	Э_DьеkеY/‘;±ЋLWw8™XЏT±‡АљР1эЋ‚¶S¬+KЁ…ЛCМb<Ћ(ьњЃ9	AњрЕD`јMОuAj—Њ–ЂО!ш’шM4~JҐџS?з‘*4=ѓ_зАё7zЧ?nДА±ЄBќRП}њуђЖ$=†®зTЫRЙ{ЄgyOсЙ	6и‰?{ ¦зcнЛ„-‘?ъZС^±ўХг‰xтњs@M`КT`“мю?`u4м!†ЪњFz?oНe:ъАђ{fqЫТщiUOь®DЁпУBОс<°	у=&Й}[ыJРц\)8&vѕ к}Ќ.2‡ІЙ<5+
-ЈыXѓJC>«Ѓ­иh"ҐцыBЉбЩ·пy-с	eІзЋ
-OsыyA"p‰Лўвxћ ЄсДVњњІG|+°јъ¶”ъ2!™HЈl-\nq·HГ
-iЬбsn[Хюeињ
-–»TГ$Ў“В"ЕИ”п,„ы$іэLЖjB!3а!4z‚ѕЗЊЭхЖf ­еЛDqc Њxљ‚§wђ} ЪЛAМiаОc`БI}%Њ|Ћ'B–P|aq¶ПQ“Сэ}.*yIшЛ®Z™PиІ,У^ЯKХay¦€„LUFd3…KЈ*гЭruђcмБѓYх&6ЉъaFБ
-LBҐ•	ѕЪCBЈѕ µqдёi‚ҐRZь9UПиpqоXT№ы”­RuvљКї;СЭCcQ{$йяQV)oђ&Б%Qа7ЩkoПг?В:iњ+±NPр]`€t9)<e0H”Юш1#S‘Д‡gАп	 Ъ™Я?рCй	DџЋ1HЦјЮЖS‹’ЗTjЪ#™)ГЙ1ѓ U[‚[ЇJ»!‰Еy9*i:Pi%рКђчqДa,^&Ы—fЎЬNз
-БhдMі_еыR+жC•Пш	·CчаѓRJeQ›ЩtXYCb-=3-hГіУ#N{B…Q±Є~ЗчD»?дЬbbзз Љч¤©(А@ѓ’N”fў‘7з'ЩЩ#±НNѕ­Ґ0 ХNi~‘Q`ёје вg…ѓSZ Ѓf+$»њўh{¤‰j‘ Њa"Г%У!dх.aШy†7x?Е@Ќuз3:Нb·¦¬•wj?«эє&УмРzV9бПґ\ПиСlш{ОЙќ‰j*IMАпћ5=WЮ·КтR¦нKњ№ФNжT•ЉJWђ\»g:VфцSуЃaI[ЗMI_є†ЯpJF@ъB‚ъtXЉпкѓ{†БЛЙDO›а„€ф„“фD8"»BОЗЏVй
-"О]кG7е‘®L°ЗѕрА{ЄьvЄе“рwUчћ<W“dHUё¬}Вы…>§Ь%EыMн}P7Џ	а-Ўз7§UќЅLмuJт5+@“”“иІGЏЮ„ґКиѓJПҐзбХ	БћТэўАtлaЗЂRВ‡„,№”eЎKжP©B№ъ(n\—BБП”M"·Х~Юэ	wяЂ¶Г5FТЌdх  ч|й+]y†рIВy‚_џHq ДаLХ0АЩыїjµЌЉc5'wЈЇ5аНІ•“SУ353ґИ)zЗ$Q|-WuДcDќ’xДђ[=:А‰Ж \g‹УЋГШё[g$UsзЈ»lо2+Fк”)…8¦вNmЂ*ґ+ЖЉяЪ"ёЦ ќlђЈГжfg§gе•·*ЛидЛюqф5Є"JМIяУњѓЎ;"\в†щЂФл<;o$1M€bю”:73Dџп)щ_ѕr:њqХ‘Фк[7лпЭ#d%dрЛrbь]жХ`»SоБ›
-¦Б/cУЃG"аўР•А+;t^?HЇ’чЇ«?IeџBУ¬ЦhъҐZ¦вLF™Щ”СёrљIiс_jc”HеаA:™}•A„ђ<аВЊм»Њ]tћђАcЂћГRйцRdMi$МЎј <;з+Р„vІ15ќgуЎТUщ
-5Ф!ЩУ]<ZкЃ &Щv<!GЇRд\|ґ±жЋ…Ќс)s›ЋЩЌ†‰гJёўxYН\…L>xўб>Н$CHy:ЃЬєL±
-Ч§<—Ь оr„дw aЯи~5o–…"<ИОq3Ѓ"жпЃФТ}ОЂCFпт
-•ь‰-$Ќkоo!РA’ыt„Л"ЮЈmо‹фШу\$;^­xЙ+%c€щJ/?е'ЧЭ-u>ћ–њ{GЎ()ПB!д!‰ФCт“ћ3Д-u|Gжx.…ріOЮјКІ"о<Т,*г5—}¦ж"я8'И¶"¦|шсь`’g7у!Џ№ыВh`,Є&РЛ-†+E_)*8§h¬ИЈ.I±
-eMwGЙ°Э#јЗeuBFЇc™ъ,CҐекПU@wPдa–L›xґ?ћz“vjO¦К`щЈ»
-/‹уHщ¤ѓ,6©М#-IgFНЬ2ўi=V>!§в‰ кЃ™‘ЫЛщ*.S‘–vўМмy	E*jЙ*L±wўxЫ‰1бSe"ЛMжG~њvќЂ}H§Ђ“‰М›вa«ћ9/Iµr@ХXDиi8Т@кЇ„Т$mBЏМi]!ыЖ`›JIКgў,¤CQ;‰h•шWЩBЭѕоqщU)#Кdђ›ф•Z;‘–% Ж<v*TГ>Ghq"ќ#^д7\”Cя­(табxґГЧ#¤!Џ.їзnПїQ8ёП‘dO§?х©P3Ън@в·%F`0ѕ^>Ђ•џЁоRАРТIъщШч<•ўЃFUіЭОР[–G9ЩаУhГБ­Ђхўј—KкR°х­
-Џ№Ёќ€ў·9Ё–Ґ5«OЄЫ>sJFсХі‹1€См}н}±,‡ї‡…Ћ’<иЯЕиц”ьЙ?њ{хrKъ/lЅрўNfи[!*т,ТX>8?сno>1k&“TёЃ_T*ЧЁiсh°€«DОЉpЃыf V-3&ёK3ќЃЮЕ{7'tKBБ®бЏT•W—ЫЃ±»тмXЮЮpOсc~ц}н&ЏЩл±З‹МrЫMK~Ўуа
-hT¶;3ттј0&ЊЄd°3фТ$uRfЇ…ьшD–†гЛyЯ»wDvµOeЭЃ _Яђ3{ЪгyЦf%	іУ ґЖH©Wїґ— ‹¬pДЃыЫ".ЗU1FRЃ^/[ѓУЃFЁrD>ії/s$zf<§H@—Е,=UTЈвu>+їИё{+Win¶.\Є	›°ХFnGЇ|ҐТг™FZwАaП¬ЅдЉЁc2И)\?Ь®fСњ87wBRzЂТЛ н_…®UOцу4ИЬі#љ{ЏdоrU\VyЗЏЅm'„Ћ^жфLоэДьWuю±›ґ
-_¶4_sДcЮQке_dе7ХIy(’џ)jГ‚Ќ·яЊ?<б¬°ЧЧєA°ЁЅvл¬E]щ‚Чр[Iћ>%xыzцєuvНвщ№9ѓ&@м©Ж$DоOypЊu	Z”Шіж›‚эб№±ЯрCьїфТШЯt?uй¬'ћ{Й{§ки4«4«l»КЬ	v—U¶?q?ЕуRшK?!ҐґfiјџЫµз->бФФдФмМдфЅmX•\Qе®Я\ђOaomЛOўxЯЅ…)ЯЭl;с5Ќw m37ЧнЖNк­вѓ7a*ЧУ›ѕљґ Ювe_0ЧIЭVЕГ~БрЦ–і–Ф¬mxйЫЃЧцВ4ysgХЩш•Уц*– ЕД'ЌO«,Ў†nмБ|ўmЦўКЦбqF1њ#¬uњZэ*jz5?Lј8}У[ЏbЇ’TY€+ZdI©]ЗиЏПшбВezї'1~«4kA$ОКwYШ2Ѓo"${#»\а—ЦыfХлm·&^л€»х6gA}й‚™ї®E/vhИOўµЫћ›ІрО§n«YsљН··`cпыIк…^\±~юБ/ЕUy?rљ 0@шЯ	Џ(пБt]ЇР·/&*НИн"«ва]•Y|]·Дўn№ ХkАГДТюДAцч–HЪі7БМќСЋкR¬TЭї%>’mБYKў 4{‘б‹6ц<ь`aџџgЕ¤:eЇз“:Х/Т§:я«	Kuю—nюS»ПЎъF  
-0
-
-
-07-03-2016 13:22:13 DEBUG HttpClient:124 - 
-* CLIENT: Hooray! I've got necessary information
- Servers Response is :
-HTTP/1.1 200 OK
-Server: nginx/1.6.3
-Date: Mon, 07 Mar 2016 11:22:09 GMT
-Content-Type: text/html; charset=utf-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-Vary: Accept-Encoding
-X-Powered-By: PHP/5.3.29
-Expires: Thu, 19 Nov 1981 08:52:00 GMT
-Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-Pragma: no-cache
-Content-Encoding: gzip
-
-1759
-‹      Ѕ\{oЬЦ•яЫю·LЏ°Г™СУЦ3hТd“mЪё€6AЕЎ4ґ8д„дHњ ’ЧмF@РЕ-љ6»цЏb±cYЏх2ђO0уЌцњsј—CКrРV‰Gт>Пгw^—ZъЙП?xkх77Яf­ґ¬\]В_,pВЌe+оZxГsљ+WЇ2шYJэ4рV†нП‡‡Г>ь>цШр|tox<Ъ=ЭѓчЩрЬЪ…›РЉ}ОnFqъЎл„µё»TзcРx4fЫK?<нШЮg]kЩz+
-S/LнХќЋg1—[¶RпNZЗХ-2·еД‰—.яык;цK,Ћьp“µbo}ЩZw¶|и\ѓ‹Е^°lбW‹Ґ0,\·ќЇ~З¦{|5ј3µt:ќАіУЁл¶x1¦ЯЮЁзџХ:б†U‚&ё•Д®Ю·„HЂv;рЁ§$-‘!tЪ°¶¦—ё±ЯI}њXншСыp8нй%bџБѓубЙи ЭcЈ}ёq6м;іС0/чЎ#4лЌВ9&рќШ: ±ъФKЭјнї„Чрq6<ц†П‡g5IWmk›ЮОv7}_/тТ¤XeгЏ/Z@®эЂ TЌе±т‰{Х‹(ЁZY+9Б#Ж'йNа%-ПKҐ¬‘дєI"%.лkQ”&iмtІ«ZЫkШlL–ф!і!ЦЃ‚¶ін%QЫ«зo\n°тхµХ?Ы$KЅЧmgЛбw-ІѕlЭNкќ »б‡Iэцg]/Ю±'k“ЌЪ$­з6·TзнЕє^mH“V?~8Р·е№›Ї<ДКO+лЭРEХ¬L°»?­\{-сb П^"wуЪDM^™XьbbQЌћS…k;NШфоШ[^мЇы®ѓC^SZqmnЭm6<gЭm4ззжЧЧ@МRќѓсТZФЬЖ,…‘±ф¦їЕЬАI@°А‹SFџvРЬ‹оЕvat/R ,[m'В.°©FзsєiД‹l4Ф‹б&Ьk: *MцЪ;x°н7УЦ»ЮЂЦ‹¬г4›~ёБ;/кКРљY~#Ў¦?<eГ' b=Т)T¶ѕPbА«ЇG (г фаж" БШц{x!¬Ѓ°f|H›®-­Е+ГїВЁgЂї…vЁЭЅб	и+Є8Є(ОјO#(В†OhfЎЦа‚`®О†з5 пЊ eh‰П(|•Ил7—­m@kњдИ;Р nF
-EЩ7Ќ:AґЙоЋP№:€!.Ў†ҐАЦd(Ђ™Ђ–ряvь”64ѕ@AvД°­X[N»µiю¦§3й'¶Н>ъKўnмzМ¶W^IПлх­Нљµл NNЗЇG/„Я PoМЯИлФ%фК ШGїЁщЎџVоВ€п5ШфЌ©№©Жt•Ea°у±ЯЬрТdЃҐqЧЛfPsЋmr›ъ?›МHs‹“Fр|ЊuЇ¶p±јЪы0fE^ew±яі ё|шЪтьЌVЉєSјcR‹Ч§‰`m_QЛ¤г„УmЇкЌ¶Ѕ ђ’:ЪЬKЭ@¶Ѓы h[ ^Iћ`tґV6bWЎrђgs`аpфФґW9:ЈG9J~йАтxЊ+¦VЙЗл[wмNґнЕvґѕЋьцWШё/«М;ЄM€shЈJХMЇЎ?:>IЪ’Ј‡c"ЁЌv?еў±ЧњД+,j‚†ВvэШ<9Лџ`о­?ф/і п’yј;аbѓСPD‚!П†OYXґ‹€@LёsHњлM”Н±ЭЉь¤d?\ЏМЌ|ьоп}И ®П‡§ґ‘ТµЈС>Ж^Т‰ВRr№С†ЬБ·r±™xбgй Г0:С»dрЌ Z“яЧ·Wp З]JtMѓ—M“Ir7ђ¦†TKhчХR0д$;Ў+1ё1†УњЄmDС8u;aSxНь)!t3YЫбЌЉ\DIiXXЫ»
-)—АлRъ•be:(‰¦џtggББУОР"ч¦И]Ђ7ЧZп¦“:¶УґЭА§`Ан®Щі3ЌлSуУ“і3ііЌйЙ™‚IAы№йЖшGЧoL'ВД VmсlмAШЊ¶kъНП?gџ|
-Ю[7iUоJLОи$ЩSЖќb@¤‹$н"Ь\}X~G^К—Ј/Їc_N\л4‰ЌVШ&|*Ъ`?щц.ј?ьЌ”CETvЊэpR¦ bFенj`(э?::2n+Жp$у`шЖЅ цГЯPрЮв#hіe:тг(яЄфюO‚йаNЏLСЙисрL?#й0—d†§> љ}ъA(і	Ючf†б «и…ўG'bS€ҐђУшќKОс?h|nМТ9мнЅ›6\!¦ЏцЮxйDќ8єіsЙ№ё]=ґШ:д^f’4rЈАЖњР«LF–чuВЮ]]ЅyЃ(ЌЙ’Ii\nxЛА[	ю…в‡=ІсПDP!8'C@g<XH"Чw‚[”І^НхFє,Фл<~¬%iќбџ€о*=fuУu»ШЧVІгPOЈ?Эn‹c¬ёяюd#¤T qw•ЦFЎgЮяuЧw7?дq‚ѕ5ЖD›©WM·э€[ЭЂP>©®;®‡<¬·«;NЬ­FН0ЪДх„ю¦oёвПФЕz·•<АµќxNм¶М ЧЎ ]QK:m7Хys.Z`оТVa ?p‹Ґ#бn%^ !L`§«sДR<¤qlJsXМџлµў „dЩЄІм]Љ?tр†%’a|0¤;XлNаҐp=SV/?№е7›^(»т©э¦Е¶њ 7¦sіУуЧ/У7 ЋЄ~ИXК, !б·.)щ\‡UУ©M|B\Гќ\ыФљЁAУkЫЮЪ¦џ&Пs[ЬЌјVeъH ›«~Ы‹єйEАhIw­aаДвХ™FѓТ)h™µ@Oд.иC,;я“ќ&љ›	Кьhз‰ј¦їЈw43У?џ™ћ™јqЈ 	’ЪЃF(яз© ¤ЅtЁ:o]Р8Л;MК>?ѕ”†юВЇ5Y0°>{Л‹#»K°Hй#ЭwA°]љR“вЉz¶uc0з
-a4Dcнnк5±х•б7?XгЅА&зgk“sЌЪФфtmjvљБX‚ІWфMђ®ЪNЬC>„ЂгqЫkъЭ¶‰ўrБ–Ѓ&Ф}ѓ¤… mЂЋ#жФx{ іОќА7ТЦІ5[„yґЁµnљFКи®Ґ!ѓvТuБ?$|1	@tљг)eщ—кјчЉNрщ:ЭА‰№g,Vы~и6ХЈ`†с^ \џЊ`Міњ#\мOОљоЙЌ†тhтJM]oLО–<›™™.л5;;З{]б.НШҐ‘8"іІµ]8ЬГo`/?R=Ѓ]ЁDjѕьБй+є[|dД8иN0ґDеЎшяСй1wЊIЈЊ±Ѓ™Xsq‡`Ѕ¤Кё_)Ђ…‹ БHµ‚xЖА;§YўЃя@а›К0beFЄСhэR›ђяy‰ЌИяјєН(ЃЫђЙйЙ№й№№щ—йRjSJшSџ?ТжЊSЩD/і@EbзЭшa™Мµ¦V¤Яw®тq=Y{ИiНёОdp	‘ЊЕќЈPЃ`\{Ѓ]§ЉЛR’ЖQё±"Іј>	[жwЌ†W‚ЪЂЈ жSoЄ$К=иМkEќйО6‹eюШЋє	Э_DьеkеY/‘;±ЋLWw8™XЏT±‡АљР1эЋ‚¶S¬+KЁ…ЛCМb<Ћ(ьњЃ9	AњрЕD`јMОuAj—Њ–ЂО!ш’шM4~JҐџS?з‘*4=ѓ_зАё7zЧ?nДА±ЄBќRП}њуђЖ$=†®зTЫRЙ{ЄgyOсЙ	6и‰?{ ¦зcнЛ„-‘?ъZС^±ўХг‰xтњs@M`КT`“мю?`u4м!†ЪњFz?oНe:ъАђ{fqЫТщiUOь®DЁпУBОс<°	у=&Й}[ыJРц\)8&vѕ к}Ќ.2‡ІЙ<5+
-ЈыXѓJC>«Ѓ­иh"ҐцыBЉбЩ·пy-с	eІзЋ
-OsыyA"p‰Лўвxћ ЄсДVњњІG|+°јъ¶”ъ2!™HЈl-\nq·HГ
-iЬбsn[Хюeињ
-–»TГ$Ў“В"ЕИ”п,„ы$іэLЖjB!3а!4z‚ѕЗЊЭхЖf ­еЛDqc Њxљ‚§wђ} ЪЛAМiаОc`БI}%Њ|Ћ'B–P|aq¶ПQ“Сэ}.*yIшЛ®Z™PиІ,У^ЯKХay¦€„LUFd3…KЈ*гЭruђcмБѓYх&6ЉъaFБ
-LBҐ•	ѕЪCBЈѕ µqдёi‚ҐRZь9UПиpqоXT№ы”­RuvљКї;СЭCcQ{$йяQV)oђ&Б%Qа7ЩkoПг?В:iњ+±NPр]`€t9)<e0H”Юш1#S‘Д‡gАп	 Ъ™Я?рCй	DџЋ1HЦјЮЖS‹’ЗTjЪ#™)ГЙ1ѓ U[‚[ЇJ»!‰Еy9*i:Pi%рКђчqДa,^&Ы—fЎЬNз
-БhдMі_еыR+жC•Пш	·CчаѓRJeQ›ЩtXYCb-=3-hГіУ#N{B…Q±Є~ЗчD»?дЬbbзз Љч¤©(А@ѓ’N”fў‘7з'ЩЩ#±НNѕ­Ґ0 ХNi~‘Q`ёје вg…ѓSZ Ѓf+$»њўh{¤‰j‘ Њa"Г%У!dх.aШy†7x?Е@Ќuз3:Нb·¦¬•wj?«эє&УмРzV9бПґ\ПиСlш{ОЙќ‰j*IMАпћ5=WЮ·КтR¦нKњ№ФNжT•ЉJWђ\»g:VфцSуЃaI[ЗMI_є†ЯpJF@ъB‚ъtXЉпкѓ{†БЛЙDO›а„€ф„“фD8"»BОЗЏVй
-"О]кG7е‘®L°ЗѕрА{ЄьvЄе“рwUчћ<W“dHUё¬}Вы…>§Ь%EыMн}P7Џ	а-Ўз7§UќЅLмuJт5+@“”“иІGЏЮ„ґКиѓJПҐзбХ	БћТэўАtлaЗЂRВ‡„,№”eЎKжP©B№ъ(n\—BБП”M"·Х~Юэ	wяЂ¶Г5FТЌdх  ч|й+]y†рIВy‚_џHq ДаLХ0АЩыїjµЌЉc5'wЈЇ5аНІ•“SУ353ґИ)zЗ$Q|-WuДcDќ’xДђ[=:А‰Ж \g‹УЋГШё[g$UsзЈ»lо2+Fк”)…8¦вNmЂ*ґ+ЖЉяЪ"ёЦ ќlђЈГжfg§gе•·*ЛидЛюqф5Є"JМIяУњѓЎ;"\в†щЂФл<;o$1M€bю”:73Dџп)щ_ѕr:њqХ‘Фк[7лпЭ#d%dрЛrbь]жХ`»SоБ›
-¦Б/cУЃG"аўР•А+;t^?HЇ’чЇ«?IeџBУ¬ЦhъҐZ¦вLF™Щ”СёrљIiс_jc”HеаA:™}•A„ђ<аВЊм»Њ]tћђАcЂћГRйцRdMi$МЎј <;з+Р„vІ15ќgуЎТUщ
-5Ф!ЩУ]<ZкЃ &Щv<!GЇRд\|ґ±жЋ…Ќс)s›ЋЩЌ†‰гJёўxYН\…L>xўб>Н$CHy:ЃЬєL±
-Ч§<—Ь оr„дw aЯи~5o–…"<ИОq3Ѓ"жпЃФТ}ОЂCFпт
-•ь‰-$Ќkоo!РA’ыt„Л"ЮЈmо‹фШу\$;^­xЙ+%c€щJ/?е'ЧЭ-u>ћ–њ{GЎ()ПB!д!‰ФCт“ћ3Д-u|Gжx.…ріOЮјКІ"о<Т,*г5—}¦ж"я8'И¶"¦|шсь`’g7у!Џ№ыВh`,Є&РЛ-†+E_)*8§h¬ИЈ.I±
-eMwGЙ°Э#јЗeuBFЇc™ъ,CҐекПU@wPдa–L›xґ?ћz“vjO¦К`щЈ»
-/‹уHщ¤ѓ,6©М#-IgFНЬ2ўi=V>!§в‰ кЃ™‘ЫЛщ*.S‘–vўМмy	E*jЙ*L±wўxЫ‰1бSe"ЛMжG~њvќЂ}H§Ђ“‰М›вa«ћ9/Iµr@ХXDиi8Т@кЇ„Т$mBЏМi]!ыЖ`›JIКgў,¤CQ;‰h•шWЩBЭѕоqщU)#Кdђ›ф•Z;‘–% Ж<v*TГ>Ghq"ќ#^д7\”Cя­(табxґГЧ#¤!Џ.їзnПїQ8ёП‘dO§?х©P3Ън@в·%F`0ѕ^>Ђ•џЁоRАРТIъщШч<•ўЃFUіЭОР[–G9ЩаУhГБ­Ђхўј—KкR°х­
-Џ№Ёќ€ў·9Ё–Ґ5«OЄЫ>sJFсХі‹1€См}н}±,‡ї‡…Ћ’<иЯЕиц”ьЙ?њ{хrKъ/lЅрўNfи[!*т,ТX>8?сno>1k&“TёЃ_T*ЧЁiсh°€«DОЉpЃыf V-3&ёK3ќЃЮЕ{7'tKBБ®бЏT•W—ЫЃ±»тмXЮЮpOсc~ц}н&ЏЩл±З‹МrЫMK~Ўуа
-hT¶;3ттј0&ЊЄd°3фТ$uRfЇ…ьшD–†гЛyЯ»wDvµOeЭЃ _Яђ3{ЪгyЦf%	іУ ґЖH©Wїґ— ‹¬pДЃыЫ".ЗU1FRЃ^/[ѓУЃFЁrD>ії/s$zf<§H@—Е,=UTЈвu>+їИё{+Win¶.\Є	›°ХFnGЇ|ҐТг™FZwАaП¬ЅдЉЁc2И)\?Ь®fСњ87wBRzЂТЛ н_…®UOцу4ИЬі#љ{ЏdоrU\VyЗЏЅm'„Ћ^жфLоэДьWuю±›ґ
-_¶4_sДcЮQке_dе7ХIy(’џ)jГ‚Ќ·яЊ?<б¬°ЧЧєA°ЁЅvл¬E]щ‚Чр[Iћ>%xыzцєuvНвщ№9ѓ&@м©Ж$DоOypЊu	Z”Шіж›‚эб№±ЯрCьїфТШЯt?uй¬'ћ{Й{§ки4«4«l»КЬ	v—U¶?q?ЕуRшK?!ҐґfiјџЫµз->бФФдФмМдфЅmX•\Qе®Я\ђOaomЛOўxЯЅ…)ЯЭl;с5Ќw m37ЧнЖNк­вѓ7a*ЧУ›ѕљґ Ювe_0ЧIЭVЕГ~БрЦ–і–Ф¬mxйЫЃЧцВ4ysgХЩш•Уц*– ЕД'ЌO«,Ў†nмБ|ўmЦўКЦбqF1њ#¬uњZэ*jz5?Lј8}У[ЏbЇ’TY€+ZdI©]ЗиЏПшбВezї'1~«4kA$ОКwYШ2Ѓo"${#»\а—ЦыfХлm·&^л€»х6gA}й‚™ї®E/vhИOўµЫћ›ІрО§n«YsљН··`cпыIк…^\±~юБ/ЕUy?rљ 0@шЯ	Џ(пБt]ЇР·/&*НИн"«ва]•Y|]·Дўn№ ХkАГДТюДAцч–HЪі7БМќСЋкR¬TЭї%>’mБYKў 4{‘б‹6ц<ь`aџџgЕ¤:eЇз“:Х/Т§:я«	Kuю—nюS»ПЎъF  
-0
-
-
-07-03-2016 13:22:27 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 13:22:13 количество живых подключений 10 время ответа сервера 5145 милисекунд
-07-03-2016 13:22:27 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 13:22:06 количество живых подключений 10 время ответа сервера 2 милисекунд
-07-03-2016 13:22:27 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 13:22:13 количество живых подключений 10 время ответа сервера 5134 милисекунд
-07-03-2016 13:22:27 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 13:22:06 количество живых подключений 10 время ответа сервера 10 милисекунд
-07-03-2016 13:22:27 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 13:22:13 количество живых подключений 10 время ответа сервера 5141 милисекунд
-07-03-2016 13:22:27 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 13:22:13 количество живых подключений 10 время ответа сервера 5143 милисекунд
-07-03-2016 13:22:27 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 13:22:06 количество живых подключений 10 время ответа сервера 0 милисекунд
-07-03-2016 13:22:27 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 13:22:06 количество живых подключений 10 время ответа сервера 3 милисекунд
-07-03-2016 13:22:27 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 13:22:13 количество живых подключений 10 время ответа сервера 5139 милисекунд
-07-03-2016 13:22:27 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 13:22:06 количество живых подключений 10 время ответа сервера 7 милисекунд
-07-03-2016 13:22:27 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 13:22:06 количество живых подключений 10 время ответа сервера 4 милисекунд
-07-03-2016 13:22:27 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 13:22:13 количество живых подключений 10 время ответа сервера 5132 милисекунд
-07-03-2016 13:22:27 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 13:22:06 количество живых подключений 10 время ответа сервера 9 милисекунд
-07-03-2016 13:22:27 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 13:22:06 количество живых подключений 10 время ответа сервера 13 милисекунд
-07-03-2016 13:22:27 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 13:22:13 количество живых подключений 10 время ответа сервера 5127 милисекунд
-07-03-2016 13:22:27 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 13:22:13 количество живых подключений 10 время ответа сервера 5128 милисекунд
-07-03-2016 13:22:27 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 13:22:13 количество живых подключений 10 время ответа сервера 5136 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 19 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 372 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 310 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 250 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 700 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 477 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 544 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 1 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 2 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 3 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 4 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 7 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 8 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 647 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 9 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 204 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:14 количество живых подключений 10 время ответа сервера 938 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 13 милисекунд
+07-03-2016 15:27:53 INFO  ServerResponseTimeAnalizer:51 - На дату 2016-03-07 15:26:13 количество живых подключений 10 время ответа сервера 430 милисекунд
