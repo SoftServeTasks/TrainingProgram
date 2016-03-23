@@ -5,10 +5,10 @@
  */
 package com.mycompany.httpclient;
 
-import com.mycompany.forwardproxyserver.HttpRequestParser;
-import com.mycompany.forwardproxyserver.ntlm.AuthNtlmType1Maker;
-import com.mycompany.forwardproxyserver.ntlm.AuthNtlmType3Maker;
-import com.mycompany.forwardproxyserver.ntlm.auth.AuthorizedClientDto;
+import com.mycompany.AuthorizationServer.HttpRequestParser;
+import com.mycompany.AuthorizationServer.ntlm.AuthNtlmType1Maker;
+import com.mycompany.AuthorizationServer.ntlm.AuthNtlmType3Maker;
+import com.mycompany.AuthorizationServer.ntlm.auth.AuthorizedClientDto;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.concurrent.CountDownLatch;

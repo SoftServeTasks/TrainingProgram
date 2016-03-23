@@ -5,14 +5,14 @@
  */
 package com.mycompany.httpclient;
 
-import com.mycompany.forwardproxyserver.ProxyServer;
-import com.mycompany.forwardproxyserver.telemetry.ServerResponseTimeAnalizer;
+import com.mycompany.AuthorizationServer.AuthorizationServer;
+import com.mycompany.AuthorizationServer.telemetry.ServerResponseTimeAnalizer;
 import java.util.HashSet;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.CountDownLatch;
 import com.mycompany.httpclient.HttpClient;
-import com.mycompany.ssl.HttpsEchoer;
+import com.mycompany.HttpsServer.HttpsEchoer;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -30,7 +30,7 @@ public class ClientsRunner {
         HttpsEchoer https = new HttpsEchoer();
         https.start();
         
-        ProxyServer proxy = new ProxyServer();
+        AuthorizationServer proxy = new AuthorizationServer();
         proxy.start();
 
         
