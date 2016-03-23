@@ -9,6 +9,7 @@ import com.mycompany.forwardproxyserver.ntlm.AuthNtlmType3Handler;
 import com.mycompany.forwardproxyserver.ntlm.NtlmManager;
 import com.mycompany.forwardproxyserver.telemetry.ClientsBrowserAnalyzer;
 import com.mycompany.forwardproxyserver.telemetry.ServerResponseTimeAnalizer;
+import com.mycompany.ssl.HttpsClient;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -149,7 +150,8 @@ public class HttpRequestHandler implements Runnable {
             requestParser.setRequest(clientsRequest);
             browserAnalyzer.setParser(requestParser);
             browserAnalyzer.analyzeBrowserType();
-            LOGGER.debug("\n+ PROXY: CURRENT TIME IS: " + getCurrentTime() + "\nCLIENTS " + clientsNumber + " REQUEST: \n" + clientsRequest);
+            LOGGER.debug("\n+ PROXY: CURRENT TIME IS: " + getCurrentTime() + "\nCLIENTS " + clientsNumber
+            + " REQUEST: \n" + clientsRequest);
             String proxyAuthenticatHeaderValue = null;
             while (proxyAuthenticatHeaderValue == null) {
                 LOGGER.info("\n* PROXY: Необходима NTLM аутентификация, возвращаю ошибку 407 клиенту!\n");
@@ -178,7 +180,10 @@ public class HttpRequestHandler implements Runnable {
             if (type3Handler.checkUserData()) {
                 requestParser.setRequest(clientsRequest);
                 String cleanClientsRequest = requestParser.cleanClientsRequest();
-                dawnloadFromInet(cleanClientsRequest, requestParser.getHost(), requestParser.getPort());
+                System.err.println("HTTPS");
+                HttpsClient httpsClient = new HttpsClient();
+                httpsClient.start();
+                //dawnloadFromInet(cleanClientsRequest, requestParser.getHost(), requestParser.getPort());
             } else {
                 LOGGER.error("Unrecognized client");
                 responseHandler.print401Error();
@@ -193,13 +198,13 @@ public class HttpRequestHandler implements Runnable {
             } catch (Exception ex) {
             }
         } finally {
-            browserAnalyzer.getInfoAboutBrpowsers();
+            //browserAnalyzer.getInfoAboutBrpowsers();
             count--;
             try {
                 connectionWithClient.shutdownInput();
                 connectionWithClient.shutdownOutput();
                 connectionWithClient.close();
-                serverResponseTimeAnalizer.getResponseTimeStatistic();
+               // serverResponseTimeAnalizer.getResponseTimeStatistic();
             } catch (IOException ex) {
                 LOGGER.error("ERROR: ", ex);
             }

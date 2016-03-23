@@ -40,17 +40,16 @@ public class HttpClient /*implements Runnable*/ extends Thread{
     private String user;
     private String password;
     private static final Logger LOGGER = Logger.getLogger(HttpClient.class);
-
-    private String defaultMessageToServer = "GET http://portscan.ru/ HTTP/1.1\n"
-            + "Host: portscan.ru\n"
+// http://portscan.ru/
+    private String defaultMessageToServer = "GET https://localhost:8888 HTTP/1.1\n"
+            + "Host: localhost:8888\n"
             + "Proxy-Connection: keep-alive\n"
             + "Cache-Control: max-age=0\n"
             + "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\n"
             + "Upgrade-Insecure-Requests: 1\n"
             + "User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36\n"
             + "Accept-Encoding: gzip, deflate, sdch\n"
-            + "Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2\n"
-            + "Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811\n"/* + threadIdentificator*/;
+            + "Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2\n";
 
     private String type1MessageToServer;
 

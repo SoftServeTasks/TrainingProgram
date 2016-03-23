@@ -848,3 +848,2525 @@ _¶4_sДcЮQке_dе7ХIy(’џ)jГ‚Ќ·яЊ?<б¬°ЧЧєA°ЁЅvл¬E]щ‚Чр[Iћ>%xыzцєuvНвщ№9ѓ&@м©Ж$
 0
 
 
+17:49:43,044  INFO Thread-1 HttpClient:run:100 - Client number 0 started
+17:49:43,044  INFO Thread-2 HttpClient:run:100 - Client number 1 started
+17:49:43,044  INFO Thread-10 HttpClient:run:100 - Client number 9 started
+17:49:43,044  INFO Thread-8 HttpClient:run:100 - Client number 7 started
+17:49:43,045 DEBUG Thread-1 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+17:49:43,045 DEBUG Thread-8 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+17:49:43,045  INFO Thread-4 HttpClient:run:100 - Client number 3 started
+17:49:43,044  INFO Thread-3 HttpClient:run:100 - Client number 2 started
+17:49:43,048 DEBUG Thread-4 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+17:49:43,046  INFO Thread-5 HttpClient:run:100 - Client number 4 started
+17:49:43,049 DEBUG Thread-5 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+17:49:43,045  INFO Thread-6 HttpClient:run:100 - Client number 5 started
+17:49:43,049 DEBUG Thread-6 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+17:49:43,045  INFO Thread-7 HttpClient:run:100 - Client number 6 started
+17:49:43,045  INFO Thread-9 HttpClient:run:100 - Client number 8 started
+17:49:43,052 DEBUG Thread-9 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+17:49:43,045 DEBUG Thread-10 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+17:49:43,045 DEBUG Thread-2 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+17:49:43,050 DEBUG Thread-7 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+17:49:43,048 DEBUG Thread-3 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+17:49:43,057 DEBUG Thread-5 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:49:43,057 DEBUG Thread-5 HttpClient:run:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:49:43,057 DEBUG Thread-5 HttpClient:run:111 - * CLIENT: Отправляю Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:49:43,057 DEBUG Thread-3 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:49:43,058 DEBUG Thread-3 HttpClient:run:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:49:43,058 DEBUG Thread-3 HttpClient:run:111 - * CLIENT: Отправляю Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:49:43,060 DEBUG Thread-1 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:49:43,060 DEBUG Thread-1 HttpClient:run:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:49:43,060 DEBUG Thread-1 HttpClient:run:111 - * CLIENT: Отправляю Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:49:43,062 DEBUG Thread-10 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:49:43,063 DEBUG Thread-10 HttpClient:run:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:49:43,063 DEBUG Thread-10 HttpClient:run:111 - * CLIENT: Отправляю Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:49:43,063 DEBUG Thread-1 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:49:43,064 DEBUG Thread-3 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:49:43,066 DEBUG Thread-2 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:49:43,066 DEBUG Thread-2 HttpClient:run:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:49:43,067 DEBUG Thread-2 HttpClient:run:111 - * CLIENT: Отправляю Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:49:43,067 ERROR Thread-1 HttpClient:run:131 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:117)
+17:49:43,071 DEBUG Thread-6 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:49:43,078 DEBUG Thread-6 HttpClient:run:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:49:43,078 DEBUG Thread-6 HttpClient:run:111 - * CLIENT: Отправляю Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:49:43,078 DEBUG Thread-7 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:49:43,069 DEBUG Thread-2 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:49:43,078 ERROR Thread-2 HttpClient:run:131 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:117)
+17:49:43,079 DEBUG Thread-8 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:49:43,079 DEBUG Thread-8 HttpClient:run:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:49:43,079 DEBUG Thread-8 HttpClient:run:111 - * CLIENT: Отправляю Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:49:43,079 DEBUG Thread-8 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:49:43,068 DEBUG Thread-5 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:49:43,068 DEBUG Thread-9 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:49:43,079 DEBUG Thread-4 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:49:43,079 ERROR Thread-8 HttpClient:run:131 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:117)
+17:49:43,067 DEBUG Thread-10 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:49:43,067 ERROR Thread-3 HttpClient:run:131 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:117)
+17:49:43,080 DEBUG Thread-9 HttpClient:run:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:49:43,080 DEBUG Thread-9 HttpClient:run:111 - * CLIENT: Отправляю Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:49:43,080 ERROR Thread-5 HttpClient:run:131 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:117)
+17:49:43,080 DEBUG Thread-4 HttpClient:run:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:49:43,080 DEBUG Thread-4 HttpClient:run:111 - * CLIENT: Отправляю Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:49:43,080 DEBUG Thread-4 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:49:43,078 DEBUG Thread-7 HttpClient:run:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:49:43,081 DEBUG Thread-7 HttpClient:run:111 - * CLIENT: Отправляю Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:49:43,081 DEBUG Thread-7 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:49:43,080 DEBUG Thread-9 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:49:43,081 ERROR Thread-4 HttpClient:run:131 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:117)
+17:49:43,081 ERROR Thread-10 HttpClient:run:131 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:117)
+17:49:43,083 ERROR Thread-9 HttpClient:run:131 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:117)
+17:49:43,083 DEBUG Thread-6 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:49:43,084 ERROR Thread-7 HttpClient:run:131 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:117)
+17:49:43,084 ERROR Thread-6 HttpClient:run:131 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:117)
+17:52:42,905  INFO Thread-1 HttpClient:run:100 - Client number 0 started
+17:52:42,906  INFO Thread-8 HttpClient:run:100 - Client number 7 started
+17:52:42,906 DEBUG Thread-1 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+17:52:42,907  INFO Thread-4 HttpClient:run:100 - Client number 3 started
+17:52:42,907 DEBUG Thread-4 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+17:52:42,907  INFO Thread-9 HttpClient:run:100 - Client number 8 started
+17:52:42,906 DEBUG Thread-8 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+17:52:42,908  INFO Thread-6 HttpClient:run:100 - Client number 5 started
+17:52:42,908  INFO Thread-5 HttpClient:run:100 - Client number 4 started
+17:52:42,910 DEBUG Thread-5 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+17:52:42,910 DEBUG Thread-6 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+17:52:42,908  INFO Thread-2 HttpClient:run:100 - Client number 1 started
+17:52:42,911 DEBUG Thread-2 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+17:52:42,908  INFO Thread-3 HttpClient:run:100 - Client number 2 started
+17:52:42,911 DEBUG Thread-3 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+17:52:42,907  INFO Thread-7 HttpClient:run:100 - Client number 6 started
+17:52:42,918 DEBUG Thread-7 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+17:52:42,907 DEBUG Thread-9 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+17:52:42,919 DEBUG Thread-7 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:52:42,919 DEBUG Thread-7 HttpClient:run:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:52:42,919 DEBUG Thread-7 HttpClient:run:111 - * CLIENT: Отправляю Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:52:42,919 DEBUG Thread-2 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:52:42,920 DEBUG Thread-2 HttpClient:run:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:52:42,920 DEBUG Thread-2 HttpClient:run:111 - * CLIENT: Отправляю Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:52:42,907  INFO Thread-10 HttpClient:run:100 - Client number 9 started
+17:52:42,916 DEBUG Thread-8 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:52:42,921 DEBUG Thread-8 HttpClient:run:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:52:42,921 DEBUG Thread-2 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:52:42,921 DEBUG Thread-8 HttpClient:run:111 - * CLIENT: Отправляю Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:52:42,922 DEBUG Thread-3 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:52:42,916 DEBUG Thread-4 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:52:42,922 DEBUG Thread-3 HttpClient:run:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:52:42,925 DEBUG Thread-3 HttpClient:run:111 - * CLIENT: Отправляю Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:52:42,925 DEBUG Thread-3 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:52:42,922 DEBUG Thread-8 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:52:42,920 DEBUG Thread-10 HttpClient:run:102 - * CLIENT: Message sent to server localhost:1002!
+
+17:52:42,922 DEBUG Thread-4 HttpClient:run:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:52:42,926 DEBUG Thread-4 HttpClient:run:111 - * CLIENT: Отправляю Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:52:42,926 ERROR Thread-2 HttpClient:run:131 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:117)
+17:52:42,926 DEBUG Thread-10 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:52:42,928 DEBUG Thread-10 HttpClient:run:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:52:42,928 DEBUG Thread-10 HttpClient:run:111 - * CLIENT: Отправляю Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:52:42,926 ERROR Thread-3 HttpClient:run:131 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:117)
+17:52:42,926 DEBUG Thread-4 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:52:42,929 ERROR Thread-4 HttpClient:run:131 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:117)
+17:52:42,926 ERROR Thread-8 HttpClient:run:131 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:117)
+17:52:42,930 DEBUG Thread-10 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:52:42,930 ERROR Thread-10 HttpClient:run:131 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:117)
+17:52:42,931 DEBUG Thread-7 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:52:42,931 ERROR Thread-7 HttpClient:run:131 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:117)
+17:52:42,931 DEBUG Thread-6 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:52:42,932 DEBUG Thread-6 HttpClient:run:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:52:42,932 DEBUG Thread-6 HttpClient:run:111 - * CLIENT: Отправляю Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:52:42,933 DEBUG Thread-6 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:52:42,933 ERROR Thread-6 HttpClient:run:131 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:117)
+17:52:42,933 DEBUG Thread-1 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:52:42,934 DEBUG Thread-1 HttpClient:run:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:52:42,934 DEBUG Thread-1 HttpClient:run:111 - * CLIENT: Отправляю Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:52:42,938 DEBUG Thread-9 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:52:42,938 DEBUG Thread-9 HttpClient:run:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:52:42,938 DEBUG Thread-9 HttpClient:run:111 - * CLIENT: Отправляю Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:52:42,939 DEBUG Thread-1 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:52:42,939 ERROR Thread-1 HttpClient:run:131 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:117)
+17:52:42,940 DEBUG Thread-9 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:52:42,940 ERROR Thread-9 HttpClient:run:131 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:117)
+17:52:42,941 DEBUG Thread-5 HttpClient:run:104 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:52:42,941 DEBUG Thread-5 HttpClient:run:108 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:52:42,941 DEBUG Thread-5 HttpClient:run:111 - * CLIENT: Отправляю Type1Message 
+GET http://portscan.ru/ HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Cookie: _ym_uid=1455283662407492012; PHPSESSID=910986a453229a57d394f007caf5f811
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:52:42,945 DEBUG Thread-5 HttpClient:run:115 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:52:42,945 ERROR Thread-5 HttpClient:run:131 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:117)
+17:55:04,558  INFO Thread-1 HttpClient:run:99 - Client number 0 started
+17:55:04,559 DEBUG Thread-1 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+17:55:04,559  INFO Thread-7 HttpClient:run:99 - Client number 6 started
+17:55:04,560  INFO Thread-2 HttpClient:run:99 - Client number 1 started
+17:55:04,560  INFO Thread-8 HttpClient:run:99 - Client number 7 started
+17:55:04,560  INFO Thread-6 HttpClient:run:99 - Client number 5 started
+17:55:04,560  INFO Thread-3 HttpClient:run:99 - Client number 2 started
+17:55:04,560  INFO Thread-9 HttpClient:run:99 - Client number 8 started
+17:55:04,563 DEBUG Thread-9 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+17:55:04,563 DEBUG Thread-3 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+17:55:04,561  INFO Thread-10 HttpClient:run:99 - Client number 9 started
+17:55:04,564 DEBUG Thread-10 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+17:55:04,561  INFO Thread-5 HttpClient:run:99 - Client number 4 started
+17:55:04,561 DEBUG Thread-6 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+17:55:04,560 DEBUG Thread-8 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+17:55:04,560 DEBUG Thread-2 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+17:55:04,560 DEBUG Thread-7 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+17:55:04,560  INFO Thread-4 HttpClient:run:99 - Client number 3 started
+17:55:04,565 DEBUG Thread-5 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+17:55:04,568 DEBUG Thread-4 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+17:55:04,574 DEBUG Thread-7 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:55:04,574 DEBUG Thread-7 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:55:04,574 DEBUG Thread-7 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:55:04,575 DEBUG Thread-9 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:55:04,575 DEBUG Thread-9 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:55:04,575 DEBUG Thread-9 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:55:04,576 DEBUG Thread-7 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:55:04,577 DEBUG Thread-6 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:55:04,577 DEBUG Thread-9 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:55:04,577 DEBUG Thread-6 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:55:04,578 DEBUG Thread-6 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:55:04,578 DEBUG Thread-8 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:55:04,581 DEBUG Thread-5 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:55:04,582 DEBUG Thread-5 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:55:04,582 DEBUG Thread-5 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:55:04,582 DEBUG Thread-5 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:55:04,582 ERROR Thread-5 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:116)
+17:55:04,581 ERROR Thread-9 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:116)
+17:55:04,580 DEBUG Thread-3 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:55:04,589 DEBUG Thread-3 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:55:04,579 ERROR Thread-7 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:116)
+17:55:04,579 DEBUG Thread-6 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:55:04,589 ERROR Thread-6 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:116)
+17:55:04,579 DEBUG Thread-4 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:55:04,590 DEBUG Thread-4 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:55:04,590 DEBUG Thread-4 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:55:04,589 DEBUG Thread-3 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:55:04,590 DEBUG Thread-4 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:55:04,590 DEBUG Thread-3 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:55:04,590 ERROR Thread-3 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:116)
+17:55:04,588 DEBUG Thread-2 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:55:04,590 DEBUG Thread-2 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:55:04,590 DEBUG Thread-2 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:55:04,590 DEBUG Thread-2 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:55:04,591 ERROR Thread-2 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:116)
+17:55:04,587 DEBUG Thread-10 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:55:04,591 DEBUG Thread-10 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:55:04,591 DEBUG Thread-10 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:55:04,591 DEBUG Thread-10 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:55:04,591 ERROR Thread-10 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:116)
+17:55:04,587 DEBUG Thread-1 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:55:04,581 DEBUG Thread-8 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:55:04,591 DEBUG Thread-8 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:55:04,591 DEBUG Thread-1 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:55:04,592 DEBUG Thread-8 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:55:04,592 DEBUG Thread-1 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: portscan.ru
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:55:04,590 ERROR Thread-4 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:116)
+17:55:04,592 DEBUG Thread-1 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+
+17:55:04,592 ERROR Thread-1 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:116)
+17:55:04,592 ERROR Thread-8 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.NullPointerException
+	at jcifs.util.Base64.decode(Base64.java:73)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:116)
+17:56:32,091  INFO Thread-2 HttpClient:run:99 - Client number 1 started
+17:56:32,091  INFO Thread-10 HttpClient:run:99 - Client number 9 started
+17:56:32,091  INFO Thread-8 HttpClient:run:99 - Client number 7 started
+17:56:32,091  INFO Thread-9 HttpClient:run:99 - Client number 8 started
+17:56:32,091  INFO Thread-3 HttpClient:run:99 - Client number 2 started
+17:56:32,091 DEBUG Thread-3 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+17:56:32,092 DEBUG Thread-9 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+17:56:32,091  INFO Thread-4 HttpClient:run:99 - Client number 3 started
+17:56:32,091  INFO Thread-6 HttpClient:run:99 - Client number 5 started
+17:56:32,091  INFO Thread-7 HttpClient:run:99 - Client number 6 started
+17:56:32,093 DEBUG Thread-7 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+17:56:32,093 DEBUG Thread-6 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+17:56:32,093 DEBUG Thread-4 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+17:56:32,092 DEBUG Thread-2 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+17:56:32,091 DEBUG Thread-10 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+17:56:32,091 DEBUG Thread-8 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+17:56:32,091  INFO Thread-1 HttpClient:run:99 - Client number 0 started
+17:56:32,091  INFO Thread-5 HttpClient:run:99 - Client number 4 started
+17:56:32,096 DEBUG Thread-5 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+17:56:32,096 DEBUG Thread-1 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+17:56:32,104 DEBUG Thread-1 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:56:32,104 DEBUG Thread-1 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:56:32,104 DEBUG Thread-1 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:56:32,104 DEBUG Thread-6 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:56:32,104 DEBUG Thread-6 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:56:32,105 DEBUG Thread-6 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:56:32,106 DEBUG Thread-8 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:56:32,107 DEBUG Thread-8 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:56:32,107 DEBUG Thread-8 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:56:32,108 DEBUG Thread-5 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:56:32,108 DEBUG Thread-5 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:56:32,108 DEBUG Thread-5 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:56:32,113 DEBUG Thread-10 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:56:32,113 DEBUG Thread-10 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:56:32,114 DEBUG Thread-10 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:56:32,114 DEBUG Thread-7 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:56:32,114 DEBUG Thread-7 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:56:32,114 DEBUG Thread-7 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:56:32,115 DEBUG Thread-8 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+17:56:32,116 DEBUG Thread-7 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+17:56:32,116 DEBUG Thread-1 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+17:56:32,117 DEBUG Thread-6 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+17:56:32,118 DEBUG Thread-10 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+17:56:32,119 DEBUG Thread-3 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:56:32,119 DEBUG Thread-3 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:56:32,119 DEBUG Thread-3 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:56:32,120 DEBUG Thread-9 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:56:32,121 DEBUG Thread-9 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:56:32,121 DEBUG Thread-9 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:56:32,122 DEBUG Thread-9 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+17:56:32,123 DEBUG Thread-3 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+17:56:32,123 DEBUG Thread-4 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:56:32,123 DEBUG Thread-4 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:56:32,123 DEBUG Thread-4 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:56:32,124 DEBUG Thread-5 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+17:56:32,126 DEBUG Thread-4 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+17:56:32,127 DEBUG Thread-2 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+17:56:32,127 DEBUG Thread-2 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+17:56:32,127 DEBUG Thread-2 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+17:56:32,129 DEBUG Thread-2 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+17:56:32,222 DEBUG Thread-4 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+17:56:32,222 DEBUG Thread-2 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+17:56:32,222 DEBUG Thread-3 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+17:56:32,222 DEBUG Thread-10 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+17:56:32,222 DEBUG Thread-5 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+17:56:32,222 DEBUG Thread-9 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+17:56:32,225 ERROR Thread-5 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+17:56:32,228 ERROR Thread-3 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+17:56:32,228 ERROR Thread-2 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+17:56:32,228 DEBUG Thread-7 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+17:56:32,228 DEBUG Thread-1 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+17:56:32,229 DEBUG Thread-6 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+17:56:32,230 ERROR Thread-7 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+17:56:32,232 ERROR Thread-1 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+17:56:32,233 DEBUG Thread-8 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+17:56:32,234 ERROR Thread-10 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+17:56:32,236 ERROR Thread-9 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+17:56:32,236 ERROR Thread-4 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+17:56:32,238 ERROR Thread-8 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+17:56:32,238 ERROR Thread-6 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+18:01:08,071  INFO Thread-5 HttpClient:run:99 - Client number 4 started
+18:01:08,072  INFO Thread-8 HttpClient:run:99 - Client number 7 started
+18:01:08,072 DEBUG Thread-5 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+18:01:08,073 DEBUG Thread-8 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+18:01:08,073  INFO Thread-1 HttpClient:run:99 - Client number 0 started
+18:01:08,073  INFO Thread-4 HttpClient:run:99 - Client number 3 started
+18:01:08,073 DEBUG Thread-1 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+18:01:08,075  INFO Thread-2 HttpClient:run:99 - Client number 1 started
+18:01:08,075  INFO Thread-10 HttpClient:run:99 - Client number 9 started
+18:01:08,074  INFO Thread-7 HttpClient:run:99 - Client number 6 started
+18:01:08,078 DEBUG Thread-10 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+18:01:08,078 DEBUG Thread-7 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+18:01:08,074  INFO Thread-9 HttpClient:run:99 - Client number 8 started
+18:01:08,079 DEBUG Thread-9 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+18:01:08,074  INFO Thread-3 HttpClient:run:99 - Client number 2 started
+18:01:08,082 DEBUG Thread-3 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+18:01:08,074  INFO Thread-6 HttpClient:run:99 - Client number 5 started
+18:01:08,074 DEBUG Thread-4 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+18:01:08,082 DEBUG Thread-6 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+18:01:08,077 DEBUG Thread-2 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+18:01:08,098 DEBUG Thread-6 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+18:01:08,098 DEBUG Thread-6 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+18:01:08,098 DEBUG Thread-6 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+18:01:08,098 DEBUG Thread-9 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+18:01:08,098 DEBUG Thread-9 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+18:01:08,098 DEBUG Thread-9 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+18:01:08,099 DEBUG Thread-8 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+18:01:08,099 DEBUG Thread-8 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+18:01:08,099 DEBUG Thread-8 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+18:01:08,102 DEBUG Thread-5 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+18:01:08,102 DEBUG Thread-5 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+18:01:08,102 DEBUG Thread-5 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+18:01:08,107 DEBUG Thread-2 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+18:01:08,107 DEBUG Thread-2 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+18:01:08,107 DEBUG Thread-2 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+18:01:08,108 DEBUG Thread-7 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+18:01:08,108 DEBUG Thread-7 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+18:01:08,108 DEBUG Thread-7 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+18:01:08,109 DEBUG Thread-5 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+18:01:08,110 DEBUG Thread-4 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+18:01:08,110 DEBUG Thread-4 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+18:01:08,110 DEBUG Thread-4 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+18:01:08,111 DEBUG Thread-4 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+18:01:08,112 DEBUG Thread-8 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+18:01:08,112 DEBUG Thread-10 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+18:01:08,112 DEBUG Thread-10 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+18:01:08,112 DEBUG Thread-10 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+18:01:08,113 DEBUG Thread-10 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+18:01:08,114 DEBUG Thread-6 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+18:01:08,114 DEBUG Thread-3 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+18:01:08,114 DEBUG Thread-3 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+18:01:08,115 DEBUG Thread-3 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+18:01:08,116 DEBUG Thread-3 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+18:01:08,120 DEBUG Thread-9 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+18:01:08,122 DEBUG Thread-2 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+18:01:08,122 DEBUG Thread-7 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+18:01:08,124 DEBUG Thread-1 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+18:01:08,124 DEBUG Thread-1 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+18:01:08,124 DEBUG Thread-1 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+18:01:08,126 DEBUG Thread-1 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+18:01:08,217 DEBUG Thread-7 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+18:01:08,217 DEBUG Thread-5 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+18:01:08,218 DEBUG Thread-2 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+18:01:08,218 DEBUG Thread-9 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+18:01:08,217 DEBUG Thread-8 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+18:01:08,219 DEBUG Thread-4 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+18:01:08,217 DEBUG Thread-6 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+18:01:08,217 DEBUG Thread-3 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+18:01:08,225 ERROR Thread-7 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+18:01:08,230 ERROR Thread-2 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+18:01:08,228 ERROR Thread-6 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+18:01:08,231 ERROR Thread-9 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+18:01:08,228 ERROR Thread-4 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+18:01:08,228 ERROR Thread-5 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+18:01:08,231 ERROR Thread-3 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+18:01:08,228 DEBUG Thread-1 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+18:01:08,228 DEBUG Thread-10 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+18:01:08,228 ERROR Thread-8 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+18:01:08,233 ERROR Thread-1 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+18:01:08,236 ERROR Thread-10 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+18:04:29,768  INFO Thread-1 HttpClient:run:99 - Client number 1 started
+18:04:29,769 DEBUG Thread-1 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+18:04:29,781 DEBUG Thread-1 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+18:04:29,781 DEBUG Thread-1 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+18:04:29,781 DEBUG Thread-1 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+18:04:29,785 DEBUG Thread-1 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+18:04:29,904 DEBUG Thread-1 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+18:04:29,907 ERROR Thread-1 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+18:07:02,610  INFO Thread-1 HttpClient:run:99 - Client number 1 started
+18:07:02,611 DEBUG Thread-1 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+18:07:02,634 DEBUG Thread-1 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+18:07:02,634 DEBUG Thread-1 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+18:07:02,634 DEBUG Thread-1 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+18:07:02,641 DEBUG Thread-1 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+18:07:02,755 DEBUG Thread-1 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+18:07:02,759 ERROR Thread-1 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+18:17:16,776  INFO Thread-1 HttpClient:run:99 - Client number 1 started
+18:17:16,777 DEBUG Thread-1 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+18:17:16,801 DEBUG Thread-1 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+18:17:16,801 DEBUG Thread-1 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+18:17:16,801 DEBUG Thread-1 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+18:17:16,807 DEBUG Thread-1 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+18:17:16,930 DEBUG Thread-1 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+18:17:16,935 ERROR Thread-1 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
+18:21:11,218  INFO Thread-1 HttpClient:run:99 - Client number 1 started
+18:21:11,219 DEBUG Thread-1 HttpClient:run:101 - * CLIENT: Message sent to server localhost:1002!
+
+18:21:11,238 DEBUG Thread-1 HttpClient:run:103 - * CLIENT: SERVER localhost:1002 RETURNED ANSWER: 
+
+ HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Proxy-Authenticate: NTLM
+Connection: close
+
+
+ ************************************************** 
+
+18:21:11,238 DEBUG Thread-1 HttpClient:run:107 - * CLIENT: Сервер вернул header Proxy-Authenticate: NTLM
+
+18:21:11,238 DEBUG Thread-1 HttpClient:run:110 - * CLIENT: Отправляю Type1Message 
+GET https://localhost:8888 HTTP/1.1
+Host: localhost:8888
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: uk-UA,uk;q=0.8,ru;q=0.6,en-US;q=0.4,en;q=0.2
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB7IIogkACQAgAAAABQAFACkAAABTT0ZUU0VSVkVEUDg1Mg==
+
+
+18:21:11,244 DEBUG Thread-1 HttpClient:run:114 - 
+* CLIENT: I've got challenge fron proxy: 
+HTTP/1.1 407 Proxy Authentication Required
+Server: squid/2.5.STABLE3
+Mime-Version: 1.0
+Content-Type: text/htmlContent-Length: 21
+Connection: close
+Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAFAAUADAAAAAHsoiidGVzdENoYWx0ZXN0Q29udBEAEQBEAAAAdABlAHMAdABUAGEAcgBnAGUAdAB0YXJnZXRJbmZvcm1hdGlvbg==
+
+18:21:11,401 DEBUG Thread-1 HttpClient:run:120 - 
+Type3: Type3Message[domain=SOFTSERVE,user=osyniaev,workstation=DP852,lmResponse=<24 bytes>,ntResponse=<65 bytes>,sessionKey=null,flags=0xA288B207]
+
+18:21:11,405 ERROR Thread-1 HttpClient:run:130 - * CLIENT: init error: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:381)
+	at java.lang.String.<init>(String.java:545)
+	at com.mycompany.httpclient.HttpClient.readMessageFromServer(HttpClient.java:156)
+	at com.mycompany.httpclient.HttpClient.run(HttpClient.java:122)
